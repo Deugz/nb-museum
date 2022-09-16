@@ -1,0 +1,721 @@
+2019-02-04T13:40:53  *** Timing information for refreshCachedValues: real(0.353353) thread(kernel=0.015625, user=0.015625) process(kernel=0.015625, user=0.015625)
+2019-02-04T13:40:53  *** Timing information for CRPTProxy::unloadCRPT: real(0) thread(kernel=0, user=0) process(kernel=0, user=0)
+2019-02-04T13:40:53  *** Timing information for CRPTProxy::loadCRPT: real(0.008008) thread(kernel=0, user=0) process(kernel=0, user=0)
+2019-02-04T13:40:55  *** Timing information for CRPTProxy::updateFrom: real(1.44114) thread(kernel=0.25, user=0.109375) process(kernel=0.421875, user=0.65625)
+2019-02-04T13:40:55  *** Timing information for CRPTProxy::createFrom: real(1.46801) thread(kernel=0.25, user=0.109375) process(kernel=0.4375, user=0.671875)
+2019-02-04T13:40:55  *** Timing information for END 62554: real(14.5153) thread(kernel=0.5, user=0.328125) process(kernel=0.828125, user=1.09375)
+2019-02-04T13:41:06  Wiring table C:\LabVIEW Modules\dae\NIMROD84modules+9monitors+LAB7Jun2017Wiring.dat is unchanged - reload skipped
+2019-02-04T13:41:06  Detector table "C:\LabVIEW Modules\dae\NIMROD84modules+9monitors+LAB7Jun2017Detector.dat" is unchanged - reload skipped
+2019-02-04T13:41:06  Spectra table C:\LabVIEW Modules\dae\NIMROD84modules+9monitors+LAB7Jun2017Spectra.dat is unchanged - reload skipped
+2019-02-04T13:41:06  Hardware period table ignored as using software periods
+2019-02-04T13:41:06  Loaded 5 monitoring parameters from table
+2019-02-04T21:29:18  BEGIN run 62555
+2019-02-04T21:29:18  Run started in software period 1
+2019-02-04T21:29:18  Setting up DAE
+2019-02-04T21:29:18  Highest dae, detector card, crate number used = 1, 12, 112
+2019-02-04T21:29:18  Number of time regimes = 2
+2019-02-04T21:29:18  CRPT memory used for histograms = 28 Mb
+2019-02-04T21:29:18  Number of periods (daq, total) = (1, 1)
+2019-02-04T21:29:18  Resetting DAE - ignore veto counter values as not yet cleared
+2019-02-04T21:29:22  FIFO Veto is ENABLED (vetoed 0) frames
+2019-02-04T21:29:22  SMP (chopper) Veto is DISABLED (counted 0) frames
+2019-02-04T21:29:22  Internal Veto is DISABLED (counted 0) frames
+2019-02-04T21:29:22  Fermi Chopper0 Veto is DISABLED (counted 0) frames
+2019-02-04T21:29:22  TS2 Pulse Veto is DISABLED (counted 0) frames
+2019-02-04T21:29:22  ISIS 50 Hz Veto is DISABLED (counted 0) frames
+2019-02-04T21:29:22  MS Mode Veto is DISABLED (counted 0) frames
+2019-02-04T21:29:22  External Veto 0 is DISABLED (counted 0) frames
+2019-02-04T21:29:22  External Veto 1 is DISABLED (counted 0) frames
+2019-02-04T21:29:22  External Veto 2 is DISABLED (counted 0) frames
+2019-02-04T21:29:22  External Veto 3 is DISABLED (counted 0) frames
+2019-02-04T21:29:22  Starting clear of DAE memory, thread ID 6284
+2019-02-04T21:29:24  Finished clear of DAE memory
+2019-02-04T21:29:24  Programming Time channels
+2019-02-04T21:29:24  Global Frame sync delay = 148 us
+2019-02-04T21:29:24  Electronics delay = 7 clock pulses
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 1
+2019-02-04T21:29:24  Setting FS delay on DC 1 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 2
+2019-02-04T21:29:24  Setting FS delay on DC 2 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 3
+2019-02-04T21:29:24  Setting FS delay on DC 3 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 4
+2019-02-04T21:29:24  Setting FS delay on DC 4 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 5
+2019-02-04T21:29:24  Setting FS delay on DC 5 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 6
+2019-02-04T21:29:24  Setting FS delay on DC 6 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 7
+2019-02-04T21:29:24  Setting FS delay on DC 7 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 8
+2019-02-04T21:29:24  Setting FS delay on DC 8 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 9
+2019-02-04T21:29:24  Setting FS delay on DC 9 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 10
+2019-02-04T21:29:24  Setting FS delay on DC 10 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 11
+2019-02-04T21:29:24  Setting FS delay on DC 11 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 101
+2019-02-04T21:29:24  Setting FS delay on DC 101 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 102
+2019-02-04T21:29:24  Setting FS delay on DC 102 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 103
+2019-02-04T21:29:24  Setting FS delay on DC 103 to 0 us
+2019-02-04T21:29:24  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 104
+2019-02-04T21:29:25  Setting FS delay on DC 104 to 0 us
+2019-02-04T21:29:25  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 105
+2019-02-04T21:29:25  Setting FS delay on DC 105 to 0 us
+2019-02-04T21:29:25  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 106
+2019-02-04T21:29:25  Setting FS delay on DC 106 to 0 us
+2019-02-04T21:29:25  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 107
+2019-02-04T21:29:25  Setting FS delay on DC 107 to 0 us
+2019-02-04T21:29:25  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 108
+2019-02-04T21:29:25  Setting FS delay on DC 108 to 0 us
+2019-02-04T21:29:25  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 109
+2019-02-04T21:29:25  Setting FS delay on DC 109 to 0 us
+2019-02-04T21:29:25  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 110
+2019-02-04T21:29:25  Setting FS delay on DC 110 to 0 us
+2019-02-04T21:29:25  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 111
+2019-02-04T21:29:25  Setting FS delay on DC 111 to 0 us
+2019-02-04T21:29:25  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 112
+2019-02-04T21:29:25  Setting FS delay on DC 112 to 0 us
+2019-02-04T21:29:26  Global Frame sync delay = 148 us
+2019-02-04T21:29:26  Electronics delay = 7 clock pulses
+2019-02-04T21:29:26  Programming POSLUT
+2019-02-04T21:29:26  There is a gap of total size 748 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 1 DAE2 Highest: 80 DAE1 low: 862 DAE1 high: 1689 NPOS: 80
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 1 using 1046520 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 2 DAE2 Highest: 72 DAE1 low: 1030 DAE1 high: 1815 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 2 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 678 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 3 DAE2 Highest: 72 DAE1 low: 1138 DAE1 high: 1887 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 3 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 4 DAE2 Highest: 72 DAE1 low: 1210 DAE1 high: 1995 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 4 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 5 DAE2 Highest: 72 DAE1 low: 1246 DAE1 high: 1335 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 5 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 6 DAE2 Highest: 72 DAE1 low: 2014 DAE1 high: 2103 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 6 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 7 DAE2 Highest: 72 DAE1 low: 1354 DAE1 high: 1443 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 7 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 8 DAE2 Highest: 72 DAE1 low: 2122 DAE1 high: 2211 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 8 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 9 DAE2 Highest: 72 DAE1 low: 1462 DAE1 high: 1551 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 9 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  Card: 10 DAE2 Highest: 9 DAE1 low: 1 DAE1 high: 9 NPOS: 9
+2019-02-04T21:29:26  MPOS: 0 to 0
+2019-02-04T21:29:26  MODN: 0 to 8
+2019-02-04T21:29:26  Card 10 using 129200 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 20 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 11 DAE2 Highest: 80 DAE1 low: 802 DAE1 high: 901 NPOS: 80
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 11 using 1046520 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 101 DAE2 Highest: 72 DAE1 low: 2230 DAE1 high: 2319 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 101 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 822 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 102 DAE2 Highest: 72 DAE1 low: 1120 DAE1 high: 2013 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 102 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:26  There is a gap of total size 822 in the DAE1 spectra on the card
+2019-02-04T21:29:26  Card: 103 DAE2 Highest: 72 DAE1 low: 1336 DAE1 high: 2229 NPOS: 72
+2019-02-04T21:29:26  MPOS: 0 to 4
+2019-02-04T21:29:26  MODN: 0 to 15
+2019-02-04T21:29:26  Card 103 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:27  There is a gap of total size 1200 in the DAE1 spectra on the card
+2019-02-04T21:29:27  Card: 104 DAE2 Highest: 72 DAE1 low: 1066 DAE1 high: 2337 NPOS: 72
+2019-02-04T21:29:27  MPOS: 0 to 4
+2019-02-04T21:29:27  MODN: 0 to 15
+2019-02-04T21:29:27  Card 104 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:27  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:29:27  Card: 105 DAE2 Highest: 72 DAE1 low: 1264 DAE1 high: 2049 NPOS: 72
+2019-02-04T21:29:27  MPOS: 0 to 4
+2019-02-04T21:29:27  MODN: 0 to 15
+2019-02-04T21:29:27  Card 105 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:27  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:29:27  Card: 106 DAE2 Highest: 72 DAE1 low: 1480 DAE1 high: 2265 NPOS: 72
+2019-02-04T21:29:27  MPOS: 0 to 4
+2019-02-04T21:29:27  MODN: 0 to 15
+2019-02-04T21:29:27  Card 106 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:27  Card: 107 DAE2 Highest: 792 DAE1 low: 10 DAE1 high: 801 NPOS: 792
+2019-02-04T21:29:27  MPOS: 1 to 227
+2019-02-04T21:29:27  MODN: 0 to 12
+2019-02-04T21:29:27  Card 107 using 10245560 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:27  There is a gap of total size 768 in the DAE1 spectra on the card
+2019-02-04T21:29:27  Card: 108 DAE2 Highest: 72 DAE1 low: 922 DAE1 high: 1761 NPOS: 72
+2019-02-04T21:29:27  MPOS: 0 to 4
+2019-02-04T21:29:27  MODN: 0 to 15
+2019-02-04T21:29:27  Card 108 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:27  There is a gap of total size 678 in the DAE1 spectra on the card
+2019-02-04T21:29:27  Card: 109 DAE2 Highest: 72 DAE1 low: 958 DAE1 high: 1707 NPOS: 72
+2019-02-04T21:29:27  MPOS: 0 to 4
+2019-02-04T21:29:27  MODN: 0 to 15
+2019-02-04T21:29:27  Card 109 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:27  There is a gap of total size 72 in the DAE1 spectra on the card
+2019-02-04T21:29:27  Card: 110 DAE2 Highest: 72 DAE1 low: 1708 DAE1 high: 1851 NPOS: 72
+2019-02-04T21:29:27  MPOS: 0 to 4
+2019-02-04T21:29:27  MODN: 0 to 15
+2019-02-04T21:29:27  Card 110 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:28  There is a gap of total size 20 in the DAE1 spectra on the card
+2019-02-04T21:29:28  Card: 111 DAE2 Highest: 80 DAE1 low: 1570 DAE1 high: 1669 NPOS: 80
+2019-02-04T21:29:28  MPOS: 0 to 4
+2019-02-04T21:29:28  MODN: 0 to 15
+2019-02-04T21:29:28  Card 111 using 1046520 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:28  There is a gap of total size 732 in the DAE1 spectra on the card
+2019-02-04T21:29:28  Card: 112 DAE2 Highest: 72 DAE1 low: 994 DAE1 high: 1797 NPOS: 72
+2019-02-04T21:29:28  MPOS: 0 to 4
+2019-02-04T21:29:28  MODN: 0 to 15
+2019-02-04T21:29:28  Card 112 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:29:29  Software periods enabled
+2019-02-04T21:29:29  (setting period card, if present, to 1 hardware period of 15000 frames)
+2019-02-04T21:29:31  Setting vetos
+2019-02-04T21:29:31  Enabling FIFO veto
+2019-02-04T21:29:31  Disabling SMP veto
+2019-02-04T21:29:31  Disabling EXTERNAL veto 0
+2019-02-04T21:29:31  Disabling EXTERNAL veto 1
+2019-02-04T21:29:31  Disabling EXTERNAL veto 2
+2019-02-04T21:29:31  Disabling EXTERNAL veto 3
+2019-02-04T21:29:31  Disabling Fermi Chopper veto 0
+2019-02-04T21:29:31  Disabling TS2 Pulse veto
+2019-02-04T21:29:31  Disabling ISIS 50Hz veto
+2019-02-04T21:29:33  Clearing frames, vetos and PPP counters
+2019-02-04T21:29:35  Previous DAE time drift (icp - dae) = 771.292300 ms
+2019-02-04T21:29:35  Time sync delay = 0.965780 ms
+2019-02-04T21:29:35  DAE time drift (icp - dae) = 2.042700 ms
+2019-02-04T21:29:35  *** Timing information for Time to compute and set new DAE time values: real(0.008778) thread(kernel=0, user=0) process(kernel=0, user=0)
+2019-02-04T21:29:35  Setting new DAE time to 2019-02-04T21:29:35.786
+2019-02-04T21:29:36  *** Timing information for refreshCachedValues: real(0.363787) thread(kernel=0.015625, user=0.015625) process(kernel=0.015625, user=0.015625)
+2019-02-04T21:29:36  *** Timing information for BEGIN: real(18.0216) thread(kernel=0.234375, user=0.453125) process(kernel=0.28125, user=0.5)
+2019-02-04T21:30:38  Aborting run 62555
+2019-02-04T21:30:41  FIFO Veto is ENABLED (vetoed 0) frames
+2019-02-04T21:30:41  SMP (chopper) Veto is DISABLED (counted 0) frames
+2019-02-04T21:30:41  Internal Veto is DISABLED (counted 0) frames
+2019-02-04T21:30:41  Fermi Chopper0 Veto is DISABLED (counted 0) frames
+2019-02-04T21:30:41  TS2 Pulse Veto is DISABLED (counted 0) frames
+2019-02-04T21:30:41  ISIS 50 Hz Veto is DISABLED (counted 0) frames
+2019-02-04T21:30:41  MS Mode Veto is DISABLED (counted 0) frames
+2019-02-04T21:30:41  External Veto 0 is DISABLED (counted 0) frames
+2019-02-04T21:30:41  External Veto 1 is DISABLED (counted 0) frames
+2019-02-04T21:30:41  External Veto 2 is DISABLED (counted 0) frames
+2019-02-04T21:30:41  External Veto 3 is DISABLED (counted 0) frames
+2019-02-04T21:30:41  Run stopped in period 1 (DAQ 1), sequence 1
+2019-02-04T21:30:41  Good/Total uAH = 0.692405 / 0.692405
+2019-02-04T21:30:41  *** Timing information for stopDataCollection(): real(2.42947) thread(kernel=0, user=0.03125) process(kernel=0.015625, user=0.03125)
+2019-02-04T21:30:41  *** Timing information for refreshCachedValues: real(0.331602) thread(kernel=0.015625, user=0) process(kernel=0.015625, user=0)
+2019-02-04T21:31:46  BEGIN run 62555
+2019-02-04T21:31:46  Run started in software period 1
+2019-02-04T21:31:46  Setting up DAE
+2019-02-04T21:31:46  Highest dae, detector card, crate number used = 1, 12, 112
+2019-02-04T21:31:46  Number of time regimes = 2
+2019-02-04T21:31:46  CRPT memory used for histograms = 28 Mb
+2019-02-04T21:31:46  Number of periods (daq, total) = (1, 1)
+2019-02-04T21:31:46  Resetting DAE - ignore veto counter values as not yet cleared
+2019-02-04T21:31:50  FIFO Veto is ENABLED (vetoed 0) frames
+2019-02-04T21:31:50  SMP (chopper) Veto is DISABLED (counted 0) frames
+2019-02-04T21:31:50  Internal Veto is DISABLED (counted 0) frames
+2019-02-04T21:31:50  Fermi Chopper0 Veto is DISABLED (counted 0) frames
+2019-02-04T21:31:50  TS2 Pulse Veto is DISABLED (counted 0) frames
+2019-02-04T21:31:50  ISIS 50 Hz Veto is DISABLED (counted 0) frames
+2019-02-04T21:31:50  MS Mode Veto is DISABLED (counted 0) frames
+2019-02-04T21:31:50  External Veto 0 is DISABLED (counted 0) frames
+2019-02-04T21:31:50  External Veto 1 is DISABLED (counted 0) frames
+2019-02-04T21:31:50  External Veto 2 is DISABLED (counted 0) frames
+2019-02-04T21:31:50  External Veto 3 is DISABLED (counted 0) frames
+2019-02-04T21:31:50  Starting clear of DAE memory, thread ID 6284
+2019-02-04T21:31:52  Finished clear of DAE memory
+2019-02-04T21:31:52  Programming Time channels
+2019-02-04T21:31:52  Global Frame sync delay = 148 us
+2019-02-04T21:31:52  Electronics delay = 7 clock pulses
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 1
+2019-02-04T21:31:52  Setting FS delay on DC 1 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 2
+2019-02-04T21:31:52  Setting FS delay on DC 2 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 3
+2019-02-04T21:31:52  Setting FS delay on DC 3 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 4
+2019-02-04T21:31:52  Setting FS delay on DC 4 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 5
+2019-02-04T21:31:52  Setting FS delay on DC 5 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 6
+2019-02-04T21:31:52  Setting FS delay on DC 6 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 7
+2019-02-04T21:31:52  Setting FS delay on DC 7 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 8
+2019-02-04T21:31:52  Setting FS delay on DC 8 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 9
+2019-02-04T21:31:52  Setting FS delay on DC 9 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 10
+2019-02-04T21:31:52  Setting FS delay on DC 10 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 11
+2019-02-04T21:31:52  Setting FS delay on DC 11 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 101
+2019-02-04T21:31:52  Setting FS delay on DC 101 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 102
+2019-02-04T21:31:52  Setting FS delay on DC 102 to 0 us
+2019-02-04T21:31:52  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 103
+2019-02-04T21:31:53  Setting FS delay on DC 103 to 0 us
+2019-02-04T21:31:53  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 104
+2019-02-04T21:31:53  Setting FS delay on DC 104 to 0 us
+2019-02-04T21:31:53  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 105
+2019-02-04T21:31:53  Setting FS delay on DC 105 to 0 us
+2019-02-04T21:31:53  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 106
+2019-02-04T21:31:53  Setting FS delay on DC 106 to 0 us
+2019-02-04T21:31:53  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 107
+2019-02-04T21:31:53  Setting FS delay on DC 107 to 0 us
+2019-02-04T21:31:53  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 108
+2019-02-04T21:31:53  Setting FS delay on DC 108 to 0 us
+2019-02-04T21:31:53  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 109
+2019-02-04T21:31:53  Setting FS delay on DC 109 to 0 us
+2019-02-04T21:31:53  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 110
+2019-02-04T21:31:53  Setting FS delay on DC 110 to 0 us
+2019-02-04T21:31:53  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 111
+2019-02-04T21:31:54  Setting FS delay on DC 111 to 0 us
+2019-02-04T21:31:54  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 112
+2019-02-04T21:31:54  Setting FS delay on DC 112 to 0 us
+2019-02-04T21:31:54  Global Frame sync delay = 148 us
+2019-02-04T21:31:54  Electronics delay = 7 clock pulses
+2019-02-04T21:31:54  Programming POSLUT
+2019-02-04T21:31:54  There is a gap of total size 748 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 1 DAE2 Highest: 80 DAE1 low: 862 DAE1 high: 1689 NPOS: 80
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 1 using 1046520 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 2 DAE2 Highest: 72 DAE1 low: 1030 DAE1 high: 1815 NPOS: 72
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 2 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 678 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 3 DAE2 Highest: 72 DAE1 low: 1138 DAE1 high: 1887 NPOS: 72
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 3 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 4 DAE2 Highest: 72 DAE1 low: 1210 DAE1 high: 1995 NPOS: 72
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 4 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 5 DAE2 Highest: 72 DAE1 low: 1246 DAE1 high: 1335 NPOS: 72
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 5 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 6 DAE2 Highest: 72 DAE1 low: 2014 DAE1 high: 2103 NPOS: 72
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 6 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 7 DAE2 Highest: 72 DAE1 low: 1354 DAE1 high: 1443 NPOS: 72
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 7 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 8 DAE2 Highest: 72 DAE1 low: 2122 DAE1 high: 2211 NPOS: 72
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 8 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 9 DAE2 Highest: 72 DAE1 low: 1462 DAE1 high: 1551 NPOS: 72
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 9 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  Card: 10 DAE2 Highest: 9 DAE1 low: 1 DAE1 high: 9 NPOS: 9
+2019-02-04T21:31:54  MPOS: 0 to 0
+2019-02-04T21:31:54  MODN: 0 to 8
+2019-02-04T21:31:54  Card 10 using 129200 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 20 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 11 DAE2 Highest: 80 DAE1 low: 802 DAE1 high: 901 NPOS: 80
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 11 using 1046520 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 101 DAE2 Highest: 72 DAE1 low: 2230 DAE1 high: 2319 NPOS: 72
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 101 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:54  There is a gap of total size 822 in the DAE1 spectra on the card
+2019-02-04T21:31:54  Card: 102 DAE2 Highest: 72 DAE1 low: 1120 DAE1 high: 2013 NPOS: 72
+2019-02-04T21:31:54  MPOS: 0 to 4
+2019-02-04T21:31:54  MODN: 0 to 15
+2019-02-04T21:31:54  Card 102 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:55  There is a gap of total size 822 in the DAE1 spectra on the card
+2019-02-04T21:31:55  Card: 103 DAE2 Highest: 72 DAE1 low: 1336 DAE1 high: 2229 NPOS: 72
+2019-02-04T21:31:55  MPOS: 0 to 4
+2019-02-04T21:31:55  MODN: 0 to 15
+2019-02-04T21:31:55  Card 103 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:55  There is a gap of total size 1200 in the DAE1 spectra on the card
+2019-02-04T21:31:55  Card: 104 DAE2 Highest: 72 DAE1 low: 1066 DAE1 high: 2337 NPOS: 72
+2019-02-04T21:31:55  MPOS: 0 to 4
+2019-02-04T21:31:55  MODN: 0 to 15
+2019-02-04T21:31:55  Card 104 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:55  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:31:55  Card: 105 DAE2 Highest: 72 DAE1 low: 1264 DAE1 high: 2049 NPOS: 72
+2019-02-04T21:31:55  MPOS: 0 to 4
+2019-02-04T21:31:55  MODN: 0 to 15
+2019-02-04T21:31:55  Card 105 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:55  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:31:55  Card: 106 DAE2 Highest: 72 DAE1 low: 1480 DAE1 high: 2265 NPOS: 72
+2019-02-04T21:31:55  MPOS: 0 to 4
+2019-02-04T21:31:55  MODN: 0 to 15
+2019-02-04T21:31:55  Card 106 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:55  Card: 107 DAE2 Highest: 792 DAE1 low: 10 DAE1 high: 801 NPOS: 792
+2019-02-04T21:31:55  MPOS: 1 to 227
+2019-02-04T21:31:55  MODN: 0 to 12
+2019-02-04T21:31:55  Card 107 using 10245560 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:55  There is a gap of total size 768 in the DAE1 spectra on the card
+2019-02-04T21:31:55  Card: 108 DAE2 Highest: 72 DAE1 low: 922 DAE1 high: 1761 NPOS: 72
+2019-02-04T21:31:55  MPOS: 0 to 4
+2019-02-04T21:31:55  MODN: 0 to 15
+2019-02-04T21:31:55  Card 108 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:55  There is a gap of total size 678 in the DAE1 spectra on the card
+2019-02-04T21:31:55  Card: 109 DAE2 Highest: 72 DAE1 low: 958 DAE1 high: 1707 NPOS: 72
+2019-02-04T21:31:55  MPOS: 0 to 4
+2019-02-04T21:31:55  MODN: 0 to 15
+2019-02-04T21:31:55  Card 109 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:56  There is a gap of total size 72 in the DAE1 spectra on the card
+2019-02-04T21:31:56  Card: 110 DAE2 Highest: 72 DAE1 low: 1708 DAE1 high: 1851 NPOS: 72
+2019-02-04T21:31:56  MPOS: 0 to 4
+2019-02-04T21:31:56  MODN: 0 to 15
+2019-02-04T21:31:56  Card 110 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:56  There is a gap of total size 20 in the DAE1 spectra on the card
+2019-02-04T21:31:56  Card: 111 DAE2 Highest: 80 DAE1 low: 1570 DAE1 high: 1669 NPOS: 80
+2019-02-04T21:31:56  MPOS: 0 to 4
+2019-02-04T21:31:56  MODN: 0 to 15
+2019-02-04T21:31:56  Card 111 using 1046520 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:56  There is a gap of total size 732 in the DAE1 spectra on the card
+2019-02-04T21:31:56  Card: 112 DAE2 Highest: 72 DAE1 low: 994 DAE1 high: 1797 NPOS: 72
+2019-02-04T21:31:56  MPOS: 0 to 4
+2019-02-04T21:31:56  MODN: 0 to 15
+2019-02-04T21:31:56  Card 112 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:31:57  Software periods enabled
+2019-02-04T21:31:57  (setting period card, if present, to 1 hardware period of 15000 frames)
+2019-02-04T21:31:59  Setting vetos
+2019-02-04T21:31:59  Enabling FIFO veto
+2019-02-04T21:31:59  Disabling SMP veto
+2019-02-04T21:31:59  Disabling EXTERNAL veto 0
+2019-02-04T21:31:59  Disabling EXTERNAL veto 1
+2019-02-04T21:31:59  Disabling EXTERNAL veto 2
+2019-02-04T21:31:59  Disabling EXTERNAL veto 3
+2019-02-04T21:31:59  Disabling Fermi Chopper veto 0
+2019-02-04T21:31:59  Disabling TS2 Pulse veto
+2019-02-04T21:31:59  Disabling ISIS 50Hz veto
+2019-02-04T21:32:02  Clearing frames, vetos and PPP counters
+2019-02-04T21:32:03  Previous DAE time drift (icp - dae) = -20.249500 ms
+2019-02-04T21:32:03  Time sync delay = 0.777960 ms
+2019-02-04T21:32:03  DAE time drift (icp - dae) = 1.523800 ms
+2019-02-04T21:32:03  *** Timing information for Time to compute and set new DAE time values: real(0.006827) thread(kernel=0, user=0) process(kernel=0, user=0)
+2019-02-04T21:32:03  Setting new DAE time to 2019-02-04T21:32:03.939
+2019-02-04T21:32:04  *** Timing information for refreshCachedValues: real(0.338429) thread(kernel=0.015625, user=0.015625) process(kernel=0.03125, user=0.015625)
+2019-02-04T21:32:04  *** Timing information for BEGIN: real(18.0117) thread(kernel=0.25, user=0.546875) process(kernel=0.3125, user=0.640625)
+2019-02-04T21:33:55  Aborting run 62555
+2019-02-04T21:33:57  FIFO Veto is ENABLED (vetoed 0) frames
+2019-02-04T21:33:57  SMP (chopper) Veto is DISABLED (counted 0) frames
+2019-02-04T21:33:57  Internal Veto is DISABLED (counted 0) frames
+2019-02-04T21:33:57  Fermi Chopper0 Veto is DISABLED (counted 0) frames
+2019-02-04T21:33:57  TS2 Pulse Veto is DISABLED (counted 0) frames
+2019-02-04T21:33:57  ISIS 50 Hz Veto is DISABLED (counted 0) frames
+2019-02-04T21:33:57  MS Mode Veto is DISABLED (counted 0) frames
+2019-02-04T21:33:57  External Veto 0 is DISABLED (counted 0) frames
+2019-02-04T21:33:57  External Veto 1 is DISABLED (counted 0) frames
+2019-02-04T21:33:57  External Veto 2 is DISABLED (counted 0) frames
+2019-02-04T21:33:57  External Veto 3 is DISABLED (counted 0) frames
+2019-02-04T21:33:57  Run stopped in period 1 (DAQ 1), sequence 1
+2019-02-04T21:33:57  Good/Total uAH = 1.229461 / 1.229461
+2019-02-04T21:33:57  *** Timing information for stopDataCollection(): real(2.41874) thread(kernel=0, user=0.078125) process(kernel=0, user=0.09375)
+2019-02-04T21:33:58  *** Timing information for refreshCachedValues: real(0.35501) thread(kernel=0, user=0) process(kernel=0, user=0.015625)
+2019-02-04T21:35:02  BEGIN run 62555
+2019-02-04T21:35:02  Run started in software period 1
+2019-02-04T21:35:02  Setting up DAE
+2019-02-04T21:35:02  Highest dae, detector card, crate number used = 1, 12, 112
+2019-02-04T21:35:02  Number of time regimes = 2
+2019-02-04T21:35:02  CRPT memory used for histograms = 28 Mb
+2019-02-04T21:35:02  Number of periods (daq, total) = (1, 1)
+2019-02-04T21:35:02  Resetting DAE - ignore veto counter values as not yet cleared
+2019-02-04T21:35:07  FIFO Veto is ENABLED (vetoed 0) frames
+2019-02-04T21:35:07  SMP (chopper) Veto is DISABLED (counted 0) frames
+2019-02-04T21:35:07  Internal Veto is DISABLED (counted 0) frames
+2019-02-04T21:35:07  Fermi Chopper0 Veto is DISABLED (counted 0) frames
+2019-02-04T21:35:07  TS2 Pulse Veto is DISABLED (counted 0) frames
+2019-02-04T21:35:07  ISIS 50 Hz Veto is DISABLED (counted 0) frames
+2019-02-04T21:35:07  MS Mode Veto is DISABLED (counted 0) frames
+2019-02-04T21:35:07  External Veto 0 is DISABLED (counted 0) frames
+2019-02-04T21:35:07  External Veto 1 is DISABLED (counted 0) frames
+2019-02-04T21:35:07  External Veto 2 is DISABLED (counted 0) frames
+2019-02-04T21:35:07  External Veto 3 is DISABLED (counted 0) frames
+2019-02-04T21:35:07  Starting clear of DAE memory, thread ID 6284
+2019-02-04T21:35:08  Finished clear of DAE memory
+2019-02-04T21:35:09  Programming Time channels
+2019-02-04T21:35:09  Global Frame sync delay = 148 us
+2019-02-04T21:35:09  Electronics delay = 7 clock pulses
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 1
+2019-02-04T21:35:09  Setting FS delay on DC 1 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 2
+2019-02-04T21:35:09  Setting FS delay on DC 2 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 3
+2019-02-04T21:35:09  Setting FS delay on DC 3 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 4
+2019-02-04T21:35:09  Setting FS delay on DC 4 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 5
+2019-02-04T21:35:09  Setting FS delay on DC 5 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 6
+2019-02-04T21:35:09  Setting FS delay on DC 6 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 7
+2019-02-04T21:35:09  Setting FS delay on DC 7 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 8
+2019-02-04T21:35:09  Setting FS delay on DC 8 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 9
+2019-02-04T21:35:09  Setting FS delay on DC 9 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 10
+2019-02-04T21:35:09  Setting FS delay on DC 10 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 11
+2019-02-04T21:35:09  Setting FS delay on DC 11 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 101
+2019-02-04T21:35:09  Setting FS delay on DC 101 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 102
+2019-02-04T21:35:09  Setting FS delay on DC 102 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 103
+2019-02-04T21:35:09  Setting FS delay on DC 103 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 104
+2019-02-04T21:35:09  Setting FS delay on DC 104 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 105
+2019-02-04T21:35:09  Setting FS delay on DC 105 to 0 us
+2019-02-04T21:35:09  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 106
+2019-02-04T21:35:09  Setting FS delay on DC 106 to 0 us
+2019-02-04T21:35:10  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 107
+2019-02-04T21:35:10  Setting FS delay on DC 107 to 0 us
+2019-02-04T21:35:10  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 108
+2019-02-04T21:35:10  Setting FS delay on DC 108 to 0 us
+2019-02-04T21:35:10  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 109
+2019-02-04T21:35:10  Setting FS delay on DC 109 to 0 us
+2019-02-04T21:35:10  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 110
+2019-02-04T21:35:10  Setting FS delay on DC 110 to 0 us
+2019-02-04T21:35:10  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 111
+2019-02-04T21:35:10  Setting FS delay on DC 111 to 0 us
+2019-02-04T21:35:10  Setting 3229 time channels from 1.781250 to 94851.781250 us on card 112
+2019-02-04T21:35:10  Setting FS delay on DC 112 to 0 us
+2019-02-04T21:35:10  Global Frame sync delay = 148 us
+2019-02-04T21:35:10  Electronics delay = 7 clock pulses
+2019-02-04T21:35:10  Programming POSLUT
+2019-02-04T21:35:10  There is a gap of total size 748 in the DAE1 spectra on the card
+2019-02-04T21:35:10  Card: 1 DAE2 Highest: 80 DAE1 low: 862 DAE1 high: 1689 NPOS: 80
+2019-02-04T21:35:10  MPOS: 0 to 4
+2019-02-04T21:35:10  MODN: 0 to 15
+2019-02-04T21:35:10  Card 1 using 1046520 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:10  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:35:10  Card: 2 DAE2 Highest: 72 DAE1 low: 1030 DAE1 high: 1815 NPOS: 72
+2019-02-04T21:35:10  MPOS: 0 to 4
+2019-02-04T21:35:10  MODN: 0 to 15
+2019-02-04T21:35:10  Card 2 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:10  There is a gap of total size 678 in the DAE1 spectra on the card
+2019-02-04T21:35:10  Card: 3 DAE2 Highest: 72 DAE1 low: 1138 DAE1 high: 1887 NPOS: 72
+2019-02-04T21:35:10  MPOS: 0 to 4
+2019-02-04T21:35:10  MODN: 0 to 15
+2019-02-04T21:35:10  Card 3 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:10  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:35:10  Card: 4 DAE2 Highest: 72 DAE1 low: 1210 DAE1 high: 1995 NPOS: 72
+2019-02-04T21:35:10  MPOS: 0 to 4
+2019-02-04T21:35:10  MODN: 0 to 15
+2019-02-04T21:35:10  Card 4 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:10  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:35:10  Card: 5 DAE2 Highest: 72 DAE1 low: 1246 DAE1 high: 1335 NPOS: 72
+2019-02-04T21:35:10  MPOS: 0 to 4
+2019-02-04T21:35:10  MODN: 0 to 15
+2019-02-04T21:35:10  Card 5 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:35:11  Card: 6 DAE2 Highest: 72 DAE1 low: 2014 DAE1 high: 2103 NPOS: 72
+2019-02-04T21:35:11  MPOS: 0 to 4
+2019-02-04T21:35:11  MODN: 0 to 15
+2019-02-04T21:35:11  Card 6 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:35:11  Card: 7 DAE2 Highest: 72 DAE1 low: 1354 DAE1 high: 1443 NPOS: 72
+2019-02-04T21:35:11  MPOS: 0 to 4
+2019-02-04T21:35:11  MODN: 0 to 15
+2019-02-04T21:35:11  Card 7 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:35:11  Card: 8 DAE2 Highest: 72 DAE1 low: 2122 DAE1 high: 2211 NPOS: 72
+2019-02-04T21:35:11  MPOS: 0 to 4
+2019-02-04T21:35:11  MODN: 0 to 15
+2019-02-04T21:35:11  Card 8 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:35:11  Card: 9 DAE2 Highest: 72 DAE1 low: 1462 DAE1 high: 1551 NPOS: 72
+2019-02-04T21:35:11  MPOS: 0 to 4
+2019-02-04T21:35:11  MODN: 0 to 15
+2019-02-04T21:35:11  Card 9 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  Card: 10 DAE2 Highest: 9 DAE1 low: 1 DAE1 high: 9 NPOS: 9
+2019-02-04T21:35:11  MPOS: 0 to 0
+2019-02-04T21:35:11  MODN: 0 to 8
+2019-02-04T21:35:11  Card 10 using 129200 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  There is a gap of total size 20 in the DAE1 spectra on the card
+2019-02-04T21:35:11  Card: 11 DAE2 Highest: 80 DAE1 low: 802 DAE1 high: 901 NPOS: 80
+2019-02-04T21:35:11  MPOS: 0 to 4
+2019-02-04T21:35:11  MODN: 0 to 15
+2019-02-04T21:35:11  Card 11 using 1046520 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  There is a gap of total size 18 in the DAE1 spectra on the card
+2019-02-04T21:35:11  Card: 101 DAE2 Highest: 72 DAE1 low: 2230 DAE1 high: 2319 NPOS: 72
+2019-02-04T21:35:11  MPOS: 0 to 4
+2019-02-04T21:35:11  MODN: 0 to 15
+2019-02-04T21:35:11  Card 101 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  There is a gap of total size 822 in the DAE1 spectra on the card
+2019-02-04T21:35:11  Card: 102 DAE2 Highest: 72 DAE1 low: 1120 DAE1 high: 2013 NPOS: 72
+2019-02-04T21:35:11  MPOS: 0 to 4
+2019-02-04T21:35:11  MODN: 0 to 15
+2019-02-04T21:35:11  Card 102 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  There is a gap of total size 822 in the DAE1 spectra on the card
+2019-02-04T21:35:11  Card: 103 DAE2 Highest: 72 DAE1 low: 1336 DAE1 high: 2229 NPOS: 72
+2019-02-04T21:35:11  MPOS: 0 to 4
+2019-02-04T21:35:11  MODN: 0 to 15
+2019-02-04T21:35:11  Card 103 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  There is a gap of total size 1200 in the DAE1 spectra on the card
+2019-02-04T21:35:11  Card: 104 DAE2 Highest: 72 DAE1 low: 1066 DAE1 high: 2337 NPOS: 72
+2019-02-04T21:35:11  MPOS: 0 to 4
+2019-02-04T21:35:11  MODN: 0 to 15
+2019-02-04T21:35:11  Card 104 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:11  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:35:11  Card: 105 DAE2 Highest: 72 DAE1 low: 1264 DAE1 high: 2049 NPOS: 72
+2019-02-04T21:35:11  MPOS: 0 to 4
+2019-02-04T21:35:11  MODN: 0 to 15
+2019-02-04T21:35:11  Card 105 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:12  There is a gap of total size 714 in the DAE1 spectra on the card
+2019-02-04T21:35:12  Card: 106 DAE2 Highest: 72 DAE1 low: 1480 DAE1 high: 2265 NPOS: 72
+2019-02-04T21:35:12  MPOS: 0 to 4
+2019-02-04T21:35:12  MODN: 0 to 15
+2019-02-04T21:35:12  Card 106 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:12  Card: 107 DAE2 Highest: 792 DAE1 low: 10 DAE1 high: 801 NPOS: 792
+2019-02-04T21:35:12  MPOS: 1 to 227
+2019-02-04T21:35:12  MODN: 0 to 12
+2019-02-04T21:35:12  Card 107 using 10245560 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:12  There is a gap of total size 768 in the DAE1 spectra on the card
+2019-02-04T21:35:12  Card: 108 DAE2 Highest: 72 DAE1 low: 922 DAE1 high: 1761 NPOS: 72
+2019-02-04T21:35:12  MPOS: 0 to 4
+2019-02-04T21:35:12  MODN: 0 to 15
+2019-02-04T21:35:12  Card 108 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:12  There is a gap of total size 678 in the DAE1 spectra on the card
+2019-02-04T21:35:12  Card: 109 DAE2 Highest: 72 DAE1 low: 958 DAE1 high: 1707 NPOS: 72
+2019-02-04T21:35:12  MPOS: 0 to 4
+2019-02-04T21:35:12  MODN: 0 to 15
+2019-02-04T21:35:12  Card 109 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:12  There is a gap of total size 72 in the DAE1 spectra on the card
+2019-02-04T21:35:12  Card: 110 DAE2 Highest: 72 DAE1 low: 1708 DAE1 high: 1851 NPOS: 72
+2019-02-04T21:35:12  MPOS: 0 to 4
+2019-02-04T21:35:12  MODN: 0 to 15
+2019-02-04T21:35:12  Card 110 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:12  There is a gap of total size 20 in the DAE1 spectra on the card
+2019-02-04T21:35:12  Card: 111 DAE2 Highest: 80 DAE1 low: 1570 DAE1 high: 1669 NPOS: 80
+2019-02-04T21:35:12  MPOS: 0 to 4
+2019-02-04T21:35:12  MODN: 0 to 15
+2019-02-04T21:35:12  Card 111 using 1046520 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:12  There is a gap of total size 732 in the DAE1 spectra on the card
+2019-02-04T21:35:12  Card: 112 DAE2 Highest: 72 DAE1 low: 994 DAE1 high: 1797 NPOS: 72
+2019-02-04T21:35:12  MPOS: 0 to 4
+2019-02-04T21:35:12  MODN: 0 to 15
+2019-02-04T21:35:12  Card 112 using 943160 of 134217728 bytes of available histogram memory
+2019-02-04T21:35:13  Software periods enabled
+2019-02-04T21:35:13  (setting period card, if present, to 1 hardware period of 15000 frames)
+2019-02-04T21:35:15  Setting vetos
+2019-02-04T21:35:15  Enabling FIFO veto
+2019-02-04T21:35:15  Disabling SMP veto
+2019-02-04T21:35:15  Disabling EXTERNAL veto 0
+2019-02-04T21:35:15  Disabling EXTERNAL veto 1
+2019-02-04T21:35:15  Disabling EXTERNAL veto 2
+2019-02-04T21:35:15  Disabling EXTERNAL veto 3
+2019-02-04T21:35:15  Disabling Fermi Chopper veto 0
+2019-02-04T21:35:15  Disabling TS2 Pulse veto
+2019-02-04T21:35:15  Disabling ISIS 50Hz veto
+2019-02-04T21:35:18  Clearing frames, vetos and PPP counters
+2019-02-04T21:35:20  Previous DAE time drift (icp - dae) = 3.826100 ms
+2019-02-04T21:35:20  Time sync delay = 0.812980 ms
+2019-02-04T21:35:20  DAE time drift (icp - dae) = 1.599100 ms
+2019-02-04T21:35:20  *** Timing information for Time to compute and set new DAE time values: real(0.006828) thread(kernel=0, user=0) process(kernel=0, user=0)
+2019-02-04T21:35:20  Setting new DAE time to 2019-02-04T21:35:20.485
+2019-02-04T21:35:20  *** Timing information for refreshCachedValues: real(0.35696) thread(kernel=0.03125, user=0.015625) process(kernel=0.03125, user=0.015625)
+2019-02-04T21:35:20  *** Timing information for BEGIN: real(17.9872) thread(kernel=0.203125, user=0.484375) process(kernel=0.234375, user=0.578125)
+2019-02-04T21:46:55  FIFO Veto is ENABLED (vetoed 0) frames
+2019-02-04T21:46:55  SMP (chopper) Veto is DISABLED (counted 0) frames
+2019-02-04T21:46:55  Internal Veto is DISABLED (counted 0) frames
+2019-02-04T21:46:55  Fermi Chopper0 Veto is DISABLED (counted 0) frames
+2019-02-04T21:46:55  TS2 Pulse Veto is DISABLED (counted 0) frames
+2019-02-04T21:46:55  ISIS 50 Hz Veto is DISABLED (counted 0) frames
+2019-02-04T21:46:55  MS Mode Veto is DISABLED (counted 0) frames
+2019-02-04T21:46:55  External Veto 0 is DISABLED (counted 0) frames
+2019-02-04T21:46:55  External Veto 1 is DISABLED (counted 0) frames
+2019-02-04T21:46:55  External Veto 2 is DISABLED (counted 0) frames
+2019-02-04T21:46:55  External Veto 3 is DISABLED (counted 0) frames
+2019-02-04T21:46:55  Run stopped in period 1 (DAQ 1), sequence 1
+2019-02-04T21:46:55  Good/Total uAH = 7.581066 / 7.581066
+2019-02-04T21:46:55  *** Timing information for stopDataCollection(): real(2.42799) thread(kernel=0, user=0.015625) process(kernel=0, user=0.015625)
+2019-02-04T21:47:09  Previous DAE time drift (icp - dae) = -15.402600 ms
+2019-02-04T21:47:09  Time sync delay = 0.983220 ms
+2019-02-04T21:47:09  DAE time drift (icp - dae) = 1.857800 ms
+2019-02-04T21:47:09  *** Timing information for Time to compute and set new DAE time values: real(0.007803) thread(kernel=0, user=0) process(kernel=0, user=0)
+2019-02-04T21:47:09  Setting new DAE time to 2019-02-04T21:47:09.213
+2019-02-04T22:00:22  FIFO Veto is ENABLED (vetoed 0) frames
+2019-02-04T22:00:22  SMP (chopper) Veto is DISABLED (counted 0) frames
+2019-02-04T22:00:22  Internal Veto is DISABLED (counted 0) frames
+2019-02-04T22:00:22  Fermi Chopper0 Veto is DISABLED (counted 0) frames
+2019-02-04T22:00:22  TS2 Pulse Veto is DISABLED (counted 0) frames
+2019-02-04T22:00:22  ISIS 50 Hz Veto is DISABLED (counted 0) frames
+2019-02-04T22:00:22  MS Mode Veto is DISABLED (counted 0) frames
+2019-02-04T22:00:22  External Veto 0 is DISABLED (counted 0) frames
+2019-02-04T22:00:22  External Veto 1 is DISABLED (counted 0) frames
+2019-02-04T22:00:22  External Veto 2 is DISABLED (counted 0) frames
+2019-02-04T22:00:22  External Veto 3 is DISABLED (counted 0) frames
+2019-02-04T22:00:22  Run stopped in period 1 (DAQ 1), sequence 1
+2019-02-04T22:00:22  Good/Total uAH = 16.186939 / 16.186939
+2019-02-04T22:00:22  *** Timing information for stopDataCollection(): real(2.41289) thread(kernel=0.015625, user=0.015625) process(kernel=0.015625, user=0.015625)
+2019-02-04T23:03:12  Previous DAE time drift (icp - dae) = -108.643200 ms
+2019-02-04T23:03:12  Time sync delay = 1.198440 ms
+2019-02-04T23:03:12  DAE time drift (icp - dae) = 1.736400 ms
+2019-02-04T23:03:12  *** Timing information for Time to compute and set new DAE time values: real(0.007803) thread(kernel=0, user=0) process(kernel=0, user=0)
+2019-02-04T23:03:12  Setting new DAE time to 2019-02-04T23:03:12.80
+2019-02-04T23:39:10  ENDing run 62555
+2019-02-04T23:39:10  *** Timing information for lockCRPT(): real(0.003901) thread(kernel=0, user=0) process(kernel=0, user=0)
+2019-02-04T23:39:13  FIFO Veto is ENABLED (vetoed 0) frames
+2019-02-04T23:39:13  SMP (chopper) Veto is DISABLED (counted 0) frames
+2019-02-04T23:39:13  Internal Veto is DISABLED (counted 0) frames
+2019-02-04T23:39:13  Fermi Chopper0 Veto is DISABLED (counted 0) frames
+2019-02-04T23:39:13  TS2 Pulse Veto is DISABLED (counted 0) frames
+2019-02-04T23:39:13  ISIS 50 Hz Veto is DISABLED (counted 0) frames
+2019-02-04T23:39:13  MS Mode Veto is DISABLED (counted 0) frames
+2019-02-04T23:39:13  External Veto 0 is DISABLED (counted 0) frames
+2019-02-04T23:39:13  External Veto 1 is DISABLED (counted 0) frames
+2019-02-04T23:39:13  External Veto 2 is DISABLED (counted 0) frames
+2019-02-04T23:39:13  External Veto 3 is DISABLED (counted 0) frames
+2019-02-04T23:39:13  Run stopped in period 1 (DAQ 1), sequence 1
+2019-02-04T23:39:13  Good/Total uAH = 40.008598 / 40.008598
+2019-02-04T23:39:13  *** Timing information for stopDataCollection(): real(2.41387) thread(kernel=0.015625, user=0) process(kernel=0.015625, user=0.015625)
+2019-02-04T23:39:13  *** Timing information for stopDataCollection(): real(2.42947) thread(kernel=0.03125, user=0) process(kernel=0.03125, user=0.015625)
+2019-02-04T23:39:14  *** Timing information for CRPTProxy::updateFrom: real(1.59852) thread(kernel=0.078125, user=0.15625) process(kernel=0.078125, user=0.15625)
+2019-02-04T23:39:14  1 DAQ periods of size 7551740 words
+2019-02-04T23:39:21  *** Timing information for UPDATE: real(7.21955) thread(kernel=0.015625, user=0.015625) process(kernel=0.03125, user=0.171875)
+2019-02-04T23:39:21  Average DAE transfer rate = 4184 KByte / s
+2019-02-04T23:39:21  *** Timing information for updateCRPTWithDAE: real(7.24491) thread(kernel=0.03125, user=0.015625) process(kernel=0.046875, user=0.171875)

@@ -1,0 +1,17 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Article
+    chapters:
+    - file: Article/Intro/Intro
+    - file: Article/Method/Method
+      sections:
+      - file: Article/Method/Proof_of_concept
+      - file: Article/Method/2nd_Version
+  - caption: Appendix
+    chapters:
+    - file: HGW/HGW_Main
+    - file: TRAP/TRAP_Main

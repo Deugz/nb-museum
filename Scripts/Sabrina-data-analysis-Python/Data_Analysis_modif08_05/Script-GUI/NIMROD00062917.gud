@@ -1,0 +1,57 @@
+ NIMROD00062917.gud
+
+ D2O growth on vanadium plate at 30 K, flow est 1.1 (+/- 0.1) 10 ^ -5 mBar equib
+
+ Fraser,Headen,Deguin
+
+ 16-FEB-2019 20:58:19
+
+ Number density of this sample (atoms/A**3) =  0.940000E-01
+ Corresponding density in g/cm**3 =    1.04203
+ Average scattering length of the sample (10**-12cm) =    0.63817
+ Average scattering length squared (barns) =  0.407257E+00
+ Average square of the scattering length (barns) =  0.408931E+00
+ Ratio of (coherent) single to interference =  0.100411E+01
+
+ Expected level of DCS [b/sr/atom] =    0.51757
+
+ Group number,  first Q,   last Q,   level [b/sr/atom],   gradient in Q (%)
+
+    1            0.0000    0.0000        0.00000              0.0000
+    2            0.0000    0.0000        0.00000              0.0000
+    3            0.0000    0.0000        0.00000              0.0000
+    4            0.0000    0.0000        0.00000              0.0000
+    5            0.0000    0.0000        0.00000              0.0000
+    6            0.0000    0.0000        0.00000              0.0000
+    7            0.0143    3.3105      174.63289            -35.5348
+    8            0.0000    0.0000        0.00000              0.0000
+    9            0.0165    4.0295      141.07527            -36.0741
+   10            0.0175    4.3893       42.53902             18.5394
+   11            0.0192    4.7492       43.09898            -26.2252
+   12            0.0326    9.9991        3.09521              3.1856
+   13            0.0401   12.1891        4.64279             11.3169
+   14            0.0539   15.1291        2.40181             -0.8525
+   15            0.0625   17.0191        3.11046              4.0442
+   16            0.0815   22.3892        3.33762              2.3576
+   17            0.0917   25.3593        3.40633              4.5576
+   18            0.1062   28.9594        3.13893              3.2911
+   19            0.1195   32.2294        2.24113              0.2112
+   20            0.1603   43.5390        3.26686              1.8927
+   21            0.1802   48.9388        3.20178              1.8578
+   22            0.2147   49.9887        2.84297              1.4928
+   23            0.2343   49.9887        2.69791              1.5388
+   24            0.2708   49.9887        2.18918              1.1257
+   25            0.3128   49.9887        2.16275              1.3311
+
+ No. of groups accepted for merge =   25
+
+ Average level of merged dcs is    2.37910 b/sr/atom;
+
+ Gradient of merged dcs:  1.2004% of average level.
+
+ WARNING! This DCS level is  359.7% ABOVE expected level.
+
+ Please check sample density, size or thickness, and composition.
+ If all is in order, then refer to your local contact for further advice
+
+ Suggested tweak factor:    0.21755

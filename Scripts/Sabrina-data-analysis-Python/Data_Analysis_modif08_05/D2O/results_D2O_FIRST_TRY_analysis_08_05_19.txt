@@ -1,0 +1,5 @@
+#fitted thickness: 0
+#fitted tweak_factor: 0
+cycle	RB_No	sample	files	total_thickness	tweak_factor	times	time_err_neg	time_err_pos	temperatures	temp_err_neg	temp_err_pos
+#		(cm)		(h)	(h)	(h)
+18_4	1910637	D2O_Isothermal	_62919_62920	0.200000	4.970	6931.70074	0.22602	0.31592	30.04442	0.27043	0.25918

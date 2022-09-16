@@ -1,0 +1,54 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: MUSEUM
+author: Vincent Deguin
+logo: OU_Logo.svg
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/Deugz/nb-museum  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+
+html:
+  favicon                   : "logo2.png"  
+  use_edit_page_button      : true
+  use_repository_button     : true
+  use_issues_button         : true
+  use_multitoc_numbering    : false
+  extra_navbar              : ""
+  extra_footer              : ""  # Will be displayed underneath the footer.
+  google_analytics_id       : G-GYJ9YP0JJ4  
+  home_page_in_navbar       : true
+  baseurl                   : "https://deugz.github.io/nb-museum/_build/html/"
+  comments:
+    hypothesis              : true
+    utterances              : 
+      repo: "https://github.com/Deugz/nb-museum"
+  announcement              : "Current Version: 27/06/2022"
+
+
+sphinx:
+  config:
+    language: en
+    html_extra_path: ['Script']
+  extra_extensions:
+  - sphinx_design
