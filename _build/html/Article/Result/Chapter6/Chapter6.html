@@ -1,0 +1,680 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✏ Chapter 6 &#8212; MUSEUM</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb-museum");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-museum/_build/html/Article/Result/Chapter6/Chapter6.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="✏ Chapter 7" href="../Chapter7/Chapter7.html" />
+    <link rel="prev" title="2nd Version" href="../../Method/2nd_Version.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GYJ9YP0JJ4"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-GYJ9YP0JJ4');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/OU_Logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">MUSEUM</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Highway to Hell
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Intro/Intro.html">
+   ✏
+   <strong>
+    Chapter 1.B
+   </strong>
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Methods
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Method/Method.html">
+   ✏
+   <strong>
+    Chapter 2.B
+   </strong>
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Method/Proof_of_concept.html">
+     Proof of concept
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Method/2nd_Version.html">
+     2
+     <sup>
+      nd
+     </sup>
+     Version
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Results
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   ✏
+   <strong>
+    Chapter 6
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter7/Chapter7.html">
+   ✏
+   <strong>
+    Chapter 7
+   </strong>
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../HGW/HGW_Main.html">
+   HGW
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/Article/Result/Chapter6/Chapter6.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Deugz/nb-museum"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Deugz/nb-museum/issues/new?title=Issue%20on%20page%20%2FArticle/Result/Chapter6/Chapter6.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/Deugz/nb-museum/edit/master/docs/Article/Result/Chapter6/Chapter6.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#novel-methodology-for-producing-amorphous-ice-micro-particles-proof-of-concept-experiment">
+   Novel methodology for producing amorphous ice micro-particles - Proof of concept experiment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview-and-aim">
+   4.1. Overview and aim
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorie-of-cooling">
+   4.2. Theorie of cooling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nucleation-theory">
+     4.2.1. Nucleation theory
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cooling-rates-and-mechanism-of-heat-dissipation">
+     4.2.2. Cooling rates and Mechanism of heat dissipation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cryo-liquid-comparison">
+     4.2.3. Cryo-liquid comparison
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proof-of-concept-experiment">
+   4.3. Proof of concept experiment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#safety-consideration">
+     4.3.1. Safety consideration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#design-and-operation">
+     4.3.2. Design and operation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ethane-liquefaction">
+       Ethane liquefaction
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#water-droplet-production-and-introduction">
+       Water droplet production and introduction
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#particle-recovery">
+       Particle recovery
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#testing-and-preliminary-results">
+   4.4. Testing and preliminary results
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>✏ Chapter 6</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#novel-methodology-for-producing-amorphous-ice-micro-particles-proof-of-concept-experiment">
+   Novel methodology for producing amorphous ice micro-particles - Proof of concept experiment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview-and-aim">
+   4.1. Overview and aim
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorie-of-cooling">
+   4.2. Theorie of cooling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nucleation-theory">
+     4.2.1. Nucleation theory
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cooling-rates-and-mechanism-of-heat-dissipation">
+     4.2.2. Cooling rates and Mechanism of heat dissipation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cryo-liquid-comparison">
+     4.2.3. Cryo-liquid comparison
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proof-of-concept-experiment">
+   4.3. Proof of concept experiment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#safety-consideration">
+     4.3.1. Safety consideration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#design-and-operation">
+     4.3.2. Design and operation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ethane-liquefaction">
+       Ethane liquefaction
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#water-droplet-production-and-introduction">
+       Water droplet production and introduction
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#particle-recovery">
+       Particle recovery
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#testing-and-preliminary-results">
+   4.4. Testing and preliminary results
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-6">
+<h1>✏ <strong>Chapter 6</strong><a class="headerlink" href="#chapter-6" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="novel-methodology-for-producing-amorphous-ice-micro-particles-proof-of-concept-experiment">
+<h2>Novel methodology for producing amorphous ice micro-particles - Proof of concept experiment<a class="headerlink" href="#novel-methodology-for-producing-amorphous-ice-micro-particles-proof-of-concept-experiment" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="overview-and-aim">
+<h2>4.1. Overview and aim<a class="headerlink" href="#overview-and-aim" title="Permalink to this headline">¶</a></h2>
+<p>Bulk properties of amorphous ices upon collisions is assumed to be less elastic than crystalline ice <span id="id1">[]</span>, thus providing a potential solution to overcoming the bouncing barrier for grains around cm size. However, collision properties of amorphous ice coated grains relevant to those found in the midplane of protoplanetary disks has never been investigated. This is due to the difficulty to produce, use and store such samples that are metastable under Earth conditions.
+ASW is commonly produced by water vapor deposition on a cold plate up to few monolayers (ML) due to the heat of condensation that needs to be transmitted into the cold surface. Bar-Nun overcame this issue by scraping the surface when the sample was 200 µm thick with a cold knife, introducing it in a sample container maintained at Liquid nitrogen temperature thus, producing 5- 10 cm thick samples <span id="id2">[]</span> (Bar Num). This method has been used to study the bulk properties of comets but is not suitable to produce pebble like samples, necessary to perform collisions.
+Another way to produce vitreous ice involves rapid freezing (quenching) from the liquid phase, where the size and shape of the frozen sample, named Hyperquenched Glassy Water (HGW), is determined and controlled by the initial liquid droplet. HGW and compact ASW have similar properties (citations) and thus can be considered good analogues of each other. However, water is a poor glass former and consequently, needs a very fast cooling rate to be vitrified, typically of the order of 106 K/s (citations).
+Brüggeller and Mayer (1980) were the first to achieve the complete vitrification of water droplets by spraying them into organic cryogenic liquids. This technique has since been improved by cryo-biologist intending to freeze living samples to be seen in Electron microscopy while avoiding artefacts due to crystallization and have been awarded the Nobel prize in chemistry in 2017 (Dubochet and McDowall 1981).
+I aim to adapt this method in order to produce µm amorphous ice grain for Astronomical purposes. The range of application is extremely broad, spanning from microgravity collision experiments to decipher the processes of planet formation, to the determination of optical constants of 3D amorphous ice, a key aspect to process future JWST Data (citations).
+In this chapter I will describe two experiments that I have designed to produce ASW grains; a proof of concept will be discussed first in section 5.3 before going on to describe the second version in section 5.4 and its procedure in section 5.5. A brief Introduction to the theory of cooling and an evaluation of both experiments will be respectively debated in sections 5.2 and 5.6.</p>
+</div>
+<div class="section" id="theorie-of-cooling">
+<h2>4.2. Theorie of cooling<a class="headerlink" href="#theorie-of-cooling" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Paragraph on the <strong>Theory of cooling</strong> <em>will be implemented later, or should go into the intro ?</em></p>
+</div>
+<div class="section" id="nucleation-theory">
+<h3>4.2.1. Nucleation theory<a class="headerlink" href="#nucleation-theory" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="cooling-rates-and-mechanism-of-heat-dissipation">
+<h3>4.2.2. Cooling rates and Mechanism of heat dissipation<a class="headerlink" href="#cooling-rates-and-mechanism-of-heat-dissipation" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="cryo-liquid-comparison">
+<h3>4.2.3. Cryo-liquid comparison<a class="headerlink" href="#cryo-liquid-comparison" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="proof-of-concept-experiment">
+<h2>4.3. Proof of concept experiment<a class="headerlink" href="#proof-of-concept-experiment" title="Permalink to this headline">¶</a></h2>
+<p>The overall aim of this experiment is to produce and introduce µm size water droplets into a liquid cryogen maintained at cold temperature to vitrify them similarly to the spray-freeze-etching method developed by Bachman <span id="id3">[]</span> with the difference that ethane is used as cryogen and not propane, as being done by Mayer <span id="id4">[]</span>.</p>
+<p>Water droplet production -&gt; 3D spherical samples.</p>
+<p>Cryo-SEM sample preparation usually requires cooling of a sample holder (holding the sample) (citation), to be subsequently introduced into the microscope without further manipulation. The method used in this proof of concept experiment work towards direct freezing into the cryogen of a large number of samples (calculation of number of individual µm droplets from 10 ml), prior to storage in liquid nitrogen for future manipulation or characterization. This imply the design of a “recovery method” to retrieve and separate the water ice particles from the cryogen (liquid ethane).</p>
+<div class="section" id="safety-consideration">
+<h3>4.3.1. Safety consideration<a class="headerlink" href="#safety-consideration" title="Permalink to this headline">¶</a></h3>
+<p>Ethane is a flammable gas and for that reason, the experiment has thus to be handled in a Glove Box (GB) to avoid the dispersion of ethane into the laboratory. The glove box is continuously purged with dry nitrogen gas to decrease the amount of oxygen, thus getting below the lower flammability limit of ethane, 3 % at atmospheric pressure <span id="id5">[]</span>. This also prevents contamination of water moisture from the atmosphere, which is necessary as some of the experiments are performed using heavy water (D2O). I have also taken the utmost care to minimize potential spark sources by having no electrical devices within the glove box and earthing all the outer metal parts. Also, the gloves are made of butadyl, a static dissipative material. Overall, after filling a Sevron Risk Assessment RA816548 (Annex?), the risk is evaluated as low.</p>
+</div>
+<div class="section" id="design-and-operation">
+<h3>4.3.2. Design and operation<a class="headerlink" href="#design-and-operation" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#gb-fig1"><span class="std std-numref">Fig. 1</span></a> shows the overall proof of concept experimental setup, which will be described in detail in this section, together with the detailed experimental procedure and the order of operation. The main experimental is divided into 4 steps, represented by the different colored rectangles in <a class="reference internal" href="#gb-fig1"><span class="std std-numref">Fig. 1</span></a>:</p>
+<ul class="simple">
+<li><p>Ethane liquefaction (green)</p></li>
+<li><p>Water droplet production (dark blue)</p></li>
+<li><p>Water droplet introduction (light blue) and</p></li>
+<li><p>Sample recovery (red)</p></li>
+</ul>
+<p>Each of these steps will be described in turn in the following paragraphs, but first a general description of the experimental set up is given, together with details on setting up the ideal working environment within the glove box.
+The glove box is divided into two parts, the main chamber P1 and an airlock chamber P2. P1 is the main working space and contains the reaction vessel (indicated with the green square containing parts labelled 1, 2, 3 and 4) and the recovery dewar (highlighted in light red, DR). P2 is a self-contained chamber connected to P1 via an air-tight door the purpose of which is to extract the recovered sample (DR) without releasing too much ethane into the laboratory. P1 has a bolted front door, that can allow all the material needed to be put inside the glove box (list of the material) prior to beginning of the experiment.
+Both chambers are purged with nitrogen gas from the same gas cylinder, with its pressure set via a two-stage gas regulator at 0.2 bar (Value to check – Do I speak about Extraction  ¼” pipe - Carbon trap? – main lab exhaust). 30 minutes of purge is necessary to decrease the O2 levels in the main chamber below the 3% representing the lower flammability limit of ethane. To monitor the oxygen levels while purging, a portable oxygen alarm is introduced into the glove box.
+Once the initial purge is achieved the N2 flow is decreased to provide good working conditions, for example, a pressure set up too high will inflate the gloves thus reducing handling abilities within the glove box. However, a small nitrogen flow needs to be present at all time, maintaining a slight overpressure and preventing any air (containing O2) from entering the glove box.</p>
+<div class="figure align-default" id="gb-fig1">
+<img alt="../../../_images/Figure5.png" src="../../../_images/Figure5.png" />
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Diagram of proof of concept experiment. Colored squares represent the different setups associated with the different part of the procedure; green: ethane liquefaction; dark blue: water droplet production; light blue: water droplet introduction; red: sample recovery and transfer. Numbers will be explained later in the text.</span><a class="headerlink" href="#gb-fig1" title="Permalink to this image">¶</a></p>
+</div>
+<p>The only time when the purge is stopped during the procedure is when liquid nitrogen needs to be introduced inside the Glove box, a preliminary step before ethane liquefaction and sample recovery. The reason being that when poured in a warm container, (1) in <a class="reference internal" href="#gb-fig1"><span class="std std-numref">Fig. 1</span></a> and <a class="reference internal" href="#gb-fig2"><span class="std std-numref">Fig. 2</span></a>, liquid nitrogen evaporates quickly with a liquid to gas ratio 1:694 (citation).
+Liquid nitrogen is taken from a pressurized Dewar, filtered using a tea towel into a polystyrene container (2L volume) and brought to the lab. A funnel (right corner of P1), connected to the glove box via a cryogenic ball valve (V1) is used to introduce the liquid nitrogen. A plastic tube (material 10 cm long) is connected to the valve inside the glove box to channel the liquid into the Dewar flask.
+Once the N2 purge is temporary paused, pressure must be applied on the gloves to decrease the overall volume of the glove box. A small amount of liquid nitrogen can then be poured into the funnel (V1 being closed). This can lead to some turbulent outpouring resulting from the initial cooling of the funnel and appropriate PPE (Personal Protective Equipment) must be worn at all times. Also, some bubble wrap and tea towels are disposed around the funnel preventing falling liquid nitrogen to get in contact with the glove box walls. V1 can then be opened and liquid Nitrogen introduced into the Dewar. Because of the Dewar being initially at room temperature, most of the liquid Nitrogen will evaporate, increasing the pressure within the glove box. Deflating the gloves and stopping the purge before introducing the liquid nitrogen allows for control of gas volume within the glove box. Indeed, the evaporating liquid nitrogen will first result in the glove inflation, thus counterbalancing the temporary increase in pressure. If too much LN2 is initially introduced into the funnel, the gloves will inflate fully thus increasing the pressure inside the glove box, preventing the liquid to flow through the valve. This can represent an explosion hazard that must be prevented by filling the Dewar (1) gradually, and not introducing too much nitrogen in the funnel each time, particularly at the beginning of the experiment where everything is warm. Before every funnel refilling with nitrogen, it is important to make sure that the gloves are fully deflated by pressing on them with V1 open. This operation must be patiently repeated 4 times to fill the 1L Dewar (1).</p>
+<div class="section" id="ethane-liquefaction">
+<h4>Ethane liquefaction<a class="headerlink" href="#ethane-liquefaction" title="Permalink to this headline">¶</a></h4>
+<p>Ethane is commercially available as gas .</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>(CAS info etc, where do I get it from  need to ask Tom on return, proper licensing is needed to get access to ethane delivery)</p>
+</div>
+<p>What kind of regulator, Ethane acheminated through a 1/8“ pipe, flashback arrester to avoid reflux of gas inside bottle  safety.</p>
+<div class="figure align-default" id="gb-fig2">
+<img alt="../../../_images/Figure6.jpg" src="../../../_images/Figure6.jpg" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">a) Separate pieces of cooling setup: (1) Dewar vessel, liquid N2 bath – primary cryogen (2) Custom reaction vessel for C2H6 – secondary cryogen (3) Frost shield (4) basket – PTFE 1 µm membrane; b) Assembled cooling setup; c) Schematic diagram of the cooling setup</span><a class="headerlink" href="#gb-fig2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Ethane is liquid between 89.7 K and 184.4 K at atmospheric pressure (citation). Liquefaction is achieved by introducing ethane gas in a reaction vessel (2), cooled to 77 K by submersion in liquid nitrogen contained in (1). (3) is a frost shield, the purpose of which is to catch frost that inevitably grows from the water vapour present within the glove box (even with the purge on), sticking on the cold metal parts of the reaction vessel (2). This is necessary to prevent frost from falling into the cryogen, as this would be a source of impurity. (4) is a PTFE membrane containing 1 μm sized pores, screwed at the bottom of a custom-made basket that is used to fish out the particles from the cryogen. (2), (3) and (4) are made of copper, a high thermal conductive metal (thermal conductivity of 401 W/m/K at 273K (citation – value taken from Wikipedia)), allowing for efficient thermal transfer. They must be put in place as shown in Figure 2 (b) prior to the initial cooling phase, basket (4) being introduced first followed by the frost shield (3). Because they are made of the same material (copper), mechanical stress due to differential shrinking resulting from exposure to cold temperature is prevented.</p>
+<p>Once (1) is filled with liquid nitrogen as described previously, (2) is slowly submerged into (1) to progressively cool it down. This part of the procedure can be quite time-consuming (10-15 min) and posing risks because cooling (2) greatly enhances nitrogen evaporation which in turn increases the pressure within the GB inflating the gloves. I overcome this issue by holding and dipping the reaction vessel with one hand inside the glove box while keeping my other hand out in order to externally open or close V1 to release the overpressure. Cryogenic gloves must be worn inside the glove box (over the top of the glove box gloves) to prevent injuries from prolonged contact with cold temperatures. Cooling of the reaction vessel at liquid nitrogen temperature (77K) is identified by an intense evaporation event (Leidenfrost effect?), followed by the liquid nitrogen becoming quiescent. This phase usually results in the evaporation of most of liquid nitrogen which can be topped up in (1), to no more than 2/3 of the level to account for the volume of the reaction vessel.</p>
+<p>Once the reaction vessel is at liquid nitrogen temperature 77K, ethane gas is introduced into (2) via a movable copper pipe from the ethane gas bottle fed through the glove box via the valve (V4). This is done by first, opening the gas bottle, followed by the gas regulator and finally the valve V4. Ethane pressure is monitored using a digital pressure gauge which is connected between the gas regulator and V4.
+The ethane introduction is characterized by the appearance of a thick fog of ethane microdroplets within the reaction vessel (as shown in figure 15 – figure is far away but don’t have similar picture with this setup … - bringing figure 15 here could create confusion between the two experiments). This fog is strongly influenced by the incoming ethane gas flow. Indeed, an ethane pressure set up too high will result in turbulent convection into the reaction vessel blowing out from it most of the liquid droplets, thus reducing the liquefaction efficiency.
+To achieve ideal flow conditions, ethane pressure is adjusted using the regulator to around 100 mbar to achieve a smooth introduction as shown in Figure 15 b).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Insert figure ethane T evolution</p>
+</div>
+<p>A K-type thermocouple is attached to the frost shield (3) to monitor the ethane temperature and is shown in Figure 3. The liquid ethane temperature is not stable and constantly increases because the cooling setup never reaches a state of equilibrium. This is due to the constant evaporation of the primary cryogen, liquid nitrogen, since its boiling temperature, 77 K is lower than the melting point of ethane, 89.7 K. It is therefore necessary to refill the liquid nitrogen in (1) every 30 minutes. (2) needs to be lifted out of (1) and carefully re-inserted once (1) is refilled. This procedure must be repeated 4 times (as can be seen in Figure 3) until the desired amount of liquid ethane has been reached corresponding to ¼ L, or a filling level 2 to 3 cm below the top of the reaction vessel. This operation takes 2 hours to be completed. Before the next step, where water droplets are introduced into the cryogen, liquid nitrogen can be topped up as necessary if the temperature is too high. The ethane pipe has to be removed from inside the reaction vessel, with its height adjusted with a lab jack to move it closer to the nozzle.</p>
+</div>
+<div class="section" id="water-droplet-production-and-introduction">
+<h4>Water droplet production and introduction<a class="headerlink" href="#water-droplet-production-and-introduction" title="Permalink to this headline">¶</a></h4>
+<p>Two goals need to be achieved regarding the water droplet production. First, the droplets must be small, in the order of a few micrometer to perform an optimal vitrification (Explain why – fewer chances of getting impurity – reduce chances of impurity per droplets, sources of heterogeneous nucleation, also smaller sample will cool quickly). What is the purity of the water used? – triple distilled water?
+Cleaning procedure, can the droplets get impurity from their way towards the cryogen …
+Secondly, they need to be introduced at relatively high speed to be deeply embed in the cryogen thus improving the forced convection thermal transfer (source).
+Both of those objectives can be achieved using commercially available nebulizers. Those devices are commonly use in drug delivery to lungs (Why? source). Droplet size relate to alveolar absorption …
+Liquid nebulization is achieved by the application of a dispersing force on a liquid or solution. The dispersing force can be of two sources, a jet of gas (from air pressurization through a compressor) or ultrasonic waves, leading to two main family of nebulizer devices (jet or ultrasonic).
+Ultrasonic Nebulizers gives a higher MMAD (Mass Median Aerodynamic Diameter) with respect to jet nebulizers (source). A peculiar feature of jet nebulizers is that they tend to cool down the water in the sample container during the nebulization process (source).
+I have chosen to use a commercially available compressor nebulizer, Phillips Innospire Deluxe. It is made of a compressor (maximum working pressure 3.6 bar), pumping the air and producing a high velocity flow through a liquid sample container (10 ml), producing an aerosol (Explain better water channeled through 4 capillaries, broke up by jet flow, baffle retain big particles and smaller particles aerosol channel out of water container).
+I have adapted the nebulizer to use nitrogen (N2) as a carrier gas rather than the ambient air and the benefits are three-folded. It prevents the introduction of both water (an impurity when D2O is used) and oxygen (a catalyst in an explosive atmosphere). The N2 flow is also an adjustable parameter to influence the nebulization process (cf. Figure? Chapter 6-7 – microscope pictures). We have blocked all the sources of auxiliary flow; The mouthpiece has been replaced by a plastic pipe that connects to the water container via a custom-made PTFE connection. An O-ring (shown in red in figure 4 (c) is inserted so that the system is completely airtight. (what is the effect on nebulization process?)</p>
+<div class="figure align-default" id="gb-fig3">
+<img alt="../../../_images/Figure7.jpg" src="../../../_images/Figure7.jpg" />
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Nebulizer setup a) Capture of the setup from Figure 1; b) Picture of the compressor nebulizer; c) Diagram of the Sidestream technology atomization setup taken from <span id="id6">[]</span></span><a class="headerlink" href="#gb-fig3" title="Permalink to this image">¶</a></p>
+</div>
+<p>The droplets are introduced into the cryogen via a nozzle made of copper fed through the glove box. The geometry of the plastic pipe between the water reservoir and the nozzle needs to be carefully adjusted to reduce droplet condensation on the pipe wall. Even though this condensation effect can be reduced, it is not possible to completely prevent it. This can result in big size droplets falling into the cryogen and that needs to be prevented at all cost. Small droplets forming on the inner walls of the pipes are usually transported by the gas flow and build up on the nozzle orifice. It is then possible to manually absorb them using a cotton bud, a task requiring peculiar attention, care and dexterity.
+It is important to note that the cooling efficiency will not only depend on the thermophysical properties of the cryogen, but also on the sample dynamics within the cryoliquid. The cooling rate will be enhanced if the samples continue sinking after being introduced into the cryogen rather than if it quickly comes to rest (forced convection) (citation). The density difference between HGW (0.94 g\cm3) and liquid ethane (0.544 g\cm3 at 184.5 K) result in the particles slowly sinking at the bottom of the reaction vessel. (We haven’t been able to measure the flow rate coming out of the nozzle)
+Typically, the water is introduced for 20 minutes and in two steps of 10 minutes each. Before starting, the water reservoir (6) is disconnected from the pipe linked to the nozzle and the height level of the Dewar (1 + 2) adjusted to place the nozzle close to 2 cm to the ethane level. The nitrogen flow is then set up at 0.5 bar before turning the compressor on. After a visual inspection of the flow quality coming out from the water reservoir (fine mist), the water reservoir is connected to the nozzle and the timer is started. After the first introduction step (10 min), we can control the ethane level and adjust the nozzle level accordingly. If the ethane temperature is above 130K, we can also refill the primary cryogen Dewar (1) with liquid nitrogen.</p>
+<div class="figure align-default" id="gb-fig4">
+<img alt="../../../_images/Figure5'.jpg" src="../../../_images/Figure5'.jpg" />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Nozzle setup showing heating ring attached around a copper cylindrical block. T1 is K type thermocouple fixed at the bottom of nozzle. T2 is K type thermocouple attached on top of the copper block.</span><a class="headerlink" href="#gb-fig4" title="Permalink to this image">¶</a></p>
+</div>
+<p>Because the nozzle is close to the liquid ethane level, incoming water droplets may be subject to freezing before entering the cryogen. This poses a problem as crystallization is expected to happen under those conditions. Temperature at the bottom of the nozzle is monitored using a K type thermocouple (T1 in Figure 5) and I aim to maintain this temperature above 0 °C preventing water droplet from freezing.
+A heat ring (Voltage) (8 in figure 5) is attached around a 1 cm thick copper block soldered to the nozzle with the purpose to act as a heat sink, warming up the whole copper nozzle. A second K type thermocouple (T2 in Figure 3) is attached to the top of the copper block to monitor its temperature. Both are connected to a PID temperature controller (Red lion). A PID loop allow the voltage of the heat ring to be controlled and adjusted with respect to the inputted copper block temperature. Various experiments have shown that an input temperature of 40 °C for T2 allows the nozzle temperature (measured by T1) to stabilize around 20°C.  An alarm has been created such as the temperature of the copper block can’t exceed 50 °C to avoid droplets evaporation. Even though T1 can be below 0°C during the water introduction, no frost is generally observed growing on the nozzle aperture.</p>
+<p>Once the time of introduction is passed (20 min), the water reservoir is disconnected from the pipe connecting it to the nozzle. This pipe must then be plugged to avoid releasing ethane gas in the laboratory atmosphere. Reaction vessel height can be lowered down and put aside of the nozzle to avoid remaining condensed water droplets falling into the cryogen. All those steps must be done carefully to avoid big chunk of ice that grew on the heat shield (3 in Figure 1) to fall into the cryogen before the particles have been recovered.</p>
+</div>
+<div class="section" id="particle-recovery">
+<h4>Particle recovery<a class="headerlink" href="#particle-recovery" title="Permalink to this headline">¶</a></h4>
+<p>Once the water droplets have been successfully introduced into the cryogen, the next stage in the process involves the recovery of the particles formed. A PTFE membrane (4 in <a class="reference internal" href="#gb-fig1"><span class="std std-numref">Fig. 1</span></a>) containing 1 μm sized pores screwed to the bottom of a basket made of copper which is used to fish out the particles from the ethane. They will then be dispersed from the basket into a Dewar (DR in figure 1) filled with liquid nitrogen where they will remain stable. Explain why stable in Ln2, and why use of membrane (difference with cryo-SEM).
+<a class="reference internal" href="#gb-fig8"><span class="std std-numref">Fig. 5</span></a> resume all the experimental steps necessary to recover the particles. First, DR (recovery Dewar) must be filled with liquid nitrogen as previously described. The heat shield is slowly removed, making sure that no frost is scrapped from it during the lift-up by the top of the basket (holding piece). Secondly, the membrane must be lifted-up until it is above the level of the cryogen for the liquid ethane to be drained away from the basket and the ice particles (3) in <a class="reference internal" href="#gb-fig8"><span class="std std-numref">Fig. 5</span></a>). This step is critical because some time needs to be allowed for the liquid to be drained, but the temperature of the particles is also increasing with time.
+The warming curve of a 3 μl water droplet removed from liquid nitrogen at ambient temperature reached -100 ˚C after only 4 seconds <span id="id7">[]</span>, and that is our time constraint to handle the particles out of the cryogen (either ethane or Nitrogen).
+I find that the particles obstruct the pores and the liquid ethane is not drained efficiently, also this parameter vary with different experiment. This make the step 4) hardly reproducible and usually resulting in either freezing ethane in liquid Nitrogen or having to wait for a long time for the cryogen to be drained (or evaporated) thus losing the amorphic structure of the particles.</p>
+<div class="figure align-default" id="gb-fig8">
+<img alt="Article/Result/Chapter6/Figures/Figure8.png" src="Article/Result/Chapter6/Figures/Figure8.png" />
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Nozzle setup showing heating ring attached around a copper cylindrical block. T1 is K type thermocouple fixed at the bottom of nozzle. T2 is K type thermocouple attached on top of the copper block.</span><a class="headerlink" href="#gb-fig8" title="Permalink to this image">¶</a></p>
+</div>
+<p>However, after dispersion of the basket content within DR (5) in figure 6) we can visually observe that we obtain a milky mixture made of ice particles in liquid nitrogen.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Cleaning - Ethane is let evaporated while purge on – different pieces cleaned with ultrasonic bath</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="testing-and-preliminary-results">
+<h2>4.4. Testing and preliminary results<a class="headerlink" href="#testing-and-preliminary-results" title="Permalink to this headline">¶</a></h2>
+<p>2 different sets of experiments have been performed with complementary results. Neutron scattering allow for determination of bulk properties of ice and the surface structure of the particles. Optical microscopy allows for direct imaging, thus determining particles size and size distribution.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Article\Result\Chapter6"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../../Method/2nd_Version.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">2<sup>nd</sup> Version</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../Chapter7/Chapter7.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">✏ <strong>Chapter 7</strong></p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Vincent Deguin<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -4,14 +4,29 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Article
+  - caption: Introduction
     chapters:
-    - file: Article/Intro/Intro
-    - file: Article/Method/Method
+    - file: Thesis_JB_B/Intro/Intro
+    - file: Science/Science
       sections:
-      - file: Article/Method/Proof_of_concept
-      - file: Article/Method/2nd_Version
-  - caption: Appendix
+      - file: Science/HGW
+      - file: Science/Ethane
+      - file: Science/Planet_formation
+      - file: Science/Collision
+  - caption: Methods
     chapters:
-    - file: HGW/HGW_Main
-    - file: TRAP/TRAP_Main
+    - file: Thesis_JB_B/Method/Method
+    - file: Technical/XP_Dev    
+      sections:
+      - file: Technical/Proof_of_concept
+      - file: Technical/2nd_Version
+    - file: Technical/Neutron
+    
+  - caption: Results
+    chapters:
+    - file: Thesis_JB_B/Chapter6/Chapter6
+    - file: Thesis_JB_B/Chapter7/Chapter7
+  - caption: Bibliography
+    chapters:
+    - file: Thesis_JB_B/Biblio/bibliography 
+
