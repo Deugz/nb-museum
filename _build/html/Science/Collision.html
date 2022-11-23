@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
@@ -360,7 +361,94 @@ const thebe_selector_output = ".output, .cell_output"
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#bouncing-barrier">
-   Bouncing Barrier
+   Bouncing barrier
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#growth-mechanism">
+     Growth mechanism
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#collision-experiments">
+   Collision Experiments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#icy-particles-collision">
+     Icy particles collision
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hgw-ice-grains">
+   HGW ice grains
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hgw-setup">
+     HGW Setup
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#initial-results">
+     Initial results
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sem">
+       SEM ?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ice-manipulation">
+     Ice manipulation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#inside-glove-box">
+       Inside Glove box
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#prep-chamber">
+       Prep chamber
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#storage">
+       Storage
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#experimental-limitations">
+       Experimental limitations
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#one-step-further">
+   One Step further
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#from-micron-to-mm-cm-size-amophous-aggregates">
+     From micron to mm-cm size amophous aggregates.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comments">
+   Comments
   </a>
  </li>
 </ul>
@@ -385,7 +473,94 @@ const thebe_selector_output = ".output, .cell_output"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#bouncing-barrier">
-   Bouncing Barrier
+   Bouncing barrier
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#growth-mechanism">
+     Growth mechanism
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#collision-experiments">
+   Collision Experiments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#icy-particles-collision">
+     Icy particles collision
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hgw-ice-grains">
+   HGW ice grains
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hgw-setup">
+     HGW Setup
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#initial-results">
+     Initial results
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sem">
+       SEM ?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ice-manipulation">
+     Ice manipulation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#inside-glove-box">
+       Inside Glove box
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#prep-chamber">
+       Prep chamber
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#storage">
+       Storage
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#experimental-limitations">
+       Experimental limitations
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#one-step-further">
+   One Step further
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#from-micron-to-mm-cm-size-amophous-aggregates">
+     From micron to mm-cm size amophous aggregates.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comments">
+   Comments
   </a>
  </li>
 </ul>
@@ -399,9 +574,197 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="collision">
 <h1>Collision<a class="headerlink" href="#collision" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="bouncing-barrier">
-<h2>Bouncing Barrier<a class="headerlink" href="#bouncing-barrier" title="Permalink to this headline">¶</a></h2>
+<div class="full-width docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-4 sd-row-cols-xs-4 sd-row-cols-sm-4 sd-row-cols-md-4 sd-row-cols-lg-4 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<p><strong>Audience</strong></p>
+<ul class="simple">
+<li><p>Ross</p></li>
+<li><p>Mark</p></li>
+</ul>
+<p><strong>Key Litterature</strong>:</p>
+<ul class="simple">
+<li><p><span id="id1">[]</span></p></li>
+<li><p>2</p></li>
+</ul>
+<p><strong>Links</strong></p>
 </div>
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<p>Description</p>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header bg-light docutils">
+<p class="sd-card-text">Teaching ✏️</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="emphase">Planet formation</p>
+<br>
+<p class="sd-card-text"><strong>Link</strong>:</p>
+<p class="sd-card-text"><a class="reference external" href="https://deugz.github.io/nb-teaching/_build/html/Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top.html"><img src="https://img.shields.io/badge/Teaching-Bitesize/Astronomy/Planet_formation_bottom-top-purple.svg?logo=data:Docs/SFP-logo.png"></a></p>
+<br>
+<p class="sd-card-text"><a class="reference external" href="https://deugz.github.io/nb-teaching/_build/html/Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom.html"><img src="https://img.shields.io/badge/Teaching-Bitesize/Astronomy/Planet_formation_top-bottom-purple.svg?logo=data:Docs/SFP-logo.png"></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="bouncing-barrier">
+<h2>Bouncing barrier<a class="headerlink" href="#bouncing-barrier" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="growth-mechanism">
+<h3>Growth mechanism<a class="headerlink" href="#growth-mechanism" title="Permalink to this headline">¶</a></h3>
+<p>Particles are coupled to the gas (Orbiting at Keplerian speed) and this is what drives the relative speed of µm dust grains (ie more or less head wind relative to their size). Dust orbits the protostar at very high velocities but the relative velocities between particles in collisions can be very slow (few cm or a few mm per second). At such velocities a “bouncing barrier” exists <span id="id2">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id18" title="A. Zsom, C. W. Ormel, C. Güttler, J. Blum, and C. P. Dullemond. The outcome of protoplanetary dust growth: pebbles, boulders, or planetesimals?: i. mapping the zoo of laboratory collision experiments. Astronomy and Astrophysics, 4 2010. doi:10.1051/0004-6361/200912976.">Zsom <em>et al.</em>, 2010</a>]</span>. Up to mm sizes the sticking is dominated by <span class="hovertext" data-hover="Description">Van der Waals type forces</span>, leading to the formation of fluffy aggregates. Past the km scale, gravity dominates <span id="id3">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id19" title="C. Güttler, J. Blum, A. Zsom, C. W. Ormel, and C. P. Dullemond. The outcome of protoplanetary dust growth: pebbles, boulders, or planetesimals?: ii. introducing the bouncing barrier. Astronomy and Astrophysics, 4 2010. doi:10.1051/0004-6361/200912852.">Güttler <em>et al.</em>, 2010</a>]</span>.</p>
+<div class="full-width docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header bg-light docutils">
+<p class="sd-card-text"><strong>Experiment</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="figure align-default" id="bouncing-lab">
+<a class="reference internal image-reference" href="../_images/Bouncing_lab.PNG"><img alt="../_images/Bouncing_lab.PNG" src="../_images/Bouncing_lab.PNG" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">source:</span><a class="headerlink" href="#bouncing-lab" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header bg-light docutils">
+<p class="sd-card-text"><strong>Model</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="figure align-default" id="markdown-fig">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/Bouncing_model.PNG"><img alt="fishy" class="bg-primary mb-1" src="../_images/Bouncing_model.PNG" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">This is a caption in <strong>Markdown</strong>!</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Those two figures comes from <span id="id4">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id14" title="missing journal in Testi2014">Testi <em>et al.</em>, 2014</a>]</span></p>
+<p><strong>models of grain growth</strong></p>
+<p>Alongside the size of the colliding particles the relative velocity is also important</p>
+</div>
+</div>
+<div class="section" id="collision-experiments">
+<h2>Collision Experiments<a class="headerlink" href="#collision-experiments" title="Permalink to this headline">¶</a></h2>
+<p>In the laboratory, a plethora of collision experiments have been conducted which clearly define the sticking bouncing and fragmentation regimes for small dusty particles at low velocities <span id="id5">[]</span>. Those experiments, carried out with different dust composition (SiO2 / Carbon dust), have shown that in “pure dust” collisions, the dust material is less
+important than the grain size, the surface roughness and porosity.</p>
+<ul class="simple">
+<li><p>All of those could be investigated by SEM</p></li>
+<li><p>Lab is often in microgravity to reach low velocity while avoiding sedimentation <span id="id6">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id15" title="Jürgen Blum and Gerhard Wurm. Experiments on sticking, restructuring, and fragmentation of preplanetary dust aggregates. Icarus, 143:138-146, 1 2000. doi:10.1006/icar.1999.6234.">Blum and Wurm, 2000</a>]</span></p></li>
+</ul>
+<p>The outcomes of these collisions provide vital data to modellers who want to understand how collision properties and outcomes impact the broader processes of planet formation. [23]</p>
+<div class="section" id="icy-particles-collision">
+<h3>Icy particles collision<a class="headerlink" href="#icy-particles-collision" title="Permalink to this headline">¶</a></h3>
+<p>Ice enhnaces the stickiness of interstellar grains <span id="id7">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id17" title="B. Gundlach and J. Blum. The stickiness of micrometer-sized water-ice particles. Astrophysical Journal, 1 2015. doi:10.1088/0004-637X/798/1/34.">Gundlach and Blum, 2015</a>]</span>. No collisions between amorphous ice particles has been performed to date (even though they are present in PPD), the reason being the complex and metastable nature of amorphous ice which makes it difficult to produce, store and use. This is what I was trying to solve</p>
+</div>
+</div>
+<div class="section" id="hgw-ice-grains">
+<h2>HGW ice grains<a class="headerlink" href="#hgw-ice-grains" title="Permalink to this headline">¶</a></h2>
+<p>I designed an experiment to produce Amorphous Ice grain analogues. HGW is similar to ASW.</p>
+<div class="section" id="hgw-setup">
+<h3>HGW Setup<a class="headerlink" href="#hgw-setup" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>OU / Helen Fraser</p></li>
+</ul>
+<div class="full-width docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-7 sd-col-xs-7 sd-col-sm-7 sd-col-md-7 sd-col-lg-7 docutils">
+<div class="figure align-default" id="experiment">
+<a class="reference internal image-reference" href="../_images/Bench_And_Glovebox_Assembly_20-12-2019_IMG3.jpg"><img alt="../_images/Bench_And_Glovebox_Assembly_20-12-2019_IMG3.jpg" src="../_images/Bench_And_Glovebox_Assembly_20-12-2019_IMG3.jpg" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">source:</span><a class="headerlink" href="#experiment" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
+<p>The purpose of this experiment is to produce <strong>µm HGW ice particles</strong>. This is achieved by spraying µm water droplets in liquid ethane, the most suited cryoliquid to achieve high cooling rates. This is a technique used in cryobiologie to freeze biological samples.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Hence, this setup could open the doors for sample preparation that extend far beyond the scope of astronomy!</p>
+<ul class="simple">
+<li><p>Important to mention for business case</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="initial-results">
+<h3>Initial results<a class="headerlink" href="#initial-results" title="Permalink to this headline">¶</a></h3>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<p><strong>Neutron Scattering</strong></p>
+<p>Initial Neutron scattering results show that our ices present some amorphicity.</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<p><strong>Optical Microscopy</strong></p>
+<div class="figure align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/2017_10_06_3rd010.jpg"><img alt="../_images/2017_10_06_3rd010.jpg" src="../_images/2017_10_06_3rd010.jpg" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">source:</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="sem">
+<h4>SEM ?<a class="headerlink" href="#sem" title="Permalink to this headline">¶</a></h4>
+<p>Electron microscopy would be allow us to caracterise the particles shape and size distribution as well as unveiling the processes at play during the aggregation phase, like <span id="id9">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id13" title="B. Gundlach, J. Ratte, J. Blum, J. Oesert, and S. N. Gorb. Sintering and sublimation of micrometre-sized water-ice particles: the formation of surface crusts on icy solar system bodies. Monthly Notices of the Royal Astronomical Society, 479:5272-5287, 10 2018. doi:10.1093/mnras/sty1839.">Gundlach <em>et al.</em>, 2018</a>]</span></p>
+</div>
+</div>
+<div class="section" id="ice-manipulation">
+<h3>Ice manipulation<a class="headerlink" href="#ice-manipulation" title="Permalink to this headline">¶</a></h3>
+<p>One of the most difficult aspect when dealing with amorphous ices is that when pulled out of their cold medium, they will very quicklywarm up and crystalise.</p>
+<div class="section" id="inside-glove-box">
+<h4>Inside Glove box<a class="headerlink" href="#inside-glove-box" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="prep-chamber">
+<h4>Prep chamber<a class="headerlink" href="#prep-chamber" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="storage">
+<h4>Storage<a class="headerlink" href="#storage" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="experimental-limitations">
+<h4>Experimental limitations<a class="headerlink" href="#experimental-limitations" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Particles need to remain at liquid nitrogen temperature or they will crystalise</p></li>
+<li><p>Ethane is present so may be best to have a prep lab in-house</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="one-step-further">
+<h2>One Step further<a class="headerlink" href="#one-step-further" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Insert Accoustic trap video</p></li>
+</ul>
+</div>
+<div class="section" id="from-micron-to-mm-cm-size-amophous-aggregates">
+<h3>From micron to mm-cm size amophous aggregates.<a class="headerlink" href="#from-micron-to-mm-cm-size-amophous-aggregates" title="Permalink to this headline">¶</a></h3>
+<p>But this is only the first step toward unveiling the role that ASW could play in overcoming the bouncing barrier. Indeed, this barrier lies at sizes around the cm size and growing such big aggregates is another big challenge.</p>
+<p>We have developped at the OU an accoustic levitation technique that can work at temperature of -20 degree to allow for the aggregation of those monomers in a similar fashion than in space</p>
+<p>Grain shape affect the IR spectral signature (ie right wing)</p>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<script src="https://utteranc.es/client.js"
+        repo="Deugz/nb-museum"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script></div>
 </div>
 
     <script type="text/x-thebe-config">

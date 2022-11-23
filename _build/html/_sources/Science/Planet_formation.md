@@ -1,3 +1,7 @@
 # Planet formation
 
-Blabla, How to grow planets from sub-micrometer dust grain ...
+
+Our current understanding of planet formation is rudimentary at best, and this lack of knowledge is compounded at the very initial stages
+
+
+

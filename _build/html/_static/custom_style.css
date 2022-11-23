@@ -20,15 +20,15 @@ h1 {
 }
 
 h2 {
-    color: white !important;
-    font-size: 2.2em !important;
-    margin-top:50px !important;
-    margin-bottom:30px !important;
+    color: linear-gradient(to bottom right, #003300 0%, #009933 120%);
+    font-size: 3.6em !important;
+    margin-top:30px !important;
+    border-top: 1px solid grey !important;
+    margin-bottom:20px !important;
     font-family: Garamond;
     text-align: center !important ;
-    padding: 15px !important;
-    background: linear-gradient(to bottom right, #003300 0%, #009933 120%);
-    border-radius: 10px;
+    padding-top: 40px !important;
+    padding-bottom: 30px !important; 
 }
 
 h3 {
@@ -184,4 +184,34 @@ padding: 10px;
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/* 	Hovered text */
+
+.hovertext {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  min-width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
 }
