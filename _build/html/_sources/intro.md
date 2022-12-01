@@ -4,7 +4,10 @@
 :align: center
 ```
 
-# Highway to Hell
+<br>
+<br>
+
+# <u>Thesis</u> .B
 
 :::::{margin} 
 ::::{grid} 1
@@ -26,7 +29,7 @@
 
 
 - **Topics**: Experimental Astrophysics, Engeneering, Material Science
-- **Job**: PhD Part I
+- **Job**: PhD Part I - Highway to Hell
 <br>
 <br>
 - **Info**: ![GitHub last commit](https://img.shields.io/github/last-commit/Deugz/nb-museum?color=green&style=plastic) - ![GitHub repo size](https://img.shields.io/github/repo-size/Deugz/nb-museum?color=yellow&style=plastic) - ![visitors](https://page-views.glitch.me/badge?page_id=https://deugz.github.io/nb-museum/_build/html/intro.html) - ![GitHub contributors](https://img.shields.io/github/contributors/Deugz/nb-museum?color=red&style=plastic)
@@ -38,57 +41,6 @@
 
 
 ## Abstract
-
-
-
-
-
-### from um grains ...
-
-<article id ="P1">
-
-<div>
-    
-
-<video src="_static/video/ssc2004-08v2_h264_vga.mov" width="400" height="400" controls>
-  Your browser does not support the video tag.
-</video>
-    
-</div>
-
-<div>
-    
-
-- Icy covered
-
-- dust:gas 1:99
-    
-</div>
-    
-</article>
-
-
-
-<h3> ... to Planets </h3>
-
-
-<article id ="P1">
-
-<div>
-
-Planets forms within those disks
-
-</div>
-
-<div>
-
-<video src="_static/video/ssc2004-08v3_h264_vga.mov" width="400" height="400" controls>
-  Your browser does not support the video tag.
-</video>
- 
-</div>
-    
-</article>
 
 
     
