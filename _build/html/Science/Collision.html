@@ -4,11 +4,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Collision &#8212; MUSEUM</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,23 +20,17 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom_style.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -42,6 +38,7 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -82,7 +79,6 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -111,7 +107,21 @@ const thebe_selector_output = ".output, .cell_output"
                 </script>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">Current Version: 27/06/2022</div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -120,9 +130,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -140,14 +151,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro.html">
-   Highway to Hell
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    <u>Thesis</u> .B
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -277,88 +289,193 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Science/Collision.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/Deugz/nb-museum"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/Deugz/nb-museum/issues/new?title=Issue%20on%20page%20%2FScience/Collision.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/Deugz/nb-museum/edit/master/docs/Science/Collision.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
         </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/Deugz/nb-museum"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/issues/new?title=Issue%20on%20page%20%2FScience/Collision.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/edit/master/docs/Science/Collision.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/Science/Collision.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#bouncing-barrier">
    Bouncing barrier
@@ -448,12 +565,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Collision</h1>
@@ -559,11 +675,12 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="collision">
-<h1>Collision<a class="headerlink" href="#collision" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="collision">
+<h1>Collision<a class="headerlink" href="#collision" title="Permalink to this headline">#</a></h1>
 <div class="full-width docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-4 sd-row-cols-xs-4 sd-row-cols-sm-4 sd-row-cols-md-4 sd-row-cols-lg-4 docutils">
@@ -601,10 +718,10 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 </div>
-<div class="section" id="bouncing-barrier">
-<h2>Bouncing barrier<a class="headerlink" href="#bouncing-barrier" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="growth-mechanism">
-<h3>Growth mechanism<a class="headerlink" href="#growth-mechanism" title="Permalink to this headline">¶</a></h3>
+<section id="bouncing-barrier">
+<h2>Bouncing barrier<a class="headerlink" href="#bouncing-barrier" title="Permalink to this headline">#</a></h2>
+<section id="growth-mechanism">
+<h3>Growth mechanism<a class="headerlink" href="#growth-mechanism" title="Permalink to this headline">#</a></h3>
 <p>Particles are coupled to the gas (Orbiting at Keplerian speed) and this is what drives the relative speed of µm dust grains (ie more or less head wind relative to their size). Dust orbits the protostar at very high velocities but the relative velocities between particles in collisions can be very slow (few cm or a few mm per second). At such velocities a “bouncing barrier” exists <span id="id2">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id21" title="A. Zsom, C. W. Ormel, C. Güttler, J. Blum, and C. P. Dullemond. The outcome of protoplanetary dust growth: pebbles, boulders, or planetesimals?: i. mapping the zoo of laboratory collision experiments. Astronomy and Astrophysics, 4 2010. doi:10.1051/0004-6361/200912976.">Zsom <em>et al.</em>, 2010</a>]</span>. Up to mm sizes the sticking is dominated by <span class="hovertext" data-hover="Description">Van der Waals type forces</span>, leading to the formation of fluffy aggregates. Past the km scale, gravity dominates <span id="id3">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id22" title="C. Güttler, J. Blum, A. Zsom, C. W. Ormel, and C. P. Dullemond. The outcome of protoplanetary dust growth: pebbles, boulders, or planetesimals?: ii. introducing the bouncing barrier. Astronomy and Astrophysics, 4 2010. doi:10.1051/0004-6361/200912852.">Güttler <em>et al.</em>, 2010</a>]</span>.</p>
 <div class="full-width docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -615,10 +732,12 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="sd-card-text"><strong>Experiment</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<div class="figure align-default" id="bouncing-lab">
+<figure class="align-default" id="bouncing-lab">
 <a class="reference internal image-reference" href="../_images/Bouncing_lab.PNG"><img alt="../_images/Bouncing_lab.PNG" src="../_images/Bouncing_lab.PNG" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">source:</span><a class="headerlink" href="#bouncing-lab" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">source:</span><a class="headerlink" href="#bouncing-lab" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 </div>
@@ -628,23 +747,25 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="sd-card-text"><strong>Model</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<div class="figure align-default" id="markdown-fig">
+<figure class="align-default" id="markdown-fig">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/Bouncing_model.PNG"><img alt="fishy" class="bg-primary mb-1" src="../_images/Bouncing_model.PNG" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">This is a caption in <strong>Markdown</strong>!</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">This is a caption in <strong>Markdown</strong>!</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-<p>Those two figures comes from <span id="id4">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id17" title="missing journal in Testi2014">Testi <em>et al.</em>, 2014</a>]</span></p>
+<p>Those two figures comes from <span id="id4">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id17">Testi <em>et al.</em>, 2014</a>]</span></p>
 <p><strong>models of grain growth</strong></p>
 <p>Alongside the size of the colliding particles the relative velocity is also important</p>
-</div>
-</div>
-<div class="section" id="collision-experiments">
-<h2>Collision Experiments<a class="headerlink" href="#collision-experiments" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="collision-experiments">
+<h2>Collision Experiments<a class="headerlink" href="#collision-experiments" title="Permalink to this headline">#</a></h2>
 <p>In the laboratory, a plethora of collision experiments have been conducted which clearly define the sticking bouncing and fragmentation regimes for small dusty particles at low velocities <span id="id5">[]</span>. Those experiments, carried out with different dust composition (SiO2 / Carbon dust), have shown that in “pure dust” collisions, the dust material is less
 important than the <strong>grain size, the surface roughness and porosity</strong>.</p>
 <ul class="simple">
@@ -652,16 +773,16 @@ important than the <strong>grain size, the surface roughness and porosity</stron
 <li><p>Lab is often in microgravity to reach low velocity while avoiding sedimentation <span id="id6">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id18" title="Jürgen Blum and Gerhard Wurm. Experiments on sticking, restructuring, and fragmentation of preplanetary dust aggregates. Icarus, 143:138-146, 1 2000. doi:10.1006/icar.1999.6234.">Blum and Wurm, 2000</a>]</span></p></li>
 </ul>
 <p>The outcomes of these collisions provide vital data to modellers who want to understand how collision properties and outcomes impact the broader processes of planet formation. [23]</p>
-<div class="section" id="icy-particles-collision">
-<h3>Icy particles collision<a class="headerlink" href="#icy-particles-collision" title="Permalink to this headline">¶</a></h3>
+<section id="icy-particles-collision">
+<h3>Icy particles collision<a class="headerlink" href="#icy-particles-collision" title="Permalink to this headline">#</a></h3>
 <p>Ice enhnaces the stickiness of interstellar grains <span id="id7">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id20" title="B. Gundlach and J. Blum. The stickiness of micrometer-sized water-ice particles. Astrophysical Journal, 1 2015. doi:10.1088/0004-637X/798/1/34.">Gundlach and Blum, 2015</a>]</span>. No collisions between amorphous ice particles has been performed to date (even though they are present in PPD), the reason being the complex and metastable nature of amorphous ice which makes it difficult to produce, store and use. This is what I was trying to solve</p>
-</div>
-</div>
-<div class="section" id="hgw-ice-grains">
-<h2>HGW ice grains<a class="headerlink" href="#hgw-ice-grains" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="hgw-ice-grains">
+<h2>HGW ice grains<a class="headerlink" href="#hgw-ice-grains" title="Permalink to this headline">#</a></h2>
 <p>I designed an experiment to produce Amorphous Ice grain analogues. HGW is similar to ASW.</p>
-<div class="section" id="hgw-setup">
-<h3>HGW Setup<a class="headerlink" href="#hgw-setup" title="Permalink to this headline">¶</a></h3>
+<section id="hgw-setup">
+<h3>HGW Setup<a class="headerlink" href="#hgw-setup" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>OU / Helen Fraser</p></li>
 </ul>
@@ -669,10 +790,12 @@ important than the <strong>grain size, the surface roughness and porosity</stron
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-column sd-col-7 sd-col-xs-7 sd-col-sm-7 sd-col-md-7 sd-col-lg-7 docutils">
-<div class="figure align-default" id="experiment">
+<figure class="align-default" id="experiment">
 <a class="reference internal image-reference" href="../_images/Bench_And_Glovebox_Assembly_20-12-2019_IMG3.jpg"><img alt="../_images/Bench_And_Glovebox_Assembly_20-12-2019_IMG3.jpg" src="../_images/Bench_And_Glovebox_Assembly_20-12-2019_IMG3.jpg" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">source:</span><a class="headerlink" href="#experiment" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">source:</span><a class="headerlink" href="#experiment" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 <div class="sd-col sd-d-flex-column sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
 <p>The purpose of this experiment is to produce <strong>µm HGW ice particles</strong>. This is achieved by spraying µm water droplets in liquid ethane, the most suited cryoliquid to achieve high cooling rates. This is a technique used in cryobiologie to freeze biological samples.</p>
@@ -687,43 +810,51 @@ important than the <strong>grain size, the surface roughness and porosity</stron
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="initial-results">
-<h3>Initial results<a class="headerlink" href="#initial-results" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="initial-results">
+<h3>Initial results<a class="headerlink" href="#initial-results" title="Permalink to this headline">#</a></h3>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
 <p><strong>Neutron Scattering</strong></p>
-<div class="figure align-default" id="id8">
+<figure class="align-default" id="id8">
 <a class="reference internal image-reference" href="../_images/ISIS-plot4sample2.PNG"><img alt="../_images/ISIS-plot4sample2.PNG" src="../_images/ISIS-plot4sample2.PNG" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">source:</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">source:</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 <div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
 <p><strong>Optical Microscopy</strong></p>
-<div class="figure align-default" id="id9">
+<figure class="align-default" id="id9">
 <a class="reference internal image-reference" href="../_images/2017_10_06_3rd010.jpg"><img alt="../_images/2017_10_06_3rd010.jpg" src="../_images/2017_10_06_3rd010.jpg" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">source:</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">source:</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 </div>
 <p>Initial Neutron scattering results show that our ices present some amorphicity.</p>
-<div class="section" id="comment-on-microscopy">
-<h4>Comment on Microscopy<a class="headerlink" href="#comment-on-microscopy" title="Permalink to this headline">¶</a></h4>
+<section id="comment-on-microscopy">
+<h4>Comment on Microscopy<a class="headerlink" href="#comment-on-microscopy" title="Permalink to this headline">#</a></h4>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
-<div class="figure align-default" id="id10">
+<figure class="align-default" id="id10">
 <a class="reference internal image-reference" href="../_images/20190927_102827.jpg"><img alt="../_images/20190927_102827.jpg" src="../_images/20190927_102827.jpg" style="width: 300px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">source:</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">source:</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 <div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
-<div class="figure align-default" id="id11">
+<figure class="align-default" id="id11">
 <a class="reference internal image-reference" href="../_images/20190927_102859.jpg"><img alt="../_images/20190927_102859.jpg" src="../_images/20190927_102859.jpg" style="width: 300px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">source:</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">source:</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 </div>
 </div>
@@ -734,9 +865,9 @@ important than the <strong>grain size, the surface roughness and porosity</stron
 <li><p>Even though the Ice container could be cool to liquid Nitrogen temperature, it is not sure that the ice is at this temperature (and liquid droplets can be seen on figure 5)</p></li>
 </ul>
 <p>A cryostage would greatly improve my observations</p>
-</div>
-<div class="section" id="sem">
-<h4>SEM ?<a class="headerlink" href="#sem" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="sem">
+<h4>SEM ?<a class="headerlink" href="#sem" title="Permalink to this headline">#</a></h4>
 <p>Cryo Electron microscopy would be of incredible help by offering:</p>
 <ul class="simple">
 <li><p>A dedicated, state of the art, experimental setup to maintain the particles at cold temperature after they have been produced, and during their characterisation.</p>
@@ -751,34 +882,38 @@ important than the <strong>grain size, the surface roughness and porosity</stron
 </li>
 <li><p>Shape and size distribution as well as unveiling the processes at play during the aggregation phase, like <span id="id12">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id16" title="B. Gundlach, J. Ratte, J. Blum, J. Oesert, and S. N. Gorb. Sintering and sublimation of micrometre-sized water-ice particles: the formation of surface crusts on icy solar system bodies. Monthly Notices of the Royal Astronomical Society, 479:5272-5287, 10 2018. doi:10.1093/mnras/sty1839.">Gundlach <em>et al.</em>, 2018</a>]</span> could be achieved with a cryo SEM</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="ice-manipulation">
-<h3>Ice manipulation<a class="headerlink" href="#ice-manipulation" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="ice-manipulation">
+<h3>Ice manipulation<a class="headerlink" href="#ice-manipulation" title="Permalink to this headline">#</a></h3>
 <p>One of the most difficult aspect when dealing with amorphous ices is that when pulled out of their cold medium, they will very quickly warm up and crystalise. Having an in-house characerision technique is the best option to mitigate those problems</p>
-<div class="section" id="experimental-limitations">
-<h4>Experimental limitations<a class="headerlink" href="#experimental-limitations" title="Permalink to this headline">¶</a></h4>
+<section id="experimental-limitations">
+<h4>Experimental limitations<a class="headerlink" href="#experimental-limitations" title="Permalink to this headline">#</a></h4>
 <ul class="simple">
 <li><p>Particles need to remain at liquid nitrogen temperature or they will crystalise</p></li>
 <li><p>Ethane is present so may be best to have a prep lab in-house</p></li>
 </ul>
-</div>
+</section>
 <div class="full-width docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
 <div class="sd-col sd-d-flex-column docutils">
 <p><strong>Inside Glove box</strong></p>
-<div class="figure align-default" id="id13">
+<figure class="align-default" id="id13">
 <a class="reference internal image-reference" href="../_images/20191118_145124.jpg"><img alt="../_images/20191118_145124.jpg" src="../_images/20191118_145124.jpg" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">source:</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">source:</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <p><strong>Storage</strong></p>
-<div class="figure align-default" id="id14">
+<figure class="align-default" id="id14">
 <a class="reference internal image-reference" href="../_images/20191122_115552.jpg"><img alt="../_images/20191122_115552.jpg" src="../_images/20191122_115552.jpg" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 16 </span><span class="caption-text">source:</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">source:</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <p><strong>Prep chamber</strong></p>
@@ -791,17 +926,19 @@ important than the <strong>grain size, the surface roughness and porosity</stron
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="one-step-further">
-<h2>One Step further<a class="headerlink" href="#one-step-further" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="from-micron-to-mm-cm-size-amophous-aggregates">
-<h3>From micron to mm-cm size amophous aggregates.<a class="headerlink" href="#from-micron-to-mm-cm-size-amophous-aggregates" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="one-step-further">
+<h2>One Step further<a class="headerlink" href="#one-step-further" title="Permalink to this headline">#</a></h2>
+<section id="from-micron-to-mm-cm-size-amophous-aggregates">
+<h3>From micron to mm-cm size amophous aggregates.<a class="headerlink" href="#from-micron-to-mm-cm-size-amophous-aggregates" title="Permalink to this headline">#</a></h3>
 <p>Producing HGW µm ICE grains is only the first step toward unveiling the role that ASW could play in overcoming the bouncing barrier. Indeed, this barrier lies at sizes around the cm size and growing such big aggregates is another big challenge.</p>
-<div class="figure align-default" id="id15">
+<figure class="align-default" id="id15">
 <a class="reference internal image-reference" href="../_images/Ice_aggregation.png"><img alt="../_images/Ice_aggregation.png" src="../_images/Ice_aggregation.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 17 </span><span class="caption-text">source:</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">source:</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -809,15 +946,15 @@ important than the <strong>grain size, the surface roughness and porosity</stron
 </ul>
 </div>
 <p>We (Anita mostly) have developped at the OU an accoustic levitation technique that can work at temperature of -20 degree to allow for the aggregation of those monomers in a similar fashion than in space</p>
-</div>
-<div class="section" id="grain-shape-vs-ir-spectroscopy">
-<h3>Grain shape vs IR spectroscopy<a class="headerlink" href="#grain-shape-vs-ir-spectroscopy" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="grain-shape-vs-ir-spectroscopy">
+<h3>Grain shape vs IR spectroscopy<a class="headerlink" href="#grain-shape-vs-ir-spectroscopy" title="Permalink to this headline">#</a></h3>
 <p>Grain shape affect the IR spectral signature (ie right wing)</p>
 <p>Electron microscopy would be a great addition to our future IR work.</p>
-</div>
-</div>
-<div class="section" id="comments">
-<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">#</a></h2>
 <script src="https://utteranc.es/client.js"
         repo="Deugz/nb-museum"
         issue-term="pathname"
@@ -825,8 +962,8 @@ important than the <strong>grain size, the surface roughness and porosity</stron
         crossorigin="anonymous"
         async>
 </script>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -850,9 +987,11 @@ important than the <strong>grain size, the surface roughness and porosity</stron
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="Planet_formation.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -868,24 +1007,28 @@ important than the <strong>grain size, the surface roughness and porosity</stron
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Vincent Deguin<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Vincent Deguin<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
