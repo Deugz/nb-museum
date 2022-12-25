@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -90,8 +91,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/OU_Logo.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Ethane" href="Ethane.html" />
-    <link rel="prev" title="Science" href="Science.html" />
+    <link rel="next" title="Levitation" href="Levitation.html" />
+    <link rel="prev" title="Collision" href="Collision.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -151,14 +152,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../intro.html">
-                    <u>Thesis</u> .B
-                </a>
-            </li>
-        </ul>
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
@@ -183,16 +176,6 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     HGW
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Ethane.html">
-     Ethane
-    </a>
-   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Planet_formation.html">
      Planet formation
@@ -201,6 +184,21 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="Collision.html">
      Collision
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     HGW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Levitation.html">
+     Levitation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="How.html">
+     How ?
     </a>
    </li>
   </ul>
@@ -244,12 +242,39 @@ const thebe_selector_output = ".output, .cell_output"
      Version
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Technical/Lev-Chamb.html">
+     Levitation Chamber
+    </a>
+   </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Technical/Neutron.html">
-   Neutron
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Technical/characterisation.html">
+   Characterisation
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Technical/Neutron.html">
+     Neutron Scattering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Technical/Microscopy.html">
+     Microscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Technical/Infrared.html">
+     Infrared
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -480,6 +505,83 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#production-methods">
    Production methods:
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basti-blum-attempt">
+     Basti/Blum attempt
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#results">
+       Results
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other">
+     Other
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorie-of-cooling">
+   4.2. Theorie of cooling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nucleation-theory">
+     4.2.1. Nucleation theory
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cooling-rates-and-mechanism-of-heat-dissipation">
+     4.2.2. Cooling rates and Mechanism of heat dissipation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cryo-liquid-comparison">
+     4.2.3. Cryo-liquid comparison
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ethane">
+   Ethane
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#phase-diagram">
+     Phase Diagram
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gas">
+       Gas
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#solid">
+       Solid
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#infrared">
+       Infrared
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         Results
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -504,6 +606,83 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#production-methods">
    Production methods:
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basti-blum-attempt">
+     Basti/Blum attempt
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#results">
+       Results
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other">
+     Other
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorie-of-cooling">
+   4.2. Theorie of cooling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nucleation-theory">
+     4.2.1. Nucleation theory
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cooling-rates-and-mechanism-of-heat-dissipation">
+     4.2.2. Cooling rates and Mechanism of heat dissipation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cryo-liquid-comparison">
+     4.2.3. Cryo-liquid comparison
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ethane">
+   Ethane
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#phase-diagram">
+     Phase Diagram
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gas">
+       Gas
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#solid">
+       Solid
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#infrared">
+       Infrared
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#id1">
+         Results
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -537,6 +716,27 @@ title="Print to PDF"
 <p>Nobel Price awarded to Jacques Dubochet …</p>
 <section id="production-methods">
 <h2>Production methods:<a class="headerlink" href="#production-methods" title="Permalink to this headline">#</a></h2>
+<section id="basti-blum-attempt">
+<h3>Basti/Blum attempt<a class="headerlink" href="#basti-blum-attempt" title="Permalink to this headline">#</a></h3>
+<figure class="align-default" id="basti1">
+<a class="reference internal image-reference" href="Science/Docs/Bastimethode.png"><img alt="Science/Docs/Bastimethode.png" src="Science/Docs/Bastimethode.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">source:</span><a class="headerlink" href="#basti1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="results">
+<h4>Results<a class="headerlink" href="#results" title="Permalink to this headline">#</a></h4>
+<figure class="align-default" id="basti2">
+<a class="reference internal image-reference" href="../_images/SabISISplot.png"><img alt="../_images/SabISISplot.png" src="../_images/SabISISplot.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">source:</span><a class="headerlink" href="#basti2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Granular material (slope), but crystalline (low Q Bragg peaks)</strong>, cf Neutron method</p>
+</section>
+</section>
+<section id="other">
+<h3>Other<a class="headerlink" href="#other" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://sci-hub.ru/10.1021/jp012868x">Scihub link</a> Thick Glassy Water by Liquid Quenching on a Diamond Wafer</p></li>
 </ul>
@@ -548,6 +748,54 @@ title="Print to PDF"
 <li><p>Can we manufacture a mould using FIB technique ?</p></li>
 </ul>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>current production method leads to crystaline ice</p>
+</div>
+</section>
+</section>
+<section id="theorie-of-cooling">
+<h2>4.2. Theorie of cooling<a class="headerlink" href="#theorie-of-cooling" title="Permalink to this headline">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Paragraph on the <strong>Theory of cooling</strong> <em>will be implemented later, or should go into the intro ?</em></p>
+</div>
+<section id="nucleation-theory">
+<h3>4.2.1. Nucleation theory<a class="headerlink" href="#nucleation-theory" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="cooling-rates-and-mechanism-of-heat-dissipation">
+<h3>4.2.2. Cooling rates and Mechanism of heat dissipation<a class="headerlink" href="#cooling-rates-and-mechanism-of-heat-dissipation" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="cryo-liquid-comparison">
+<h3>4.2.3. Cryo-liquid comparison<a class="headerlink" href="#cryo-liquid-comparison" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="ethane">
+<h2>Ethane<a class="headerlink" href="#ethane" title="Permalink to this headline">#</a></h2>
+<section id="phase-diagram">
+<h3>Phase Diagram<a class="headerlink" href="#phase-diagram" title="Permalink to this headline">#</a></h3>
+<section id="gas">
+<h4>Gas<a class="headerlink" href="#gas" title="Permalink to this headline">#</a></h4>
+</section>
+<section id="solid">
+<h4>Solid<a class="headerlink" href="#solid" title="Permalink to this headline">#</a></h4>
+<p>We have dealt with Solid Ethane in <span class="xref myst">Stairway to Heaven</span></p>
+</section>
+<section id="infrared">
+<h4>Infrared<a class="headerlink" href="#infrared" title="Permalink to this headline">#</a></h4>
+<p>Insert infrared Data</p>
+<section id="id1">
+<h5>Results<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h5>
+<p>IR Bands of solid ethane are</p>
+<p>…</p>
+<p><strong>Different polymorph</strong>:</p>
+<ul class="simple">
+<li><p>Crystaline</p></li>
+<li><p>Amorphous</p></li>
+</ul>
+</section>
+</section>
+</section>
 </section>
 </section>
 
@@ -578,17 +826,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Science.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Collision.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Science</p>
+            <p class="prev-next-title">Collision</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Ethane.html" title="next page">
+    <a class='right-next' id="next-link" href="Levitation.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Ethane</p>
+        <p class="prev-next-title">Levitation</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -1,17 +1,13 @@
 # Planet formation
 
-
-Our current understanding of planet formation is rudimentary at best, and this lack of knowledge is compounded at the very initial stages
-
-### from um grains ...
-
-
-
+:::::{div} full-width
 ::::{grid} 2
 
 :::{grid-item}
 
-<video src="../_static/video/ssc2004-08v2_h264_vga.mov" width="400" height="400" controls>
+<h3> from a cloud of µm dust grains ... </h3>
+
+<video src="../_static/video/ssc2004-08v2_h264_vga.mov" width="100%" height="" controls>
   Your browser does not support the video tag.
 </video>
 
@@ -19,13 +15,28 @@ Our current understanding of planet formation is rudimentary at best, and this l
 
 :::{grid-item}
 
-<video src="../_static/video/ssc2004-08v3_h264_vga.mov" width="400" height="400" controls>
+<h3> ... to Solar and planetary systems </h3>
+
+<video src="../_static/video/ssc2004-08v3_h264_vga.mov" width="100%" height="" controls>
   Your browser does not support the video tag.
 </video>
  
 :::
 ::::
 
+
+
+Our current understanding of planet formation is rudimentary at best, and this lack of knowledge is compounded at the very initial stages. We know that 
+- **Protoplanetary disks**
+
+We don't know about
+
+- Overcoming the **Bouncing barrier** around the cm scale
+
+
+
+
+:::::
 
 
 ***
@@ -84,6 +95,20 @@ Teaching ✏️
 :::::
 
 ## Setting up the scene
+
+### The Interstellar medium
+
+ISM, multitude of environments with various conditions, temperature, density, radiation fields etc.
+
+#### Molecular clouds
+
+```{note}
+
+may be no need to go into title, just quick paragraph to explain the preliminary stage, refering to the teaching sections relating to those environments
+
+- may be insert a JS picture display to show different molecular clouds where star formation is embeded in the following paragraph and do this as an intro paragraph
+
+```
 
 ### Star formation
 
@@ -329,5 +354,63 @@ Leads to 3 different categories of evolved planetesimals
 - `Icy rubble / pebble piles`
 - `Non icy rubble piles`
 They can be further subdivided depending on the evolution process
+
+
+## Bouncing barrier
+
+### Growth mechanism
+
+Particles are coupled to the gas (Orbiting at Keplerian speed) and this is what drives the relative speed of &micro;m dust grains (ie more or less head wind relative to their size). Dust orbits the protostar at very high velocities but the relative velocities between particles in collisions can be very slow (few cm or a few mm per second). At such velocities a “bouncing barrier” exists {cite:p}`Zsom2010`. Up to mm sizes the sticking is dominated by <span class="hovertext" data-hover="Description">Van der Waals type forces</span>, leading to the formation of fluffy aggregates. Past the km scale, gravity dominates {cite:p}`Gutler2010`.
+
+
+
+::::::{div} full-width
+:::::{grid} 2
+
+::::{grid-item-card}
+:class-header: bg-light
+:columns: 6
+**Experiment**
+^^^
+
+```{figure} Docs/Bouncing_lab.PNG
+---
+name: Bouncing_lab
+width: 500px
+---
+source: 
+```
+
+
+
+::::
+
+::::{grid-item-card}
+:class-header: bg-light
+:columns: 6
+**Model**
+^^^
+
+:::{figure-md} markdown-fig
+<img src="Docs/Bouncing_model.PNG" alt="fishy" class="bg-primary mb-1" width="600px">
+
+This is a caption in **Markdown**!
+:::
+
+
+
+
+::::
+:::::
+::::::
+
+
+Those two figures comes from {cite:p}`Testi2014`
+
+
+**models of grain growth** 
+
+Alongside the size of the colliding particles the relative velocity is also important
+
 
 

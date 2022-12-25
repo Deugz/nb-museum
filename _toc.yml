@@ -9,10 +9,11 @@ parts:
     - file: Thesis_JB_B/Intro/Intro
     - file: Science/Science
       sections:
-      - file: Science/HGW
-      - file: Science/Ethane
       - file: Science/Planet_formation
       - file: Science/Collision
+      - file: Science/HGW
+      - file: Science/Levitation
+      - file: Science/How
   - caption: Methods
     chapters:
     - file: Thesis_JB_B/Method/Method
@@ -20,8 +21,12 @@ parts:
       sections:
       - file: Technical/Proof_of_concept
       - file: Technical/2nd_Version
-    - file: Technical/Neutron
-    
+      - file: Technical/Lev-Chamb      
+    - file: Technical/characterisation    
+      sections:      
+      - file: Technical/Neutron
+      - file: Technical/Microscopy
+      - file: Technical/Infrared      
   - caption: Results
     chapters:
     - file: Thesis_JB_B/Chapter6/Chapter6

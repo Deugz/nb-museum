@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -150,14 +151,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
-                    <u>Thesis</u> .B
-                </a>
-            </li>
-        </ul>
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
@@ -183,16 +176,6 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="Science/HGW.html">
-     HGW
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Science/Ethane.html">
-     Ethane
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="Science/Planet_formation.html">
      Planet formation
     </a>
@@ -200,6 +183,21 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="Science/Collision.html">
      Collision
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Science/HGW.html">
+     HGW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Science/Levitation.html">
+     Levitation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Science/How.html">
+     How ?
     </a>
    </li>
   </ul>
@@ -243,12 +241,39 @@ const thebe_selector_output = ".output, .cell_output"
      Version
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Technical/Lev-Chamb.html">
+     Levitation Chamber
+    </a>
+   </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Technical/Neutron.html">
-   Neutron
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Technical/characterisation.html">
+   Characterisation
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Technical/Neutron.html">
+     Neutron Scattering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Technical/Microscopy.html">
+     Microscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Technical/Infrared.html">
+     Infrared
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -731,14 +756,14 @@ title="Print to PDF"
 <div>
 <h5><strong>Figures</strong></h5>
 <ul class="simple">
-<li><p><a class="reference internal" href="Thesis_JB_B/Chapter6/Chapter6.html#gb-fig1"><span class="std std-numref">Figure 18:</span></a> Proof of concept setup</p></li>
-<li><p><a class="reference internal" href="Thesis_JB_B/Chapter6/Chapter6.html#gb-fig2"><span class="std std-numref">Figure 19:</span></a> Ethane liquefaction setup</p></li>
-<li><p><a class="reference internal" href="Thesis_JB_B/Chapter6/Chapter6.html#gb-fig3"><span class="std std-numref">Figure 20:</span></a> Nebuliser setup</p></li>
-<li><p><a class="reference internal" href="Thesis_JB_B/Chapter6/Chapter6.html#gb-fig4"><span class="std std-numref">Figure 21:</span></a> Nozzle setup II</p></li>
-<li><p><a class="reference internal" href="Thesis_JB_B/Chapter6/Chapter6.html#gb-fig8"><span class="std std-numref">Figure 22:</span></a> Doesn’t show</p></li>
+<li><p><a class="reference internal" href="Thesis_JB_B/Chapter6/Chapter6.html#gb-fig1"><span class="std std-numref">Figure 23:</span></a> Proof of concept setup</p></li>
+<li><p><a class="reference internal" href="Thesis_JB_B/Chapter6/Chapter6.html#gb-fig2"><span class="std std-numref">Figure 24:</span></a> Ethane liquefaction setup</p></li>
+<li><p><a class="reference internal" href="Thesis_JB_B/Chapter6/Chapter6.html#gb-fig3"><span class="std std-numref">Figure 25:</span></a> Nebuliser setup</p></li>
+<li><p><a class="reference internal" href="Thesis_JB_B/Chapter6/Chapter6.html#gb-fig4"><span class="std std-numref">Figure 26:</span></a> Nozzle setup II</p></li>
+<li><p><a class="reference internal" href="Thesis_JB_B/Chapter6/Chapter6.html#gb-fig8"><span class="std std-numref">Figure 27:</span></a> Doesn’t show</p></li>
 <li><p><code class="xref std std-numref docutils literal notranslate"><span class="pre">Figure</span> <span class="pre">{number}:</span></code> GB setup</p></li>
-<li><p><a class="reference internal" href="Thesis_JB_B/Chapter7/Chapter7.html#directive-fig2"><span class="std std-numref">Figure 24:</span></a> what is it</p></li>
-<li><p><a class="reference internal" href="Thesis_JB_B/Chapter7/Chapter7.html#directive-fig3"><span class="std std-numref">Figure 25:</span></a> what is it</p></li>
+<li><p><a class="reference internal" href="Thesis_JB_B/Chapter7/Chapter7.html#directive-fig2"><span class="std std-numref">Figure 29:</span></a> what is it</p></li>
+<li><p><a class="reference internal" href="Thesis_JB_B/Chapter7/Chapter7.html#directive-fig3"><span class="std std-numref">Figure 30:</span></a> what is it</p></li>
 </ul>
 </div>
 <div>

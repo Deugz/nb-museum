@@ -22,6 +22,34 @@ Nobel Price awarded to Jacques Dubochet ...
 
 ## Production methods:
 
+### Basti/Blum attempt
+
+
+
+```{figure} Docs/Bastimethode.png
+---
+name: Basti1
+width: 400px
+---
+source: 
+```
+
+#### Results
+
+```{figure} Docs/SabISISplot.png
+---
+name: Basti2
+width: 400px
+---
+source: 
+```
+
+**Granular material (slope), but crystalline (low Q Bragg peaks)**, cf Neutron method
+
+
+###  Other
+
+
 - [Scihub link](https://sci-hub.ru/10.1021/jp012868x) Thick Glassy Water by Liquid Quenching on a Diamond Wafer
 
 
@@ -35,3 +63,48 @@ Nobel Price awarded to Jacques Dubochet ...
 
 
 ```
+
+
+```{note}
+
+current production method leads to crystaline ice
+
+
+```
+
+## 4.2. Theorie of cooling
+
+:::{note}
+Paragraph on the **Theory of cooling** _will be implemented later, or should go into the intro ?_
+:::
+
+### 4.2.1. Nucleation theory
+
+### 4.2.2. Cooling rates and Mechanism of heat dissipation
+
+### 4.2.3. Cryo-liquid comparison
+
+## Ethane
+
+### Phase Diagram
+
+#### Gas 
+
+
+#### Solid 
+
+We have dealt with Solid Ethane in [Stairway to Heaven]()
+
+#### Infrared
+
+Insert infrared Data
+
+##### Results
+
+IR Bands of solid ethane are 
+
+...
+
+**Different polymorph**: 
+- Crystaline
+- Amorphous

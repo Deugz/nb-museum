@@ -11,18 +11,6 @@ Brüggeller and Mayer (1980) were the first to achieve the complete vitrificatio
 I aim to adapt this method in order to produce µm amorphous ice grain for Astronomical purposes. The range of application is extremely broad, spanning from microgravity collision experiments to decipher the processes of planet formation, to the determination of optical constants of 3D amorphous ice, a key aspect to process future JWST Data (citations).
 In this chapter I will describe two experiments that I have designed to produce ASW grains; a proof of concept will be discussed first in section 5.3 before going on to describe the second version in section 5.4 and its procedure in section 5.5. A brief Introduction to the theory of cooling and an evaluation of both experiments will be respectively debated in sections 5.2 and 5.6.    
 
-## 4.2. Theorie of cooling
-
-:::{note}
-Paragraph on the **Theory of cooling** _will be implemented later, or should go into the intro ?_
-:::
-
-### 4.2.1. Nucleation theory
-
-### 4.2.2. Cooling rates and Mechanism of heat dissipation
-
-### 4.2.3. Cryo-liquid comparison
-
 
 ## 4.3. Proof of concept experiment 
 

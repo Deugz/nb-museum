@@ -38,7 +38,7 @@ html:
   extra_navbar              : ""
   extra_footer              : ""  # Will be displayed underneath the footer.
   google_analytics_id       : G-GYJ9YP0JJ4  
-  home_page_in_navbar       : true
+  home_page_in_navbar       : false
   baseurl                   : "https://deugz.github.io/nb-museum/_build/html/"
   comments:
     hypothesis              : true
