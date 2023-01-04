@@ -9,10 +9,10 @@ parts:
     - file: Thesis_JB_B/Intro/Intro
     - file: Science/Science
       sections:
-      - file: Science/Planet_formation
-      - file: Science/Collision
-      - file: Science/HGW
-      - file: Science/Levitation
+      - file: Science/Planet_formation/Planet_formation
+      - file: Science/Collision/Collision
+      - file: Science/HGW/HGW
+      - file: Science/Levitation/Levitation
       - file: Science/How
   - caption: Methods
     chapters:

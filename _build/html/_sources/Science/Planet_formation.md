@@ -7,7 +7,7 @@
 
 <h3> from a cloud of µm dust grains ... </h3>
 
-<video src="../_static/video/ssc2004-08v2_h264_vga.mov" width="100%" height="" controls>
+<video src="../../_static/video/ssc2004-08v2_h264_vga.mov" width="100%" height="" controls>
   Your browser does not support the video tag.
 </video>
 
@@ -17,7 +17,7 @@
 
 <h3> ... to Solar and planetary systems </h3>
 
-<video src="../_static/video/ssc2004-08v3_h264_vga.mov" width="100%" height="" controls>
+<video src="../../_static/video/ssc2004-08v3_h264_vga.mov" width="100%" height="" controls>
   Your browser does not support the video tag.
 </video>
  
@@ -41,76 +41,38 @@ We don't know about
 
 ***
 
-:::::{div} full-width
-::::{grid} 3
-:::{grid-item}
-:columns: 5
-**Plan**
-- **Introduction**
-
-:::
-:::{grid-item}
-:columns: 4
-
-**Key litterature**
-
-- cite Gundlach - formation of comets (caveats: rely extensively on existence of pebbles, for which only indirect evidence exist - `ref 3` )
-
-<br>
-<br>
-
-**Links**
-
-:::
-:::{grid-item-card}
-:class-header: bg-light
-:columns: 3
-
-Teaching ✏️
-^^^
-
-<p class="emphase">Planet formation</p>
-
-
-<br>
-
-**Link**: 
-
-
-[<img src="https://img.shields.io/badge/Teaching-Bitesize/Astronomy/Planet_formation_bottom-top.svg?logo=data:Docs/SFP-logo.png">](https://deugz.github.io/nb-teaching/_build/html/Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top.html) 
-
-<br>
-
-[<img src="https://img.shields.io/badge/Teaching-Bitesize/Astronomy/Planet_formation_top-bottom.svg?logo=data:Docs/SFP-logo.png">](https://deugz.github.io/nb-teaching/_build/html/Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom.html) 
-
-<br>
-
-+++
-**Audience**: <span class="hovertext" data-hover=""> Insert Audience</span>
-
-:::
-
-::::
-
-:::::
-
-## Setting up the scene
-
-### The Interstellar medium
-
-ISM, multitude of environments with various conditions, temperature, density, radiation fields etc.
-
-#### Molecular clouds
 
 ```{note}
 
-may be no need to go into title, just quick paragraph to explain the preliminary stage, refering to the teaching sections relating to those environments
+**Important**
 
-- may be insert a JS picture display to show different molecular clouds where star formation is embeded in the following paragraph and do this as an intro paragraph
+
+**To do**
+
+
+
 
 ```
 
-### Star formation
+## Overview
+
+### Setting up the scene
+
+Our fascinating story of stars and planet formation begins in the darkest and coldest places of the <span class="hovertext" data-hover="The medium between the Stars (ISM), made of multiple environments with various conditions, temperature, density, radiation fields etc.">Interstellar Medium</span>, Molecular Clouds.
+Those clouds, made of gas and dusts, evolve for [...] years, ...
+- Clumps
+- Critical mass 
+
+
+### Star formation steps
+
+
+```{note}
+
+- Insérer diagram avec differents steps 
+    - Check probation report
+
+```
 
 
 ::::{grid} 2 

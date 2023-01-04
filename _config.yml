@@ -17,8 +17,7 @@ latex:
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
-  - Thesis_JB_B/Biblio/Chapt6.bib
-  - Thesis_JB_B/Biblio/Chapt1B.bib
+  - Thesis_JB_B/Biblio/Ref_jb-museum.bib
   
 # Information about where the book exists on the web
 repository:
@@ -50,7 +49,7 @@ html:
 sphinx:
   config:
     language: en
-    html_extra_path: ['Script']
+#    html_extra_path: ['Script']
     bibtex_reference_style: author_year
   extra_extensions:
   - sphinx_design

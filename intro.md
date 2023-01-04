@@ -42,6 +42,19 @@
 
 ## Abstract
 
+```{admonition} Comments
+
+- modify the end bit
+
+
+
+```
+
+This part of my thesis focuses on what happens at the very first stages of planet formation, after the formation of a protoplanetary disk, but before large-scale km-sized bodies are clearing out “disk gaps”. a plethora of laboratory experiments, model and observational results have been combined to build a picture of how planets might form, and that over 4000 exoplanets have been found, yet it is still not exactly known how planet formation progresses. Many of the planet forming steps are thought to occur at distances > 1 - 10 AU in protoplanetary disks, i.e. in the regions beyond the so-called “snow-line” where dust settled to the disk midplane and is likely to be coated in ice,
+because the radiation from the central star simply cannot penetrate the gas and dust of the disk, so the conditions are very cold and dense. Questions remain as to whether ices in disks are dominated by crystalline or amorphous materials, but we do know that the ices are
+predominantly water-ice, which set the chemical synergy between gas and dust in planet forming regions and impact the balance of “planet forming” atmospheric elements such as C N O. By understanding planet formation from the start, we are unravelling the pathway to planet
+formation and the possible emergence of life itself. This Thesis covers the first two years of my PhD and is focused specifically on the methodologies I have developed to generate amorphous icy particles that are good analogues of those found in the disk environment. The ultimate aim is to aggregate and then collide such particles in collision experiments designed to measure the collision properties and outcomes of such materials under protoplanetary disk conditions. Although such a process sounds simple on paper, this report shows that making micron to mm-sized icy grains is non-trivial; by borrowing methods from cryobiology I have found a way to generate amorphous particles, and spent one year undertaking a proof of concept and then developing more robust techniques (and a new experiment) to reliably reproduce the production. Without adequate characterization I would not know how effective my methods were, and the first results from neutron scattering, and microscope imaging are presented here. Fundamentally I have found that it is possible to make micron sized amorphous icy particles, which could be used in collision studies, and developed a unique experimental method that can be used to make them. I am now working towards reliably storing and aggregating such materials and developing more robust production and analysis mechanisms. 
+
 
     
 

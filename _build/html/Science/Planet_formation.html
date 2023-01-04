@@ -91,8 +91,6 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/OU_Logo.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Collision" href="Collision.html" />
-    <link rel="prev" title="Science" href="Science.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -157,7 +155,7 @@ const thebe_selector_output = ".output, .cell_output"
   Introduction
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../Thesis_JB_B/Intro/Intro.html">
    ✏
@@ -166,33 +164,33 @@ const thebe_selector_output = ".output, .cell_output"
    </strong>
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="Science.html">
    Science
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Planet_formation/Planet_formation.html">
      Planet formation
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="Collision.html">
+    <a class="reference internal" href="Collision/Collision.html">
      Collision
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="HGW.html">
+    <a class="reference internal" href="HGW/HGW.html">
      HGW
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="Levitation.html">
+    <a class="reference internal" href="Levitation/Levitation.html">
      Levitation
     </a>
    </li>
@@ -502,25 +500,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#setting-up-the-scene">
-   Setting up the scene
+  <a class="reference internal nav-link" href="#overview">
+   Overview
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-interstellar-medium">
-     The Interstellar medium
+    <a class="reference internal nav-link" href="#setting-up-the-scene">
+     Setting up the scene
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#molecular-clouds">
-       Molecular clouds
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#star-formation">
-     Star formation
+    <a class="reference internal nav-link" href="#star-formation-steps">
+     Star formation steps
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -644,25 +635,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#setting-up-the-scene">
-   Setting up the scene
+  <a class="reference internal nav-link" href="#overview">
+   Overview
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-interstellar-medium">
-     The Interstellar medium
+    <a class="reference internal nav-link" href="#setting-up-the-scene">
+     Setting up the scene
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#molecular-clouds">
-       Molecular clouds
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#star-formation">
-     Star formation
+    <a class="reference internal nav-link" href="#star-formation-steps">
+     Star formation steps
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -783,13 +767,13 @@ title="Print to PDF"
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
 <h3> from a cloud of µm dust grains ... </h3>
-<video src="../_static/video/ssc2004-08v2_h264_vga.mov" width="100%" height="" controls>
+<video src="../../_static/video/ssc2004-08v2_h264_vga.mov" width="100%" height="" controls>
   Your browser does not support the video tag.
 </video>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <h3> ... to Solar and planetary systems </h3>
-<video src="../_static/video/ssc2004-08v3_h264_vga.mov" width="100%" height="" controls>
+<video src="../../_static/video/ssc2004-08v3_h264_vga.mov" width="100%" height="" controls>
   Your browser does not support the video tag.
 </video>
 </div>
@@ -805,71 +789,41 @@ title="Print to PDF"
 </ul>
 </div>
 <hr class="docutils" />
-<div class="full-width docutils">
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
-<div class="sd-col sd-d-flex-column sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
-<p><strong>Plan</strong></p>
-<ul class="simple">
-<li><p><strong>Introduction</strong></p></li>
-</ul>
-</div>
-<div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
-<p><strong>Key litterature</strong></p>
-<ul class="simple">
-<li><p>cite Gundlach - formation of comets (caveats: rely extensively on existence of pebbles, for which only indirect evidence exist - <code class="docutils literal notranslate"><span class="pre">ref</span> <span class="pre">3</span></code> )</p></li>
-</ul>
-<br>
-<br>
-<p><strong>Links</strong></p>
-</div>
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-header bg-light docutils">
-<p class="sd-card-text">Teaching ✏️</p>
-</div>
-<div class="sd-card-body docutils">
-<p class="emphase">Planet formation</p>
-<br>
-<p class="sd-card-text"><strong>Link</strong>:</p>
-<p class="sd-card-text"><a class="reference external" href="https://deugz.github.io/nb-teaching/_build/html/Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top.html"><img src="https://img.shields.io/badge/Teaching-Bitesize/Astronomy/Planet_formation_bottom-top.svg?logo=data:Docs/SFP-logo.png"></a></p>
-<br>
-<p class="sd-card-text"><a class="reference external" href="https://deugz.github.io/nb-teaching/_build/html/Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom.html"><img src="https://img.shields.io/badge/Teaching-Bitesize/Astronomy/Planet_formation_top-bottom.svg?logo=data:Docs/SFP-logo.png"></a></p>
-<br>
-</div>
-<div class="sd-card-footer docutils">
-<p class="sd-card-text"><strong>Audience</strong>: <span class="hovertext" data-hover=""> Insert Audience</span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section id="setting-up-the-scene">
-<h2>Setting up the scene<a class="headerlink" href="#setting-up-the-scene" title="Permalink to this headline">#</a></h2>
-<section id="the-interstellar-medium">
-<h3>The Interstellar medium<a class="headerlink" href="#the-interstellar-medium" title="Permalink to this headline">#</a></h3>
-<p>ISM, multitude of environments with various conditions, temperature, density, radiation fields etc.</p>
-<section id="molecular-clouds">
-<h4>Molecular clouds<a class="headerlink" href="#molecular-clouds" title="Permalink to this headline">#</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>may be no need to go into title, just quick paragraph to explain the preliminary stage, refering to the teaching sections relating to those environments</p>
+<p><strong>Important</strong></p>
+<p><strong>To do</strong></p>
+</div>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+<section id="setting-up-the-scene">
+<h3>Setting up the scene<a class="headerlink" href="#setting-up-the-scene" title="Permalink to this headline">#</a></h3>
+<p>Our fascinating story of stars and planet formation begins in the darkest and coldest places of the <span class="hovertext" data-hover="The medium between the Stars (ISM), made of multiple environments with various conditions, temperature, density, radiation fields etc.">Interstellar Medium</span>, Molecular Clouds.
+Those clouds, made of gas and dusts, evolve for […] years, …</p>
 <ul class="simple">
-<li><p>may be insert a JS picture display to show different molecular clouds where star formation is embeded in the following paragraph and do this as an intro paragraph</p></li>
+<li><p>Clumps</p></li>
+<li><p>Critical mass</p></li>
+</ul>
+</section>
+<section id="star-formation-steps">
+<h3>Star formation steps<a class="headerlink" href="#star-formation-steps" title="Permalink to this headline">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Insérer diagram avec differents steps</p>
+<ul>
+<li><p>Check probation report</p></li>
+</ul>
+</li>
 </ul>
 </div>
-</section>
-</section>
-<section id="star-formation">
-<h3>Star formation<a class="headerlink" href="#star-formation" title="Permalink to this headline">#</a></h3>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
 <figure class="align-default" id="experiment">
-<a class="reference internal image-reference" href="../_images/weic2219a.jpg"><img alt="../_images/weic2219a.jpg" src="../_images/weic2219a.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="Science/Docs/weic2219a.jpg"><img alt="Science/Docs/weic2219a.jpg" src="Science/Docs/weic2219a.jpg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">The Protostar within L1527 source: <a class="reference external" href="https://apod.nasa.gov/apod/ap221118.html">NASA APOD</a> *2022 November 18 *</span><a class="headerlink" href="#experiment" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">The Protostar within L1527 source: <a class="reference external" href="https://apod.nasa.gov/apod/ap221118.html">NASA APOD</a> *2022 November 18 *</span><a class="headerlink" href="#experiment" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -939,9 +893,9 @@ Solid materials are not pressure supported and as a result, dust particles shoul
 </ul>
 </div>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/Stoping_time.svg"><img alt="../_images/Stoping_time.svg" src="../_images/Stoping_time.svg" width="200px" /></a>
+<a class="reference internal image-reference" href="Science/Docs/Equation/Stoping_time.svg"><img alt="Science/Docs/Equation/Stoping_time.svg" src="Science/Docs/Equation/Stoping_time.svg" width="200px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">(a) correspond to Epstein regime, (b) Stokes regime</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">(a) correspond to Epstein regime, (b) Stokes regime</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -953,9 +907,9 @@ Solid materials are not pressure supported and as a result, dust particles shoul
 </ul>
 <p>A common measure of particle sizes in protoplanetary disks is the <code class="docutils literal notranslate"><span class="pre">Stokes</span> <span class="pre">number</span></code>, defined as:</p>
 <figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/Stokes_number.svg"><img alt="../_images/Stokes_number.svg" src="../_images/Stokes_number.svg" width="200px" /></a>
+<a class="reference internal image-reference" href="Science/Docs/Equation/Stokes_number.svg"><img alt="Science/Docs/Equation/Stokes_number.svg" src="Science/Docs/Equation/Stokes_number.svg" width="200px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Omega is Keplerian frequency (?)</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Omega is Keplerian frequency (?)</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -970,8 +924,8 @@ Solid materials are not pressure supported and as a result, dust particles shoul
 <h6>Ice in PPD<a class="headerlink" href="#ice-in-ppd" title="Permalink to this headline">#</a></h6>
 <p><strong>Mekler and Podolak Model</strong>:</p>
 <ul class="simple">
-<li><p><span id="id3">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id15" title="Y Mekler and M Podolak. Formation of amorphous ice in the protoplanetary nebula. Planetary and Space Science, 1994.">Mekler and Podolak, 1994</a>]</span></p></li>
-<li><p><span id="id4">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id14" title="M Podolak and Y Mekler. Dirty ice grains in the protoplanetary nebula. Planet. Space Sri, 45:1401-1406, 1997.">Podolak and Mekler, 1997</a>]</span></p></li>
+<li><p><span id="id3">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id17" title="Y Mekler and M Podolak. Formation of amorphous ice in the protoplanetary nebula. Planetary and Space Science, 1994.">Mekler and Podolak, 1994</a>]</span></p></li>
+<li><p><span id="id4">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id16" title="M Podolak and Y Mekler. Dirty ice grains in the protoplanetary nebula. Planet. Space Sri, 45:1401-1406, 1997.">Podolak and Mekler, 1997</a>]</span></p></li>
 </ul>
 </section>
 <section id="where-is-the-snow-line">
@@ -987,7 +941,7 @@ Solid materials are not pressure supported and as a result, dust particles shoul
 <h2>Growth mechanism<a class="headerlink" href="#growth-mechanism" title="Permalink to this headline">#</a></h2>
 <p>When Temperature inside PPD has decreased sub-micrometer to micrometer sized solid particles start to condense</p>
 <ul class="simple">
-<li><p><span id="id5">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id13" title="Min Li, Shichun Huang, Michail I. Petaev, Zhaohuan Zhu, and Jason H. Steffen. Dust condensation in evolving discs and the composition of planetary building blocks. Monthly Notices of the Royal Astronomical Society, 495:2543-2553, 5 2020. doi:10.1093/mnras/staa1149.">Li <em>et al.</em>, 2020</a>]</span></p></li>
+<li><p><span id="id5">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id15" title="Min Li, Shichun Huang, Michail I. Petaev, Zhaohuan Zhu, and Jason H. Steffen. Dust condensation in evolving discs and the composition of planetary building blocks. Monthly Notices of the Royal Astronomical Society, 495:2543-2553, 5 2020. doi:10.1093/mnras/staa1149.">Li <em>et al.</em>, 2020</a>]</span></p></li>
 </ul>
 <section id="coagulation-of-dust-and-ice-particles">
 <h3>Coagulation of dust and ice particles<a class="headerlink" href="#coagulation-of-dust-and-ice-particles" title="Permalink to this headline">#</a></h3>
@@ -1004,9 +958,9 @@ Solid materials are not pressure supported and as a result, dust particles shoul
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <figure class="align-default" id="bouncing-lab">
-<a class="reference internal image-reference" href="../_images/Early_growth_Me.PNG"><img alt="../_images/Early_growth_Me.PNG" src="../_images/Early_growth_Me.PNG" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="Science/Docs/Early_growth_Me.PNG"><img alt="Science/Docs/Early_growth_Me.PNG" src="Science/Docs/Early_growth_Me.PNG" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">source: <em>Formation of comets</em> Blum 2022 - to reproduce better</span><a class="headerlink" href="#bouncing-lab" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">source: <em>Formation of comets</em> Blum 2022 - to reproduce better</span><a class="headerlink" href="#bouncing-lab" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1024,9 +978,9 @@ Solid materials are not pressure supported and as a result, dust particles shoul
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <figure class="align-default" id="id6">
-<a class="reference internal image-reference" href="../_images/growthB_I.PNG"><img alt="../_images/growthB_I.PNG" src="../_images/growthB_I.PNG" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="Science/Docs/growthB_I.PNG"><img alt="Science/Docs/growthB_I.PNG" src="Science/Docs/growthB_I.PNG" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">source: <em>Formation of comets</em> Blum 2022 - to reproduce better</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">source: <em>Formation of comets</em> Blum 2022 - to reproduce better</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </aside>
@@ -1036,9 +990,9 @@ Solid materials are not pressure supported and as a result, dust particles shoul
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <figure class="align-default" id="id7">
-<a class="reference internal image-reference" href="../_images/growthB_II.PNG"><img alt="../_images/growthB_II.PNG" src="../_images/growthB_II.PNG" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="Science/Docs/growthB_II.PNG"><img alt="Science/Docs/growthB_II.PNG" src="Science/Docs/growthB_II.PNG" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">source: <em>Formation of comets</em> Blum 2022 - to reproduce better</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">source: <em>Formation of comets</em> Blum 2022 - to reproduce better</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </aside>
@@ -1048,9 +1002,9 @@ Solid materials are not pressure supported and as a result, dust particles shoul
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <figure class="align-default" id="id8">
-<a class="reference internal image-reference" href="../_images/growthB_III.PNG"><img alt="../_images/growthB_III.PNG" src="../_images/growthB_III.PNG" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="Science/Docs/growthB_III.PNG"><img alt="Science/Docs/growthB_III.PNG" src="Science/Docs/growthB_III.PNG" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">source: <em>Formation of comets</em> Blum 2022 - to reproduce better</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">source: <em>Formation of comets</em> Blum 2022 - to reproduce better</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </aside>
@@ -1072,7 +1026,7 @@ They can be further subdivided depending on the evolution process</p></li>
 <h2>Bouncing barrier<a class="headerlink" href="#bouncing-barrier" title="Permalink to this headline">#</a></h2>
 <section id="id9">
 <h3>Growth mechanism<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
-<p>Particles are coupled to the gas (Orbiting at Keplerian speed) and this is what drives the relative speed of µm dust grains (ie more or less head wind relative to their size). Dust orbits the protostar at very high velocities but the relative velocities between particles in collisions can be very slow (few cm or a few mm per second). At such velocities a “bouncing barrier” exists <span id="id10">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id21" title="A. Zsom, C. W. Ormel, C. Güttler, J. Blum, and C. P. Dullemond. The outcome of protoplanetary dust growth: pebbles, boulders, or planetesimals?: i. mapping the zoo of laboratory collision experiments. Astronomy and Astrophysics, 4 2010. doi:10.1051/0004-6361/200912976.">Zsom <em>et al.</em>, 2010</a>]</span>. Up to mm sizes the sticking is dominated by <span class="hovertext" data-hover="Description">Van der Waals type forces</span>, leading to the formation of fluffy aggregates. Past the km scale, gravity dominates <span id="id11">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id22" title="C. Güttler, J. Blum, A. Zsom, C. W. Ormel, and C. P. Dullemond. The outcome of protoplanetary dust growth: pebbles, boulders, or planetesimals?: ii. introducing the bouncing barrier. Astronomy and Astrophysics, 4 2010. doi:10.1051/0004-6361/200912852.">Güttler <em>et al.</em>, 2010</a>]</span>.</p>
+<p>Particles are coupled to the gas (Orbiting at Keplerian speed) and this is what drives the relative speed of µm dust grains (ie more or less head wind relative to their size). Dust orbits the protostar at very high velocities but the relative velocities between particles in collisions can be very slow (few cm or a few mm per second). At such velocities a “bouncing barrier” exists <span id="id10">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id23" title="A. Zsom, C. W. Ormel, C. Güttler, J. Blum, and C. P. Dullemond. The outcome of protoplanetary dust growth: pebbles, boulders, or planetesimals?: i. mapping the zoo of laboratory collision experiments. Astronomy and Astrophysics, 4 2010. doi:10.1051/0004-6361/200912976.">Zsom <em>et al.</em>, 2010</a>]</span>. Up to mm sizes the sticking is dominated by <span class="hovertext" data-hover="Description">Van der Waals type forces</span>, leading to the formation of fluffy aggregates. Past the km scale, gravity dominates <span id="id11">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id24" title="C. Güttler, J. Blum, A. Zsom, C. W. Ormel, and C. P. Dullemond. The outcome of protoplanetary dust growth: pebbles, boulders, or planetesimals?: ii. introducing the bouncing barrier. Astronomy and Astrophysics, 4 2010. doi:10.1051/0004-6361/200912852.">Güttler <em>et al.</em>, 2010</a>]</span>.</p>
 <div class="full-width docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
@@ -1083,9 +1037,9 @@ They can be further subdivided depending on the evolution process</p></li>
 </div>
 <div class="sd-card-body docutils">
 <figure class="align-default" id="id12">
-<a class="reference internal image-reference" href="../_images/Bouncing_lab.PNG"><img alt="../_images/Bouncing_lab.PNG" src="../_images/Bouncing_lab.PNG" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="Science/Docs/Bouncing_lab.PNG"><img alt="Science/Docs/Bouncing_lab.PNG" src="Science/Docs/Bouncing_lab.PNG" style="width: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">source:</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">source:</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1098,9 +1052,9 @@ They can be further subdivided depending on the evolution process</p></li>
 </div>
 <div class="sd-card-body docutils">
 <figure class="align-default" id="markdown-fig">
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/Bouncing_model.PNG"><img alt="fishy" class="bg-primary mb-1" src="../_images/Bouncing_model.PNG" style="width: 600px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="Science/Docs/Bouncing_model.PNG"><img alt="fishy" class="bg-primary mb-1" src="Science/Docs/Bouncing_model.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 10 </span><span class="caption-text">This is a caption in <strong>Markdown</strong>!</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">This is a caption in <strong>Markdown</strong>!</span><a class="headerlink" href="#markdown-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1109,7 +1063,7 @@ They can be further subdivided depending on the evolution process</p></li>
 </div>
 </div>
 </div>
-<p>Those two figures comes from <span id="id13">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id17">Testi <em>et al.</em>, 2014</a>]</span></p>
+<p>Those two figures comes from <span id="id13">[<a class="reference internal" href="../Thesis_JB_B/Biblio/bibliography.html#id19">Testi <em>et al.</em>, 2014</a>]</span></p>
 <p><strong>models of grain growth</strong></p>
 <p>Alongside the size of the colliding particles the relative velocity is also important</p>
 </section>
@@ -1143,20 +1097,6 @@ They can be further subdivided depending on the evolution process</p></li>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Science.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Science</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="Collision.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Collision</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>

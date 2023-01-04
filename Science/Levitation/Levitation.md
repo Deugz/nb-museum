@@ -1,15 +1,9 @@
 # Levitation
 
-***
-**Key Litterature**:
-- 1
-- 2
-***
 
 ## One Step further
 
-
-### From micron to mm-cm size amophous aggregates.
+### <strong>&#187;  <u> From micron to mm-cm size amophous aggregates</u></strong>
 
 Producing HGW &micro;m ICE grains is only the first step toward unveiling the role that ASW could play in overcoming the bouncing barrier. Indeed, this barrier lies at sizes around the cm size and growing such big aggregates is another big challenge. 
 
@@ -31,8 +25,8 @@ source:
 
 We (Anita mostly) have developped at the OU an accoustic levitation technique that can work at temperature of -20 degree to allow for the aggregation of those monomers in a similar fashion than in space
 
+### <strong>&#187;  <u> Grain shape vs IR spectroscopy</u></strong>
 
-### Grain shape vs IR spectroscopy
 
 Grain shape affect the IR spectral signature (ie right wing)
 
