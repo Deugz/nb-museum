@@ -1,0 +1,2549 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="XP_drawing1.svg">
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 148.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="210 : 148.5 : 1"
+       inkscape:persp3d-origin="105 : 99 : 1"
+       id="perspective6610" />
+    <marker
+       inkscape:stockid="Arrow1Sstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Sstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5570"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.2) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5564"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker5489"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path5487" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4820"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4802"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4814"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5552"
+       x="-0.346877"
+       width="1.693754"
+       y="-0.28349572"
+       height="1.5669914">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.0288619"
+         id="feGaussianBlur5554" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.64167879"
+     inkscape:cx="530.79716"
+     inkscape:cy="-505.21964"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:object-nodes="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:snap-grids="true"
+     inkscape:document-rotation="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.3;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:2.51472;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.20567;stroke-opacity:1"
+       id="rect1209"
+       width="84.037743"
+       height="15.004376"
+       x="273.21225"
+       y="230.00999"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery2.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6158"
+       d="M 314.96117,-1.0312904 H 217.93208"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4693"
+       d="M 25.923644,63.618658 H 16.88883"
+       style="fill:none;stroke:#000000;stroke-width:0.26468688;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.25733447;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 26.26559,65.940234 H 16.951424"
+       id="path4695"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4697"
+       d="m 18.491988,64.793695 v -1.027172 h 3.61667 3.616668 l 5.46e-4,0.96454 c 2.96e-4,0.530497 0.01423,0.992725 0.03126,1.027172 l 0.0307,0.06263 H 22.139914 18.49199 Z"
+       style="opacity:0.03999999;fill:#c4c8b7;fill-opacity:1;stroke:#aaffee;stroke-width:0.12666033;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4699"
+       d="m 18.491988,64.793695 v -1.027172 h 3.61667 3.616668 l 5.46e-4,0.96454 c 2.96e-4,0.530497 0.01423,0.992725 0.03126,1.027172 l 0.0307,0.06263 H 22.139914 18.49199 Z"
+       style="opacity:0.03999999;fill:#c4c8b7;fill-opacity:1;stroke:#aaffee;stroke-width:0.12666033;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4701"
+       d="m 18.491988,64.793695 v -1.027172 h 3.61667 3.616668 l 5.46e-4,0.96454 c 2.96e-4,0.530497 0.01423,0.992725 0.03126,1.027172 l 0.0307,0.06263 H 22.139914 18.49199 Z"
+       style="opacity:0.03999999;fill:#c4c8b7;fill-opacity:1;stroke:#aaffee;stroke-width:0.12666033;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4703"
+       d="m 18.491988,64.793695 v -1.027172 h 3.61667 3.616668 l 5.46e-4,0.96454 c 2.96e-4,0.530497 0.01423,0.992725 0.03126,1.027172 l 0.0307,0.06263 H 22.139914 18.49199 Z"
+       style="opacity:0.03999999;fill:#aaffee;fill-opacity:1;stroke:#aaffee;stroke-width:0.12666033;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4705"
+       d="m 18.491988,64.793695 v -1.027172 h 3.61667 3.616668 v 0.973001 c 0,0.55003 0.02017,0.996551 0.04609,1.027171 l 0.04609,0.05417 h -3.662754 -3.662756 z"
+       style="opacity:0.03999999;fill:#aaffee;fill-opacity:1;stroke:#aaffee;stroke-width:0.12666033;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4707"
+       d="m 17.560227,64.793695 v -1.027172 h 4.2645 4.264501 v 0.973001 c 0,0.550031 0.02379,0.996551 0.05435,1.027171 l 0.05435,0.05417 h -4.318843 -4.31884 z"
+       style="opacity:1;fill:#aaffee;fill-opacity:1;stroke:#aaffee;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4522"
+       d="m 20.67998,56.390607 7.503659,11.751565"
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 41.112136,56.424016 33.608477,68.175581"
+       id="path4524"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4528"
+       d="m 28.089656,67.782012 v 7.48354"
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 33.697881,67.829259 v 7.48354"
+       id="path4532"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.23758638;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 92.471882,24.183148 V 57.591839"
+       id="path4518-2"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4520-5"
+       d="M 112.58033,24.183148 V 57.591839"
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.23758638;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4522-9"
+       d="m 92.304839,57.257753 7.503694,11.751564"
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 112.7371,57.291162 -7.5037,11.751564"
+       id="path4524-6"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4528-8"
+       d="m 99.714553,68.649158 v 7.483538"
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 105.32281,68.696405 v 7.483541"
+       id="path4532-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.66000001;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:1.88222444;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       d="m 108.31668,269.02041 -2.1e-4,-12.75318 -13.381565,-20.96067 -13.381564,-20.96066 -0.0027,-60.48288 -0.0027,-60.482889 h 35.355339 35.35534 v 60.345349 60.34535 l -13.38453,20.95955 -13.38452,20.95954 v 12.89183 12.89183 h -8.58629 -8.5863 z"
+       id="path4586"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g4787"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4640"
+         d="M 20.410714,29.534598 41.530135,32.84189"
+         style="fill:#ff0000;stroke:#ff0000;stroke-width:1.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#ff0000;stroke:#ff0000;stroke-width:1.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 20.410714,35.884602 21.119421,3.307292"
+         id="path4642"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4644"
+         d="m 20.410714,42.234606 21.119421,3.307292"
+         style="fill:#ff0000;stroke:#ff0000;stroke-width:1.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#ff0000;stroke:#ff0000;stroke-width:1.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 20.410714,48.58461 21.119421,3.307292"
+         id="path4646"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4648"
+         d="m 20.406116,54.905253 20.041935,3.138559"
+         style="fill:#ff0000;stroke:#ff0000;stroke-width:1.10556316;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4780">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4518"
+         d="M 20.847023,23.316003 V 56.724694"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.23758638;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.23758638;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 40.955369,23.316003 V 56.724694"
+         id="path4520"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4564-2"
+         d="m 20.183359,25.020555 21.401868,3.654629"
+         style="fill:none;stroke:#000000;stroke-width:0.27755505px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.27629992px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 20.223032,27.349296 21.362443,3.628335"
+         id="path4574-0"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         transform="scale(0.26458333)"
+         inkscape:connector-curvature="0"
+         id="path4606"
+         d="m 116.81164,109.66401 c -22.049111,-3.75085 -40.139513,-6.82098 -40.200897,-6.82251 -0.08751,-0.002 -0.111607,-0.83306 -0.111607,-3.849154 v -3.84638 l 0.245536,0.05273 c 0.33651,0.07227 80.223208,13.711454 80.310018,13.711454 0.0382,0 0.0695,1.70759 0.0695,3.79465 0,2.98037 -0.024,3.79296 -0.11161,3.78679 -0.0614,-0.004 -18.15179,-3.07673 -40.20089,-6.82758 z"
+         style="opacity:1;fill:#aaffee;fill-opacity:1;stroke:#a05a2c;stroke-width:0.33273342;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.27755505px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 20.183359,31.370559 21.401868,3.654629"
+         id="path4608"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4610"
+         d="m 20.223032,33.6993 21.362443,3.628335"
+         style="fill:none;stroke:#000000;stroke-width:0.27629992px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="opacity:1;fill:#aaffee;fill-opacity:1;stroke:#a05a2c;stroke-width:0.08803572;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         d="M 30.906413,35.365273 C 25.072585,34.37286 20.286167,33.560555 20.269925,33.56015 c -0.02315,-5.29e-4 -0.02953,-0.220414 -0.02953,-1.018422 V 31.52404 l 0.06497,0.01395 c 0.08903,0.01912 21.225723,3.627822 21.248692,3.627822 0.01011,0 0.01839,0.4518 0.01839,1.004001 0,0.788556 -0.0063,1.003554 -0.02953,1.001921 -0.01624,-0.0011 -4.802661,-0.814051 -10.636485,-1.806463 z"
+         id="path4612"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4614"
+         d="m 20.183359,37.720563 21.401868,3.654629"
+         style="fill:none;stroke:#000000;stroke-width:0.27755505px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.27629992px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 20.223032,40.049304 21.362443,3.628335"
+         id="path4616"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4618"
+         d="m 30.906413,41.715277 c -5.833828,-0.992413 -10.620246,-1.804718 -10.636488,-1.805123 -0.02315,-5.29e-4 -0.02953,-0.220414 -0.02953,-1.018422 v -1.017688 l 0.06497,0.01395 c 0.08903,0.01912 21.225723,3.627822 21.248692,3.627822 0.01011,0 0.01839,0.4518 0.01839,1.004001 0,0.788556 -0.0063,1.003554 -0.02953,1.001921 -0.01624,-0.0011 -4.802661,-0.814051 -10.636485,-1.806463 z"
+         style="opacity:1;fill:#aaffee;fill-opacity:1;stroke:#a05a2c;stroke-width:0.08803572;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.27755505px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 20.183359,44.070567 21.401868,3.654629"
+         id="path4620"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4622"
+         d="m 20.223032,46.399308 21.362443,3.628335"
+         style="fill:none;stroke:#000000;stroke-width:0.27629992px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="opacity:1;fill:#aaffee;fill-opacity:1;stroke:#a05a2c;stroke-width:0.08803572;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         d="m 30.906413,48.065281 c -5.833828,-0.992413 -10.620246,-1.804718 -10.636488,-1.805123 -0.02315,-5.29e-4 -0.02953,-0.220414 -0.02953,-1.018422 v -1.017688 l 0.06497,0.01395 c 0.08903,0.01912 21.225723,3.627822 21.248692,3.627822 0.01011,0 0.01839,0.4518 0.01839,1.004001 0,0.788556 -0.0063,1.003554 -0.02953,1.001921 -0.01624,-0.0011 -4.802661,-0.814051 -10.636485,-1.806463 z"
+         id="path4624"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4626"
+         d="M 20.183359,50.420571 41.585227,54.0752"
+         style="fill:none;stroke:#000000;stroke-width:0.27755505px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.27629992px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 20.223032,52.749312 21.362443,3.628335"
+         id="path4628"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4630"
+         d="m 30.906413,54.415285 c -5.833828,-0.992413 -10.620246,-1.804718 -10.636488,-1.805123 -0.02315,-5.29e-4 -0.02953,-0.220414 -0.02953,-1.018422 v -1.017688 l 0.06497,0.01395 c 0.08903,0.01912 21.225723,3.627822 21.248692,3.627822 0.01011,0 0.01839,0.4518 0.01839,1.004001 0,0.788556 -0.0063,1.003554 -0.02953,1.001921 -0.01624,-0.0011 -4.802661,-0.814051 -10.636485,-1.806463 z"
+         style="opacity:1;fill:#aaffee;fill-opacity:1;stroke:#a05a2c;stroke-width:0.08803572;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.25287929px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 20.252716,56.736163 19.137037,3.392724"
+         id="path4632"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4634"
+         d="m 22.035926,59.347789 16.083009,2.682542"
+         style="fill:none;stroke:#000000;stroke-width:0.20613822px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         transform="scale(0.26458333)"
+         inkscape:connector-curvature="0"
+         id="path4638"
+         d="m 144.12098,234.2525 c -7.1e-4,-0.13505 -0.0252,-0.24554 -0.0545,-0.24554 -0.0292,0 -13.66141,-2.27009 -30.29372,-5.04464 -16.632316,-2.77455 -30.288722,-5.04464 -30.347572,-5.04464 -0.05885,0 -0.132482,0.15934 -0.163623,0.35408 l -0.05662,0.35409 -3.028179,-4.74058 c -1.665498,-2.60732 -3.011697,-4.75706 -2.991553,-4.77721 0.0288,-0.0288 69.713797,12.28604 70.956807,12.53959 l 0.31702,0.0647 -1.77324,2.76786 c -0.97528,1.52232 -1.95107,3.0491 -2.16841,3.39285 -0.34034,0.53828 -0.39535,0.59093 -0.39646,0.37947 z"
+         style="opacity:1;fill:#aaffee;fill-opacity:1;stroke:#a05a2c;stroke-width:0.33273342;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4650"
+         d="M 20.262371,25.03655 H 17.121953"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 20.345893,27.375158 H 17.205475"
+         id="path4652"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         transform="scale(0.26458333)"
+         inkscape:connector-curvature="0"
+         id="path4665"
+         d="m 67.111828,99.068041 v -3.882774 h 4.608821 4.608821 l 6.94e-4,3.64602 c 3.79e-4,2.005313 0.0183,3.752563 0.03983,3.882773 l 0.03913,0.23676 h -4.648649 -4.648649 z"
+         style="opacity:0.03999999;fill:#c4c8b7;fill-opacity:1;stroke:#aaffee;stroke-width:0.27799079;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         transform="scale(0.26458333)"
+         inkscape:connector-curvature="0"
+         id="path4667"
+         d="m 67.111828,99.068041 v -3.882774 h 4.608821 4.608821 l 6.94e-4,3.64602 c 3.79e-4,2.005313 0.0183,3.752563 0.03983,3.882773 l 0.03913,0.23676 h -4.648649 -4.648649 z"
+         style="opacity:0.03999999;fill:#c4c8b7;fill-opacity:1;stroke:#aaffee;stroke-width:0.27799079;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         transform="scale(0.26458333)"
+         inkscape:connector-curvature="0"
+         id="path4669"
+         d="m 67.111828,99.068041 v -3.882774 h 4.608821 4.608821 l 6.94e-4,3.64602 c 3.79e-4,2.005313 0.0183,3.752563 0.03983,3.882773 l 0.03913,0.23676 h -4.648649 -4.648649 z"
+         style="opacity:0.03999999;fill:#c4c8b7;fill-opacity:1;stroke:#aaffee;stroke-width:0.27799079;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         transform="scale(0.26458333)"
+         inkscape:connector-curvature="0"
+         id="path4671"
+         d="m 67.111828,99.068041 v -3.882774 h 4.608821 4.608821 l 6.94e-4,3.64602 c 3.79e-4,2.005313 0.0183,3.752563 0.03983,3.882773 l 0.03913,0.23676 h -4.648649 -4.648649 z"
+         style="opacity:0.03999999;fill:#aaffee;fill-opacity:1;stroke:#aaffee;stroke-width:0.27799079;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         transform="scale(0.26458333)"
+         inkscape:connector-curvature="0"
+         id="path4673"
+         d="m 67.111828,99.068041 v -3.882774 h 4.608821 4.608821 v 3.678004 c 0,2.079149 0.02553,3.767019 0.05873,3.882769 l 0.05873,0.20478 h -4.667549 -4.667548 z"
+         style="opacity:0.03999999;fill:#aaffee;fill-opacity:1;stroke:#aaffee;stroke-width:0.27799079;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4675"
+         d="m 17.884934,26.211752 v -1.027317 h 1.219417 1.219417 v 0.973138 c 0,0.550109 0.0068,0.996691 0.01554,1.027316 l 0.01554,0.05418 h -1.234956 -1.234955 z"
+         style="opacity:1;fill:#aaffee;fill-opacity:1;stroke:#aaffee;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="M 7.9190343,26.127705 H 13.197608"
+       id="path5259"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5485"
+       d="M 13.598245,64.756895 H 8.3196714"
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5489)"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="2.4190485"
+       y="26.841516"
+       id="text5937"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan5935"
+         x="2.4190485"
+         y="26.841516"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri;stroke-width:0.264583"> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"
+   id="tspan5947">In</tspan></tspan></text>
+    <text
+       id="text5945"
+       y="65.489578"
+       x="0.39687622"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri;stroke-width:0.264583"
+         y="65.489578"
+         x="0.39687622"
+         id="tspan5943"
+         sodipodi:role="line"> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Bold'"
+   id="tspan5949">Out</tspan></tspan></text>
+    <g
+       id="g5985"
+       transform="translate(-6.879167)">
+      <g
+         id="g5971">
+        <path
+           inkscape:connector-curvature="0"
+           id="path5957"
+           d="m 101.46772,23.389398 v 34.07015"
+           style="fill:#ff6600;stroke:#ff9955;stroke-width:0.84149909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="fill:#ff6600;stroke:#ff9955;stroke-width:0.72000003;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 96.973187,23.604533 h 4.912843"
+           id="path5967"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="matrix(-1,0,0,1,218.97012,0)"
+         id="g5977">
+        <path
+           style="fill:#ff6600;stroke:#ff9955;stroke-width:0.84149909;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 101.46772,23.389398 v 34.07015"
+           id="path5973"
+           inkscape:connector-curvature="0" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path5975"
+           d="m 96.973187,23.604533 h 4.912843"
+           style="fill:#ff6600;stroke:#ff9955;stroke-width:0.72000003;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+    </g>
+    <g
+       id="g6001"
+       transform="translate(53.445861)">
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.23758638;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 99.351049,24.183148 V 57.591839"
+         id="path5989"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5991"
+         d="M 119.4595,24.183148 V 57.591839"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.23758638;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5993"
+         d="M 99.184006,57.257753 106.6877,69.009317"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 119.61627,57.291162 -7.5037,11.751564"
+         id="path5995"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5997"
+         d="m 106.59372,68.649158 v 7.483538"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.20198,68.696405 v 7.483541"
+         id="path5999"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path6003"
+       d="m 160.55533,71.779672 -5e-5,-3.374279 -3.54056,-5.545844 -3.54056,-5.545841 -7.2e-4,-16.002762 -7.1e-4,-16.002764 h 9.35448 9.35449 v 15.966373 15.966374 l -3.54134,5.545548 -3.54134,5.545544 v 3.410964 3.410963 h -2.27181 -2.2718 z"
+       style="opacity:0.66000001;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.49800521;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+    <g
+       id="g6084"
+       transform="translate(89.958384)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im2.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6071"
+         d="M 224.59867,87.170003 V 116.29934"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.94499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.94499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 230.20693,87.35391 v 29.12935"
+         id="path6073"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       style="opacity:0.66000001;fill:#7fff2a;fill-opacity:1;stroke:#7fff2a;stroke-width:0.45430535;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       d="m 315.06766,71.315934 -5e-5,-2.801533 -3.54883,-4.604499 -3.54883,-4.604496 -7.2e-4,-13.286471 -7.1e-4,-13.286472 h 9.37633 9.37634 v 13.256258 13.25626 l -3.54961,4.604252 -3.54961,4.60425 v 2.831991 2.83199 h -2.27712 -2.27711 z"
+       id="path6051"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im2.png" />
+    <g
+       id="g6017"
+       transform="translate(207.96324)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im2.png">
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.23758638;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 99.351049,24.183148 V 57.591839"
+         id="path6005"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6007"
+         d="M 119.4595,24.183148 V 57.591839"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.23758638;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6009"
+         d="M 99.184006,57.257753 106.6877,69.009317"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 119.61627,57.291162 -7.5037,11.751564"
+         id="path6011"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6013"
+         d="m 106.59372,68.649158 v 7.483538"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.20198,68.696405 v 7.483541"
+         id="path6015"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g6035"
+       transform="matrix(3.8254039e-4,0,0,-3.8254039e-4,315.76361,64.42955)"
+       style="fill:#2196f3;stroke:none"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im2.png">
+      <path
+         id="path6021"
+         d="m 5496,12785 c -57,-20 -108,-66 -138,-125 l -28,-52 v -265 -264 l -37,30 c -139,111 -333,21 -333,-154 0,-36 7,-69 19,-93 11,-20 94,-111 185,-202 l 166,-165 v -442 c 0,-244 -3,-443 -7,-443 -4,0 -138,130 -298,288 -301,299 -317,312 -397,312 -67,0 -147,-49 -178,-110 -26,-52 -27,-138 -1,-188 11,-20 213,-230 450,-467 l 431,-430 v -627 c 0,-346 -3,-628 -7,-628 -5,0 -332,257 -728,571 -640,508 -721,575 -731,608 -37,125 -149,211 -274,211 -112,0 -237,-81 -280,-182 -19,-43 -22,-65 -18,-128 5,-83 23,-126 73,-180 l 33,-35 122,-825 c 67,-454 127,-863 135,-910 7,-47 12,-86 10,-88 -3,-3 -1076,615 -1089,628 -4,4 -77,266 -162,582 -84,315 -159,585 -164,599 -26,63 -115,119 -187,119 -102,-1 -203,-101 -203,-201 0,-25 181,-725 205,-797 3,-7 1,-11 -3,-9 -336,191 -751,434 -763,446 -9,9 -40,106 -69,216 -65,247 -73,267 -122,310 -72,61 -166,65 -248,11 -57,-38 -85,-96 -84,-177 l 1,-66 -213,124 c -234,135 -277,151 -365,132 -56,-12 -122,-58 -156,-108 -65,-97 -50,-233 35,-317 16,-16 122,-83 235,-148 114,-65 207,-122 207,-127 0,-4 -14,-11 -31,-14 -64,-14 -139,-118 -139,-191 0,-101 100,-204 199,-204 22,0 140,27 263,60 l 223,60 125,-72 c 546,-315 652,-378 639,-382 -8,-3 -182,-50 -386,-104 -205,-55 -388,-109 -405,-119 -18,-10 -46,-38 -63,-62 -26,-37 -30,-51 -30,-111 0,-60 4,-74 30,-112 56,-79 152,-108 255,-78 19,6 278,76 576,155 l 541,145 274,-158 c 151,-87 393,-227 539,-311 146,-84 268,-156 272,-159 4,-4 -180,-81 -410,-172 -229,-90 -615,-243 -858,-340 l -440,-175 -45,12 c -122,33 -266,-35 -324,-152 -28,-57 -28,-213 0,-270 58,-116 203,-184 325,-152 l 45,12 380,-151 c 209,-83 595,-236 857,-340 263,-104 474,-192 470,-195 -28,-26 -1090,-629 -1102,-626 -8,3 -244,66 -525,141 -280,75 -532,144 -559,151 -119,35 -212,10 -271,-73 -26,-38 -30,-52 -30,-112 0,-60 4,-74 30,-111 17,-24 45,-51 62,-62 18,-10 200,-63 405,-118 205,-55 379,-102 387,-105 8,-2 -161,-106 -375,-229 l -390,-224 -223,59 c -122,33 -240,60 -262,60 -99,0 -199,-103 -199,-204 0,-73 75,-177 139,-191 17,-3 31,-10 31,-14 0,-4 -89,-58 -198,-121 C 214,3598 110,3535 93,3522 75,3509 46,3469 29,3434 1,3378 -2,3363 3,3312 c 6,-67 26,-113 71,-160 38,-42 71,-59 134,-72 80,-18 125,-1 359,135 l 214,124 -6,-53 c -11,-82 32,-168 100,-204 102,-53 231,-17 280,79 9,16 42,128 75,250 32,122 60,222 62,223 2,1 55,32 118,68 101,58 501,288 617,355 l 42,24 -19,-68 c -103,-378 -190,-715 -190,-741 0,-101 101,-201 203,-202 69,0 150,48 182,110 7,14 81,282 165,595 84,314 157,578 164,588 10,16 1085,642 1091,635 1,-2 -58,-412 -132,-913 l -135,-910 -34,-37 c -51,-57 -67,-96 -72,-178 -4,-63 0,-85 18,-128 41,-96 148,-171 256,-180 137,-11 258,74 298,209 10,32 65,80 451,385 865,686 996,789 1005,792 7,2 10,-223 10,-625 v -628 l -431,-430 c -237,-237 -439,-447 -450,-467 -26,-50 -25,-136 1,-188 31,-61 111,-110 178,-110 80,0 96,13 397,312 160,158 294,288 298,288 4,0 7,-199 7,-443 v -442 l -166,-165 c -91,-91 -174,-182 -185,-202 -26,-50 -25,-136 1,-188 32,-63 111,-110 184,-110 37,0 112,33 144,62 l 22,21 V 459 194 l 26,-52 c 93,-187 355,-187 448,0 26,52 26,52 26,315 v 264 l 38,-30 c 138,-111 332,-21 332,154 0,36 -7,69 -19,93 -11,20 -94,111 -185,202 l -166,165 v 442 c 0,244 3,443 7,443 4,0 138,-130 298,-288 301,-299 317,-312 397,-312 67,0 147,49 178,110 26,52 27,138 1,188 -11,20 -213,230 -450,467 l -431,430 v 627 c 0,346 3,628 8,628 4,0 331,-257 727,-571 642,-509 721,-574 731,-607 27,-91 98,-168 181,-196 132,-45 286,16 361,142 24,42 27,57 27,137 0,99 -10,128 -69,193 l -34,37 -135,910 c -74,501 -133,911 -132,913 2,2 245,-136 541,-307 334,-192 544,-319 552,-333 7,-13 76,-259 153,-548 77,-289 146,-549 155,-577 36,-129 167,-196 279,-144 72,33 125,111 125,182 0,25 -181,725 -205,797 -3,7 -1,11 3,9 70,-41 768,-441 770,-443 2,-1 30,-101 62,-223 33,-122 66,-234 75,-250 37,-72 139,-119 218,-101 111,25 187,141 159,244 -6,20 -9,36 -8,36 2,0 100,-56 219,-125 153,-89 231,-128 267,-135 164,-31 316,109 297,273 -8,59 -50,140 -91,170 -17,13 -120,75 -228,137 -109,63 -198,117 -198,121 0,4 14,11 31,14 64,14 139,118 139,191 0,101 -100,204 -199,204 -22,0 -140,-27 -262,-60 l -223,-59 -383,221 c -211,121 -383,223 -383,227 0,4 168,51 373,105 204,54 390,108 412,120 21,11 53,41 70,64 26,38 30,52 30,112 0,60 -4,74 -30,112 -41,58 -96,88 -161,88 -35,0 -226,-47 -595,-145 -299,-80 -560,-150 -579,-156 -34,-10 -46,-4 -575,301 -297,172 -543,315 -547,319 -4,3 207,91 470,195 262,104 648,257 857,340 l 380,151 45,-12 c 90,-24 201,8 270,77 113,113 112,308 -3,423 -67,67 -178,98 -266,74 l -45,-12 -440,175 c -243,97 -629,250 -858,340 -230,91 -414,168 -410,172 4,3 250,146 546,317 l 539,311 581,-155 c 390,-104 597,-155 631,-155 64,0 119,31 160,88 26,38 30,52 30,112 0,60 -4,74 -30,112 -17,23 -49,53 -70,64 -22,12 -204,65 -405,118 -439,117 -400,105 -375,118 11,6 178,102 370,213 193,111 360,207 371,213 18,9 62,1 243,-48 122,-33 239,-60 259,-60 102,1 202,102 202,204 0,73 -75,177 -139,191 -17,3 -31,10 -31,14 0,5 93,62 207,127 216,125 251,151 284,216 74,145 -13,324 -174,358 -86,17 -128,2 -362,-134 l -212,-123 1,66 c 1,81 -27,139 -84,177 -82,54 -176,50 -248,-11 -49,-43 -57,-63 -122,-310 -29,-110 -60,-207 -69,-216 -12,-12 -427,-255 -763,-446 -4,-2 -6,2 -3,9 24,72 205,772 205,797 0,100 -101,200 -203,201 -72,0 -161,-56 -187,-119 -5,-14 -80,-284 -164,-599 -85,-316 -158,-578 -162,-582 -13,-13 -1086,-631 -1089,-628 -2,2 3,41 10,88 8,47 68,456 135,910 l 122,825 33,37 c 60,65 70,94 70,193 0,105 -18,148 -84,208 -122,110 -288,116 -398,14 -47,-43 -69,-79 -87,-138 -10,-33 -92,-101 -731,-608 -396,-314 -723,-571 -727,-571 -5,0 -8,282 -8,628 v 627 l 431,430 c 237,237 439,447 450,467 27,53 26,141 -4,193 -46,81 -144,120 -237,95 -40,-11 -78,-45 -335,-301 -160,-159 -294,-289 -298,-289 -4,0 -7,199 -7,443 v 442 l 166,165 c 91,91 174,182 185,202 12,24 19,57 19,93 0,99 -55,170 -153,196 -60,17 -126,1 -179,-42 l -38,-30 v 264 265 l -28,53 c -59,114 -188,166 -306,124 z m -948,-3829 782,-620 v -743 c 0,-536 -3,-743 -11,-743 -8,0 -1265,719 -1288,737 -2,2 -69,438 -147,970 -79,533 -145,985 -149,1006 -5,36 -4,38 13,25 10,-7 370,-292 800,-632 z m 2733,-364 c -81,-551 -150,-1004 -152,-1005 -22,-18 -1280,-737 -1288,-737 -8,0 -11,226 -11,743 v 743 l 797,632 c 439,347 798,630 800,629 1,-2 -65,-454 -146,-1005 z M 4416,6779 c 354,-204 644,-375 644,-379 0,-4 -290,-174 -643,-378 l -644,-371 -489,193 c -269,107 -642,254 -829,328 -187,74 -391,155 -452,179 -62,24 -113,46 -113,49 0,3 188,79 417,170 230,91 651,258 938,372 286,114 522,207 524,207 2,1 293,-166 647,-370 z m 3544,144 c 530,-210 1106,-438 1243,-491 37,-15 67,-29 67,-32 0,-3 -210,-88 -468,-190 -257,-101 -680,-269 -941,-372 l -475,-187 -643,371 c -354,204 -642,375 -641,380 6,17 1283,747 1298,742 8,-3 260,-102 560,-221 z M 5330,5212 v -747 l -657,-520 c -361,-286 -720,-570 -797,-632 -77,-62 -141,-111 -143,-109 -6,6 295,2010 303,2013 5,2 295,170 644,372 349,203 638,369 643,370 4,1 7,-335 7,-747 z m 1170,365 c 344,-198 627,-362 629,-364 5,-3 301,-2006 298,-2010 -1,-1 -361,283 -800,630 l -797,632 v 748 748 l 23,-12 c 12,-7 303,-174 647,-372 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path6023"
+         d="m 4285,8635 c 23,-57 47,-172 57,-267 25,-244 -39,-531 -147,-664 l -35,-42 43,10 c 127,29 373,-52 580,-189 72,-48 216,-183 255,-238 20,-29 20,-27 -3,46 -36,114 -48,234 -42,394 9,220 63,395 154,496 l 36,40 -29,-8 c -50,-14 -166,-6 -249,16 -208,57 -456,218 -595,386 -18,22 -29,31 -25,20 z m 252,-359 c 110,-70 230,-124 353,-157 74,-19 73,-15 40,-124 -30,-102 -50,-237 -50,-342 0,-51 -3,-93 -6,-93 -4,0 -38,20 -78,44 -128,81 -236,125 -413,172 -9,2 -7,19 8,61 32,93 58,241 65,366 4,65 8,117 10,117 2,0 34,-20 71,-44 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path6025"
+         d="m 6830,8598 c -171,-190 -500,-349 -725,-352 -44,0 -92,3 -108,7 l -27,7 35,-48 c 84,-117 120,-287 112,-527 -5,-167 -24,-269 -67,-370 l -21,-50 60,61 c 146,151 355,271 562,325 83,21 209,28 269,15 l 35,-8 -26,28 c -97,105 -153,371 -130,612 11,123 37,238 70,316 11,25 19,46 18,45 -1,0 -27,-28 -57,-61 z m -144,-421 c 1,-145 8,-197 51,-373 4,-19 -1,-23 -39,-29 -79,-13 -232,-67 -333,-117 -55,-27 -104,-54 -109,-59 -6,-5 -13,-9 -17,-9 -3,0 -9,80 -12,178 -5,164 -21,273 -52,353 -5,13 3,18 42,24 83,12 254,74 358,129 55,30 102,54 105,55 3,1 5,-68 6,-152 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path6027"
+         d="m 3800,6952 c -1,-34 -57,-127 -115,-190 -164,-177 -442,-324 -665,-352 l -55,-6 40,-8 c 195,-36 425,-160 586,-313 88,-85 142,-159 169,-236 10,-28 19,-44 19,-33 2,36 63,133 124,196 159,164 405,297 616,334 42,7 69,16 61,18 -8,3 -46,13 -85,22 -85,21 -244,95 -345,162 -92,60 -238,198 -282,267 -18,28 -40,73 -50,101 -9,28 -17,45 -18,38 z m 294,-500 c 60,-40 113,-72 118,-72 22,0 3,-18 -39,-39 -89,-43 -241,-149 -318,-222 l -77,-73 -50,58 c -65,73 -188,173 -295,239 l -83,50 67,35 c 111,56 225,136 304,214 l 74,73 95,-95 c 61,-62 134,-122 204,-168 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path6029"
+         d="m 7381,6990 c -4,-75 -146,-240 -289,-338 -150,-103 -339,-183 -464,-198 -55,-6 -72,-24 -24,-24 73,0 288,-97 428,-192 154,-105 317,-301 318,-382 1,-13 8,-3 19,25 58,149 270,331 498,429 100,42 233,80 284,80 26,0 30,3 19,10 -8,5 -25,10 -36,10 -35,0 -173,50 -259,93 -114,57 -216,128 -306,214 -88,85 -142,159 -169,236 -10,28 -19,45 -19,37 z m 53,-295 c 60,-70 186,-172 293,-238 l 83,-50 -67,-34 c -105,-53 -224,-136 -307,-215 l -76,-73 -55,61 c -68,77 -182,169 -285,231 -44,27 -79,50 -80,54 0,3 21,15 48,28 84,41 244,153 317,223 38,37 73,68 76,68 3,0 27,-25 53,-55 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path6031"
+         d="m 5034,5442 c -143,-137 -333,-243 -526,-293 -93,-24 -235,-29 -283,-10 l -30,12 31,-33 c 102,-107 158,-368 134,-618 -11,-115 -41,-250 -73,-320 -13,-30 -2,-22 77,55 143,139 331,245 528,296 96,25 249,31 286,11 17,-10 13,-1 -18,40 -22,29 -50,78 -61,108 -81,213 -79,573 5,783 13,31 23,57 22,57 0,-1 -42,-40 -92,-88 z m -104,-371 c 0,-139 17,-276 45,-360 8,-25 15,-46 15,-47 0,-1 -21,-5 -47,-9 -81,-11 -253,-73 -362,-131 -57,-29 -105,-54 -105,-54 -1,0 -1,66 -2,148 -1,146 -18,273 -48,360 l -14,40 46,7 c 102,14 354,113 435,170 12,8 25,15 29,15 5,0 8,-62 8,-139 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path6033"
+         d="m 6105,5565 c 55,-153 70,-263 62,-450 -9,-220 -63,-395 -154,-496 l -36,-40 29,8 c 16,4 61,7 99,7 217,-4 556,-184 721,-384 48,-59 66,-71 44,-31 -19,36 -48,191 -55,291 -16,234 52,517 154,632 l 31,36 -42,-10 c -128,-29 -374,51 -581,189 -70,47 -212,179 -256,238 -14,18 -20,22 -16,10 z m 249,-364 c 116,-76 247,-131 423,-177 9,-2 7,-19 -8,-61 -32,-93 -58,-241 -65,-366 -4,-65 -8,-117 -10,-117 -2,0 -36,21 -76,47 -89,58 -243,126 -340,152 -83,22 -81,16 -48,126 30,102 50,237 50,343 0,50 3,92 7,92 4,0 34,-18 67,-39 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g6080"
+       transform="translate(89.958384)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-Im2.png">
+      <circle
+         r="6.2808337"
+         cy="81.311859"
+         cx="227.43428"
+         id="path6053"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:1.32000005;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6055"
+         d="m 234.15625,81.55357 h 18.9933"
+         style="fill:none;stroke:#000000;stroke-width:1.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.95684451;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 252.64879,75.950072 V 86.816884"
+         id="path6057"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6059"
+         d="m 222.2574,77.891589 9.90583,6.840645"
+         style="fill:none;stroke:#000000;stroke-width:1.05086374;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.05086374;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 232.16323,77.891589 -9.90583,6.840645"
+         id="path6063"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g6106"
+       transform="matrix(0.9954152,0,0,1.1748481,91.00098,-7.0707579)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.92199999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 225.12784,-54.684531 V 20.831981"
+         id="path6086"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6088"
+         d="M 229.67776,-54.736928 V 20.779618"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.92199999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6094"
+         d="m 225.12059,20.736859 1.09072,4.555299"
+         style="fill:none;stroke:#a05a2c;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#a05a2c;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 229.6536,20.70345 -1.09072,4.555299"
+         id="path6100"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g6126"
+       transform="translate(89.958384)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="-40.154762"
+         x="230.22531"
+         height="11.528275"
+         width="3.2127976"
+         id="rect6108"
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="rect6110"
+         width="3.2127976"
+         height="11.528275"
+         x="221.2296"
+         y="-40.154762" />
+      <rect
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="rect6112"
+         width="3.2127976"
+         height="11.528275"
+         x="233.81131"
+         y="-40.154762" />
+      <rect
+         y="-40.154762"
+         x="217.6436"
+         height="11.528275"
+         width="3.2127976"
+         id="rect6114"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6130"
+       transform="translate(89.958384,-16.404171)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6118"
+         d="m 224.3136,-54.687667 c -0.24007,-8.232009 -0.18489,-20.985676 4.0223,-27.304073 20.38358,-30.61222 67.95658,-26.43048 72.72323,23.679638"
+         style="fill:none;stroke:#000000;stroke-width:0.27603865px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.24056262px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 230.1043,-54.685224 c -0.20446,-7.341101 -0.15746,-18.714501 3.4256,-24.34909 17.35967,-27.299206 57.87523,-23.570036 61.93475,21.116909"
+         id="path6120"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect6132"
+       width="12.828938"
+       height="23.118814"
+       x="382.44989"
+       y="-74.589264"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.70999995;fill:#5599ff;fill-opacity:1;stroke:none;stroke-width:0.81026995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect6134"
+       width="12.093946"
+       height="10.824416"
+       x="382.70111"
+       y="-62.711876"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g6146"
+       transform="translate(42.862521,-16.404171)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6136"
+         d="m 343.35532,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 349.17619,-34.813173 v 20.269129"
+         id="path6138"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       style="opacity:0.6;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect6148"
+       width="45.916893"
+       height="27.072386"
+       x="371.18222"
+       y="-31.319033"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="matrix(0,1,-0.30092587,0,413.09109,-357.97706)"
+       id="g6154"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 343.35532,-34.813173 v 20.269129"
+         id="path6150"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6152"
+         d="m 349.17619,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 417.09097,-1.0312904 H 320.06188"
+       id="path6156"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g1197"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1095"
+         d="M 279.50915,126.47598 V 154.8944"
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 348.83042,126.47598 V 154.8944"
+         id="path1097"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1099"
+         d="m 279.85596,155.50195 h 68.5661"
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <rect
+       y="136.60414"
+       x="281.04697"
+       height="17.393116"
+       width="66.520317"
+       id="rect1103"
+       style="opacity:0.3;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:2.40884757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png" />
+    <g
+       id="g1116"
+       transform="matrix(0.78898675,0,0,0.86250186,46.038747,23.581902)"
+       style="fill:none;fill-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1105"
+         d="m 312.12869,116.25201 v 29.59383"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 321.65375,116.25201 v 29.59383"
+         id="path1107"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1111"
+         d="m 321.68208,145.82425 c -0.47075,6.04651 -9.83315,5.69637 -9.53189,-0.28176"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25911698px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.53199822;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       d="m 295.38787,152.94386 c -1.5935,-0.26496 -2.71825,-1.44952 -2.91261,-3.06753 -0.0346,-0.28832 -0.0508,-3.15717 -0.0509,-9.04369 l -1.4e-4,-8.62142 h 3.63625 3.63625 v 8.72392 c 0,9.47903 0.0135,8.97408 -0.25807,9.69732 -0.61217,1.63057 -2.31204,2.60052 -4.05083,2.3114 z"
+       id="path1122"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png" />
+    <g
+       style="fill:none;fill-opacity:1"
+       transform="matrix(0.78898675,0,0,0.86250186,67.205427,23.581902)"
+       id="g1130"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 312.12869,116.25201 v 29.59383"
+         id="path1124"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1126"
+         d="m 321.65375,116.25201 v 29.59383"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25911698px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 321.68208,145.82425 c -0.47075,6.04651 -9.83315,5.69637 -9.53189,-0.28176"
+         id="path1128"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path1132"
+       d="m 316.55467,152.94386 c -1.5935,-0.26496 -2.71825,-1.44952 -2.91261,-3.06753 -0.0346,-0.28832 -0.0508,-3.15717 -0.0509,-9.04369 l -1.4e-4,-8.62142 h 3.63625 3.63625 v 8.72392 c 0,9.47903 0.0135,8.97408 -0.25807,9.69732 -0.61217,1.63057 -2.31204,2.60052 -4.05083,2.3114 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.53199822;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png" />
+    <g
+       id="g1140"
+       transform="matrix(0.78898675,0,0,0.86250186,86.255439,23.581902)"
+       style="fill:none;fill-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1134"
+         d="m 312.12869,116.25201 v 29.59383"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 321.65375,116.25201 v 29.59383"
+         id="path1136"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1138"
+         d="m 321.68208,145.82425 c -0.47075,6.04651 -9.83315,5.69637 -9.53189,-0.28176"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.25911698px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="opacity:1;fill:#80ff2b;fill-opacity:0.65882353;stroke:none;stroke-width:0.53199822;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       d="m 335.60479,152.94386 c -1.5935,-0.26496 -2.71825,-1.44952 -2.91261,-3.06753 -0.0346,-0.28832 -0.0508,-3.15717 -0.0509,-9.04369 l -1.4e-4,-8.62142 h 3.63625 3.63625 v 8.72392 c 0,9.47903 0.0135,8.97408 -0.25807,9.69732 -0.61217,1.63057 -2.31204,2.60052 -4.05083,2.3114 z"
+       id="path1142"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png" />
+    <g
+       style="fill:#2196f3;stroke:none"
+       transform="matrix(3.8254039e-4,0,0,-3.8254039e-4,333.75538,150.15488)"
+       id="g1158"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 5496,12785 c -57,-20 -108,-66 -138,-125 l -28,-52 v -265 -264 l -37,30 c -139,111 -333,21 -333,-154 0,-36 7,-69 19,-93 11,-20 94,-111 185,-202 l 166,-165 v -442 c 0,-244 -3,-443 -7,-443 -4,0 -138,130 -298,288 -301,299 -317,312 -397,312 -67,0 -147,-49 -178,-110 -26,-52 -27,-138 -1,-188 11,-20 213,-230 450,-467 l 431,-430 v -627 c 0,-346 -3,-628 -7,-628 -5,0 -332,257 -728,571 -640,508 -721,575 -731,608 -37,125 -149,211 -274,211 -112,0 -237,-81 -280,-182 -19,-43 -22,-65 -18,-128 5,-83 23,-126 73,-180 l 33,-35 122,-825 c 67,-454 127,-863 135,-910 7,-47 12,-86 10,-88 -3,-3 -1076,615 -1089,628 -4,4 -77,266 -162,582 -84,315 -159,585 -164,599 -26,63 -115,119 -187,119 -102,-1 -203,-101 -203,-201 0,-25 181,-725 205,-797 3,-7 1,-11 -3,-9 -336,191 -751,434 -763,446 -9,9 -40,106 -69,216 -65,247 -73,267 -122,310 -72,61 -166,65 -248,11 -57,-38 -85,-96 -84,-177 l 1,-66 -213,124 c -234,135 -277,151 -365,132 -56,-12 -122,-58 -156,-108 -65,-97 -50,-233 35,-317 16,-16 122,-83 235,-148 114,-65 207,-122 207,-127 0,-4 -14,-11 -31,-14 -64,-14 -139,-118 -139,-191 0,-101 100,-204 199,-204 22,0 140,27 263,60 l 223,60 125,-72 c 546,-315 652,-378 639,-382 -8,-3 -182,-50 -386,-104 -205,-55 -388,-109 -405,-119 -18,-10 -46,-38 -63,-62 -26,-37 -30,-51 -30,-111 0,-60 4,-74 30,-112 56,-79 152,-108 255,-78 19,6 278,76 576,155 l 541,145 274,-158 c 151,-87 393,-227 539,-311 146,-84 268,-156 272,-159 4,-4 -180,-81 -410,-172 -229,-90 -615,-243 -858,-340 l -440,-175 -45,12 c -122,33 -266,-35 -324,-152 -28,-57 -28,-213 0,-270 58,-116 203,-184 325,-152 l 45,12 380,-151 c 209,-83 595,-236 857,-340 263,-104 474,-192 470,-195 -28,-26 -1090,-629 -1102,-626 -8,3 -244,66 -525,141 -280,75 -532,144 -559,151 -119,35 -212,10 -271,-73 -26,-38 -30,-52 -30,-112 0,-60 4,-74 30,-111 17,-24 45,-51 62,-62 18,-10 200,-63 405,-118 205,-55 379,-102 387,-105 8,-2 -161,-106 -375,-229 l -390,-224 -223,59 c -122,33 -240,60 -262,60 -99,0 -199,-103 -199,-204 0,-73 75,-177 139,-191 17,-3 31,-10 31,-14 0,-4 -89,-58 -198,-121 C 214,3598 110,3535 93,3522 75,3509 46,3469 29,3434 1,3378 -2,3363 3,3312 c 6,-67 26,-113 71,-160 38,-42 71,-59 134,-72 80,-18 125,-1 359,135 l 214,124 -6,-53 c -11,-82 32,-168 100,-204 102,-53 231,-17 280,79 9,16 42,128 75,250 32,122 60,222 62,223 2,1 55,32 118,68 101,58 501,288 617,355 l 42,24 -19,-68 c -103,-378 -190,-715 -190,-741 0,-101 101,-201 203,-202 69,0 150,48 182,110 7,14 81,282 165,595 84,314 157,578 164,588 10,16 1085,642 1091,635 1,-2 -58,-412 -132,-913 l -135,-910 -34,-37 c -51,-57 -67,-96 -72,-178 -4,-63 0,-85 18,-128 41,-96 148,-171 256,-180 137,-11 258,74 298,209 10,32 65,80 451,385 865,686 996,789 1005,792 7,2 10,-223 10,-625 v -628 l -431,-430 c -237,-237 -439,-447 -450,-467 -26,-50 -25,-136 1,-188 31,-61 111,-110 178,-110 80,0 96,13 397,312 160,158 294,288 298,288 4,0 7,-199 7,-443 v -442 l -166,-165 c -91,-91 -174,-182 -185,-202 -26,-50 -25,-136 1,-188 32,-63 111,-110 184,-110 37,0 112,33 144,62 l 22,21 V 459 194 l 26,-52 c 93,-187 355,-187 448,0 26,52 26,52 26,315 v 264 l 38,-30 c 138,-111 332,-21 332,154 0,36 -7,69 -19,93 -11,20 -94,111 -185,202 l -166,165 v 442 c 0,244 3,443 7,443 4,0 138,-130 298,-288 301,-299 317,-312 397,-312 67,0 147,49 178,110 26,52 27,138 1,188 -11,20 -213,230 -450,467 l -431,430 v 627 c 0,346 3,628 8,628 4,0 331,-257 727,-571 642,-509 721,-574 731,-607 27,-91 98,-168 181,-196 132,-45 286,16 361,142 24,42 27,57 27,137 0,99 -10,128 -69,193 l -34,37 -135,910 c -74,501 -133,911 -132,913 2,2 245,-136 541,-307 334,-192 544,-319 552,-333 7,-13 76,-259 153,-548 77,-289 146,-549 155,-577 36,-129 167,-196 279,-144 72,33 125,111 125,182 0,25 -181,725 -205,797 -3,7 -1,11 3,9 70,-41 768,-441 770,-443 2,-1 30,-101 62,-223 33,-122 66,-234 75,-250 37,-72 139,-119 218,-101 111,25 187,141 159,244 -6,20 -9,36 -8,36 2,0 100,-56 219,-125 153,-89 231,-128 267,-135 164,-31 316,109 297,273 -8,59 -50,140 -91,170 -17,13 -120,75 -228,137 -109,63 -198,117 -198,121 0,4 14,11 31,14 64,14 139,118 139,191 0,101 -100,204 -199,204 -22,0 -140,-27 -262,-60 l -223,-59 -383,221 c -211,121 -383,223 -383,227 0,4 168,51 373,105 204,54 390,108 412,120 21,11 53,41 70,64 26,38 30,52 30,112 0,60 -4,74 -30,112 -41,58 -96,88 -161,88 -35,0 -226,-47 -595,-145 -299,-80 -560,-150 -579,-156 -34,-10 -46,-4 -575,301 -297,172 -543,315 -547,319 -4,3 207,91 470,195 262,104 648,257 857,340 l 380,151 45,-12 c 90,-24 201,8 270,77 113,113 112,308 -3,423 -67,67 -178,98 -266,74 l -45,-12 -440,175 c -243,97 -629,250 -858,340 -230,91 -414,168 -410,172 4,3 250,146 546,317 l 539,311 581,-155 c 390,-104 597,-155 631,-155 64,0 119,31 160,88 26,38 30,52 30,112 0,60 -4,74 -30,112 -17,23 -49,53 -70,64 -22,12 -204,65 -405,118 -439,117 -400,105 -375,118 11,6 178,102 370,213 193,111 360,207 371,213 18,9 62,1 243,-48 122,-33 239,-60 259,-60 102,1 202,102 202,204 0,73 -75,177 -139,191 -17,3 -31,10 -31,14 0,5 93,62 207,127 216,125 251,151 284,216 74,145 -13,324 -174,358 -86,17 -128,2 -362,-134 l -212,-123 1,66 c 1,81 -27,139 -84,177 -82,54 -176,50 -248,-11 -49,-43 -57,-63 -122,-310 -29,-110 -60,-207 -69,-216 -12,-12 -427,-255 -763,-446 -4,-2 -6,2 -3,9 24,72 205,772 205,797 0,100 -101,200 -203,201 -72,0 -161,-56 -187,-119 -5,-14 -80,-284 -164,-599 -85,-316 -158,-578 -162,-582 -13,-13 -1086,-631 -1089,-628 -2,2 3,41 10,88 8,47 68,456 135,910 l 122,825 33,37 c 60,65 70,94 70,193 0,105 -18,148 -84,208 -122,110 -288,116 -398,14 -47,-43 -69,-79 -87,-138 -10,-33 -92,-101 -731,-608 -396,-314 -723,-571 -727,-571 -5,0 -8,282 -8,628 v 627 l 431,430 c 237,237 439,447 450,467 27,53 26,141 -4,193 -46,81 -144,120 -237,95 -40,-11 -78,-45 -335,-301 -160,-159 -294,-289 -298,-289 -4,0 -7,199 -7,443 v 442 l 166,165 c 91,91 174,182 185,202 12,24 19,57 19,93 0,99 -55,170 -153,196 -60,17 -126,1 -179,-42 l -38,-30 v 264 265 l -28,53 c -59,114 -188,166 -306,124 z m -948,-3829 782,-620 v -743 c 0,-536 -3,-743 -11,-743 -8,0 -1265,719 -1288,737 -2,2 -69,438 -147,970 -79,533 -145,985 -149,1006 -5,36 -4,38 13,25 10,-7 370,-292 800,-632 z m 2733,-364 c -81,-551 -150,-1004 -152,-1005 -22,-18 -1280,-737 -1288,-737 -8,0 -11,226 -11,743 v 743 l 797,632 c 439,347 798,630 800,629 1,-2 -65,-454 -146,-1005 z M 4416,6779 c 354,-204 644,-375 644,-379 0,-4 -290,-174 -643,-378 l -644,-371 -489,193 c -269,107 -642,254 -829,328 -187,74 -391,155 -452,179 -62,24 -113,46 -113,49 0,3 188,79 417,170 230,91 651,258 938,372 286,114 522,207 524,207 2,1 293,-166 647,-370 z m 3544,144 c 530,-210 1106,-438 1243,-491 37,-15 67,-29 67,-32 0,-3 -210,-88 -468,-190 -257,-101 -680,-269 -941,-372 l -475,-187 -643,371 c -354,204 -642,375 -641,380 6,17 1283,747 1298,742 8,-3 260,-102 560,-221 z M 5330,5212 v -747 l -657,-520 c -361,-286 -720,-570 -797,-632 -77,-62 -141,-111 -143,-109 -6,6 295,2010 303,2013 5,2 295,170 644,372 349,203 638,369 643,370 4,1 7,-335 7,-747 z m 1170,365 c 344,-198 627,-362 629,-364 5,-3 301,-2006 298,-2010 -1,-1 -361,283 -800,630 l -797,632 v 748 748 l 23,-12 c 12,-7 303,-174 647,-372 z"
+         id="path1144" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 4285,8635 c 23,-57 47,-172 57,-267 25,-244 -39,-531 -147,-664 l -35,-42 43,10 c 127,29 373,-52 580,-189 72,-48 216,-183 255,-238 20,-29 20,-27 -3,46 -36,114 -48,234 -42,394 9,220 63,395 154,496 l 36,40 -29,-8 c -50,-14 -166,-6 -249,16 -208,57 -456,218 -595,386 -18,22 -29,31 -25,20 z m 252,-359 c 110,-70 230,-124 353,-157 74,-19 73,-15 40,-124 -30,-102 -50,-237 -50,-342 0,-51 -3,-93 -6,-93 -4,0 -38,20 -78,44 -128,81 -236,125 -413,172 -9,2 -7,19 8,61 32,93 58,241 65,366 4,65 8,117 10,117 2,0 34,-20 71,-44 z"
+         id="path1146" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 6830,8598 c -171,-190 -500,-349 -725,-352 -44,0 -92,3 -108,7 l -27,7 35,-48 c 84,-117 120,-287 112,-527 -5,-167 -24,-269 -67,-370 l -21,-50 60,61 c 146,151 355,271 562,325 83,21 209,28 269,15 l 35,-8 -26,28 c -97,105 -153,371 -130,612 11,123 37,238 70,316 11,25 19,46 18,45 -1,0 -27,-28 -57,-61 z m -144,-421 c 1,-145 8,-197 51,-373 4,-19 -1,-23 -39,-29 -79,-13 -232,-67 -333,-117 -55,-27 -104,-54 -109,-59 -6,-5 -13,-9 -17,-9 -3,0 -9,80 -12,178 -5,164 -21,273 -52,353 -5,13 3,18 42,24 83,12 254,74 358,129 55,30 102,54 105,55 3,1 5,-68 6,-152 z"
+         id="path1148" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 3800,6952 c -1,-34 -57,-127 -115,-190 -164,-177 -442,-324 -665,-352 l -55,-6 40,-8 c 195,-36 425,-160 586,-313 88,-85 142,-159 169,-236 10,-28 19,-44 19,-33 2,36 63,133 124,196 159,164 405,297 616,334 42,7 69,16 61,18 -8,3 -46,13 -85,22 -85,21 -244,95 -345,162 -92,60 -238,198 -282,267 -18,28 -40,73 -50,101 -9,28 -17,45 -18,38 z m 294,-500 c 60,-40 113,-72 118,-72 22,0 3,-18 -39,-39 -89,-43 -241,-149 -318,-222 l -77,-73 -50,58 c -65,73 -188,173 -295,239 l -83,50 67,35 c 111,56 225,136 304,214 l 74,73 95,-95 c 61,-62 134,-122 204,-168 z"
+         id="path1150" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 7381,6990 c -4,-75 -146,-240 -289,-338 -150,-103 -339,-183 -464,-198 -55,-6 -72,-24 -24,-24 73,0 288,-97 428,-192 154,-105 317,-301 318,-382 1,-13 8,-3 19,25 58,149 270,331 498,429 100,42 233,80 284,80 26,0 30,3 19,10 -8,5 -25,10 -36,10 -35,0 -173,50 -259,93 -114,57 -216,128 -306,214 -88,85 -142,159 -169,236 -10,28 -19,45 -19,37 z m 53,-295 c 60,-70 186,-172 293,-238 l 83,-50 -67,-34 c -105,-53 -224,-136 -307,-215 l -76,-73 -55,61 c -68,77 -182,169 -285,231 -44,27 -79,50 -80,54 0,3 21,15 48,28 84,41 244,153 317,223 38,37 73,68 76,68 3,0 27,-25 53,-55 z"
+         id="path1152" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 5034,5442 c -143,-137 -333,-243 -526,-293 -93,-24 -235,-29 -283,-10 l -30,12 31,-33 c 102,-107 158,-368 134,-618 -11,-115 -41,-250 -73,-320 -13,-30 -2,-22 77,55 143,139 331,245 528,296 96,25 249,31 286,11 17,-10 13,-1 -18,40 -22,29 -50,78 -61,108 -81,213 -79,573 5,783 13,31 23,57 22,57 0,-1 -42,-40 -92,-88 z m -104,-371 c 0,-139 17,-276 45,-360 8,-25 15,-46 15,-47 0,-1 -21,-5 -47,-9 -81,-11 -253,-73 -362,-131 -57,-29 -105,-54 -105,-54 -1,0 -1,66 -2,148 -1,146 -18,273 -48,360 l -14,40 46,7 c 102,14 354,113 435,170 12,8 25,15 29,15 5,0 8,-62 8,-139 z"
+         id="path1154" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 6105,5565 c 55,-153 70,-263 62,-450 -9,-220 -63,-395 -154,-496 l -36,-40 29,8 c 16,4 61,7 99,7 217,-4 556,-184 721,-384 48,-59 66,-71 44,-31 -19,36 -48,191 -55,291 -16,234 52,517 154,632 l 31,36 -42,-10 c -128,-29 -374,51 -581,189 -70,47 -212,179 -256,238 -14,18 -20,22 -16,10 z m 249,-364 c 116,-76 247,-131 423,-177 9,-2 7,-19 -8,-61 -32,-93 -58,-241 -65,-366 -4,-65 -8,-117 -10,-117 -2,0 -36,21 -76,47 -89,58 -243,126 -340,152 -83,22 -81,16 -48,126 30,102 50,237 50,343 0,50 3,92 7,92 4,0 34,-18 67,-39 z"
+         id="path1156" />
+    </g>
+    <g
+       id="g1174"
+       transform="matrix(3.8254039e-4,0,0,-3.8254039e-4,333.75538,143.80484)"
+       style="fill:#2196f3;stroke:none"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png">
+      <path
+         id="path1160"
+         d="m 5496,12785 c -57,-20 -108,-66 -138,-125 l -28,-52 v -265 -264 l -37,30 c -139,111 -333,21 -333,-154 0,-36 7,-69 19,-93 11,-20 94,-111 185,-202 l 166,-165 v -442 c 0,-244 -3,-443 -7,-443 -4,0 -138,130 -298,288 -301,299 -317,312 -397,312 -67,0 -147,-49 -178,-110 -26,-52 -27,-138 -1,-188 11,-20 213,-230 450,-467 l 431,-430 v -627 c 0,-346 -3,-628 -7,-628 -5,0 -332,257 -728,571 -640,508 -721,575 -731,608 -37,125 -149,211 -274,211 -112,0 -237,-81 -280,-182 -19,-43 -22,-65 -18,-128 5,-83 23,-126 73,-180 l 33,-35 122,-825 c 67,-454 127,-863 135,-910 7,-47 12,-86 10,-88 -3,-3 -1076,615 -1089,628 -4,4 -77,266 -162,582 -84,315 -159,585 -164,599 -26,63 -115,119 -187,119 -102,-1 -203,-101 -203,-201 0,-25 181,-725 205,-797 3,-7 1,-11 -3,-9 -336,191 -751,434 -763,446 -9,9 -40,106 -69,216 -65,247 -73,267 -122,310 -72,61 -166,65 -248,11 -57,-38 -85,-96 -84,-177 l 1,-66 -213,124 c -234,135 -277,151 -365,132 -56,-12 -122,-58 -156,-108 -65,-97 -50,-233 35,-317 16,-16 122,-83 235,-148 114,-65 207,-122 207,-127 0,-4 -14,-11 -31,-14 -64,-14 -139,-118 -139,-191 0,-101 100,-204 199,-204 22,0 140,27 263,60 l 223,60 125,-72 c 546,-315 652,-378 639,-382 -8,-3 -182,-50 -386,-104 -205,-55 -388,-109 -405,-119 -18,-10 -46,-38 -63,-62 -26,-37 -30,-51 -30,-111 0,-60 4,-74 30,-112 56,-79 152,-108 255,-78 19,6 278,76 576,155 l 541,145 274,-158 c 151,-87 393,-227 539,-311 146,-84 268,-156 272,-159 4,-4 -180,-81 -410,-172 -229,-90 -615,-243 -858,-340 l -440,-175 -45,12 c -122,33 -266,-35 -324,-152 -28,-57 -28,-213 0,-270 58,-116 203,-184 325,-152 l 45,12 380,-151 c 209,-83 595,-236 857,-340 263,-104 474,-192 470,-195 -28,-26 -1090,-629 -1102,-626 -8,3 -244,66 -525,141 -280,75 -532,144 -559,151 -119,35 -212,10 -271,-73 -26,-38 -30,-52 -30,-112 0,-60 4,-74 30,-111 17,-24 45,-51 62,-62 18,-10 200,-63 405,-118 205,-55 379,-102 387,-105 8,-2 -161,-106 -375,-229 l -390,-224 -223,59 c -122,33 -240,60 -262,60 -99,0 -199,-103 -199,-204 0,-73 75,-177 139,-191 17,-3 31,-10 31,-14 0,-4 -89,-58 -198,-121 C 214,3598 110,3535 93,3522 75,3509 46,3469 29,3434 1,3378 -2,3363 3,3312 c 6,-67 26,-113 71,-160 38,-42 71,-59 134,-72 80,-18 125,-1 359,135 l 214,124 -6,-53 c -11,-82 32,-168 100,-204 102,-53 231,-17 280,79 9,16 42,128 75,250 32,122 60,222 62,223 2,1 55,32 118,68 101,58 501,288 617,355 l 42,24 -19,-68 c -103,-378 -190,-715 -190,-741 0,-101 101,-201 203,-202 69,0 150,48 182,110 7,14 81,282 165,595 84,314 157,578 164,588 10,16 1085,642 1091,635 1,-2 -58,-412 -132,-913 l -135,-910 -34,-37 c -51,-57 -67,-96 -72,-178 -4,-63 0,-85 18,-128 41,-96 148,-171 256,-180 137,-11 258,74 298,209 10,32 65,80 451,385 865,686 996,789 1005,792 7,2 10,-223 10,-625 v -628 l -431,-430 c -237,-237 -439,-447 -450,-467 -26,-50 -25,-136 1,-188 31,-61 111,-110 178,-110 80,0 96,13 397,312 160,158 294,288 298,288 4,0 7,-199 7,-443 v -442 l -166,-165 c -91,-91 -174,-182 -185,-202 -26,-50 -25,-136 1,-188 32,-63 111,-110 184,-110 37,0 112,33 144,62 l 22,21 V 459 194 l 26,-52 c 93,-187 355,-187 448,0 26,52 26,52 26,315 v 264 l 38,-30 c 138,-111 332,-21 332,154 0,36 -7,69 -19,93 -11,20 -94,111 -185,202 l -166,165 v 442 c 0,244 3,443 7,443 4,0 138,-130 298,-288 301,-299 317,-312 397,-312 67,0 147,49 178,110 26,52 27,138 1,188 -11,20 -213,230 -450,467 l -431,430 v 627 c 0,346 3,628 8,628 4,0 331,-257 727,-571 642,-509 721,-574 731,-607 27,-91 98,-168 181,-196 132,-45 286,16 361,142 24,42 27,57 27,137 0,99 -10,128 -69,193 l -34,37 -135,910 c -74,501 -133,911 -132,913 2,2 245,-136 541,-307 334,-192 544,-319 552,-333 7,-13 76,-259 153,-548 77,-289 146,-549 155,-577 36,-129 167,-196 279,-144 72,33 125,111 125,182 0,25 -181,725 -205,797 -3,7 -1,11 3,9 70,-41 768,-441 770,-443 2,-1 30,-101 62,-223 33,-122 66,-234 75,-250 37,-72 139,-119 218,-101 111,25 187,141 159,244 -6,20 -9,36 -8,36 2,0 100,-56 219,-125 153,-89 231,-128 267,-135 164,-31 316,109 297,273 -8,59 -50,140 -91,170 -17,13 -120,75 -228,137 -109,63 -198,117 -198,121 0,4 14,11 31,14 64,14 139,118 139,191 0,101 -100,204 -199,204 -22,0 -140,-27 -262,-60 l -223,-59 -383,221 c -211,121 -383,223 -383,227 0,4 168,51 373,105 204,54 390,108 412,120 21,11 53,41 70,64 26,38 30,52 30,112 0,60 -4,74 -30,112 -41,58 -96,88 -161,88 -35,0 -226,-47 -595,-145 -299,-80 -560,-150 -579,-156 -34,-10 -46,-4 -575,301 -297,172 -543,315 -547,319 -4,3 207,91 470,195 262,104 648,257 857,340 l 380,151 45,-12 c 90,-24 201,8 270,77 113,113 112,308 -3,423 -67,67 -178,98 -266,74 l -45,-12 -440,175 c -243,97 -629,250 -858,340 -230,91 -414,168 -410,172 4,3 250,146 546,317 l 539,311 581,-155 c 390,-104 597,-155 631,-155 64,0 119,31 160,88 26,38 30,52 30,112 0,60 -4,74 -30,112 -17,23 -49,53 -70,64 -22,12 -204,65 -405,118 -439,117 -400,105 -375,118 11,6 178,102 370,213 193,111 360,207 371,213 18,9 62,1 243,-48 122,-33 239,-60 259,-60 102,1 202,102 202,204 0,73 -75,177 -139,191 -17,3 -31,10 -31,14 0,5 93,62 207,127 216,125 251,151 284,216 74,145 -13,324 -174,358 -86,17 -128,2 -362,-134 l -212,-123 1,66 c 1,81 -27,139 -84,177 -82,54 -176,50 -248,-11 -49,-43 -57,-63 -122,-310 -29,-110 -60,-207 -69,-216 -12,-12 -427,-255 -763,-446 -4,-2 -6,2 -3,9 24,72 205,772 205,797 0,100 -101,200 -203,201 -72,0 -161,-56 -187,-119 -5,-14 -80,-284 -164,-599 -85,-316 -158,-578 -162,-582 -13,-13 -1086,-631 -1089,-628 -2,2 3,41 10,88 8,47 68,456 135,910 l 122,825 33,37 c 60,65 70,94 70,193 0,105 -18,148 -84,208 -122,110 -288,116 -398,14 -47,-43 -69,-79 -87,-138 -10,-33 -92,-101 -731,-608 -396,-314 -723,-571 -727,-571 -5,0 -8,282 -8,628 v 627 l 431,430 c 237,237 439,447 450,467 27,53 26,141 -4,193 -46,81 -144,120 -237,95 -40,-11 -78,-45 -335,-301 -160,-159 -294,-289 -298,-289 -4,0 -7,199 -7,443 v 442 l 166,165 c 91,91 174,182 185,202 12,24 19,57 19,93 0,99 -55,170 -153,196 -60,17 -126,1 -179,-42 l -38,-30 v 264 265 l -28,53 c -59,114 -188,166 -306,124 z m -948,-3829 782,-620 v -743 c 0,-536 -3,-743 -11,-743 -8,0 -1265,719 -1288,737 -2,2 -69,438 -147,970 -79,533 -145,985 -149,1006 -5,36 -4,38 13,25 10,-7 370,-292 800,-632 z m 2733,-364 c -81,-551 -150,-1004 -152,-1005 -22,-18 -1280,-737 -1288,-737 -8,0 -11,226 -11,743 v 743 l 797,632 c 439,347 798,630 800,629 1,-2 -65,-454 -146,-1005 z M 4416,6779 c 354,-204 644,-375 644,-379 0,-4 -290,-174 -643,-378 l -644,-371 -489,193 c -269,107 -642,254 -829,328 -187,74 -391,155 -452,179 -62,24 -113,46 -113,49 0,3 188,79 417,170 230,91 651,258 938,372 286,114 522,207 524,207 2,1 293,-166 647,-370 z m 3544,144 c 530,-210 1106,-438 1243,-491 37,-15 67,-29 67,-32 0,-3 -210,-88 -468,-190 -257,-101 -680,-269 -941,-372 l -475,-187 -643,371 c -354,204 -642,375 -641,380 6,17 1283,747 1298,742 8,-3 260,-102 560,-221 z M 5330,5212 v -747 l -657,-520 c -361,-286 -720,-570 -797,-632 -77,-62 -141,-111 -143,-109 -6,6 295,2010 303,2013 5,2 295,170 644,372 349,203 638,369 643,370 4,1 7,-335 7,-747 z m 1170,365 c 344,-198 627,-362 629,-364 5,-3 301,-2006 298,-2010 -1,-1 -361,283 -800,630 l -797,632 v 748 748 l 23,-12 c 12,-7 303,-174 647,-372 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path1162"
+         d="m 4285,8635 c 23,-57 47,-172 57,-267 25,-244 -39,-531 -147,-664 l -35,-42 43,10 c 127,29 373,-52 580,-189 72,-48 216,-183 255,-238 20,-29 20,-27 -3,46 -36,114 -48,234 -42,394 9,220 63,395 154,496 l 36,40 -29,-8 c -50,-14 -166,-6 -249,16 -208,57 -456,218 -595,386 -18,22 -29,31 -25,20 z m 252,-359 c 110,-70 230,-124 353,-157 74,-19 73,-15 40,-124 -30,-102 -50,-237 -50,-342 0,-51 -3,-93 -6,-93 -4,0 -38,20 -78,44 -128,81 -236,125 -413,172 -9,2 -7,19 8,61 32,93 58,241 65,366 4,65 8,117 10,117 2,0 34,-20 71,-44 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path1164"
+         d="m 6830,8598 c -171,-190 -500,-349 -725,-352 -44,0 -92,3 -108,7 l -27,7 35,-48 c 84,-117 120,-287 112,-527 -5,-167 -24,-269 -67,-370 l -21,-50 60,61 c 146,151 355,271 562,325 83,21 209,28 269,15 l 35,-8 -26,28 c -97,105 -153,371 -130,612 11,123 37,238 70,316 11,25 19,46 18,45 -1,0 -27,-28 -57,-61 z m -144,-421 c 1,-145 8,-197 51,-373 4,-19 -1,-23 -39,-29 -79,-13 -232,-67 -333,-117 -55,-27 -104,-54 -109,-59 -6,-5 -13,-9 -17,-9 -3,0 -9,80 -12,178 -5,164 -21,273 -52,353 -5,13 3,18 42,24 83,12 254,74 358,129 55,30 102,54 105,55 3,1 5,-68 6,-152 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path1166"
+         d="m 3800,6952 c -1,-34 -57,-127 -115,-190 -164,-177 -442,-324 -665,-352 l -55,-6 40,-8 c 195,-36 425,-160 586,-313 88,-85 142,-159 169,-236 10,-28 19,-44 19,-33 2,36 63,133 124,196 159,164 405,297 616,334 42,7 69,16 61,18 -8,3 -46,13 -85,22 -85,21 -244,95 -345,162 -92,60 -238,198 -282,267 -18,28 -40,73 -50,101 -9,28 -17,45 -18,38 z m 294,-500 c 60,-40 113,-72 118,-72 22,0 3,-18 -39,-39 -89,-43 -241,-149 -318,-222 l -77,-73 -50,58 c -65,73 -188,173 -295,239 l -83,50 67,35 c 111,56 225,136 304,214 l 74,73 95,-95 c 61,-62 134,-122 204,-168 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path1168"
+         d="m 7381,6990 c -4,-75 -146,-240 -289,-338 -150,-103 -339,-183 -464,-198 -55,-6 -72,-24 -24,-24 73,0 288,-97 428,-192 154,-105 317,-301 318,-382 1,-13 8,-3 19,25 58,149 270,331 498,429 100,42 233,80 284,80 26,0 30,3 19,10 -8,5 -25,10 -36,10 -35,0 -173,50 -259,93 -114,57 -216,128 -306,214 -88,85 -142,159 -169,236 -10,28 -19,45 -19,37 z m 53,-295 c 60,-70 186,-172 293,-238 l 83,-50 -67,-34 c -105,-53 -224,-136 -307,-215 l -76,-73 -55,61 c -68,77 -182,169 -285,231 -44,27 -79,50 -80,54 0,3 21,15 48,28 84,41 244,153 317,223 38,37 73,68 76,68 3,0 27,-25 53,-55 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path1170"
+         d="m 5034,5442 c -143,-137 -333,-243 -526,-293 -93,-24 -235,-29 -283,-10 l -30,12 31,-33 c 102,-107 158,-368 134,-618 -11,-115 -41,-250 -73,-320 -13,-30 -2,-22 77,55 143,139 331,245 528,296 96,25 249,31 286,11 17,-10 13,-1 -18,40 -22,29 -50,78 -61,108 -81,213 -79,573 5,783 13,31 23,57 22,57 0,-1 -42,-40 -92,-88 z m -104,-371 c 0,-139 17,-276 45,-360 8,-25 15,-46 15,-47 0,-1 -21,-5 -47,-9 -81,-11 -253,-73 -362,-131 -57,-29 -105,-54 -105,-54 -1,0 -1,66 -2,148 -1,146 -18,273 -48,360 l -14,40 46,7 c 102,14 354,113 435,170 12,8 25,15 29,15 5,0 8,-62 8,-139 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path1172"
+         d="m 6105,5565 c 55,-153 70,-263 62,-450 -9,-220 -63,-395 -154,-496 l -36,-40 29,8 c 16,4 61,7 99,7 217,-4 556,-184 721,-384 48,-59 66,-71 44,-31 -19,36 -48,191 -55,291 -16,234 52,517 154,632 l 31,36 -42,-10 c -128,-29 -374,51 -581,189 -70,47 -212,179 -256,238 -14,18 -20,22 -16,10 z m 249,-364 c 116,-76 247,-131 423,-177 9,-2 7,-19 -8,-61 -32,-93 -58,-241 -65,-366 -4,-65 -8,-117 -10,-117 -2,0 -36,21 -76,47 -89,58 -243,126 -340,152 -83,22 -81,16 -48,126 30,102 50,237 50,343 0,50 3,92 7,92 4,0 34,-18 67,-39 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="fill:#2196f3;stroke:none"
+       transform="matrix(3.8254039e-4,0,0,-3.8254039e-4,333.75538,137.4548)"
+       id="g1190"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 5496,12785 c -57,-20 -108,-66 -138,-125 l -28,-52 v -265 -264 l -37,30 c -139,111 -333,21 -333,-154 0,-36 7,-69 19,-93 11,-20 94,-111 185,-202 l 166,-165 v -442 c 0,-244 -3,-443 -7,-443 -4,0 -138,130 -298,288 -301,299 -317,312 -397,312 -67,0 -147,-49 -178,-110 -26,-52 -27,-138 -1,-188 11,-20 213,-230 450,-467 l 431,-430 v -627 c 0,-346 -3,-628 -7,-628 -5,0 -332,257 -728,571 -640,508 -721,575 -731,608 -37,125 -149,211 -274,211 -112,0 -237,-81 -280,-182 -19,-43 -22,-65 -18,-128 5,-83 23,-126 73,-180 l 33,-35 122,-825 c 67,-454 127,-863 135,-910 7,-47 12,-86 10,-88 -3,-3 -1076,615 -1089,628 -4,4 -77,266 -162,582 -84,315 -159,585 -164,599 -26,63 -115,119 -187,119 -102,-1 -203,-101 -203,-201 0,-25 181,-725 205,-797 3,-7 1,-11 -3,-9 -336,191 -751,434 -763,446 -9,9 -40,106 -69,216 -65,247 -73,267 -122,310 -72,61 -166,65 -248,11 -57,-38 -85,-96 -84,-177 l 1,-66 -213,124 c -234,135 -277,151 -365,132 -56,-12 -122,-58 -156,-108 -65,-97 -50,-233 35,-317 16,-16 122,-83 235,-148 114,-65 207,-122 207,-127 0,-4 -14,-11 -31,-14 -64,-14 -139,-118 -139,-191 0,-101 100,-204 199,-204 22,0 140,27 263,60 l 223,60 125,-72 c 546,-315 652,-378 639,-382 -8,-3 -182,-50 -386,-104 -205,-55 -388,-109 -405,-119 -18,-10 -46,-38 -63,-62 -26,-37 -30,-51 -30,-111 0,-60 4,-74 30,-112 56,-79 152,-108 255,-78 19,6 278,76 576,155 l 541,145 274,-158 c 151,-87 393,-227 539,-311 146,-84 268,-156 272,-159 4,-4 -180,-81 -410,-172 -229,-90 -615,-243 -858,-340 l -440,-175 -45,12 c -122,33 -266,-35 -324,-152 -28,-57 -28,-213 0,-270 58,-116 203,-184 325,-152 l 45,12 380,-151 c 209,-83 595,-236 857,-340 263,-104 474,-192 470,-195 -28,-26 -1090,-629 -1102,-626 -8,3 -244,66 -525,141 -280,75 -532,144 -559,151 -119,35 -212,10 -271,-73 -26,-38 -30,-52 -30,-112 0,-60 4,-74 30,-111 17,-24 45,-51 62,-62 18,-10 200,-63 405,-118 205,-55 379,-102 387,-105 8,-2 -161,-106 -375,-229 l -390,-224 -223,59 c -122,33 -240,60 -262,60 -99,0 -199,-103 -199,-204 0,-73 75,-177 139,-191 17,-3 31,-10 31,-14 0,-4 -89,-58 -198,-121 C 214,3598 110,3535 93,3522 75,3509 46,3469 29,3434 1,3378 -2,3363 3,3312 c 6,-67 26,-113 71,-160 38,-42 71,-59 134,-72 80,-18 125,-1 359,135 l 214,124 -6,-53 c -11,-82 32,-168 100,-204 102,-53 231,-17 280,79 9,16 42,128 75,250 32,122 60,222 62,223 2,1 55,32 118,68 101,58 501,288 617,355 l 42,24 -19,-68 c -103,-378 -190,-715 -190,-741 0,-101 101,-201 203,-202 69,0 150,48 182,110 7,14 81,282 165,595 84,314 157,578 164,588 10,16 1085,642 1091,635 1,-2 -58,-412 -132,-913 l -135,-910 -34,-37 c -51,-57 -67,-96 -72,-178 -4,-63 0,-85 18,-128 41,-96 148,-171 256,-180 137,-11 258,74 298,209 10,32 65,80 451,385 865,686 996,789 1005,792 7,2 10,-223 10,-625 v -628 l -431,-430 c -237,-237 -439,-447 -450,-467 -26,-50 -25,-136 1,-188 31,-61 111,-110 178,-110 80,0 96,13 397,312 160,158 294,288 298,288 4,0 7,-199 7,-443 v -442 l -166,-165 c -91,-91 -174,-182 -185,-202 -26,-50 -25,-136 1,-188 32,-63 111,-110 184,-110 37,0 112,33 144,62 l 22,21 V 459 194 l 26,-52 c 93,-187 355,-187 448,0 26,52 26,52 26,315 v 264 l 38,-30 c 138,-111 332,-21 332,154 0,36 -7,69 -19,93 -11,20 -94,111 -185,202 l -166,165 v 442 c 0,244 3,443 7,443 4,0 138,-130 298,-288 301,-299 317,-312 397,-312 67,0 147,49 178,110 26,52 27,138 1,188 -11,20 -213,230 -450,467 l -431,430 v 627 c 0,346 3,628 8,628 4,0 331,-257 727,-571 642,-509 721,-574 731,-607 27,-91 98,-168 181,-196 132,-45 286,16 361,142 24,42 27,57 27,137 0,99 -10,128 -69,193 l -34,37 -135,910 c -74,501 -133,911 -132,913 2,2 245,-136 541,-307 334,-192 544,-319 552,-333 7,-13 76,-259 153,-548 77,-289 146,-549 155,-577 36,-129 167,-196 279,-144 72,33 125,111 125,182 0,25 -181,725 -205,797 -3,7 -1,11 3,9 70,-41 768,-441 770,-443 2,-1 30,-101 62,-223 33,-122 66,-234 75,-250 37,-72 139,-119 218,-101 111,25 187,141 159,244 -6,20 -9,36 -8,36 2,0 100,-56 219,-125 153,-89 231,-128 267,-135 164,-31 316,109 297,273 -8,59 -50,140 -91,170 -17,13 -120,75 -228,137 -109,63 -198,117 -198,121 0,4 14,11 31,14 64,14 139,118 139,191 0,101 -100,204 -199,204 -22,0 -140,-27 -262,-60 l -223,-59 -383,221 c -211,121 -383,223 -383,227 0,4 168,51 373,105 204,54 390,108 412,120 21,11 53,41 70,64 26,38 30,52 30,112 0,60 -4,74 -30,112 -41,58 -96,88 -161,88 -35,0 -226,-47 -595,-145 -299,-80 -560,-150 -579,-156 -34,-10 -46,-4 -575,301 -297,172 -543,315 -547,319 -4,3 207,91 470,195 262,104 648,257 857,340 l 380,151 45,-12 c 90,-24 201,8 270,77 113,113 112,308 -3,423 -67,67 -178,98 -266,74 l -45,-12 -440,175 c -243,97 -629,250 -858,340 -230,91 -414,168 -410,172 4,3 250,146 546,317 l 539,311 581,-155 c 390,-104 597,-155 631,-155 64,0 119,31 160,88 26,38 30,52 30,112 0,60 -4,74 -30,112 -17,23 -49,53 -70,64 -22,12 -204,65 -405,118 -439,117 -400,105 -375,118 11,6 178,102 370,213 193,111 360,207 371,213 18,9 62,1 243,-48 122,-33 239,-60 259,-60 102,1 202,102 202,204 0,73 -75,177 -139,191 -17,3 -31,10 -31,14 0,5 93,62 207,127 216,125 251,151 284,216 74,145 -13,324 -174,358 -86,17 -128,2 -362,-134 l -212,-123 1,66 c 1,81 -27,139 -84,177 -82,54 -176,50 -248,-11 -49,-43 -57,-63 -122,-310 -29,-110 -60,-207 -69,-216 -12,-12 -427,-255 -763,-446 -4,-2 -6,2 -3,9 24,72 205,772 205,797 0,100 -101,200 -203,201 -72,0 -161,-56 -187,-119 -5,-14 -80,-284 -164,-599 -85,-316 -158,-578 -162,-582 -13,-13 -1086,-631 -1089,-628 -2,2 3,41 10,88 8,47 68,456 135,910 l 122,825 33,37 c 60,65 70,94 70,193 0,105 -18,148 -84,208 -122,110 -288,116 -398,14 -47,-43 -69,-79 -87,-138 -10,-33 -92,-101 -731,-608 -396,-314 -723,-571 -727,-571 -5,0 -8,282 -8,628 v 627 l 431,430 c 237,237 439,447 450,467 27,53 26,141 -4,193 -46,81 -144,120 -237,95 -40,-11 -78,-45 -335,-301 -160,-159 -294,-289 -298,-289 -4,0 -7,199 -7,443 v 442 l 166,165 c 91,91 174,182 185,202 12,24 19,57 19,93 0,99 -55,170 -153,196 -60,17 -126,1 -179,-42 l -38,-30 v 264 265 l -28,53 c -59,114 -188,166 -306,124 z m -948,-3829 782,-620 v -743 c 0,-536 -3,-743 -11,-743 -8,0 -1265,719 -1288,737 -2,2 -69,438 -147,970 -79,533 -145,985 -149,1006 -5,36 -4,38 13,25 10,-7 370,-292 800,-632 z m 2733,-364 c -81,-551 -150,-1004 -152,-1005 -22,-18 -1280,-737 -1288,-737 -8,0 -11,226 -11,743 v 743 l 797,632 c 439,347 798,630 800,629 1,-2 -65,-454 -146,-1005 z M 4416,6779 c 354,-204 644,-375 644,-379 0,-4 -290,-174 -643,-378 l -644,-371 -489,193 c -269,107 -642,254 -829,328 -187,74 -391,155 -452,179 -62,24 -113,46 -113,49 0,3 188,79 417,170 230,91 651,258 938,372 286,114 522,207 524,207 2,1 293,-166 647,-370 z m 3544,144 c 530,-210 1106,-438 1243,-491 37,-15 67,-29 67,-32 0,-3 -210,-88 -468,-190 -257,-101 -680,-269 -941,-372 l -475,-187 -643,371 c -354,204 -642,375 -641,380 6,17 1283,747 1298,742 8,-3 260,-102 560,-221 z M 5330,5212 v -747 l -657,-520 c -361,-286 -720,-570 -797,-632 -77,-62 -141,-111 -143,-109 -6,6 295,2010 303,2013 5,2 295,170 644,372 349,203 638,369 643,370 4,1 7,-335 7,-747 z m 1170,365 c 344,-198 627,-362 629,-364 5,-3 301,-2006 298,-2010 -1,-1 -361,283 -800,630 l -797,632 v 748 748 l 23,-12 c 12,-7 303,-174 647,-372 z"
+         id="path1176" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 4285,8635 c 23,-57 47,-172 57,-267 25,-244 -39,-531 -147,-664 l -35,-42 43,10 c 127,29 373,-52 580,-189 72,-48 216,-183 255,-238 20,-29 20,-27 -3,46 -36,114 -48,234 -42,394 9,220 63,395 154,496 l 36,40 -29,-8 c -50,-14 -166,-6 -249,16 -208,57 -456,218 -595,386 -18,22 -29,31 -25,20 z m 252,-359 c 110,-70 230,-124 353,-157 74,-19 73,-15 40,-124 -30,-102 -50,-237 -50,-342 0,-51 -3,-93 -6,-93 -4,0 -38,20 -78,44 -128,81 -236,125 -413,172 -9,2 -7,19 8,61 32,93 58,241 65,366 4,65 8,117 10,117 2,0 34,-20 71,-44 z"
+         id="path1178" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 6830,8598 c -171,-190 -500,-349 -725,-352 -44,0 -92,3 -108,7 l -27,7 35,-48 c 84,-117 120,-287 112,-527 -5,-167 -24,-269 -67,-370 l -21,-50 60,61 c 146,151 355,271 562,325 83,21 209,28 269,15 l 35,-8 -26,28 c -97,105 -153,371 -130,612 11,123 37,238 70,316 11,25 19,46 18,45 -1,0 -27,-28 -57,-61 z m -144,-421 c 1,-145 8,-197 51,-373 4,-19 -1,-23 -39,-29 -79,-13 -232,-67 -333,-117 -55,-27 -104,-54 -109,-59 -6,-5 -13,-9 -17,-9 -3,0 -9,80 -12,178 -5,164 -21,273 -52,353 -5,13 3,18 42,24 83,12 254,74 358,129 55,30 102,54 105,55 3,1 5,-68 6,-152 z"
+         id="path1180" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 3800,6952 c -1,-34 -57,-127 -115,-190 -164,-177 -442,-324 -665,-352 l -55,-6 40,-8 c 195,-36 425,-160 586,-313 88,-85 142,-159 169,-236 10,-28 19,-44 19,-33 2,36 63,133 124,196 159,164 405,297 616,334 42,7 69,16 61,18 -8,3 -46,13 -85,22 -85,21 -244,95 -345,162 -92,60 -238,198 -282,267 -18,28 -40,73 -50,101 -9,28 -17,45 -18,38 z m 294,-500 c 60,-40 113,-72 118,-72 22,0 3,-18 -39,-39 -89,-43 -241,-149 -318,-222 l -77,-73 -50,58 c -65,73 -188,173 -295,239 l -83,50 67,35 c 111,56 225,136 304,214 l 74,73 95,-95 c 61,-62 134,-122 204,-168 z"
+         id="path1182" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 7381,6990 c -4,-75 -146,-240 -289,-338 -150,-103 -339,-183 -464,-198 -55,-6 -72,-24 -24,-24 73,0 288,-97 428,-192 154,-105 317,-301 318,-382 1,-13 8,-3 19,25 58,149 270,331 498,429 100,42 233,80 284,80 26,0 30,3 19,10 -8,5 -25,10 -36,10 -35,0 -173,50 -259,93 -114,57 -216,128 -306,214 -88,85 -142,159 -169,236 -10,28 -19,45 -19,37 z m 53,-295 c 60,-70 186,-172 293,-238 l 83,-50 -67,-34 c -105,-53 -224,-136 -307,-215 l -76,-73 -55,61 c -68,77 -182,169 -285,231 -44,27 -79,50 -80,54 0,3 21,15 48,28 84,41 244,153 317,223 38,37 73,68 76,68 3,0 27,-25 53,-55 z"
+         id="path1184" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 5034,5442 c -143,-137 -333,-243 -526,-293 -93,-24 -235,-29 -283,-10 l -30,12 31,-33 c 102,-107 158,-368 134,-618 -11,-115 -41,-250 -73,-320 -13,-30 -2,-22 77,55 143,139 331,245 528,296 96,25 249,31 286,11 17,-10 13,-1 -18,40 -22,29 -50,78 -61,108 -81,213 -79,573 5,783 13,31 23,57 22,57 0,-1 -42,-40 -92,-88 z m -104,-371 c 0,-139 17,-276 45,-360 8,-25 15,-46 15,-47 0,-1 -21,-5 -47,-9 -81,-11 -253,-73 -362,-131 -57,-29 -105,-54 -105,-54 -1,0 -1,66 -2,148 -1,146 -18,273 -48,360 l -14,40 46,7 c 102,14 354,113 435,170 12,8 25,15 29,15 5,0 8,-62 8,-139 z"
+         id="path1186" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 6105,5565 c 55,-153 70,-263 62,-450 -9,-220 -63,-395 -154,-496 l -36,-40 29,8 c 16,4 61,7 99,7 217,-4 556,-184 721,-384 48,-59 66,-71 44,-31 -19,36 -48,191 -55,291 -16,234 52,517 154,632 l 31,36 -42,-10 c -128,-29 -374,51 -581,189 -70,47 -212,179 -256,238 -14,18 -20,22 -16,10 z m 249,-364 c 116,-76 247,-131 423,-177 9,-2 7,-19 -8,-61 -32,-93 -58,-241 -65,-366 -4,-65 -8,-117 -10,-117 -2,0 -36,21 -76,47 -89,58 -243,126 -340,152 -83,22 -81,16 -48,126 30,102 50,237 50,343 0,50 3,92 7,92 4,0 34,-18 67,-39 z"
+         id="path1188" />
+    </g>
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0.65882353;stroke:none;stroke-width:2.25186491;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect1192"
+       width="7.4316349"
+       height="5.0097179"
+       x="332.57065"
+       y="122.92057"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery1.png" />
+    <g
+       id="g1205"
+       transform="matrix(1.2698971,0,0,1.760882,-83.703538,-26.474677)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery2.png">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 279.50915,126.47598 V 154.8944"
+         id="path1199"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1201"
+         d="M 348.83042,126.47598 V 154.8944"
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 279.85596,155.50195 h 68.5661"
+         id="path1203"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.20567;stroke-opacity:1"
+       id="rect1207"
+       width="64.495979"
+       height="23.621983"
+       x="283.32614"
+       y="221.09116"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery2.png" />
+    <g
+       id="g4923"
+       transform="translate(1.5875,1.1990911)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery2.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1211"
+         d="m 284.39276,201.31769 v 18.57909"
+         style="fill:none;stroke:#999999;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1213"
+         d="m 284.52545,219.63137 h 58.78954"
+         style="fill:none;stroke:#999999;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#999999;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 343.13063,201.31769 v 18.57909"
+         id="path1215"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       style="fill:#808080;stroke:#d3bc5f;stroke-width:0.865;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 307.43108,215.26661 v 5.30188"
+       id="path4925"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery2.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4927"
+       d="m 323.30618,215.26661 v 5.30188"
+       style="fill:#808080;stroke:#d3bc5f;stroke-width:0.865;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery2.png" />
+    <path
+       style="fill:none;stroke:#d3bc5f;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 307.74645,219.84389 H 322.9483"
+       id="path4929"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery2.png" />
+    <path
+       style="opacity:1;fill:#6eff47;fill-opacity:0.760784;stroke:none;stroke-width:0.215304;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.20567;stroke-opacity:1"
+       d="m 307.89113,217.43493 v -2.04038 h 7.46483 7.46482 v 2.04038 2.04039 h -7.46482 -7.46483 z"
+       id="path4933"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery2.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4935"
+       d="m 307.43108,199.2936 v 15.45402"
+       style="fill:#808080;stroke:#d3bc5f;stroke-width:0.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery2.png" />
+    <path
+       style="fill:#808080;stroke:#d3bc5f;stroke-width:0.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 323.30618,199.2936 v 15.45402"
+       id="path4937"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\XP1-recovery2.png" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 85.830641,464.63772 H -11.197885"
+       id="path4939"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <g
+       transform="matrix(1,0,0,1.6658565,-139.17114,407.62631)"
+       id="g4945"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png">
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.94499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 224.59867,87.170003 V 116.29934"
+         id="path4941"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4943"
+         d="m 230.20693,87.35391 v 29.12935"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.94499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4947"
+       d="m 85.937131,536.98536 -5e-5,-2.80155 -3.548809,-4.60453 -3.548812,-4.60452 -7.2e-4,-13.28654 -7.1e-4,-13.28655 h 9.376279 9.376286 v 13.25633 13.25634 l -3.549589,4.60428 -3.549592,4.60427 v 2.83201 2.83201 h -2.277105 -2.277098 z"
+       style="opacity:0.66000001;fill:#7fff2a;fill-opacity:1;stroke:#7fff2a;stroke-width:0.45430535;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <g
+       transform="translate(-21.166671,465.66902)"
+       id="g4961"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4949"
+         d="M 99.351049,24.183148 V 57.591839"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.23758638;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.23758638;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 119.4595,24.183148 V 57.591839"
+         id="path4951"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 99.184006,57.257753 106.6877,69.009317"
+         id="path4953"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4955"
+         d="m 119.61627,57.291162 -7.5037,11.751564"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:1.046;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 106.59372,68.649158 v 7.483538"
+         id="path4957"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4959"
+         d="m 112.20198,68.696405 v 7.483541"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       style="fill:#2196f3;stroke:none"
+       transform="matrix(3.8254039e-4,0,0,-3.8254039e-4,86.633078,530.09894)"
+       id="g4977"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 5496,12785 c -57,-20 -108,-66 -138,-125 l -28,-52 v -265 -264 l -37,30 c -139,111 -333,21 -333,-154 0,-36 7,-69 19,-93 11,-20 94,-111 185,-202 l 166,-165 v -442 c 0,-244 -3,-443 -7,-443 -4,0 -138,130 -298,288 -301,299 -317,312 -397,312 -67,0 -147,-49 -178,-110 -26,-52 -27,-138 -1,-188 11,-20 213,-230 450,-467 l 431,-430 v -627 c 0,-346 -3,-628 -7,-628 -5,0 -332,257 -728,571 -640,508 -721,575 -731,608 -37,125 -149,211 -274,211 -112,0 -237,-81 -280,-182 -19,-43 -22,-65 -18,-128 5,-83 23,-126 73,-180 l 33,-35 122,-825 c 67,-454 127,-863 135,-910 7,-47 12,-86 10,-88 -3,-3 -1076,615 -1089,628 -4,4 -77,266 -162,582 -84,315 -159,585 -164,599 -26,63 -115,119 -187,119 -102,-1 -203,-101 -203,-201 0,-25 181,-725 205,-797 3,-7 1,-11 -3,-9 -336,191 -751,434 -763,446 -9,9 -40,106 -69,216 -65,247 -73,267 -122,310 -72,61 -166,65 -248,11 -57,-38 -85,-96 -84,-177 l 1,-66 -213,124 c -234,135 -277,151 -365,132 -56,-12 -122,-58 -156,-108 -65,-97 -50,-233 35,-317 16,-16 122,-83 235,-148 114,-65 207,-122 207,-127 0,-4 -14,-11 -31,-14 -64,-14 -139,-118 -139,-191 0,-101 100,-204 199,-204 22,0 140,27 263,60 l 223,60 125,-72 c 546,-315 652,-378 639,-382 -8,-3 -182,-50 -386,-104 -205,-55 -388,-109 -405,-119 -18,-10 -46,-38 -63,-62 -26,-37 -30,-51 -30,-111 0,-60 4,-74 30,-112 56,-79 152,-108 255,-78 19,6 278,76 576,155 l 541,145 274,-158 c 151,-87 393,-227 539,-311 146,-84 268,-156 272,-159 4,-4 -180,-81 -410,-172 -229,-90 -615,-243 -858,-340 l -440,-175 -45,12 c -122,33 -266,-35 -324,-152 -28,-57 -28,-213 0,-270 58,-116 203,-184 325,-152 l 45,12 380,-151 c 209,-83 595,-236 857,-340 263,-104 474,-192 470,-195 -28,-26 -1090,-629 -1102,-626 -8,3 -244,66 -525,141 -280,75 -532,144 -559,151 -119,35 -212,10 -271,-73 -26,-38 -30,-52 -30,-112 0,-60 4,-74 30,-111 17,-24 45,-51 62,-62 18,-10 200,-63 405,-118 205,-55 379,-102 387,-105 8,-2 -161,-106 -375,-229 l -390,-224 -223,59 c -122,33 -240,60 -262,60 -99,0 -199,-103 -199,-204 0,-73 75,-177 139,-191 17,-3 31,-10 31,-14 0,-4 -89,-58 -198,-121 C 214,3598 110,3535 93,3522 75,3509 46,3469 29,3434 1,3378 -2,3363 3,3312 c 6,-67 26,-113 71,-160 38,-42 71,-59 134,-72 80,-18 125,-1 359,135 l 214,124 -6,-53 c -11,-82 32,-168 100,-204 102,-53 231,-17 280,79 9,16 42,128 75,250 32,122 60,222 62,223 2,1 55,32 118,68 101,58 501,288 617,355 l 42,24 -19,-68 c -103,-378 -190,-715 -190,-741 0,-101 101,-201 203,-202 69,0 150,48 182,110 7,14 81,282 165,595 84,314 157,578 164,588 10,16 1085,642 1091,635 1,-2 -58,-412 -132,-913 l -135,-910 -34,-37 c -51,-57 -67,-96 -72,-178 -4,-63 0,-85 18,-128 41,-96 148,-171 256,-180 137,-11 258,74 298,209 10,32 65,80 451,385 865,686 996,789 1005,792 7,2 10,-223 10,-625 v -628 l -431,-430 c -237,-237 -439,-447 -450,-467 -26,-50 -25,-136 1,-188 31,-61 111,-110 178,-110 80,0 96,13 397,312 160,158 294,288 298,288 4,0 7,-199 7,-443 v -442 l -166,-165 c -91,-91 -174,-182 -185,-202 -26,-50 -25,-136 1,-188 32,-63 111,-110 184,-110 37,0 112,33 144,62 l 22,21 V 459 194 l 26,-52 c 93,-187 355,-187 448,0 26,52 26,52 26,315 v 264 l 38,-30 c 138,-111 332,-21 332,154 0,36 -7,69 -19,93 -11,20 -94,111 -185,202 l -166,165 v 442 c 0,244 3,443 7,443 4,0 138,-130 298,-288 301,-299 317,-312 397,-312 67,0 147,49 178,110 26,52 27,138 1,188 -11,20 -213,230 -450,467 l -431,430 v 627 c 0,346 3,628 8,628 4,0 331,-257 727,-571 642,-509 721,-574 731,-607 27,-91 98,-168 181,-196 132,-45 286,16 361,142 24,42 27,57 27,137 0,99 -10,128 -69,193 l -34,37 -135,910 c -74,501 -133,911 -132,913 2,2 245,-136 541,-307 334,-192 544,-319 552,-333 7,-13 76,-259 153,-548 77,-289 146,-549 155,-577 36,-129 167,-196 279,-144 72,33 125,111 125,182 0,25 -181,725 -205,797 -3,7 -1,11 3,9 70,-41 768,-441 770,-443 2,-1 30,-101 62,-223 33,-122 66,-234 75,-250 37,-72 139,-119 218,-101 111,25 187,141 159,244 -6,20 -9,36 -8,36 2,0 100,-56 219,-125 153,-89 231,-128 267,-135 164,-31 316,109 297,273 -8,59 -50,140 -91,170 -17,13 -120,75 -228,137 -109,63 -198,117 -198,121 0,4 14,11 31,14 64,14 139,118 139,191 0,101 -100,204 -199,204 -22,0 -140,-27 -262,-60 l -223,-59 -383,221 c -211,121 -383,223 -383,227 0,4 168,51 373,105 204,54 390,108 412,120 21,11 53,41 70,64 26,38 30,52 30,112 0,60 -4,74 -30,112 -41,58 -96,88 -161,88 -35,0 -226,-47 -595,-145 -299,-80 -560,-150 -579,-156 -34,-10 -46,-4 -575,301 -297,172 -543,315 -547,319 -4,3 207,91 470,195 262,104 648,257 857,340 l 380,151 45,-12 c 90,-24 201,8 270,77 113,113 112,308 -3,423 -67,67 -178,98 -266,74 l -45,-12 -440,175 c -243,97 -629,250 -858,340 -230,91 -414,168 -410,172 4,3 250,146 546,317 l 539,311 581,-155 c 390,-104 597,-155 631,-155 64,0 119,31 160,88 26,38 30,52 30,112 0,60 -4,74 -30,112 -17,23 -49,53 -70,64 -22,12 -204,65 -405,118 -439,117 -400,105 -375,118 11,6 178,102 370,213 193,111 360,207 371,213 18,9 62,1 243,-48 122,-33 239,-60 259,-60 102,1 202,102 202,204 0,73 -75,177 -139,191 -17,3 -31,10 -31,14 0,5 93,62 207,127 216,125 251,151 284,216 74,145 -13,324 -174,358 -86,17 -128,2 -362,-134 l -212,-123 1,66 c 1,81 -27,139 -84,177 -82,54 -176,50 -248,-11 -49,-43 -57,-63 -122,-310 -29,-110 -60,-207 -69,-216 -12,-12 -427,-255 -763,-446 -4,-2 -6,2 -3,9 24,72 205,772 205,797 0,100 -101,200 -203,201 -72,0 -161,-56 -187,-119 -5,-14 -80,-284 -164,-599 -85,-316 -158,-578 -162,-582 -13,-13 -1086,-631 -1089,-628 -2,2 3,41 10,88 8,47 68,456 135,910 l 122,825 33,37 c 60,65 70,94 70,193 0,105 -18,148 -84,208 -122,110 -288,116 -398,14 -47,-43 -69,-79 -87,-138 -10,-33 -92,-101 -731,-608 -396,-314 -723,-571 -727,-571 -5,0 -8,282 -8,628 v 627 l 431,430 c 237,237 439,447 450,467 27,53 26,141 -4,193 -46,81 -144,120 -237,95 -40,-11 -78,-45 -335,-301 -160,-159 -294,-289 -298,-289 -4,0 -7,199 -7,443 v 442 l 166,165 c 91,91 174,182 185,202 12,24 19,57 19,93 0,99 -55,170 -153,196 -60,17 -126,1 -179,-42 l -38,-30 v 264 265 l -28,53 c -59,114 -188,166 -306,124 z m -948,-3829 782,-620 v -743 c 0,-536 -3,-743 -11,-743 -8,0 -1265,719 -1288,737 -2,2 -69,438 -147,970 -79,533 -145,985 -149,1006 -5,36 -4,38 13,25 10,-7 370,-292 800,-632 z m 2733,-364 c -81,-551 -150,-1004 -152,-1005 -22,-18 -1280,-737 -1288,-737 -8,0 -11,226 -11,743 v 743 l 797,632 c 439,347 798,630 800,629 1,-2 -65,-454 -146,-1005 z M 4416,6779 c 354,-204 644,-375 644,-379 0,-4 -290,-174 -643,-378 l -644,-371 -489,193 c -269,107 -642,254 -829,328 -187,74 -391,155 -452,179 -62,24 -113,46 -113,49 0,3 188,79 417,170 230,91 651,258 938,372 286,114 522,207 524,207 2,1 293,-166 647,-370 z m 3544,144 c 530,-210 1106,-438 1243,-491 37,-15 67,-29 67,-32 0,-3 -210,-88 -468,-190 -257,-101 -680,-269 -941,-372 l -475,-187 -643,371 c -354,204 -642,375 -641,380 6,17 1283,747 1298,742 8,-3 260,-102 560,-221 z M 5330,5212 v -747 l -657,-520 c -361,-286 -720,-570 -797,-632 -77,-62 -141,-111 -143,-109 -6,6 295,2010 303,2013 5,2 295,170 644,372 349,203 638,369 643,370 4,1 7,-335 7,-747 z m 1170,365 c 344,-198 627,-362 629,-364 5,-3 301,-2006 298,-2010 -1,-1 -361,283 -800,630 l -797,632 v 748 748 l 23,-12 c 12,-7 303,-174 647,-372 z"
+         id="path4963" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 4285,8635 c 23,-57 47,-172 57,-267 25,-244 -39,-531 -147,-664 l -35,-42 43,10 c 127,29 373,-52 580,-189 72,-48 216,-183 255,-238 20,-29 20,-27 -3,46 -36,114 -48,234 -42,394 9,220 63,395 154,496 l 36,40 -29,-8 c -50,-14 -166,-6 -249,16 -208,57 -456,218 -595,386 -18,22 -29,31 -25,20 z m 252,-359 c 110,-70 230,-124 353,-157 74,-19 73,-15 40,-124 -30,-102 -50,-237 -50,-342 0,-51 -3,-93 -6,-93 -4,0 -38,20 -78,44 -128,81 -236,125 -413,172 -9,2 -7,19 8,61 32,93 58,241 65,366 4,65 8,117 10,117 2,0 34,-20 71,-44 z"
+         id="path4965" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 6830,8598 c -171,-190 -500,-349 -725,-352 -44,0 -92,3 -108,7 l -27,7 35,-48 c 84,-117 120,-287 112,-527 -5,-167 -24,-269 -67,-370 l -21,-50 60,61 c 146,151 355,271 562,325 83,21 209,28 269,15 l 35,-8 -26,28 c -97,105 -153,371 -130,612 11,123 37,238 70,316 11,25 19,46 18,45 -1,0 -27,-28 -57,-61 z m -144,-421 c 1,-145 8,-197 51,-373 4,-19 -1,-23 -39,-29 -79,-13 -232,-67 -333,-117 -55,-27 -104,-54 -109,-59 -6,-5 -13,-9 -17,-9 -3,0 -9,80 -12,178 -5,164 -21,273 -52,353 -5,13 3,18 42,24 83,12 254,74 358,129 55,30 102,54 105,55 3,1 5,-68 6,-152 z"
+         id="path4967" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 3800,6952 c -1,-34 -57,-127 -115,-190 -164,-177 -442,-324 -665,-352 l -55,-6 40,-8 c 195,-36 425,-160 586,-313 88,-85 142,-159 169,-236 10,-28 19,-44 19,-33 2,36 63,133 124,196 159,164 405,297 616,334 42,7 69,16 61,18 -8,3 -46,13 -85,22 -85,21 -244,95 -345,162 -92,60 -238,198 -282,267 -18,28 -40,73 -50,101 -9,28 -17,45 -18,38 z m 294,-500 c 60,-40 113,-72 118,-72 22,0 3,-18 -39,-39 -89,-43 -241,-149 -318,-222 l -77,-73 -50,58 c -65,73 -188,173 -295,239 l -83,50 67,35 c 111,56 225,136 304,214 l 74,73 95,-95 c 61,-62 134,-122 204,-168 z"
+         id="path4969" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 7381,6990 c -4,-75 -146,-240 -289,-338 -150,-103 -339,-183 -464,-198 -55,-6 -72,-24 -24,-24 73,0 288,-97 428,-192 154,-105 317,-301 318,-382 1,-13 8,-3 19,25 58,149 270,331 498,429 100,42 233,80 284,80 26,0 30,3 19,10 -8,5 -25,10 -36,10 -35,0 -173,50 -259,93 -114,57 -216,128 -306,214 -88,85 -142,159 -169,236 -10,28 -19,45 -19,37 z m 53,-295 c 60,-70 186,-172 293,-238 l 83,-50 -67,-34 c -105,-53 -224,-136 -307,-215 l -76,-73 -55,61 c -68,77 -182,169 -285,231 -44,27 -79,50 -80,54 0,3 21,15 48,28 84,41 244,153 317,223 38,37 73,68 76,68 3,0 27,-25 53,-55 z"
+         id="path4971" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 5034,5442 c -143,-137 -333,-243 -526,-293 -93,-24 -235,-29 -283,-10 l -30,12 31,-33 c 102,-107 158,-368 134,-618 -11,-115 -41,-250 -73,-320 -13,-30 -2,-22 77,55 143,139 331,245 528,296 96,25 249,31 286,11 17,-10 13,-1 -18,40 -22,29 -50,78 -61,108 -81,213 -79,573 5,783 13,31 23,57 22,57 0,-1 -42,-40 -92,-88 z m -104,-371 c 0,-139 17,-276 45,-360 8,-25 15,-46 15,-47 0,-1 -21,-5 -47,-9 -81,-11 -253,-73 -362,-131 -57,-29 -105,-54 -105,-54 -1,0 -1,66 -2,148 -1,146 -18,273 -48,360 l -14,40 46,7 c 102,14 354,113 435,170 12,8 25,15 29,15 5,0 8,-62 8,-139 z"
+         id="path4973" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 6105,5565 c 55,-153 70,-263 62,-450 -9,-220 -63,-395 -154,-496 l -36,-40 29,8 c 16,4 61,7 99,7 217,-4 556,-184 721,-384 48,-59 66,-71 44,-31 -19,36 -48,191 -55,291 -16,234 52,517 154,632 l 31,36 -42,-10 c -128,-29 -374,51 -581,189 -70,47 -212,179 -256,238 -14,18 -20,22 -16,10 z m 249,-364 c 116,-76 247,-131 423,-177 9,-2 7,-19 -8,-61 -32,-93 -58,-241 -65,-366 -4,-65 -8,-117 -10,-117 -2,0 -36,21 -76,47 -89,58 -243,126 -340,152 -83,22 -81,16 -48,126 30,102 50,237 50,343 0,50 3,92 7,92 4,0 34,-18 67,-39 z"
+         id="path4975" />
+    </g>
+    <g
+       transform="translate(-139.17114,465.66902)"
+       id="g4989"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png">
+      <circle
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:1.32000005;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="circle4979"
+         cx="227.43428"
+         cy="81.311859"
+         r="6.2808337" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 234.15625,81.55357 h 18.9933"
+         id="path4981"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4983"
+         d="M 252.64879,75.950072 V 86.816884"
+         style="fill:none;stroke:#000000;stroke-width:0.95684451;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.05086374;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 222.2574,77.891589 9.90583,6.840645"
+         id="path4985"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4987"
+         d="m 232.16323,77.891589 -9.90583,6.840645"
+         style="fill:none;stroke:#000000;stroke-width:1.05086374;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(0.9954152,0,0,1.1748481,-138.12853,458.59821)"
+       id="g4999"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4991"
+         d="M 225.12784,-54.684531 V 20.831981"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.92199999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.92199999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 229.67776,-54.736928 V 20.779618"
+         id="path4993"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#a05a2c;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 225.12059,20.736859 1.09072,4.555299"
+         id="path4995"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4997"
+         d="m 229.6536,20.70345 -1.09072,4.555299"
+         style="fill:none;stroke:#a05a2c;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       transform="translate(-139.17114,465.66902)"
+       id="g5009"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png">
+      <rect
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="rect5001"
+         width="3.2127976"
+         height="11.528275"
+         x="230.22531"
+         y="-40.154762" />
+      <rect
+         y="-40.154762"
+         x="221.2296"
+         height="11.528275"
+         width="3.2127976"
+         id="rect5003"
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+      <rect
+         y="-40.154762"
+         x="233.81131"
+         height="11.528275"
+         width="3.2127976"
+         id="rect5005"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="rect5007"
+         width="3.2127976"
+         height="11.528275"
+         x="217.6436"
+         y="-40.154762" />
+    </g>
+    <g
+       transform="translate(-139.17114,449.26475)"
+       id="g5015"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.27603865px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 224.3136,-54.687667 c -0.24007,-8.232009 -0.18489,-20.985676 4.0223,-27.304073 20.38358,-30.61222 67.95658,-26.43048 72.72323,23.679638"
+         id="path5011"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5013"
+         d="m 230.1043,-54.685224 c -0.20446,-7.341101 -0.15746,-18.714501 3.4256,-24.34909 17.35967,-27.299206 57.87523,-23.570036 61.93475,21.116909"
+         style="fill:none;stroke:#000000;stroke-width:0.24056262px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <rect
+       y="391.07785"
+       x="153.32018"
+       height="23.118814"
+       width="12.828938"
+       id="rect5017"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png" />
+    <rect
+       y="402.95541"
+       x="153.57138"
+       height="10.824416"
+       width="12.093946"
+       id="rect5019"
+       style="opacity:0.70999995;fill:#5599ff;fill-opacity:1;stroke:none;stroke-width:0.81026995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png" />
+    <g
+       transform="translate(-186.26727,449.26475)"
+       id="g5025"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 343.35532,-34.813173 v 20.269129"
+         id="path5021"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5023"
+         d="m 349.17619,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <rect
+       y="434.34872"
+       x="142.05283"
+       height="27.072386"
+       width="45.916893"
+       id="rect5027"
+       style="opacity:0.6;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png" />
+    <g
+       id="g5033"
+       transform="matrix(0,1,-0.30092587,0,183.96048,107.69139)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5029"
+         d="m 343.35532,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 349.17619,-34.813173 v 20.269129"
+         id="path5031"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path5035"
+       d="M 187.96036,464.63772 H 90.931324"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5037"
+       d="M -11.119323,633.6821 V 464.58556"
+       style="fill:none;stroke:#000000;stroke-width:0.34928516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.34928516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 187.72025,633.6821 V 464.58556"
+       id="path5039"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.37907451px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 187.96036,633.44295 H -11.210576"
+       id="path5041"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 31.154404,633.12973 v 91.96181"
+       id="path5043"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5045"
+       d="m 146.51307,633.12973 v 91.96181"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5049"
+       d="M 146.55553,724.98936 H 31.040262"
+       style="fill:none;stroke:#000000;stroke-width:0.28868973px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       style="fill:none;stroke:#ff00ff;stroke-width:0.26674733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 31.154768,675.67421 c 5.470975,-4.2633 11.093857,-9.58014 17.36068,-11.63495 10.088159,-3.30778 32.116061,15.60808 39.681548,19.32903 7.186847,3.53474 29.287654,-21.3933 39.872334,-21.3933 7.65654,0 17.61453,8.94113 18.50534,15.95115"
+       id="path5055"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5057"
+       d="m 31.154768,691.7085 c 5.470975,4.2633 11.093857,9.58014 17.36068,11.63495 10.088159,3.30778 32.116061,-15.60808 39.681548,-19.32903 7.186847,-3.53474 29.287654,21.3933 39.872334,21.3933 7.65654,0 17.61453,-8.94113 18.50534,-15.95115"
+       style="fill:none;stroke:#ff00ff;stroke-width:0.26674733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 31.053619,669.89058 -20.967828,7.16621"
+       id="path5059"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5061"
+       d="M 31.053619,695.04857 10.085791,687.88236"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 10.218498,677.07507 v 10.81569"
+       id="path5063"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       style="opacity:1;fill:#ff0000;fill-opacity:0.76078431;stroke:#000000;stroke-width:0.82937217;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       d="m 78.057317,2612.8626 -38.934219,-13.3002 0.06234,-20.1639 0.06234,-20.1639 38.830584,-13.2738 c 21.356822,-7.3006 38.877678,-13.2267 38.935248,-13.1691 0.0576,0.058 0.0761,21.0896 0.0413,46.7378 l -0.0633,46.6332 z"
+       id="path5065"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5067"
+       d="m 156.9355,691.31989 10.3014,-3.51901 -0.0165,-5.33504 -0.0165,-5.33503 -10.27398,-3.51202 c -5.65069,-1.93162 -10.28645,-3.49957 -10.30168,-3.48433 -0.0152,0.0154 -0.0201,5.57996 -0.0109,12.36604 l 0.0168,12.33837 z"
+       style="opacity:1;fill:#ff0000;fill-opacity:0.76078431;stroke:#000000;stroke-width:0.21943805;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <g
+       id="g5079"
+       transform="matrix(-1,0,0,1,314.89257,526.52357)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png">
+      <circle
+         r="6.2808337"
+         cy="81.311859"
+         cx="227.43428"
+         id="circle5069"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:1.32000005;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5071"
+         d="m 234.15625,81.55357 h 18.9933"
+         style="fill:none;stroke:#000000;stroke-width:1.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.95684451;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 252.64879,75.950072 V 86.816884"
+         id="path5073"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5075"
+         d="m 222.2574,77.891589 9.90583,6.840645"
+         style="fill:none;stroke:#000000;stroke-width:1.05086374;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.05086374;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 232.16323,77.891589 -9.90583,6.840645"
+         id="path5077"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g5085"
+       transform="matrix(1,0,0,1.6658565,-139.17114,468.48086)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5081"
+         d="M 224.59867,87.170003 V 116.29934"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.94499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.94499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 230.20693,87.35391 v 29.12935"
+         id="path5083"
+         inkscape:connector-curvature="0" />
+    </g>
+    <circle
+       style="opacity:1;fill:none;fill-opacity:0.76078431;stroke:#000000;stroke-width:0.57499999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:3.45, 3.45;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5089"
+       cx="88.189308"
+       cy="683.25421"
+       r="12.275469"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Full-setup-1.png" />
+    <path
+       id="path1123"
+       d="m 269.50437,374.9789 h 86.33148"
+       style="fill:#ffcc00;fill-opacity:1;stroke:#ffcc00;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       y="344.5936"
+       x="270.18677"
+       height="28.151571"
+       width="85.319267"
+       id="rect1125"
+       style="fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:4.0475;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.937255;paint-order:fill markers stroke" />
+    <path
+       style="fill:#ffcc00;fill-opacity:1;stroke:#ffcc00;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 365.28414,374.9789 h 86.33148"
+       id="path1129" />
+    <rect
+       style="fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:4.0475;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.937255;paint-order:fill markers stroke"
+       id="rect1131"
+       width="85.319267"
+       height="28.151571"
+       x="365.96741"
+       y="344.5936" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:connector-curvature="0"
+       id="path4411"
+       d="M 651.62595,934.85942 V 820.00297"
+       style="fill:none;stroke:#000000;stroke-width:0.28786531px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:connector-curvature="0"
+       id="path4413"
+       d="M 651.73301,819.45663 H 559.7712"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 651.73301,934.81529 H 559.7712"
+       id="path4415"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="fill:none;stroke:#000000;stroke-width:0.28868973px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 559.87338,934.85775 V 819.34249"
+       id="path4417"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:connector-curvature="0"
+       id="path4419"
+       d="m 609.18853,819.45699 c 4.2633,5.47098 9.58014,11.09386 11.63495,17.36068 3.30778,10.08816 -15.60808,32.11606 -19.32903,39.68155 -3.53474,7.18685 21.3933,29.28765 21.3933,39.87233 0,7.65654 -8.94113,17.61453 -15.95115,18.50534"
+       style="fill:none;stroke:#ff00ff;stroke-width:0.26674733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="fill:none;stroke:#ff00ff;stroke-width:0.26674733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 593.15424,819.45699 c -4.2633,5.47098 -9.58014,11.09386 -11.63495,17.36068 -3.30778,10.08816 15.60808,32.11606 19.32903,39.68155 3.53474,7.18685 -21.3933,29.28765 -21.3933,39.87233 0,7.65654 8.94113,17.61453 15.95115,18.50534"
+       id="path4421"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:connector-curvature="0"
+       id="path4423"
+       d="m 614.97216,819.35584 -7.16621,-20.96782"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 589.81417,819.35584 7.16621,-20.96782"
+       id="path4425"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:connector-curvature="0"
+       id="path4427"
+       d="M 607.78767,798.52072 H 596.97198"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:connector-curvature="0"
+       id="path4429"
+       d="m 593.54285,808.95489 3.51901,-10.30135 5.33504,0.0165 5.33503,0.0165 3.51202,10.27393 c 1.93162,5.65066 3.49957,10.28638 3.48433,10.30162 -0.0154,0.0152 -5.57996,0.0201 -12.36604,0.0109 l -12.33837,-0.0168 z"
+       style="opacity:1;fill:#ff0000;fill-opacity:0.76078431;stroke:#000000;stroke-width:0.21943805;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:1;fill:#ff0000;fill-opacity:0.76078431;stroke:#000000;stroke-width:0.21943805;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       d="m 593.54285,945.23772 3.51901,10.3014 5.33504,-0.0165 5.33503,-0.0165 3.51202,-10.27398 c 1.93162,-5.65069 3.49957,-10.28645 3.48433,-10.30168 -0.0154,-0.0152 -5.57996,-0.0201 -12.36604,-0.0109 l -12.33837,0.0168 z"
+       id="path4431"
+       inkscape:connector-curvature="0" />
+    <circle
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       r="12.275469"
+       cy="-601.60852"
+       cx="876.49152"
+       id="circle4433"
+       style="opacity:1;fill:none;fill-opacity:0.76078431;stroke:#000000;stroke-width:0.57499999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:3.45, 3.45;stroke-dashoffset:0;stroke-opacity:1"
+       transform="rotate(90)" />
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="g4443"
+       transform="matrix(0.9954152,0,0,1.1748481,-138.12853,458.59821)">
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.92199999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 225.12784,-54.684531 V 20.831981"
+         id="path4435"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4437"
+         d="M 229.67776,-54.736928 V 20.779618"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.92199999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4439"
+         d="m 225.12059,20.736859 1.09072,4.555299"
+         style="fill:none;stroke:#a05a2c;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#a05a2c;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 229.6536,20.70345 -1.09072,4.555299"
+         id="path4441"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="g4453"
+       transform="translate(-139.17114,465.66902)">
+      <rect
+         y="-40.154762"
+         x="230.22531"
+         height="11.528275"
+         width="3.2127976"
+         id="rect4445"
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="rect4447"
+         width="3.2127976"
+         height="11.528275"
+         x="221.2296"
+         y="-40.154762" />
+      <rect
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="rect4449"
+         width="3.2127976"
+         height="11.528275"
+         x="233.81131"
+         y="-40.154762" />
+      <rect
+         y="-40.154762"
+         x="217.6436"
+         height="11.528275"
+         width="3.2127976"
+         id="rect4451"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="g4459"
+       transform="translate(-139.17114,449.26475)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4455"
+         d="m 224.3136,-54.687667 c -0.24007,-8.232009 -0.18489,-20.985676 4.0223,-27.304073 20.38358,-30.61222 67.95658,-26.43048 72.72323,23.679638"
+         style="fill:none;stroke:#000000;stroke-width:0.27603865px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.24056262px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 230.1043,-54.685224 c -0.20446,-7.341101 -0.15746,-18.714501 3.4256,-24.34909 17.35967,-27.299206 57.87523,-23.570036 61.93475,21.116909"
+         id="path4457"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect4461"
+       width="12.828938"
+       height="23.118814"
+       x="153.32018"
+       y="391.07785" />
+    <rect
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:0.70999995;fill:#5599ff;fill-opacity:1;stroke:none;stroke-width:0.81026995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect4463"
+       width="12.093946"
+       height="10.824416"
+       x="153.57138"
+       y="402.95541" />
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="g4469"
+       transform="translate(-186.26727,449.26475)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4465"
+         d="m 343.35532,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 349.17619,-34.813173 v 20.269129"
+         id="path4467"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:0.6;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect4471"
+       width="45.916893"
+       height="27.072386"
+       x="142.05283"
+       y="434.34872" />
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       transform="matrix(0,1,-0.30092587,0,183.96048,107.69139)"
+       id="g4477">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 343.35532,-34.813173 v 20.269129"
+         id="path4473"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4475"
+         d="m 349.17619,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 187.96036,464.63772 H 90.931324"
+       id="path4479"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4483"
+       d="m 525.06606,739.33022 v 88.72043"
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.99706602;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.99706602;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 520.537,739.26866 v 88.72047"
+       id="path4485"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="g4507"
+       transform="matrix(-1,0,0,1,750.20434,794.24278)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4503"
+         d="m 224.3136,-54.687667 c -0.24007,-8.232009 -0.18489,-20.985676 4.0223,-27.304073 20.38358,-30.61222 67.95658,-26.43048 72.72323,23.679638"
+         style="fill:none;stroke:#000000;stroke-width:0.27603865px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.24056262px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 230.1043,-54.685224 c -0.20446,-7.341101 -0.15746,-18.714501 3.4256,-24.34909 17.35967,-27.299206 57.87523,-23.570036 61.93475,21.116909"
+         id="path4505"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect4509"
+       width="12.828938"
+       height="23.118814"
+       x="-457.71405"
+       y="736.05536"
+       transform="scale(-1,1)" />
+    <rect
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:0.70999995;fill:#5599ff;fill-opacity:1;stroke:none;stroke-width:0.81026995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect4511"
+       width="12.093946"
+       height="10.824416"
+       x="-457.46283"
+       y="747.93292"
+       transform="scale(-1,1)" />
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="g4517"
+       transform="matrix(-1,0,0,1,797.30047,794.24278)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4513"
+         d="m 343.35532,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 349.17619,-34.813173 v 20.269129"
+         id="path4515"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:0.6;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect4519"
+       width="45.916893"
+       height="27.072386"
+       x="-468.98138"
+       y="779.32623"
+       transform="scale(-1,1)" />
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       transform="matrix(0,1,0.30092587,0,427.07272,452.66942)"
+       id="g4525">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 343.35532,-34.813173 v 20.269129"
+         id="path4521"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4523"
+         d="m 349.17619,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.99706602;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 525.06606,739.33022 v 88.72043"
+       id="path4529"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4531"
+       d="m 520.537,739.26866 v 88.72047"
+       style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.99706602;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="matrix(-1,0,0,1,750.20434,794.24278)"
+       id="g4553"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.27603865px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 224.3136,-54.687667 c -0.24007,-8.232009 -0.18489,-20.985676 4.0223,-27.304073 20.38358,-30.61222 67.95658,-26.43048 72.72323,23.679638"
+         id="path4549"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4551"
+         d="m 230.1043,-54.685224 c -0.20446,-7.341101 -0.15746,-18.714501 3.4256,-24.34909 17.35967,-27.299206 57.87523,-23.570036 61.93475,21.116909"
+         style="fill:none;stroke:#000000;stroke-width:0.24056262px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <rect
+       y="736.05536"
+       x="-457.71405"
+       height="23.118814"
+       width="12.828938"
+       id="rect4555"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       transform="scale(-1,1)" />
+    <rect
+       y="747.93292"
+       x="-457.46283"
+       height="10.824416"
+       width="12.093946"
+       id="rect4557"
+       style="opacity:0.70999995;fill:#5599ff;fill-opacity:1;stroke:none;stroke-width:0.81026995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       transform="scale(-1,1)" />
+    <g
+       transform="matrix(-1,0,0,1,797.30047,794.24278)"
+       id="g4563"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 343.35532,-34.813173 v 20.269129"
+         id="path4559"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4561"
+         d="m 349.17619,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <rect
+       y="779.32623"
+       x="-468.98138"
+       height="27.072386"
+       width="45.916893"
+       id="rect4565"
+       style="opacity:0.6;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       transform="scale(-1,1)" />
+    <g
+       id="g4571"
+       transform="matrix(0,1,0.30092587,0,427.07272,452.66942)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4567"
+         d="m 343.35532,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 349.17619,-34.813173 v 20.269129"
+         id="path4569"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       style="fill:none;stroke:#a05a2c;stroke-width:0.86500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 520.54888,827.93533 c 0.83068,23.9636 21.09941,50.71658 46.79944,50.71658"
+       id="path4585"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5416"
+       d="m 525.04972,827.41656 c 0.75808,22.37253 19.25539,47.34923 42.70932,47.34923"
+       style="fill:none;stroke:#a05a2c;stroke-width:0.7984333;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#549aff;fill-opacity:0.91764706;stroke:none;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5552)"
+       d="m 568.19733,876.61894 14.03745,-8.10453 v 17.17581 z"
+       id="path5418"
+       inkscape:connector-curvature="0"
+       transform="matrix(2.0386978,0,0,1.1715767,-588.54879,-150.49713)"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\AL-2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="g6646"
+       transform="matrix(0.9954152,0,0,1.1748481,58.140488,508.49012)">
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.92199999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 225.12784,-54.684531 V 20.831981"
+         id="path6638"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6640"
+         d="M 229.67776,-54.736928 V 20.779618"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.92199999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6642"
+         d="m 225.12059,20.736859 1.09072,4.555299"
+         style="fill:none;stroke:#a05a2c;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#a05a2c;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 229.6536,20.70345 -1.09072,4.555299"
+         id="path6644"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="g6656"
+       transform="translate(57.097878,515.56093)">
+      <rect
+         y="-40.154762"
+         x="230.22531"
+         height="11.528275"
+         width="3.2127976"
+         id="rect6648"
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="rect6650"
+         width="3.2127976"
+         height="11.528275"
+         x="221.2296"
+         y="-40.154762" />
+      <rect
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="rect6652"
+         width="3.2127976"
+         height="11.528275"
+         x="233.81131"
+         y="-40.154762" />
+      <rect
+         y="-40.154762"
+         x="217.6436"
+         height="11.528275"
+         width="3.2127976"
+         id="rect6654"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="g6662"
+       transform="translate(57.097878,499.15666)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6658"
+         d="m 224.3136,-54.687667 c -0.24007,-8.232009 -0.18489,-20.985676 4.0223,-27.304073 20.38358,-30.61222 67.95658,-26.43048 72.72323,23.679638"
+         style="fill:none;stroke:#000000;stroke-width:0.27603865px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.24056262px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 230.1043,-54.685224 c -0.20446,-7.341101 -0.15746,-18.714501 3.4256,-24.34909 17.35967,-27.299206 57.87523,-23.570036 61.93475,21.116909"
+         id="path6660"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect6664"
+       width="12.828938"
+       height="23.118814"
+       x="349.5892"
+       y="440.96976" />
+    <rect
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:0.70999995;fill:#5599ff;fill-opacity:1;stroke:none;stroke-width:0.81026995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect6666"
+       width="12.093946"
+       height="10.824416"
+       x="349.84039"
+       y="452.84732" />
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="g6672"
+       transform="translate(10.001748,499.15666)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6668"
+         d="m 343.35532,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 349.17619,-34.813173 v 20.269129"
+         id="path6670"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:0.6;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       id="rect6674"
+       width="45.916893"
+       height="27.072386"
+       x="338.32184"
+       y="484.24063" />
+    <g
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       transform="matrix(0,1,-0.30092587,0,380.2295,157.5833)"
+       id="g6680">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 343.35532,-34.813173 v 20.269129"
+         id="path6676"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6678"
+         d="m 349.17619,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(0.9954152,0,0,1.1748481,58.140488,508.49012)"
+       id="g6692"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6684"
+         d="M 225.12784,-54.684531 V 20.831981"
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.92199999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:#a05a2c;stroke:#a05a2c;stroke-width:0.92199999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 229.67776,-54.736928 V 20.779618"
+         id="path6686"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#a05a2c;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 225.12059,20.736859 1.09072,4.555299"
+         id="path6688"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6690"
+         d="m 229.6536,20.70345 -1.09072,4.555299"
+         style="fill:none;stroke:#a05a2c;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       transform="translate(57.097878,515.56093)"
+       id="g6702"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png">
+      <rect
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="rect6694"
+         width="3.2127976"
+         height="11.528275"
+         x="230.22531"
+         y="-40.154762" />
+      <rect
+         y="-40.154762"
+         x="221.2296"
+         height="11.528275"
+         width="3.2127976"
+         id="rect6696"
+         style="opacity:1;fill:#a05a2c;fill-opacity:1;stroke:#a05a2c;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+      <rect
+         y="-40.154762"
+         x="233.81131"
+         height="11.528275"
+         width="3.2127976"
+         id="rect6698"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+         id="rect6700"
+         width="3.2127976"
+         height="11.528275"
+         x="217.6436"
+         y="-40.154762" />
+    </g>
+    <g
+       transform="translate(57.097878,499.15666)"
+       id="g6708"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.27603865px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 224.3136,-54.687667 c -0.24007,-8.232009 -0.18489,-20.985676 4.0223,-27.304073 20.38358,-30.61222 67.95658,-26.43048 72.72323,23.679638"
+         id="path6704"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6706"
+         d="m 230.1043,-54.685224 c -0.20446,-7.341101 -0.15746,-18.714501 3.4256,-24.34909 17.35967,-27.299206 57.87523,-23.570036 61.93475,21.116909"
+         style="fill:none;stroke:#000000;stroke-width:0.24056262px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <rect
+       y="440.96976"
+       x="349.5892"
+       height="23.118814"
+       width="12.828938"
+       id="rect6710"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png" />
+    <rect
+       y="452.84732"
+       x="349.84039"
+       height="10.824416"
+       width="12.093946"
+       id="rect6712"
+       style="opacity:0.70999995;fill:#5599ff;fill-opacity:1;stroke:none;stroke-width:0.81026995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png" />
+    <g
+       transform="translate(10.001748,499.15666)"
+       id="g6718"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 343.35532,-34.813173 v 20.269129"
+         id="path6714"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6716"
+         d="m 349.17619,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <rect
+       y="484.24063"
+       x="338.32184"
+       height="27.072386"
+       width="45.916893"
+       id="rect6720"
+       style="opacity:0.6;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:0.79900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.2056694;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png" />
+    <g
+       id="g6726"
+       transform="matrix(0,1,-0.30092587,0,380.2295,157.5833)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="D:\PhD-project-shareable\Archive\Presentation\School_talk\11-12_OU-Physics\Image\Neb-setup.png">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6722"
+         d="m 343.35532,-34.813173 v 20.269129"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 349.17619,-34.813173 v 20.269129"
+         id="path6724"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

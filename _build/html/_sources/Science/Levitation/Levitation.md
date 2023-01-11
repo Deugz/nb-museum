@@ -1,4 +1,12 @@
-# Levitation
+# Levitation and IR Signature
+
+## IR Observation of Disks
+
+- {cite:p}`Aikawa2012`
+
+**Red wing**
+
+
 
 
 ## One Step further
@@ -31,5 +39,12 @@ We (Anita mostly) have developped at the OU an accoustic levitation technique th
 Grain shape affect the IR spectral signature (ie right wing)
 
 Electron microscopy would be a great addition to our future IR work.
+
+#### Fluffy aggregate opacity
+
+- {cite:p}`Kataoka2013`
+
+
+
 
 

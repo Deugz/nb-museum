@@ -1,64 +1,43 @@
-# Planet formation
+# Stars & Planet Formation
+
+<h3> <strong>&#187;  <u>  Introduction </u></strong> </h3>
 
 :::::{div} full-width
-::::{grid} 3
+::::{grid} 2
 
 :::{grid-item}
-:columns: 5
 
-<p class="emphase">from a cloud of µm dust grains ...</p>
-
-<video src="../../_static/video/ssc2004-08v2_h264_vga.mov" width="100%" height="" controls>
-  Your browser does not support the video tag.
-</video>
+Introduction paragraph
 
 :::
 
 :::{grid-item}
-:columns: 2
 
-<br>
-<br>
-<br>
-<br>
-
-```{image} Docs/Question.png
-```
+**Plan**
 
 :::
 
-
-
-:::{grid-item}
-:columns: 5
-
-<p class="emphase">... to Solar and planetary systems </p>
-
-<video src="../../_static/video/ssc2004-08v3_h264_vga.mov" width="100%" height="" controls>
-  Your browser does not support the video tag.
-</video>
- 
-:::
 ::::
 :::::
 
-:::{div} full-width
-
-<br>
-<br>
-
-We know that Planets forms within **Protoplanetary disks** (cf video above - <span style="color:red;">Source</span>), that are a by-product of star formation. However, our current understanding of **HOW** planets are forming is rudimentary at best, and this lack of knowledge is compounded at the very initial stages. For example it is not yet clear how interstellar nm dust grains <span style="color:red;">Insert Drain review on Dust</span> initially present in the solar nebula <span style="color:red;">Insert MMSN ref</span>, can grow by 12 orders of magnitude to many 100’s or 1000’s of km sizes of moons, comets, asteroids and planets present in a mature solar system. One of the major difficulties encountered by scientist is overcoming the **Bouncing barrier** present around around the cm scale. 
-
-We will - **Plan**
-
-:::
 
 ***
 
 
-```{note}
+<h4> <strong> Notes </strong></h4> 
 
-**Important**
+::::::{div} full-width
+
+:::::{grid} 2
+
+::::{grid-item}
+
+<h5> &#127793; <strong> For me </strong></h5>
+
+
+
+```{admonition} To Do
+:class: note, dropdown
 
 - Insert a small paragraph about how we unveil the history of soloar systems via meteorites and Deuterium fractionation
 
@@ -67,60 +46,42 @@ We will - **Plan**
     - Ortograph Correction (lol, good luck with that)
     - Check if something can be said about D/H or O<sup>16</sup>/O<sup>18</sup>
 
-**To do**
-
 - Rework the intro
+    - Insert plan
+- Make sure that the titles are correct
 
 ```
 
-```{admonition} Click here!
-:class: tip, dropdown
-Here's what's inside!
-```
-
-## Setting up the scene
-
-```{note}
-
-Introduce the ISM
-
-```
-
-### <strong>&#187;  <u>  Molecular Clouds </u></strong> 
-
-:::::{div} full-width
-::::{grid} 2 
-
-:::{grid-item}
-:columns: 4
-
-
-```{figure} Docs/Molecular_cloud_Pillar_cut.png
----
-name: Bouncing_lab
-width: 300px
----
-[Source](https://commons.wikimedia.org/wiki/File:Eagle_nebula_pillars.jpg) 
-```
-
-
-link to teaching JWST to see more pictures
-
-:::
-
-:::{grid-item}
-:columns: 8
-
-Our fascinating story of stars and planet formation begins in the darkest and coldest places of the <span class="hovertext" data-hover="The medium between the Stars (ISM), made of multiple environments with various conditions, temperature, density, radiation fields etc.">Interstellar Medium</span>, Molecular Clouds.
-Those clouds, made of gas and dusts are the cocoons within which star forms. They evolve for [...] years, ...
-- Clumps
-- Critical mass - **Jeans instability**
-
-:::
 ::::
-:::::
 
-#### <strong>Structure</strong>
+::::{grid-item}
+
+<h5> &#127757; <strong>The rest of the World </strong></h5>
+
+```{admonition} Ross
+:class: tip, dropdown
+Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / smaller disk ? What proportion of observed PPD via ALMA are homogeneous ?
+```
+
+
+
+::::
+
+
+
+:::::
+  
+::::::
+    
+  
+
+
+
+## Setting up the scene 
+
+### <strong>&#187;  <u>  The Interstellar Medium </u></strong> 
+
+#### <strong> Galactic Ecocystem and Star lifecycle</strong>
 
 :::::{div} full-width
 ::::{grid} 2 
@@ -128,9 +89,56 @@ Those clouds, made of gas and dusts are the cocoons within which star forms. The
 :::{grid-item}
 :columns: 5
 
-Description
+<br>
+<br>
 
-Onion like structure ...
+<p class="emphase"> It is not unlikely in life that birth story start with death. So is the case for plants, whose death replenish the earth with organic matter that will make the terrain fertile for a new plant to emerge. Stars are no different in that respect and their life goes in cycle and the ISM is their ecocystem. </p>
+
+:::
+
+:::{grid-item}
+:columns: 7
+
+```{figure} Docs/The-lifecycle-of-gas-dust.png
+---
+name: Bouncing_lab
+width: 1000px
+---
+
+```
+
+:::
+
+::::
+
+:::::
+
+````{margin}
+```{note}
+
+**Introduce the ISM**
+
+- cycle
+- Stars produce Ashes during their lifetime that are dispersed into the Diffuse ISM
+- Big dust production when they die (supernovae)
+
+```
+````
+
+The Big Bang produced all the Hydrogen (as well as Helium and Lithium) present today in the universe. The rest of the elements of the periodic table (called metal by Astronomers), up to iron (Z = 26), has been produced in the center of stars in a process called <span class="hovertext" data-hover="Hydrogen is burned in fusion reaction and heavier elements are produced as the star evolve">nucleosynthesis</span>. However, it is only when the star die in a massive explosion like supernovae, that those heavy elements are ejected throughout the Universe. We are now 14.6 Billion years post Big Bang and at the third generation of stars, galaxies have had time to form and they will be our host for the rest of this discussion. So what are galaxies made of ? Well, a supermassive Black hole at the center and then stars (may be solar systems) as far as our eyes can see, but this would be omitting the major constituent of the 
+
+
+#### <strong> Structure and environments </strong>
+
+:::::{div} full-width
+::::{grid} 2 
+
+:::{grid-item}
+:columns: 5
+
+<p class="emphase">Onion like structure, interconected ...</p>
+
+
 
 :::
 
@@ -213,10 +221,20 @@ Description
 :::::
 ::::::
 
-***
+```{note}
 
+**Evolution of material through the ISM**
 
-### <strong>&#187;  <u>  Dust grains </u></strong>
+- Diffuse ISM - radiation - no ice
+- Interconnectivity of the different environments - material exchange
+- From low to high density environments 
+- Finally end up in the densest environments of the ISM, **molecular clouds**
+
+```
+
+### <strong>&#187;  <u>  Interstellar Dust Grains</u></strong>
+
+#### <strong> Structure </strong>
 
 :::::{div} full-width
 ::::{grid} 2 
@@ -250,6 +268,10 @@ Condensation temperature
 :::{grid-item}
 :columns: 5
 
+<p class="emphase">sub-µm dust grains</p>
+
+{cite:p}`Williams2000` - from ashes to dust
+
 
 Here is a typical dust grain that can be found inside a Molecular clouds. Because low temperature the grain is surrounded by an icy layer.
 
@@ -265,77 +287,350 @@ This ice layer is responsible for most of the chemistry observed in the ISM
 
 :::::
 
-
-
-
-
-####  <strong> light interaction  </strong>
-
-***
-
-##### Scattering
-
-###### Per individual dust grains## Scattering
-
-::::{margin}
 ```{note}
 
-What is the difference in absorbtion from bare dust, ice, and ice with dust mixtures
+**Introduction to dust**
+
+- Ice - link to intro Thesis.A with more details
+- Dust processing within MC: preliminary growth up to µm sizes.
+- Role in chemistry
+- Ice formed by atomic deposition, diffusion, reaction of atomic species to form molecules. 
+
+**Astrophysics of dust grains**
+
+-  physical optics of small particles
+- charging of dust grains
+- heating and cooling of dust grains
+- chemistry on dust grain surfaces
+-  forces and torques on dust grains
+- sputtering and shattering of dust grains
+- alignment of dust with the magnetic field
+
+ introduction to these topics can be found elsewhere (Kr¨ugel 2002, Draine 2003a
 
 ```
 
-::::
 
-```{image} Docs/Dust_light_interaction.png
-:alt: Class2
-:width: 600px
-:align: center
-```
+### <strong>&#187;  <u>  Molecular Clouds </u></strong>
+
+#### <strong>Observation</strong>
 
 :::::{div} full-width
-::::{grid} 3 
+::::{grid} 2 
 
 :::{grid-item}
 
-**Energy absorbed by grain**
+<input type="radio" name="gallery" id="slide-1"/>
+<input type="radio" name="gallery" id="slide-2"/>
+<input type="radio" name="gallery" id="slide-3"/>
+<input type="radio" name="gallery" id="slide-4"/>
+<input type="radio" name="gallery" id="slide-5"/>
+<input type="radio" name="gallery" id="slide-6"/>
 
-```{image} Docs/Equation/Eabs.svg
-:alt: Eabs
-:width: 200px
-:align: center
-```
+<div id="gallery"></div>
+
+<div class="slides">
+  <label class="labelSC" for="slide-1"></label>
+  <label class="labelSC" for="slide-2"></label>
+  <label class="labelSC" for="slide-3"></label>
+  <label class="labelSC" for="slide-4"></label>
+  <label class="labelSC" for="slide-5"></label>
+  <label class="labelSC" for="slide-6"></label>
+</div>
+
+Image source: [ESO](https://www.eso.org/public/images/eso9934b/)
 
 :::
 
 :::{grid-item}
 
-**Energy emitted by grain**
+Our knowledge of interstellar dust is derived from the interaction of dust particles with electromagnetic radiation: 
 
-```{image} Docs/Equation/Eem.svg
-:alt: Eem
-:width: 200px
-:align: center
-```
+- **Attenuation of starlight**  A<sub>&lambda;</sub>
+
+
+Wavelength dependance of `interstellar extinction` gives information about the size and composition of the grains. Best determined using the <span class="comparison of the fluxes from two stars with nearly-identical spectroscopic features, but with one of the stars nearly unaffected by dust" data-hover="Definition">pair method</span>.
+
+    - R<sub>V</sub>
+
 
 :::
 
-:::{grid-item}
-
-**Equilibrium dust temperature**
-
-```{image} Docs/Equation/Tdust_eq.svg
-:alt: Tdust_eq
-:width: 300px
-:align: center
-```
-:::
 ::::
 
 :::::
 
+
+#### <strong>Properties</strong>
+
+##### <strong>Molecular factory</strong>
+
+Quiescent over long timescales. Shield dust from radiation ...
+
+
+##### <strong>Star nursery</strong>
+
+
+
+:::::{div} full-width
+::::{grid} 2 
+
+:::{grid-item}
+:columns: 4
+
+
+```{figure} Docs/Molecular_cloud_Pillar_cut.png
+---
+name: Bouncing_lab
+width: 300px
+---
+[Source](https://commons.wikimedia.org/wiki/File:Eagle_nebula_pillars.jpg) 
+```
+
+
+link to teaching JWST to see more pictures
+
+:::
+
+:::{grid-item}
+:columns: 8
+
+<p class="emphase">Star nurseries</p>
+
+Our fascinating story of stars and planet formation begins in the darkest and coldest places of the <span class="hovertext" data-hover="The medium between the Stars (ISM), made of multiple environments with various conditions, temperature, density, radiation fields etc.">Interstellar Medium</span>, Molecular Clouds.
+Those clouds, made of gas and dusts are the cocoons within which star forms. They evolve for [...] years, ...
+- Clumps
+- Critical mass - **Jeans instability**
+
+:::
+::::
+:::::
+
+
+```{note}
+
+**Star nursery**
+
+- Gas + Dust, High density, protected from radiation
+- Diverse molecular content, **Chemistry** - How ?
+- Surface of **dust grains**
+
+```
+
+
 ***
 
-###### The big picture
+
+
+## Star formation
+
+Within **dense core** ...
+
+
+There is 2 parameters often used to describe the **SED** (Spectral Energy Distribution):
+- Spectral index (class I, II, III)
+- Bolometric temperature (class 0, I)
+However, SEDs are way too complex to be characterised by a single number and their characterisation are inevitably coarse
+
+### <strong>&#187;  <u>  Step by Step </u></strong>
+
+:::::{div} full-width
+::::{grid} 4
+
+:::{grid-item}
+
+<h5><strong>Class 0</strong></h5>
+
+```{figure} Docs/Class0a.png
+---
+name: Class0a
+width: 300px
+---
+```
+
+```{figure} Docs/Class0b.png
+---
+name: Class0b
+width: 300px
+---
+```
+
+:::
+
+:::{grid-item}
+
+<h5><strong>Class 1</strong></h5>
+
+```{figure} Docs/Class1a.png
+---
+name: Class1a
+width: 300px
+---
+```
+
+```{figure} Docs/Class1b.png
+---
+name: Class1b
+width: 300px
+---
+```
+
+
+:::
+
+:::{grid-item}
+
+<h5><strong>Class 2</strong></h5>
+
+```{figure} Docs/Class2a.png
+---
+name: Class2a
+width: 300px
+---
+```
+
+```{figure} Docs/Class2b.png
+---
+name: Class2b
+width: 300px
+---
+```
+
+
+:::
+
+:::{grid-item}
+
+<h5><strong>Class 3</strong></h5>
+
+```{figure} Docs/Class3a.png
+---
+name: Class3a
+width: 300px
+---
+```
+
+```{figure} Docs/Class3b.png
+---
+name: Class3b
+width: 300px
+---
+```
+
+
+:::
+
+
+::::
+:::::
+
+
+::::::{div} full-width
+:::::{dropdown} Images
+
+::::{tab-set}
+
+:::{tab-item} Class 0
+
+Description
+
+**Litterature**
+
+:::
+
+:::{tab-item} Class 1
+
+```{figure} Docs/weic2219a.jpg
+---
+name: Experiment
+width: 600px
+---
+The Protostar within L1527 source: [NASA APOD](https://apod.nasa.gov/apod/ap221118.html) *2022 November 18 *
+```
+
+:::
+
+:::{tab-item} Class 2
+
+Description
+
+**Litterature**
+
+:::
+
+:::{tab-item} Class 3
+
+Description
+
+**Litterature**
+
+:::
+
+::::
+:::::
+::::::
+
+
+
+
+
+
+
+***
+
+
+
+
+First stage of planet formation. 
+Not detectable in the near infrared.
+
+Cold core emit like a `grey body`
+
+M<sub>Star</sub> < M<sub>Core</sub>
+
+
+**More Ressources**:
+
+- [ESO - HLTau 2020 meeting](https://www.eso.org/sci/meetings/2020/hltau2020/talks/Class_0I.html)
+
+
+***
+
+Protostar begins to emerge and become detectable in the NIR (near Infrared).
+
+Core is dispersing and punctuated by outflows 
+
+SED dominated by FIR
+
+
+`protostellar disk` to `protoplanetary disk` in 10<sup>4</sup> years (`ref 4 - 5`)
+This process involve high temperature but while material is accreted by the star the disk mass and temperature decrease. 
+
+
+
+M<sub>Star</sub> > M<sub>Core</sub>
+
+
+***
+
+
+Core has dissipated, the star has reached it's final mass and is now contracting. The star is now a Pre-Main-Sequence (PMS - ie T Tauri Star or HerbigAe depending on it's mass).
+
+`Infrared excess` above photosphere, due to a protoplantary disks.
+
+***
+
+Circumstellar disk has very little dust (optically thin) and little if any infrared excess.
+
+SED looks like a stellar photosphere.
+
+
+***
+
+### <strong>&#187;  <u>  Spectral Energy Distribution </u></strong>
+
+The Ariane thread of star formation
+
 
 :::::{div} full-width
 ::::{grid} 2 
@@ -376,167 +671,8 @@ Insert link toward SED teaching material from Hawai uni
 ```
 
 
-##### Absorption
 
 
-
-
-
-### <strong>&#187;  <u>  Star formation steps </u></strong>
-
-Within **dense core** ...
-
-
-There is 2 parameters often used to describe the **SED** (Spectral Energy Distribution):
-- Spectral index (class I, II, III)
-- Bolometric temperature (class 0, I)
-However, SEDs are way too complex to be characterised by a single number and their characterisation are inevitably coarse
-
-***
-
-#### <strong> Class 0 </strong>
-
-:::::{div} full-width
-::::{grid} 2 
-
-:::{grid-item}
-
-- **timescale**: O - 
-
-:::
-
-:::{grid-item}
-
-```{image} Docs/Class0.png
-:alt: Class0
-:width: 600px
-:align: center
-```
-
-:::
-::::
-:::::
-
-First stage of planet formation. 
-Not detectable in the near infrared.
-
-Cold core emit like a `grey body`
-
-M<sub>Star</sub> < M<sub>Core</sub>
-
-
-**More Ressources**:
-
-- [ESO - HLTau 2020 meeting](https://www.eso.org/sci/meetings/2020/hltau2020/talks/Class_0I.html)
-
-
-***
-
-#### <strong> Class 1 </strong>
-
-:::::{div} full-width
-::::{grid} 2 
-
-:::{grid-item}
-
-- **timescale**:
-
-:::
-
-:::{grid-item}
-
-```{image} Docs/Class1.png
-:alt: Class1
-:width: 600px
-:align: center
-```
-
-```{figure} Docs/weic2219a.jpg
----
-name: Experiment
-width: 600px
----
-The Protostar within L1527 source: [NASA APOD](https://apod.nasa.gov/apod/ap221118.html) *2022 November 18 *
-```
-
-:::
-::::
-:::::
-
-Protostar begins to emerge and become detectable in the NIR (near Infrared).
-
-Core is dispersing and punctuated by outflows 
-
-SED dominated by FIR
-
-
-`protostellar disk` to `protoplanetary disk` in 10<sup>4</sup> years (`ref 4 - 5`)
-This process involve high temperature but while material is accreted by the star the disk mass and temperature decrease. 
-
-
-
-M<sub>Star</sub> > M<sub>Core</sub>
-
-
-***
-
-#### <strong> Class 2 </strong>
-
-:::::{div} full-width
-::::{grid} 2 
-
-:::{grid-item}
-
-- **timescale**:
-
-:::
-
-:::{grid-item}
-
-```{image} Docs/Class2.png
-:alt: Class2
-:width: 600px
-:align: center
-```
-
-:::
-::::
-:::::
-
-Core has dissipated, the star has reached it's final mass and is now contracting. The star is now a Pre-Main-Sequence (PMS - ie T Tauri Star or HerbigAe depending on it's mass).
-
-`Infrared excess` above photosphere, due to a protoplantary disks.
-
-***
-
-#### <strong> Class 3 </strong>
-
-:::::{div} full-width
-::::{grid} 2 
-
-:::{grid-item}
-
-- **timescale**:
-
-:::
-
-:::{grid-item}
-
-```{image} Docs/Class3.png
-:alt: Class3
-:width: 600px
-:align: center
-```
-
-Circumstellar disk has very little dust (optically thin) and little if any infrared excess.
-
-SED looks like a stellar photosphere.
-
-:::
-::::
-:::::
-
-***
 
 ## Protoplanetary Disks
 
@@ -704,110 +840,111 @@ For water ice, the critical condensation temperature is between 145K (ref 24) an
 
 However, snow-line location of different ice species can vary due to several processes in the disk (`ref 26 - 28`)
 
-## Growth mechanism
 
-When Temperature inside PPD has decreased sub-micrometer to micrometer sized solid particles start to condense
-- {cite:p}`Li2020`
+- {cite:p}`Cieza2016`
 
-Particles are coupled to the gas (Orbiting at Keplerian speed) and this is what drives the relative speed of &micro;m dust grains (ie more or less head wind relative to their size). Dust orbits the protostar at very high velocities but the relative velocities between particles in collisions can be very slow (few cm or a few mm per second). At such velocities a “bouncing barrier” exists {cite:p}`Zsom2010`. Up to mm sizes the sticking is dominated by <span class="hovertext" data-hover="Description">Van der Waals type forces</span>, leading to the formation of fluffy aggregates. Past the km scale, gravity dominates {cite:p}`Gutler2010`.
+### Importance of snowline in Planet formation
 
+- {cite:p}`Zhang2015`
 
+```{tip}
 
-### <strong>&#187;  <u>  Coagulation of dust and ice particles </u></strong>
+- important for Ross, ie annular substructure can be the result of grain growth
+    ie dip appear because no more small grain, replaced by bigger grains -> PPD are not homogeneous
 
+```
+
+- {cite:p}`Okuzumi2012`
+
+### Planet formation scenario
+
+- **Core accretion scenario**
+
+## Planet building blocks
+
+### Interstellar Dust
 
 :::::{div} full-width
-::::{grid} 2
+::::{grid} 3 
 
 :::{grid-item}
 
-**Nomenclature** (from `ref 2`)
-- `Grains` (dust or ice) or sub &micro;m in size and homogeneous in composition (1 material) - (**Not really accurate is it ?**)
-- `Agglomerates` are grains that can be heterogeneous in composition
-- `Pebbles` mm to decimeter sized porous agglomerates (up to growth barrier when hit and stick regime stops)
+**Energy absorbed by grain**
 
-:::
-
-:::{grid-item}
-
-```{figure} Docs/Early_growth_Me.PNG
----
-name: Bouncing_lab
-width: 800px
----
-source: *Formation of comets* Blum 2022 - to reproduce better
+```{image} Docs/Equation/Eabs.svg
+:alt: Eabs
+:width: 200px
+:align: center
 ```
 
 :::
 
+:::{grid-item}
+
+**Energy emitted by grain**
+
+```{image} Docs/Equation/Eem.svg
+:alt: Eem
+:width: 200px
+:align: center
+```
+
+:::
+
+:::{grid-item}
+
+**Equilibrium dust temperature**
+
+```{image} Docs/Equation/Tdust_eq.svg
+:alt: Tdust_eq
+:width: 300px
+:align: center
+```
+:::
 ::::
 
 :::::
 
 
-#### <strong>The Bouncing Barrier</strong>
+#### Processing
 
 
 
-
-#### <strong>Formation of planetesimals from pebbles</strong> 
-
-via `streaming instability` and subsequent `gravitational collapse`
-
-##### Dust settling
-
-::::{margin}
-
-```{figure} Docs/growthB_I.PNG
+::::{div} full-width
+```{figure} Docs/Ice-process-PPD1.png
 ---
 name: Bouncing_lab
-width: 800px
+width: 1400px
 ---
-source: *Formation of comets* Blum 2022 - to reproduce better
 ```
-
-::::
-
-##### Streaming Instability
-
-::::{margin}
-
-```{figure} Docs/growthB_II.PNG
----
-name: Bouncing_lab
-width: 800px
----
-source: *Formation of comets* Blum 2022 - to reproduce better
-```
-
 ::::
 
 
-##### Gravitational collapse
-
-::::{margin}
-
-```{figure} Docs/growthB_III.PNG
----
-name: Bouncing_lab
-width: 800px
----
-source: *Formation of comets* Blum 2022 - to reproduce better
-```
-
-::::
+- Up to protostar - {cite:p}`Oberg2011`
 
 
 
+### Dust evolution
 
-#### <strong>Evolutionary alteration</strong>
+#### Grain-Grain collisions
 
-Leads to 3 different categories of evolved planetesimals
-- `Icy pebble piles`
-- `Icy rubble / pebble piles`
-- `Non icy rubble piles`
-They can be further subdivided depending on the evolution process
+foundation for theoratical models of dust evolution in disks
+- cf next chapters
 
 
+
+## Geochemistry
+
+### Comets 
+
+Reservoir of unprocessed ices
+
+#### D/H Ratio
+
+- {cite:p}`Faure2015`
+
+### Meteorites
+
+- {cite:p}`Cuzzi2005`
 
 

@@ -29,6 +29,7 @@ h2 {
     padding: 15px !important;
     background: linear-gradient(to bottom right, #003300 0%, #009933 120%);
     border-radius: 10px;
+    width: 100% !important;
 }
 
 h3 {
@@ -227,4 +228,64 @@ padding: 10px;
 .hovertext:hover:before {
   opacity: 1;
   visibility: visible;
+}
+
+
+
+/* 	Slideshow simple */
+
+input {
+  display: none;
+}
+
+.labelSC {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #efefef;
+  margin: 8px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.slides {
+  width: 400px;
+  text-align: center;
+}
+
+#slide-1:checked ~ #gallery {
+  background-image: url('assets/B68/eso44.jpg');
+}
+#slide-2:checked ~ #gallery {
+  background-image: url('assets/B68/eso55.jpg');
+}
+#slide-3:checked ~ #gallery {
+  background-image: url('assets/B68/eso90.jpg');
+}
+#slide-4:checked ~ #gallery {
+  background-image: url('assets/B68/eso125.jpg');
+}
+#slide-5:checked ~ #gallery {
+  background-image: url('assets/B68/eso165.jpg');
+}
+#slide-6:checked ~ #gallery {
+  background-image: url('assets/B68/eso216.jpg');
+}
+
+#gallery {
+  width: 400px;
+  height: 400px;
+  background-color: lightgrey;
+  background-size: cover;
+  border-radius: 0.375em;
+  box-shadow: 0 3px 8px 0 grey;
+}
+
+#slide-1:checked ~ .slides label:nth-of-type(1),
+#slide-2:checked ~ .slides label:nth-of-type(2),
+#slide-3:checked ~ .slides label:nth-of-type(3) 
+#slide-4:checked ~ .slides label:nth-of-type(4)
+#slide-5:checked ~ .slides label:nth-of-type(5) 
+#slide-6:checked ~ .slides label:nth-of-type(6) {
+  background: #888;
 }

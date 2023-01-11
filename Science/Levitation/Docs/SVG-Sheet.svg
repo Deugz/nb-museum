@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="SVG-Sheet.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker1283"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path1281" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path868"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4497"
+       id="linearGradient4223"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.32498138,0,0,0.32498138,-362.15724,-33.801442)"
+       x1="640.10504"
+       y1="400.26917"
+       x2="3007.1802"
+       y2="615.44818" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4497">
+      <stop
+         style="stop-color:#ffd700;stop-opacity:1;"
+         offset="0"
+         id="stop4499" />
+      <stop
+         style="stop-color:#ffd700;stop-opacity:0;"
+         offset="1"
+         id="stop4501" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4497"
+       id="linearGradient2015"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1515088,0,0,1.1515088,-2787.5756,-296.89446)"
+       x1="640.10504"
+       y1="400.26917"
+       x2="3007.1802"
+       y2="615.44818" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="228.60717"
+     inkscape:cy="832.3139"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2160"
+     inkscape:window-height="1346"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="opacity:0.45;fill:#ffffff;fill-opacity:1;stroke:#000080;stroke-width:0.467042;stroke-miterlimit:4;stroke-dasharray:0.467042, 1.401126;stroke-dashoffset:0"
+       id="path1541"
+       cx="104.0162"
+       cy="21.979656"
+       r="17.287863"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       id="path815"
+       cx="15.434815"
+       cy="17.770161"
+       r="4.07586"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       r="4.07586"
+       cy="30.866367"
+       cx="23.319267"
+       id="circle817"
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       id="circle819"
+       cx="31.871893"
+       cy="14.696561"
+       r="4.07586"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="23.307819"
+       y="46.301182"
+       id="text823"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png"><tspan
+         sodipodi:role="line"
+         id="tspan821"
+         x="23.803913"
+         y="46.301182"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332">Interstellar Dust </tspan><tspan
+         sodipodi:role="line"
+         x="23.307819"
+         y="49.82896"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan825">grain analogs</tspan><tspan
+         sodipodi:role="line"
+         x="23.307819"
+         y="53.356739"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan964">m</tspan><tspan
+         sodipodi:role="line"
+         x="23.307819"
+         y="56.884514"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan951" /><tspan
+         sodipodi:role="line"
+         x="23.307819"
+         y="60.412292"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1227" /><tspan
+         sodipodi:role="line"
+         x="23.307819"
+         y="63.940071"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1229" /><tspan
+         sodipodi:role="line"
+         x="23.307819"
+         y="67.46785"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1223" /><tspan
+         sodipodi:role="line"
+         x="23.307819"
+         y="70.995628"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1225" /></text>
+    <rect
+       style="opacity:0.45;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:0.565;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect827"
+       width="3.7417734"
+       height="3.7417734"
+       x="10.824416"
+       y="13.026127"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 10.824416,13.026127 4.0090428,6.4780233"
+       id="path829"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <text
+       id="text835"
+       y="7.0125608"
+       x="-17.317148"
+       style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png"><tspan
+         id="tspan833"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="7.0125608"
+         x="-17.317148"
+         sodipodi:role="line">Amorphous structure (HGW)</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="10.540339"
+         x="-17.317148"
+         sodipodi:role="line"
+         id="tspan839">Bulk density : <tspan
+   style="-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan843">0.94 g/cm</tspan><tspan
+   style="font-size:65%;baseline-shift:super;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan841">3</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="M 52.053094,24.785986 H 70.761958"
+       id="path845"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       r="4.07586"
+       cy="18.03743"
+       cx="92.942978"
+       id="circle1201"
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       id="circle1203"
+       cx="96.283852"
+       cy="11.622961"
+       r="4.07586"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       r="4.07586"
+       cy="21.111031"
+       cx="101.89651"
+       id="circle1205"
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       id="circle1207"
+       cx="97.085663"
+       cy="33.405426"
+       r="4.07586"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       r="4.07586"
+       cy="35.40995"
+       cx="105.10374"
+       id="circle1209"
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       id="circle1211"
+       cx="112.32001"
+       cy="32.202717"
+       r="4.07586"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       r="4.07586"
+       cy="11.222056"
+       cx="111.11731"
+       id="circle1213"
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       id="circle1215"
+       cx="103.7674"
+       cy="9.3511686"
+       r="4.07586"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       r="4.07586"
+       cy="16.567446"
+       cx="116.06179"
+       id="circle1217"
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       id="circle1219"
+       cx="117.13087"
+       cy="25.387341"
+       r="4.07586"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       r="4.07586"
+       cy="25.65461"
+       cx="91.473"
+       id="circle1221"
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <text
+       id="text1245"
+       y="46.167545"
+       x="103.68346"
+       style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png"><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="46.167545"
+         x="104.17955"
+         id="tspan1233"
+         sodipodi:role="line">Protoplanetary disk </tspan><tspan
+         id="tspan1235"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="49.695324"
+         x="103.68346"
+         sodipodi:role="line">Dust grain analogs</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="53.223103"
+         x="103.68346"
+         sodipodi:role="line"
+         id="tspan966">mm - cm</tspan><tspan
+         id="tspan1237"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="56.750877"
+         x="103.68346"
+         sodipodi:role="line" /><tspan
+         id="tspan1239"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="60.278656"
+         x="103.68346"
+         sodipodi:role="line" /><tspan
+         id="tspan1241"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="63.806435"
+         x="103.68346"
+         sodipodi:role="line" /><tspan
+         id="tspan1243"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="67.334213"
+         x="103.68346"
+         sodipodi:role="line" /></text>
+    <rect
+       y="14.362474"
+       x="97.152473"
+       height="3.7417734"
+       width="3.7417734"
+       id="rect1251"
+       style="opacity:0.45;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:0.565;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1253"
+       d="M 97.152478,14.362475 90.3371,7.8143709"
+       style="fill:none;stroke:#ff0000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="73.554489"
+       y="4.7407699"
+       id="text1263"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png"><tspan
+         sodipodi:role="line"
+         x="73.554489"
+         y="4.7407699"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1255">Porosity</tspan><tspan
+         id="tspan1261"
+         sodipodi:role="line"
+         x="73.554489"
+         y="8.268548"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332">SSA / Granularity :<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan949"> ?</tspan></tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1265"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion1267"><rect
+           id="rect1269"
+           width="256.07367"
+           height="189.40359"
+           x="92.934036"
+           y="-28.549141" /></flowRegion><flowPara
+         id="flowPara1271" /></flowRoot>    <path
+       inkscape:connector-curvature="0"
+       id="path1279"
+       d="M 103.76975,60.252253 V 71.389311"
+       style="fill:none;stroke:#000000;stroke-width:0.20413806px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker1283)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="103.68345"
+       y="81.84803"
+       id="text1537"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png"><tspan
+         sodipodi:role="line"
+         x="103.68345"
+         y="81.84803"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1527">Collisions</tspan><tspan
+         sodipodi:role="line"
+         x="103.68345"
+         y="85.375809"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1529" /><tspan
+         sodipodi:role="line"
+         x="103.68345"
+         y="88.903587"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1531" /><tspan
+         sodipodi:role="line"
+         x="103.68345"
+         y="92.431366"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1533" /><tspan
+         sodipodi:role="line"
+         x="103.68345"
+         y="95.959145"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1535" /></text>
+    <circle
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       id="circle1543"
+       cx="108.71188"
+       cy="18.438335"
+       r="4.07586"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       r="4.07586"
+       cy="26.189152"
+       cx="108.17735"
+       id="circle1545"
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <circle
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       style="opacity:0.45;fill:#80e5ff;stroke:#0000ff;stroke-width:0.26458332"
+       id="circle1547"
+       cx="98.422012"
+       cy="27.391865"
+       r="4.07586"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <image
+       y="49.082668"
+       x="17.596142"
+       id="image961"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAABRCAYAAACJ1BvjAAAABHNCSVQICAgIfAhkiAAAASxJREFU eJzt2CFOxEAYhuEXVCUSOThkj1CJ5BgcYSVHQOLWcgtwSORKcCCRuK6YJvx0uzQkzDRN3ieZ7CQz Tf9+TTczA5IkSZIkSZIkSZIk6X+cVLzXBmiAT+BuZu410A79e+CjYF3VJaAPbc5jmNsVq2rktNaN 1sAwAsMIDCMwjMAwAsMIDCMwjMAwgqXCuJwZP6tSxchSYbS/jG1H4+eFa6ku8XOj9kLewY5tR/N6 4KZOifUkDh/ymbxV74bfuFPdjfrd0FLFmotJHIZxrN2SP5NjY6uX+H6gd6Y/hx1wFa7ZTMzZlCyy 1klXAl6H/htwQX77ifzf8cT0aVZDDqgdrnsAvgrWWUXibyddi3DRFRhGYBiBYSygIa86e/LiSpIk SZIkSZIkSdLq7AHa5kvtqR1UmQAAAABJRU5ErkJggg== "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="7.1323299"
+       width="6.3681283"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\Global-aim.png" />
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       id="text4217"
+       y="109.61511"
+       x="-127.55518"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.38666677px;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:url(#linearGradient4223);fill-opacity:1;stroke:none;stroke-width:0.28222224px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\Viny\Desktop\C2D6\PhD\P1-Journey\Image\c2d6tit.png"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.39940548px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Semi-Bold';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="109.61511"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan987">  Experimenting with the earliest </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.39940548px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Semi-Bold';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="122.61436"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan991">      stages of planet formation</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.39940548px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Semi-Bold';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="127.07235"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan1003" /><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.39940548px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Semi-Bold';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="127.07235"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan1005" /><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.39940548px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Semi-Bold';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="127.07235"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan1007" /><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.39940548px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Semi-Bold';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="127.07235"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan1009" /><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.39940548px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Semi-Bold';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="127.07235"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan1011" /><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.39940548px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Semi-Bold';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="127.07235"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan1013" /><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:10.39940548px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Semi-Bold';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="127.07235"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan1015" /><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.79955435px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Italic';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="133.23503"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan4243">          </tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.79955435px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Italic';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="142.98448"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan1017">         <tspan
+   style="font-size:6.3499999px;fill:url(#linearGradient4223);stroke-width:0.28222224px"
+   id="tspan1021">       PhD adventure by Vincent Deguin</tspan></tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.79955435px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Italic';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="146.57124"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan993" /><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.79955435px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Italic';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="146.57124"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan995" /><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.79955435px;line-height:1.25;font-family:'Lucida Fax';-inkscape-font-specification:'Lucida Fax Italic';text-align:start;text-anchor:start;fill:url(#linearGradient4223);fill-opacity:1;stroke-width:0.28222224px"
+         y="146.57124"
+         x="-127.55518"
+         sodipodi:role="line"
+         id="tspan997" /></text>
+  </g>
+</svg>

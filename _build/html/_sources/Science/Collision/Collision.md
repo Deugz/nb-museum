@@ -1,4 +1,116 @@
-# Collision
+# Growth & Collision XP
+
+## Growth mechanism
+
+When Temperature inside PPD has decreased sub-micrometer to micrometer sized solid particles start to condense
+- {cite:p}`Li2020`
+
+Particles are coupled to the gas (Orbiting at Keplerian speed) and this is what drives the relative speed of &micro;m dust grains (ie more or less head wind relative to their size). Dust orbits the protostar at very high velocities but the relative velocities between particles in collisions can be very slow (few cm or a few mm per second). At such velocities a “bouncing barrier” exists {cite:p}`Zsom2010`. Up to mm sizes the sticking is dominated by <span class="hovertext" data-hover="Description">Van der Waals type forces</span>, leading to the formation of fluffy aggregates. Past the km scale, gravity dominates {cite:p}`Gutler2010`.
+
+
+
+### <strong>&#187;  <u>  Coagulation of dust and ice particles </u></strong>
+
+
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+
+**Nomenclature** (from `ref 2`)
+- `Grains` (dust or ice) or sub &micro;m in size and homogeneous in composition (1 material) - (**Not really accurate is it ?**)
+- `Agglomerates` are grains that can be heterogeneous in composition
+- `Pebbles` mm to decimeter sized porous agglomerates (up to growth barrier when hit and stick regime stops)
+
+:::
+
+:::{grid-item}
+
+```{figure} Docs/Early_growth_Me.PNG
+---
+name: Bouncing_lab
+width: 800px
+---
+source: *Formation of comets* Blum 2022 - to reproduce better
+```
+
+:::
+
+::::
+
+:::::
+
+
+#### <strong>The Bouncing Barrier</strong>
+
+**Can the Bouncing barrier be beneficial to growth ?**
+
+- {cite:p}`Windmark2012`
+
+
+
+
+
+#### <strong>Formation of planetesimals from pebbles</strong> 
+
+via `streaming instability` and subsequent `gravitational collapse`
+
+##### Dust settling
+
+::::{margin}
+
+```{figure} Docs/growthB_I.PNG
+---
+name: Bouncing_lab
+width: 800px
+---
+source: *Formation of comets* Blum 2022 - to reproduce better
+```
+
+::::
+
+##### Streaming Instability
+
+::::{margin}
+
+```{figure} Docs/growthB_II.PNG
+---
+name: Bouncing_lab
+width: 800px
+---
+source: *Formation of comets* Blum 2022 - to reproduce better
+```
+
+::::
+
+
+##### Gravitational collapse
+
+::::{margin}
+
+```{figure} Docs/growthB_III.PNG
+---
+name: Bouncing_lab
+width: 800px
+---
+source: *Formation of comets* Blum 2022 - to reproduce better
+```
+
+::::
+
+
+
+
+#### <strong>Evolutionary alteration</strong>
+
+Leads to 3 different categories of evolved planetesimals
+- `Icy pebble piles`
+- `Icy rubble / pebble piles`
+- `Non icy rubble piles`
+They can be further subdivided depending on the evolution process
+
+
+
 
 ## Experiments
 
@@ -224,6 +336,14 @@ Aikawa 2012 may not be a good ref,  check Deuterium fractionation papers
 
 Ice enhnaces the stickiness of interstellar grains {cite:p}`Gundlach2015`. No collisions between amorphous ice particles has been performed to date (even though they are present in PPD), the reason being the complex and metastable nature of amorphous ice which makes it difficult to produce, store and use. This is what I was trying to solve
 
+{cite:p}`Gartner2017`
+
+```{note}
+
+Extract ice figure
+- cite Neutron data above with this paper
+
+```
 
 
 ##### The difference between Ice and Dust
@@ -247,11 +367,12 @@ I designed an experiment to produce Amorphous Ice grain analogues. HGW is simila
 ::::{grid} 2
 :::{grid-item}
 
-**Explanation**
+- {cite:p}`Salter2009`
 
 ```{note}
 
-Inserer Slater paper
+Insert barillet photo in the paper
+
 
 ```
 

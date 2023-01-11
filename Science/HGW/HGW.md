@@ -1,4 +1,4 @@
-# HGW
+# Hyperquenched Glassy Water
 
 Hyperquenched Glassy Water
 
@@ -11,7 +11,19 @@ Obtained for the **extremely rapid** cooling of water dropplets. Different techn
 
 Nobel Price awarded to Jacques Dubochet ...
 
+
+## What is it
+
+### Similarity with ASW
+
+- {cite:p}`Mate2012`
+
+
 ## Production methods:
+
+### Plunge cooling method
+
+- {cite:p}`Ryan1992` - Review
 
 ### <strong>&#187;  <u>  Cryo Electron microscopy </u></strong> 
 
@@ -73,7 +85,9 @@ Idea that vitrification of water is impossible, only minimum growth can be achie
 
 In thin film method, dubochet confess that the proximity of the sample with a surface can have some influence (**definitely have for us**)
 
+**Sample history**
 
+- {cite:p}`Bald1979`
 
 ### <strong>&#187;  <u>  Basti/Blum attempt </u></strong> 
 
@@ -181,8 +195,14 @@ Presence of a **solute** changes the freezing conditions.
 
 ### <strong>&#187;  <u>Cooling rates and Mechanism of heat dissipation </u></strong>
 
+- {cite:p}`Gylys2016` - influence of film boiling on cooling
+--> need good heat dissipation medium
+
 
 ### <strong>&#187;  <u> Cryo-liquid comparison </u></strong>
+
+- {cite:p}`silvester_relative_1982`
+- {cite:p}`Bald1984`
 
 
 #### <strong>Ethane</strong>

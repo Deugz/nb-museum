@@ -17,16 +17,16 @@ parts:
   - caption: Methods
     chapters:
     - file: Thesis_JB_B/Method/Method
-    - file: Technical/XP_Dev    
+    - file: Technical/XP_Dev/XP_Dev    
       sections:
-      - file: Technical/Proof_of_concept
-      - file: Technical/2nd_Version
-      - file: Technical/Lev-Chamb      
-    - file: Technical/characterisation    
-      sections:      
-      - file: Technical/Neutron
-      - file: Technical/Microscopy
-      - file: Technical/Infrared      
+      - file: Technical/XP_Dev/V1/Proof_of_concept
+      - file: Technical/XP_Dev/V2/2nd_Version
+      - file: Technical/XP_Dev/Levitation/Lev-Chamb      
+    - file: Technical/Characterisation/characterisation    
+      sections:
+      - file: Technical/Characterisation/Microscopy/Microscopy
+      - file: Technical/Characterisation/Neutron/Neutron
+      - file: Technical/Characterisation/Infrared/Infrared      
   - caption: Results
     chapters:
     - file: Thesis_JB_B/Chapter6/Chapter6
