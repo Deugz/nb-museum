@@ -1,0 +1,929 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Star Formation &#8212; MUSEUM</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb-museum");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-museum/_build/html/Science/Planet_formation/Star_formation.html" />
+    <link rel="shortcut icon" href="../../_static/OU_Logo.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Protoplanetary Disks" href="PPD.html" />
+    <link rel="prev" title="Prequel" href="Prequel.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GYJ9YP0JJ4"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-GYJ9YP0JJ4');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">Current Version: 27/06/2022</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/OU_Logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">MUSEUM</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Thesis_JB_B/Intro/Intro.html">
+   ✏
+   <strong>
+    Chapter 1.B
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../Science.html">
+   Science
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="Planet_formation.html">
+     Stars &amp; Planet Formation
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="Prequel.html">
+       Prequel
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Star Formation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="PPD.html">
+       Protoplanetary Disks
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Blocks.html">
+       Building Blocks
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="GeoChem.html">
+       Geochemistry
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Collision/Collision.html">
+     Growth &amp; Collision XP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HGW/HGW.html">
+     Hyperquenched Glassy Water
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Levitation/Levitation.html">
+     Levitation and IR Signature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../How.html">
+     Thesis Aim → How ?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Methods
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Thesis_JB_B/Method/Method.html">
+   ✏
+   <strong>
+    Chapter 2.B
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Technical/XP_Dev/XP_Dev.html">
+   XP Development
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Technical/XP_Dev/V1/Proof_of_concept.html">
+     Proof of concept
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Technical/XP_Dev/V2/2nd_Version.html">
+     2
+     <sup>
+      nd
+     </sup>
+     Version
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Technical/XP_Dev/Levitation/Lev-Chamb.html">
+     Levitation Chamber
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Technical/Characterisation/characterisation.html">
+   Characterisation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Technical/Characterisation/Microscopy/Microscopy.html">
+     Microscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Technical/Characterisation/Neutron/Neutron.html">
+     Neutron Scattering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Technical/Characterisation/Infrared/Infrared.html">
+     Infrared
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Results
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Thesis_JB_B/Chapter6/Chapter6.html">
+   ✏
+   <strong>
+    Chapter 6
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Thesis_JB_B/Chapter7/Chapter7.html">
+   ✏
+   <strong>
+    Chapter 7
+   </strong>
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Bibliography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/Deugz/nb-museum"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/issues/new?title=Issue%20on%20page%20%2FScience/Planet_formation/Star_formation.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/edit/master/docs/Science/Planet_formation/Star_formation.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/Science/Planet_formation/Star_formation.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strong-u-spectral-energy-distribution-u-strong">
+     <strong>
+      ‣
+      <u>
+       Spectral Energy Distribution
+      </u>
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#strong-the-ariane-thread-to-follow-star-evolution-strong">
+       <strong>
+        The Ariane thread to follow star evolution
+       </strong>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#strong-black-vs-grey-body-radiation-strong">
+         <strong>
+          Black vs Grey body radiation
+         </strong>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strong-u-step-by-step-u-strong">
+     <strong>
+      ‣
+      <u>
+       Step by Step
+      </u>
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Star Formation</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strong-u-spectral-energy-distribution-u-strong">
+     <strong>
+      ‣
+      <u>
+       Spectral Energy Distribution
+      </u>
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#strong-the-ariane-thread-to-follow-star-evolution-strong">
+       <strong>
+        The Ariane thread to follow star evolution
+       </strong>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#strong-black-vs-grey-body-radiation-strong">
+         <strong>
+          Black vs Grey body radiation
+         </strong>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strong-u-step-by-step-u-strong">
+     <strong>
+      ‣
+      <u>
+       Step by Step
+      </u>
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="star-formation">
+<h1>Star Formation<a class="headerlink" href="#star-formation" title="Permalink to this headline">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<div class="full-width docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<p>Introduction paragraph</p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><strong>Plan</strong></p>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<h4> <strong> Notes </strong></h4> 
+<div class="full-width docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<h5> &#127793; <strong> For me </strong></h5>
+<div class="note dropdown admonition">
+<p class="admonition-title">To Do</p>
+<ul class="simple">
+<li><p>Insert a small paragraph about how we unveil the history of soloar systems via meteorites and Deuterium fractionation</p></li>
+<li><p>Finish this page as best I can and send to Ross for:</p>
+<ul>
+<li><p>Comments</p></li>
+<li><p>Ortograph Correction (lol, good luck with that)</p></li>
+<li><p>Check if something can be said about D/H or O<sup>16</sup>/O<sup>18</sup></p></li>
+</ul>
+</li>
+<li><p>Rework the intro</p>
+<ul>
+<li><p>Insert plan</p></li>
+</ul>
+</li>
+<li><p>Make sure that the titles are correct</p></li>
+</ul>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<h5> &#127757; <strong>The rest of the World </strong></h5>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ross</p>
+<p>Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / smaller disk ? What proportion of observed PPD via ALMA are homogeneous ?</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="strong-u-spectral-energy-distribution-u-strong">
+<h3><strong>‣  <u>  Spectral Energy Distribution </u></strong><a class="headerlink" href="#strong-u-spectral-energy-distribution-u-strong" title="Permalink to this headline">#</a></h3>
+<section id="strong-the-ariane-thread-to-follow-star-evolution-strong">
+<h4><strong> The Ariane thread to follow star evolution </strong><a class="headerlink" href="#strong-the-ariane-thread-to-follow-star-evolution-strong" title="Permalink to this headline">#</a></h4>
+<section id="strong-black-vs-grey-body-radiation-strong">
+<h5><strong> Black vs Grey body radiation </strong><a class="headerlink" href="#strong-black-vs-grey-body-radiation-strong" title="Permalink to this headline">#</a></h5>
+<div class="full-width docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<p>A dusty envelope absorbs the stellar photons.</p>
+<p>The dust grains re-emit thermal radiation (isotropically).</p>
+<p>This dust emission is absorbed by other grains.</p>
+<p>This process is reated until the photons escapes from the core.</p>
+<p>Because the (radiative) energy is conserved, the temperature of the surface that  the observer sees is much lower than that of the star and the characteristic wavelength longer (“redder”).</p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<a class="reference internal image-reference" href="../../_images/Dust_SED.png"><img alt="Class2" class="align-center" src="../../_images/Dust_SED.png" style="width: 600px;" /></a>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Insert link toward SED teaching material from Hawai uni</p>
+</div>
+<p>Within <strong>dense core</strong> …</p>
+<p>There is 2 parameters often used to describe the <strong>SED</strong> (Spectral Energy Distribution):</p>
+<ul class="simple">
+<li><p>Spectral index (class I, II, III)</p></li>
+<li><p>Bolometric temperature (class 0, I)
+However, SEDs are way too complex to be characterised by a single number and their characterisation are inevitably coarse</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="strong-u-step-by-step-u-strong">
+<h3><strong>‣  <u> Step by Step </u></strong><a class="headerlink" href="#strong-u-step-by-step-u-strong" title="Permalink to this headline">#</a></h3>
+<div class="full-width docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-4 sd-row-cols-xs-4 sd-row-cols-sm-4 sd-row-cols-md-4 sd-row-cols-lg-4 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<h5><strong>Class 0</strong></h5>
+<figure class="align-default" id="class0a">
+<a class="reference internal image-reference" href="../../_images/Class0a.png"><img alt="../../_images/Class0a.png" src="../../_images/Class0a.png" style="width: 300px;" /></a>
+</figure>
+<figure class="align-default" id="class0b">
+<a class="reference internal image-reference" href="../../_images/Class0b.png"><img alt="../../_images/Class0b.png" src="../../_images/Class0b.png" style="width: 300px;" /></a>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<h5><strong>Class 1</strong></h5>
+<figure class="align-default" id="class1a">
+<a class="reference internal image-reference" href="../../_images/Class1a.png"><img alt="../../_images/Class1a.png" src="../../_images/Class1a.png" style="width: 300px;" /></a>
+</figure>
+<figure class="align-default" id="class1b">
+<a class="reference internal image-reference" href="../../_images/Class1b.png"><img alt="../../_images/Class1b.png" src="../../_images/Class1b.png" style="width: 300px;" /></a>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<h5><strong>Class 2</strong></h5>
+<figure class="align-default" id="class2a">
+<a class="reference internal image-reference" href="../../_images/Class2a.png"><img alt="../../_images/Class2a.png" src="../../_images/Class2a.png" style="width: 300px;" /></a>
+</figure>
+<figure class="align-default" id="class2b">
+<a class="reference internal image-reference" href="../../_images/Class2b.png"><img alt="../../_images/Class2b.png" src="../../_images/Class2b.png" style="width: 300px;" /></a>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<h5><strong>Class 3</strong></h5>
+<figure class="align-default" id="class3a">
+<a class="reference internal image-reference" href="../../_images/Class3a.png"><img alt="../../_images/Class3a.png" src="../../_images/Class3a.png" style="width: 300px;" /></a>
+</figure>
+<figure class="align-default" id="class3b">
+<a class="reference internal image-reference" href="../../_images/Class3b.png"><img alt="../../_images/Class3b.png" src="../../_images/Class3b.png" style="width: 300px;" /></a>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="full-width docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Images<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="1c770ef4-7f72-4304-a12f-45761b8732c7" name="87234335-7fad-46bd-a337-6a956d9c4518" type="radio">
+</input><label class="sd-tab-label" for="1c770ef4-7f72-4304-a12f-45761b8732c7">
+Class 0</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">First stage of planet formation.
+Not detectable in the near infrared.</p>
+<p class="sd-card-text">Cold core emit like a <code class="docutils literal notranslate"><span class="pre">grey</span> <span class="pre">body</span></code></p>
+<p class="sd-card-text">M<sub>Star</sub> &lt; M<sub>Core</sub></p>
+<p class="sd-card-text"><strong>More Ressources</strong>:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://www.eso.org/sci/meetings/2020/hltau2020/talks/Class_0I.html">ESO - HLTau 2020 meeting</a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p class="sd-card-text">Extract picture from article below</p></li>
+</ul>
+</div>
+<p class="sd-card-text"><strong>Litterature</strong></p>
+<p class="sd-card-text"><span id="id1">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id48" title="Elena Redaelli, Stefano Bovino, Patricio Sanhueza, Kaho Morii, Giovanni Sabatini, Paola Caselli, Andrea Giannetti, and Shanghuo Li. The core population and kinematics of a massive clump at early stages: an atacama large millimeter/submillimeter array view. The Astrophysical Journal, 936:169, 9 2022. doi:10.3847/1538-4357/ac85b4.">Redaelli <em>et al.</em>, 2022</a>]</span></p>
+</div>
+<input id="97ee55ab-cb8a-4199-b812-c1042bc31d1d" name="87234335-7fad-46bd-a337-6a956d9c4518" type="radio">
+</input><label class="sd-tab-label" for="97ee55ab-cb8a-4199-b812-c1042bc31d1d">
+Class 1</label><div class="sd-tab-content docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<p class="sd-card-text">Protostar begins to emerge and become detectable in the NIR (near Infrared).</p>
+<p class="sd-card-text">Core is dispersing and punctuated by outflows</p>
+<p class="sd-card-text">SED dominated by FIR</p>
+<p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">protostellar</span> <span class="pre">disk</span></code> to <code class="docutils literal notranslate"><span class="pre">protoplanetary</span> <span class="pre">disk</span></code> in 10<sup>4</sup> years (<code class="docutils literal notranslate"><span class="pre">ref</span> <span class="pre">4</span> <span class="pre">-</span> <span class="pre">5</span></code>)
+This process involve high temperature but while material is accreted by the star the disk mass and temperature decrease.</p>
+<p class="sd-card-text">M<sub>Star</sub> &gt; M<sub>Core</sub></p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="experiment">
+<a class="reference internal image-reference" href="../../_images/weic2219a.jpg"><img alt="../../_images/weic2219a.jpg" src="../../_images/weic2219a.jpg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">The Protostar within L1527 source: <a class="reference external" href="https://apod.nasa.gov/apod/ap221118.html">NASA APOD</a> *2022 November 18 *</span><a class="headerlink" href="#experiment" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<input id="4a99f187-b593-48d8-ba13-09c954567f93" name="87234335-7fad-46bd-a337-6a956d9c4518" type="radio">
+</input><label class="sd-tab-label" for="4a99f187-b593-48d8-ba13-09c954567f93">
+Class 2</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">Core has dissipated, the star has reached it’s final mass and is now contracting. The star is now a Pre-Main-Sequence (PMS - ie T Tauri Star or HerbigAe depending on it’s mass).</p>
+<p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Infrared</span> <span class="pre">excess</span></code> above photosphere, due to a protoplantary disks.</p>
+<p class="sd-card-text"><strong>Litterature</strong></p>
+</div>
+<input id="8f51f1a0-a691-4300-b1b6-43b8996406ca" name="87234335-7fad-46bd-a337-6a956d9c4518" type="radio">
+</input><label class="sd-tab-label" for="8f51f1a0-a691-4300-b1b6-43b8996406ca">
+Class 3</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">Circumstellar disk has very little dust (optically thin) and little if any infrared excess.</p>
+<p class="sd-card-text">SED looks like a stellar photosphere.</p>
+<p class="sd-card-text"><strong>Litterature</strong></p>
+</div>
+</div>
+</div>
+</details></div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Science\Planet_formation"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Prequel.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Prequel</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="PPD.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Protoplanetary Disks</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Vincent Deguin<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

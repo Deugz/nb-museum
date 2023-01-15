@@ -10,6 +10,12 @@ parts:
     - file: Science/Science
       sections:
       - file: Science/Planet_formation/Planet_formation
+        sections:
+        - file: Science/Planet_formation/Prequel
+        - file: Science/Planet_formation/Star_formation
+        - file: Science/Planet_formation/PPD
+        - file: Science/Planet_formation/Blocks
+        - file: Science/Planet_formation/GeoChem
       - file: Science/Collision/Collision
       - file: Science/HGW/HGW
       - file: Science/Levitation/Levitation
