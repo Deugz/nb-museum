@@ -3,20 +3,56 @@
 
 <h3> <strong>&#187;  <u>  How it works </u></strong> </h3>
 
+:::::{div} full-width
+::::{grid} 2 
+
+:::{grid-item}
+
+```{note}
+
+**Explain the 2 formats** 
+
+- what is the difference, between the 2
+
+```
+
+:::
+
+:::{grid-item}
+
 ```{figure} Docs/Funnel_final.png
 ---
-name: Planet formation
+name: Plan
 width: 400px
 ---
 
 ```
 
+:::
 
+::::
+
+:::::
 
 
 
 
 <h3> <strong>&#187;  <u>  Plan </u></strong> </h3>
+
+::::{div} full-width
+
+```{figure} Docs/bubble-plan.svg
+---
+name: Planet formation
+width: 1000px
+---
+
+```
+
+::::
+
+
+
 
 :::::{div} full-width
 ::::{grid} 5

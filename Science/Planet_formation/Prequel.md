@@ -1,4 +1,6 @@
-# Prequel
+# Setting up the stage
+
+***
 
 <h3> <strong> <u>  Introduction </u></strong> </h3>
 
@@ -6,27 +8,53 @@
 ::::{grid} 2
 
 :::{grid-item}
+:columns: 7
 
-Introduction paragraph
+It is commonly assumed by the public that appart from stars, our galaxy is empty, filled by void (as our eyes can see we we observe the night sky). And even though the vaccum we can achieve on Earth is higher than what we found in space, assuming that the medium between the stars (rightfully named the Interstellar Medium) is empty, is a big misconception. 
 
 :::
 
 :::{grid-item}
+:columns: 5
 
 **Plan**
+
+- **The Interstellar Medium**
+    - Galactic ecocystem and star lifecycle
+    - Structure and environments 
+
+<br>
+
+- **Interstellar Dust Grains**
+    - Formation and evolution
+    - Structure
+    
+<br>
+
+- **Molecular Clouds**
+    - Observation
+        - Extinction of star light
+        - Distribution throughout the Galaxy
+    - Properties
+        - Molecular factories
+        - Star nurseries
+        
+<br>
+
+- **Summary**
 
 :::
 
 ::::
 :::::
 
-
-***
-
-
-<h4> <strong> Notes </strong></h4> 
-
 ::::::{div} full-width
+
+<div id="note">
+
+- **Notes:**
+    
+***
 
 :::::{grid} 2
 
@@ -62,26 +90,20 @@ Introduction paragraph
 :class: tip, dropdown
 Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / smaller disk ? What proportion of observed PPD via ALMA are homogeneous ?
 ```
-
-
-
 ::::
-
-
-
-:::::
-  
+:::::  
+    
+</div>
+    
 ::::::
     
-  
 
 
 
-## Setting up the scene 
 
-### <strong> &#x2023; <u>  The Interstellar Medium </u></strong> 
+##  The Interstellar Medium 
 
-#### <strong> &#x2023; &#x2023; Galactic Ecocystem and Star lifecycle</strong>
+### <strong> &#x2023; <u> Galactic Ecocystem and Star lifecycle </u></strong> 
 
 :::::{div} full-width
 ::::{grid} 2 
@@ -113,7 +135,9 @@ Figure caption
 
 :::::
 
-````{margin}
+
+The Big Bang produced all the Hydrogen (as well as Helium and Lithium) present today in the universe. The rest of the elements of the periodic table (called metal by Astronomers), up to iron (Z = 26), has been produced in the center of stars in a process called <span class="hovertext" data-hover="Hydrogen is burned in fusion reaction and heavier elements are produced as the star evolve">nucleosynthesis</span>. However, it is only when the star die in a massive explosion like supernovae, that those heavy elements are ejected throughout the Universe. We are now 14.6 Billion years post Big Bang and at the third generation of stars, galaxies have had time to form and they will be our host for the rest of this discussion. So what are galaxies made of ? Well, a supermassive Black hole at the center and then stars (may be solar systems) as far as our eyes can see, but this would be omitting the major constituent of the 
+
 ```{note}
 
 **Introduce the ISM**
@@ -123,13 +147,10 @@ Figure caption
 - Big dust production when they die (supernovae)
 
 ```
-````
-
-The Big Bang produced all the Hydrogen (as well as Helium and Lithium) present today in the universe. The rest of the elements of the periodic table (called metal by Astronomers), up to iron (Z = 26), has been produced in the center of stars in a process called <span class="hovertext" data-hover="Hydrogen is burned in fusion reaction and heavier elements are produced as the star evolve">nucleosynthesis</span>. However, it is only when the star die in a massive explosion like supernovae, that those heavy elements are ejected throughout the Universe. We are now 14.6 Billion years post Big Bang and at the third generation of stars, galaxies have had time to form and they will be our host for the rest of this discussion. So what are galaxies made of ? Well, a supermassive Black hole at the center and then stars (may be solar systems) as far as our eyes can see, but this would be omitting the major constituent of the 
 
 ***
 
-#### <strong> &#x2023; &#x2023; Structure and environments </strong>
+### <strong> &#x2023; <u> Structure and environments </u></strong> 
 
 :::::{div} full-width
 ::::{grid} 2 
@@ -253,12 +274,61 @@ Description
 
 ***
 
-### <strong>&#x2023;  <u>  Interstellar Dust Grains</u></strong>
+##  Interstellar Dust Grains
+
+### <strong>&#x2023;  <u> Formation and evolution </u></strong>
+
+Betelgeuse:
+- Red supergiant
+- R☉ = 1000
+
+```{figure} Docs/Betelgeuse_SME.jpg
+---
+name: Betelgeuse Outburst
+width: 1000px
+---
+Betelgeuse Outburst (**Artist impression**) [Source](https://www.nasa.gov/feature/goddard/2020/hubble-finds-that-betelgeuses-mysterious-dimming-is-due-to-a-traumatic-outburst)
+```
+
+:::::{dropdown} Scientific Observations
+
+::::{tab-set}
+
+:::{tab-item} Direct Imaging
+
+Sphere Instrument - ESO VLT
+
+```{figure} Docs/Eso2003c.jpg
+---
+name: Betelgeuse Sphere Instrument
+width: 1000px
+---
+[Source](https://commons.wikimedia.org/wiki/File:Eso2003c.jpg)
+```
+
+:::
+
+:::{tab-item} Spectroscopy ?
+
+- [Static curves](https://www.aavso.org/LCGv2/static.htm?DateFormat=Calendar&RequestedBands=V,R&Grid=true&view=api.delim&ident=betelgeuse&fromjd=2458120&tojd=2459961.165&delimiter=@@@)
+- [Interactive curve](https://www.aavso.org/LCGv2/index.htm?DateFormat=Calendar&RequestedBands=V,R&view=api.delim&ident=betelgeuse&fromjd=2458120&tojd=2459961.165&delimiter=@@@)
+
+
+```{figure} Docs/Betelgeuse_dim_plot.png
+---
+name: Betelgeuse Sphere Instrument
+width: 1000px
+---
+```
+
+
+:::
+::::
+:::::
 
 Interstellar dust is the Ariane thread connecting star death with star formation after having evolved through the ISM.  
 
-
-#### <strong>&#x2023; &#x2023; Structure </strong>
+### <strong>&#x2023;  <u> Structure  </u></strong>
 
 :::::{div} full-width
 ::::{grid} 2 
@@ -332,12 +402,11 @@ introduction to these topics can be found elsewhere (Kr¨ugel 2002, Draine 2003a
 
 ```
 
+## Molecular Clouds
 
-### <strong> &#x2023;  <u>  Molecular Clouds </u></strong>
+### <strong> &#x2023;  <u> Observation  </u></strong>
 
-#### <strong> &#x2023; &#x2023; Observation</strong>
-
-##### <strong> &#x2023; &#x2023; &#x2023; Extinction of star light</strong>
+#### <strong> &#x2023; &#x2023; Extinction of star light </strong>
 
 :::::{div} full-width
 ::::{grid} 2 
@@ -393,7 +462,7 @@ Indeed, our dear William couldn't have been more wrong (yes, it happens to every
 
 :::::
 
-###### How does it work ?
+##### <strong> &#x2023; &#x2023; &#x2023; How does it work ? </strong>
 
 Absorption / Scattering
 
@@ -404,8 +473,8 @@ Wavelength dependance of `interstellar extinction` gives information about the s
 
 - R<sub>V</sub>
 
+#### <strong> &#x2023; &#x2023; Distribution </strong>
 
-##### <strong> &#x2023; &#x2023; &#x2023; Distribution</strong>
 
 ::::{div} full-width
 
@@ -421,7 +490,7 @@ Wavelength dependance of `interstellar extinction` gives information about the s
 
 For an interactive view of the Galaxy at multiple wavelength over the whole electromagnetic spectrum, check <a href="https://chromoscope.net/" target="blank"> Chromoscope </a>.
  
-````{margin}
+::::{margin}
 
 ```{admonition} Scientific Activity
 :class: seealso, dropdown
@@ -431,7 +500,7 @@ Open the dropdown on your left and have a look at the different molecular clouds
 - [ESA Sky](http://sky.esa.int/)
 
 ```
-````
+::::
 
 <br>
 
@@ -472,20 +541,17 @@ Description
 ::::
 :::::
 
+***
+
+### <strong> &#x2023; <u> Properties </u></strong> 
+
+#### <strong> &#x2023; &#x2023; Molecular factory </strong>
 
 
-
-#### <strong> &#x2023; &#x2023; Properties</strong>
-
-
-
-##### <strong> &#x2023; &#x2023; &#x2023; Molecular factory</strong>
 
 Quiescent over long timescales. Shield dust from radiation ...
 
-
-##### <strong> &#x2023; &#x2023; &#x2023; Star nursery</strong>
-
+#### <strong> &#x2023; &#x2023; Star nursery </strong>
 
 
 :::::{div} full-width
@@ -535,5 +601,32 @@ Those clouds, made of gas and dusts are the cocoons within which star forms. The
 
 
 ***
+
+## Summary 
+
+
+:::::{div} full-width
+::::{grid} 2 
+
+:::{grid-item}
+:columns: 8
+
+**summary**
+
+We have seen ...
+
+:::
+
+:::{grid-item}
+:columns: 4
+
+**Next Steps**
+
+***
+
+:::
+::::
+:::::
+
 
 

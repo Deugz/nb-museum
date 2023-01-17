@@ -1,32 +1,42 @@
 # Star Formation
 
-## Introduction
+<h3> <strong> <u>  Introduction </u></strong> </h3>
 
 :::::{div} full-width
 ::::{grid} 2
 
 :::{grid-item}
+:columns: 7
 
-Introduction paragraph
+Intro paragraph
 
 :::
 
 :::{grid-item}
+:columns: 5
 
 **Plan**
+
+- **Spectral Energy Distribution**
+    - Galactic ecocystem and star lifecycle
+    - Structure and environments 
+
+<br>
+
+- **Summary**
 
 :::
 
 ::::
 :::::
 
-
-***
-
-
-<h4> <strong> Notes </strong></h4> 
-
 ::::::{div} full-width
+
+<div id="note">
+
+- **Notes:**
+    
+***
 
 :::::{grid} 2
 
@@ -62,27 +72,18 @@ Introduction paragraph
 :class: tip, dropdown
 Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / smaller disk ? What proportion of observed PPD via ALMA are homogeneous ?
 ```
-
-
-
 ::::
-
-
-
-:::::
-  
-::::::
+:::::  
     
-  
+</div>
+    
+::::::
+   
+## Spectral Energy Distribution
 
+### <strong>&#x2023;  <u> Ariane thread for star evolution  </u></strong>
 
-
-### <strong>&#x2023;  <u>  Spectral Energy Distribution </u></strong>
-
-#### <strong> The Ariane thread to follow star evolution </strong>
-
-##### <strong> Black vs Grey body radiation </strong>
-
+#### <strong> &#x2023; &#x2023; Black vs Grey body radiation </strong>
 
 :::::{div} full-width
 ::::{grid} 2 
@@ -134,7 +135,7 @@ There is 2 parameters often used to describe the **SED** (Spectral Energy Distri
 - Bolometric temperature (class 0, I)
 However, SEDs are way too complex to be characterised by a single number and their characterisation are inevitably coarse
 
-### <strong>&#x2023;  <u> Step by Step </u></strong>
+## Step by Step
 
 :::::{div} full-width
 ::::{grid} 4
@@ -325,5 +326,15 @@ SED looks like a stellar photosphere.
 :::::
 ::::::
 
+## From Cloud to Disk 
+
+How much of the initial material is reprocessed 
+
+```{note}
+
+- Ross D/H ratio
+    - Energetic processes responsible for H fractionation
+
+```
 
 

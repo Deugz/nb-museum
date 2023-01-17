@@ -15,8 +15,12 @@ parts:
         - file: Science/Planet_formation/Star_formation
         - file: Science/Planet_formation/PPD
         - file: Science/Planet_formation/Blocks
-        - file: Science/Planet_formation/GeoChem
-      - file: Science/Collision/Collision
+      - file: Science/Collision/MCG_Main
+        sections:
+        - file: Science/Collision/Migration
+        - file: Science/Collision/Collision
+        - file: Science/Collision/Growth
+        - file: Science/Collision/GeoChem
       - file: Science/HGW/HGW
       - file: Science/Levitation/Levitation
       - file: Science/How

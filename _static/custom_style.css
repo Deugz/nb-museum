@@ -133,6 +133,14 @@ padding: 10px;
 border-radius: 5px;
 }
 
+#note
+
+{
+padding: 5px;
+border-radius: 5px;
+box-shadow: 0 3px 8px 0 grey;
+}
+
 #subdiv2
 {
 width:50%;
