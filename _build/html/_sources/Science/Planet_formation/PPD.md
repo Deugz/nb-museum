@@ -1,32 +1,43 @@
 # Protoplanetary Disks
 
-## Introduction
+***
+
+<h3> <strong> <u>  Introduction </u></strong> </h3>
 
 :::::{div} full-width
 ::::{grid} 2
 
 :::{grid-item}
+:columns: 7
 
-Introduction paragraph
+Intro paragraph
 
 :::
 
 :::{grid-item}
+:columns: 5
 
 **Plan**
 
-:::
+- **Spectral Energy Distribution**
+    - Galactic ecocystem and star lifecycle
+    - Structure and environments 
 
+<br>
+
+- **Summary**
+
+:::
 ::::
 :::::
 
-
-***
-
-
-<h4> <strong> Notes </strong></h4> 
-
 ::::::{div} full-width
+
+<div id="note">
+
+- **Notes:**
+    
+***
 
 :::::{grid} 2
 
@@ -39,16 +50,8 @@ Introduction paragraph
 ```{admonition} To Do
 :class: note, dropdown
 
-- Insert a small paragraph about how we unveil the history of soloar systems via meteorites and Deuterium fractionation
-
-- Finish this page as best I can and send to Ross for:
-    - Comments
-    - Ortograph Correction (lol, good luck with that)
-    - Check if something can be said about D/H or O<sup>16</sup>/O<sup>18</sup>
-
-- Rework the intro
-    - Insert plan
-- Make sure that the titles are correct
+- Think about coherent plan
+- Implement
 
 ```
 
@@ -58,31 +61,125 @@ Introduction paragraph
 
 <h5> &#127757; <strong>The rest of the World </strong></h5>
 
-```{admonition} Ross
+```{admonition} Colaboration
 :class: tip, dropdown
-Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / smaller disk ? What proportion of observed PPD via ALMA are homogeneous ?
+
+Star formation is not my expertise so if you want to help, feel free to comment the contribution you could make
+
+```
+::::
+:::::  
+    
+</div>
+    
+::::::
+   
+## Quick Overview
+
+### <strong>&#x2023;  <u> Definition </u></strong>
+
+<p class="emphase">A protoplanetary disk is a rotating disk of gas and dust surrounding a newly formed star, from which planets and other celestial objects eventually form.</p>
+
+```{note}
+
+**How did we get there**
+- Class 2
+
+
+- Explain rotation of gas and -> Disk.
+- Gas:Dust ratio 99:1
+
+```
+  
+### <strong>&#x2023;  <u> Discovery and Early History  </u></strong>
+
+Infrared excess around young stars
+
+#### <strong>&#x2023; &#x2023;  Direct Imaging </strong>
+
+##### <strong>&#x2023; &#x2023; &#x2023;  The First </strong>
+
+:::::{div} full-width
+::::{grid} 2
+:::{grid-item}
+:columns: 8
+
+Directly imaged by Hubble in 1992.
+{cite:p}`ODell1993`
+
+```{admonition} Cool fact 
+
+Beneficiated from the refurbishment of Hubble in 1993
+
+- Check [link](https://www.nasa.gov/mission_pages/hubble/servicing/index.html)
+
+```
+
+{cite:p}`Odell1994`
+
+
+
+:::
+
+:::{grid-item}
+:columns: 4
+
+```{figure} Docs/PPD_Odell_1.jpg
+---
+name: PPD_first_image
+width: 300px
+---
+PPD [source](https://hubblesite.org/contents/media/images/1994/24/164-Image.html?news=true)
+```
+
+:::
+::::
+:::::
+
+##### <strong>&#x2023; &#x2023; &#x2023;  The Famous </strong>
+
+```{note}
+
+HL Tau
+
+```
+
+substructure -> structure
+
+
+
+
+### <strong> Structure </strong>
+
+```{note}
+
+Insert here the most simple diagram from Birnstiel + Observations
+
+```
+
+#### <strong> Constituents </strong>
+
+```{figure} Docs/Dullemond-2006.png
+---
+name: PPD_constit
+width: 1200px
+---
+[Reference]() - Dullemond 2006 to find
+```
+
+```{note}
+
+Split in 2 and modify in inkscape with relevant information
+
 ```
 
 
 
-::::
+#### <strong> Observation techniques </strong>
 
+Different techniques will probe different parts, objects of the disk ...
 
-
-:::::
-  
-::::::
-    
-  
-
-
-### <strong>&#x2023;  <u> What ? </u></strong>
-
-#### <strong> How did we got there </strong>
-
-
-
-#### <strong> Observations </strong>
+- link with SED 
 
 
 
@@ -95,7 +192,7 @@ Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / s
 ```
 
 
-````{margin}
+::::{margin}
 
 ```{image} Docs/Andrews-et-al-Animation.gif
 :alt: PPD-Gif
@@ -105,18 +202,77 @@ Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / s
 
 [Papers + Data](https://almascience.eso.org/almadata/lp/DSHARP/)
 
-````
+::::
 
 
-```{note}
 
-Intro paragraphe (emphase format to introduce the subject/topic)
 
+## Properties 
+
+<p class="emphase">Protoplanetary disks are a beautifull playground for modellers to play.</p>
+
+<br>
+<br>
+
+### Physics of PPDs
+
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+:columns: 4
+
+Figure X is a protoplanetary disk schematic highlighting some of the key disc mechanisms and the physics that is required to be modeled to understand them (in parentheses and defined below):
+
+- **HD**: <span class="hovertext" data-hover="Definition">Hydrodynamics</span> 
+
+<br>
+
+- **MHD**: <span class="hovertext" data-hover="Definition">Magnetohydrodynamics</span> 
+
+<br>
+
+- **RHD**: <span class="hovertext" data-hover="Definition">Radiationhydrodynamics</span> 
+
+<br>
+
+- **RT**: <span class="hovertext" data-hover="Definition">Radiative transfer</span>
+
+<br>
+
+- **CHEM**: <span class="hovertext" data-hover="Definition">Chemistry</span>
+
+<br>
+
+- **DD**: <span class="hovertext" data-hover="Definition">Dust dynamics</span> 
+
+:::
+
+:::{grid-item}
+:columns: 8
+```{figure} Docs/ModelPP.png
+---
+name: PPD_models
+width: 1200px
+---
+[Reference]()
 ```
 
+:::
+
+::::
+
+:::::
+
+Most of the Physics presented above is out of the scope of my work and we will now focus on the Dust Dynamics, and more ?
+
+#### Dust Dynamics
 
 
-### <strong>&#x2023;  <u>  Properties </u></strong>
+
+
+
+
 
 
 PPD Diagrams comes from Til Birnstiel website - [source](https://www.til-birnstiel.de/#stacks_in_395_page1_myModal)
@@ -277,3 +433,6 @@ However, snow-line location of different ice species can vary due to several pro
 ### Planet formation scenario
 
 - **Core accretion scenario**
+
+
+{cite:p}`Eistrup2022`

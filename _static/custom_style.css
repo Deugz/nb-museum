@@ -322,6 +322,13 @@ padding: 10px;
   padding: Opx !important;
 }
 
+#transition-img .images-Nebula {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  padding: Opx !important;
+}
+
 #transition-img img {
   width: 100%;
   height: 100%;

@@ -67,16 +67,7 @@ It is commonly assumed by the public that appart from stars, our galaxy is empty
 ```{admonition} To Do
 :class: note, dropdown
 
-- Insert a small paragraph about how we unveil the history of soloar systems via meteorites and Deuterium fractionation
-
-- Finish this page as best I can and send to Ross for:
-    - Comments
-    - Ortograph Correction (lol, good luck with that)
-    - Check if something can be said about D/H or O<sup>16</sup>/O<sup>18</sup>
-
-- Rework the intro
-    - Insert plan
-- Make sure that the titles are correct
+- Keep implementing
 
 ```
 
@@ -86,9 +77,12 @@ It is commonly assumed by the public that appart from stars, our galaxy is empty
 
 <h5> &#127757; <strong>The rest of the World </strong></h5>
 
-```{admonition} Ross
-:class: tip, dropdown
-Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / smaller disk ? What proportion of observed PPD via ALMA are homogeneous ?
+```{admonition} Supervisors
+:class: warning, dropdown
+
+Taking into consideration that this content is aimed at bachelor student or science enthusiast, what do you think about the format? The plan ?
+
+
 ```
 ::::
 :::::  
@@ -321,10 +315,26 @@ width: 1000px
 ---
 ```
 
+:::
+
+:::{tab-item} Emission
+
+```{figure} Docs/Betelgeuse_3.png
+---
+name: Betelgeuse Emission
+width: 1000px
+---
+[Source](https://hubblesite.org/contents/media/images/2020/44/4727-Image?itemsPerPage=100&page=2&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+```
 
 :::
+
+
+
 ::::
 :::::
+
+**Review**: Carbonaceous grains {cite:p}`Herrero2022`
 
 Interstellar dust is the Ariane thread connecting star death with star formation after having evolved through the ISM.  
 
@@ -602,8 +612,51 @@ Those clouds, made of gas and dusts are the cocoons within which star forms. The
 
 ***
 
-## Summary 
+## Triggering star formation
 
+How does the process of star formation beggin ? not out of the blue
+
+- Contraction of molecular cloud OK but what else
+
+
+### A Brief History of our own Solar system
+
+4.6 Billion years ago ...
+
+#### The local Bubble
+
+{cite:p}`Zucker2022`
+
+:::::{div} full-width
+::::{grid} 2 
+
+:::{grid-item}
+:columns: 3
+
+Explanation,
+
+Go check the various star formation region in Figure X
+
+:::
+
+:::{grid-item}
+:columns: 9
+
+```{figure} Docs/Local_Bubble.png
+---
+name: Local_Bubble
+width: 1200px
+---
+[Source](https://hubblesite.org/contents/media/images/2022/006/01FS4Y67XXY8Y8HBVK4V404G21?itemsPerPage=100) 
+```
+
+
+:::
+::::
+:::::
+
+
+## Summary 
 
 :::::{div} full-width
 ::::{grid} 2 
@@ -611,14 +664,26 @@ Those clouds, made of gas and dusts are the cocoons within which star forms. The
 :::{grid-item}
 :columns: 8
 
-**summary**
-
-We have seen ...
+<figure id="transition-img">
+<div class="images-Nebula">
+<img src="../../_static/assets/MC/Beautyfull_star_formation_IR.png" alt="" class="two">
+<img src="../../_static/assets/MC/Beautyfull_star_formation_V.png" alt="" class="one">
+</div>
+<figcaption>Hover the figure to switch between images - <a href="https://hubblesite.org/contents/media/images/2018/21/4150-Image.html?itemsPerPage=100&page=5&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945" target="blank"> Image 1 </a> Visible  - <a href="https://hubblesite.org/contents/media/images/2018/21/4151-Image.html?itemsPerPage=100&page=5&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945" target="blank"> Image 2 </a> Infrared </figcaption>
+</figure>
 
 :::
 
 :::{grid-item}
 :columns: 4
+
+
+<br>
+<br>
+
+We have seen that ...
+
+
 
 **Next Steps**
 

@@ -1,5 +1,7 @@
 # Star Formation
 
+***
+
 <h3> <strong> <u>  Introduction </u></strong> </h3>
 
 :::::{div} full-width
@@ -49,16 +51,7 @@ Intro paragraph
 ```{admonition} To Do
 :class: note, dropdown
 
-- Insert a small paragraph about how we unveil the history of soloar systems via meteorites and Deuterium fractionation
-
-- Finish this page as best I can and send to Ross for:
-    - Comments
-    - Ortograph Correction (lol, good luck with that)
-    - Check if something can be said about D/H or O<sup>16</sup>/O<sup>18</sup>
-
-- Rework the intro
-    - Insert plan
-- Make sure that the titles are correct
+- Implement
 
 ```
 
@@ -68,9 +61,11 @@ Intro paragraph
 
 <h5> &#127757; <strong>The rest of the World </strong></h5>
 
-```{admonition} Ross
+```{admonition} Colaboration
 :class: tip, dropdown
-Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / smaller disk ? What proportion of observed PPD via ALMA are homogeneous ?
+
+Star formation is not my expertise so if you want to help, feel free to comment the contribution you could make
+
 ```
 ::::
 :::::  
@@ -78,6 +73,20 @@ Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / s
 </div>
     
 ::::::
+
+## Observation
+
+Orion complex, closest star forming region from the sun. 
+
+```{figure} Docs/Star_formation_Hubble.png
+---
+name: Star_formation_Hubble
+width: 1200px
+---
+[Reference](https://hubblesite.org/contents/media/images/2021/006/01F0XQN12YE0C2MZV4JV7F1RM9?itemsPerPage=100&page=2&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+```
+
+
    
 ## Spectral Energy Distribution
 
@@ -336,5 +345,28 @@ How much of the initial material is reprocessed
     - Energetic processes responsible for H fractionation
 
 ```
+
+
+
+### Star accretion rate
+
+Protostars are very hungry babies 
+
+```{figure} Docs/Accretion-rate.png
+---
+name: Stars_accretion_rate
+width: 1200px
+---
+[Reference]() - to find
+```
+
+Outburst related to accretion
+
+
+{cite:p}`Kospal2023`
+
+### Processing
+
+{cite:p}`Schneeberger2023`
 
 

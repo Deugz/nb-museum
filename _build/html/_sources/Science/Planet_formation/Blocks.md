@@ -1,33 +1,44 @@
-# Building Blocks
+# Planets Building Blocks
 
+***
 
-## Introduction
+<h3> <strong> <u>  Introduction </u></strong> </h3>
 
 :::::{div} full-width
 ::::{grid} 2
 
 :::{grid-item}
+:columns: 7
 
-Introduction paragraph
+Intro paragraph
 
 :::
 
 :::{grid-item}
+:columns: 5
 
 **Plan**
+
+- **Spectral Energy Distribution**
+    - Galactic ecocystem and star lifecycle
+    - Structure and environments 
+
+<br>
+
+- **Summary**
 
 :::
 
 ::::
 :::::
 
-
-***
-
-
-<h4> <strong> Notes </strong></h4> 
-
 ::::::{div} full-width
+
+<div id="note">
+
+- **Notes:**
+    
+***
 
 :::::{grid} 2
 
@@ -40,16 +51,7 @@ Introduction paragraph
 ```{admonition} To Do
 :class: note, dropdown
 
-- Insert a small paragraph about how we unveil the history of soloar systems via meteorites and Deuterium fractionation
-
-- Finish this page as best I can and send to Ross for:
-    - Comments
-    - Ortograph Correction (lol, good luck with that)
-    - Check if something can be said about D/H or O<sup>16</sup>/O<sup>18</sup>
-
-- Rework the intro
-    - Insert plan
-- Make sure that the titles are correct
+- Implement
 
 ```
 
@@ -59,21 +61,20 @@ Introduction paragraph
 
 <h5> &#127757; <strong>The rest of the World </strong></h5>
 
-```{admonition} Ross
+```{admonition} Colaboration
 :class: tip, dropdown
-Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / smaller disk ? What proportion of observed PPD via ALMA are homogeneous ?
+
+Star formation is not my expertise so if you want to help, feel free to comment the contribution you could make
+
 ```
-
-
-
 ::::
-
-
-
-:::::
-  
-::::::
+:::::  
     
+</div>
+    
+::::::
+   
+## Interstellar Dust
     
 ```{warning}
 
@@ -88,7 +89,7 @@ Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / s
 
 
 
-### Interstellar Dust
+### Dust Light Interaction
 
 :::::{div} full-width
 ::::{grid} 3 
@@ -158,3 +159,51 @@ foundation for theoratical models of dust evolution in disks
 - cf next chapters
 
 
+## Interplanetary Dust Particles
+
+:::::{div} full-width
+
+::::{grid} 2
+
+:::{grid-item}
+
+<p class="emphase"> What we can sample that is most similar to what was originaly present in the Solar Nebula</p>
+
+:::
+
+:::{grid-item}
+
+```{figure} Docs/Porous_chondriteIDP.jpg
+---
+name: Interplanetary Dust
+width: 800px
+---
+[Source](https://upload.wikimedia.org/wikipedia/commons/1/1c/Porous_chondriteIDP.jpg)
+
+```
+
+:::
+::::
+:::::
+
+
+
+
+
+
+
+{cite:p}`Bradley2013`
+
+
+How can we catch those grains ? Well this has been achieved by the Stardust mission that we will describe below
+
+
+### StarDust mission
+
+First **sample return mission**, launched by NASA in 1999
+
+- StarDust [website](https://solarsystem.nasa.gov/stardust/home/index.html)
+
+### Properties
+
+{cite:p}`Mann2005`
