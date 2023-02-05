@@ -82,7 +82,6 @@ It is commonly assumed by the public that appart from stars, our galaxy is empty
 
 Taking into consideration that this content is aimed at bachelor student or science enthusiast, what do you think about the format? The plan ?
 
-
 ```
 ::::
 :::::  
@@ -270,11 +269,21 @@ Description
 
 ##  Interstellar Dust Grains
 
+<p class="emphase"> We have seen that dust grains are present in the ISM and play a key role in it's evolution but what are they and how do they come from</p>
+
 ### <strong>&#x2023;  <u> Formation and evolution </u></strong>
 
-Betelgeuse:
+Interstellar dust form through a combination of processes in the interstellar medium (ISM). One of them is the **condensation from the ejecta of evolved stars**. As stars come closer to the end of their lives, they often experience mass loss through winds and outbursts, which can lead to the formation of dust grains. We had a recent great example of such processes with the star Betelgeuse that is explain below: 
+
+::::{margin}
+```{admonition} Betelgeuse
+:class: tip
+
 - Red supergiant
 - R☉ = 1000
+
+```
+::::
 
 ```{figure} Docs/Betelgeuse_SME.jpg
 ---
