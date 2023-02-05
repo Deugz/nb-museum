@@ -365,8 +365,30 @@ Outburst related to accretion
 
 {cite:p}`Kospal2023`
 
+
+### Jets
+
+```{figure} Docs/Protostar_jet.jpg
+---
+name: Protostar_jet
+width: 1200px
+---
+[Reference](https://hubblesite.org/contents/media/images/2015/42/3656-Image.html?itemsPerPage=100&page=8&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+```
+
 ### Processing
 
 {cite:p}`Schneeberger2023`
 
+### Summary
+
+
+
+```{figure} Docs/Star_cluster_Hubble_heritage.jpg
+---
+name: Star_cluster_Hubble_heritage
+width: 1200px
+---
+[Reference](https://hubblesite.org/contents/media/images/2015/12/3519-Image.html?itemsPerPage=100&page=9&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+```
 

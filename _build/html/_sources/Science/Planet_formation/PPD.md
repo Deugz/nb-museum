@@ -209,10 +209,31 @@ Different techniques will probe different parts, objects of the disk ...
 
 ## Properties 
 
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+:columns: 4
+
 <p class="emphase">Protoplanetary disks are a beautifull playground for modellers to play.</p>
 
-<br>
-<br>
+:::
+
+:::{grid-item}
+:columns: 8
+
+
+```{figure} Docs/PPD_Model_Obs.jpg
+---
+name: PPD_model_obs
+width: 1200px
+---
+[Reference](https://hubblesite.org/contents/media/images/2015/40/3651-Image.html?itemsPerPage=100&page=8&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+```
+
+:::
+::::
+:::::
 
 ### Physics of PPDs
 
@@ -429,6 +450,26 @@ However, snow-line location of different ice species can vary due to several pro
 ```
 
 - {cite:p}`Okuzumi2012`
+
+
+## Substructures
+
+```{figure} Docs/Tw_Hy_gap_explain.png
+---
+name: Tw_Hy_gap_explain
+width: 400px
+---
+[Reference](https://hubblesite.org/contents/media/images/2017/03/3972-Image.html?itemsPerPage=100&page=6&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+```
+
+```{figure} Docs/Disk_gaps_hubble.png
+---
+name: Disk_gaps_hubble
+width: 1200px
+---
+[Reference](https://hubblesite.org/contents/media/images/2017/03/3975-Image.html?itemsPerPage=100&page=6&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+```
+
 
 ### Planet formation scenario
 
