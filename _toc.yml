@@ -9,20 +9,28 @@ parts:
     - file: Thesis_JB_B/Intro/Intro
     - file: Science/Science
       sections:
-      - file: Science/Planet_formation/Planet_formation
+      - file: Science/Planet_formation/Main_Planet_formation
         sections:
         - file: Science/Planet_formation/Prequel
         - file: Science/Planet_formation/Star_formation
         - file: Science/Planet_formation/PPD
         - file: Science/Planet_formation/Blocks
-      - file: Science/Collision/MCG_Main
+      - file: Science/Collision/Main_Collision
         sections:
         - file: Science/Collision/Migration
         - file: Science/Collision/Collision
         - file: Science/Collision/Growth
         - file: Science/Collision/GeoChem
-      - file: Science/HGW/HGW
-      - file: Science/Levitation/Levitation
+      - file: Science/HGW/Main_HGW
+        sections:
+        - file: Science/HGW/Vitrification
+        - file: Science/HGW/HGW
+        - file: Science/HGW/Cooling
+      - file: Science/Levitation/Main_Levitation
+        sections:
+        - file: Science/Levitation/3DObs
+        - file: Science/Levitation/RightWing
+        - file: Science/Levitation/Levitation        
       - file: Science/How
   - caption: Methods
     chapters:

@@ -19,19 +19,19 @@ It is commonly assumed by the public that appart from stars, our galaxy is empty
 
 **Plan**
 
-- **The Interstellar Medium**
+- [**The Interstellar Medium**](content:references:Title1) 
     - Galactic ecocystem and star lifecycle
     - Structure and environments 
 
 <br>
 
-- **Interstellar Dust Grains**
+- [**Interstellar Dust Grains**](content:references:Title2) 
     - Formation and evolution
     - Structure
     
 <br>
 
-- **Molecular Clouds**
+- [**Molecular Clouds**](content:references:Title3)
     - Observation
         - Extinction of star light
         - Distribution throughout the Galaxy
@@ -41,41 +41,56 @@ It is commonly assumed by the public that appart from stars, our galaxy is empty
         
 <br>
 
-- **Summary**
+- [**Triggering star formation**](content:references:Title4)
+
+<br>
+
+- [**Summary**](content:references:Title5)
 
 :::
 
 ::::
 :::::
 
-::::::{div} full-width
-
-<div id="note">
-
-- **Notes:**
-    
 ***
 
+
+::::{margin}
+:::{grid-item-card}
+:class-header: bg-light
+
+**Page**
+^^^
+
+- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 04/02/2023
+   
+:::
+::::
+
+
+
+::::::{grid-item-card}
+:class-header: bg-light
+
+**Notes**
+^^^
 :::::{grid} 2
-
 ::::{grid-item}
-
-<h5> &#127793; <strong> For me </strong></h5>
-
-
 
 ```{admonition} To Do
 :class: note, dropdown
 
-- Keep implementing
+- Write the content, and send to Anita when happy 
 
 ```
 
 ::::
 
 ::::{grid-item}
-
-<h5> &#127757; <strong>The rest of the World </strong></h5>
 
 ```{admonition} Supervisors
 :class: warning, dropdown
@@ -85,15 +100,12 @@ Taking into consideration that this content is aimed at bachelor student or scie
 ```
 ::::
 :::::  
-    
-</div>
-    
 ::::::
     
 
 
 
-
+(content:references:Title1)=  
 ##  The Interstellar Medium 
 
 ### <strong> &#x2023; <u> Galactic Ecocystem and Star lifecycle </u></strong> 
@@ -156,8 +168,6 @@ The Big Bang produced all the Hydrogen (as well as Helium and Lithium) present t
 
 <p class="emphase"> ISM environments are interconnected and affect each other through a variety of physical and chemical processes, making the ISM a complex and dynamic medium.</p>
 
-Figure X show those different environments represented in an Onion like structure.
-
 :::
 
 
@@ -176,6 +186,10 @@ Figure caption
 :::
 ::::
 :::::
+
+
+{numref}`MC_tranche` show those different environments represented in an Onion like structure.
+
 
 ::::::{div} full-width
 :::::{dropdown} <span style="float: right">![flag alt >](../../Docs/Svg_icons/onion-svgrepo-com.svg)</span> Onion layers
@@ -267,6 +281,7 @@ Description
 
 ***
 
+(content:references:Title2)= 
 ##  Interstellar Dust Grains
 
 <p class="emphase"> We have seen that dust grains are present in the ISM and play a key role in it's evolution but what are they and how do they come from</p>
@@ -421,6 +436,8 @@ introduction to these topics can be found elsewhere (Kr¨ugel 2002, Draine 2003a
 
 ```
 
+
+(content:references:Title3)= 
 ## Molecular Clouds
 
 ### <strong> &#x2023;  <u> Observation  </u></strong>
@@ -621,6 +638,7 @@ Those clouds, made of gas and dusts are the cocoons within which star forms. The
 
 ***
 
+(content:references:Title4)= 
 ## Triggering star formation
 
 How does the process of star formation beggin ? not out of the blue
@@ -664,7 +682,7 @@ width: 1200px
 ::::
 :::::
 
-
+(content:references:Title5)= 
 ## Summary 
 
 :::::{div} full-width

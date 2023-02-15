@@ -1,50 +1,85 @@
-# Levitation and IR Signature
-
-## IR Observation of Disks
-
-- {cite:p}`Aikawa2012`
-
-**Red wing**
+# Levitation techniques
 
 
+***
+
+<h3> <strong> <u>  Introduction </u></strong> </h3>
+
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+:columns: 7
+
+Intro paragraph
+
+:::
+
+:::{grid-item}
+:columns: 5
+
+**Plan**
+
+- [**Cryo-EM**](content:references:Title1) 
 
 
-## One Step further
 
-### <strong>&#187;  <u> From micron to mm-cm size amophous aggregates</u></strong>
+<br>
 
-Producing HGW &micro;m ICE grains is only the first step toward unveiling the role that ASW could play in overcoming the bouncing barrier. Indeed, this barrier lies at sizes around the cm size and growing such big aggregates is another big challenge. 
+- **Summary**
 
-```{figure} Docs/Ice_aggregation.png
----
-name: Experiment
-width: 600px
----
-source: 
+:::
+
+::::
+:::::
+
+::::{margin}
+:::{grid-item-card}
+:class-header: bg-light
+
+**Page**
+^^^
+
+- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 04/02/2023
+   
+:::
+::::
+
+
+
+::::::{grid-item-card}
+:class-header: bg-light
+
+**Notes**
+^^^
+:::::{grid} 2
+::::{grid-item}
+
+```{admonition} To Do
+:class: note, dropdown
+
+- Think about coherent plan
+- Implement
+
 ```
 
-```{note}
+::::
 
-- Insert Accoustic trap video
+::::{grid-item}
+
+```{admonition} Colaboration
+:class: tip, dropdown
+
+May be talk with Jacques Dubochet
 
 ```
+::::
+:::::  
+::::::
 
-
-
-We (Anita mostly) have developped at the OU an accoustic levitation technique that can work at temperature of -20 degree to allow for the aggregation of those monomers in a similar fashion than in space
-
-### <strong>&#187;  <u> Grain shape vs IR spectroscopy</u></strong>
-
-
-Grain shape affect the IR spectral signature (ie right wing)
-
-Electron microscopy would be a great addition to our future IR work.
-
-#### Fluffy aggregate opacity
-
-- {cite:p}`Kataoka2013`
-
-
-
-
-
+(content:references:Title1)=
+## Cryo EM

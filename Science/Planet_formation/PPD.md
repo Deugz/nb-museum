@@ -19,33 +19,47 @@ Intro paragraph
 
 **Plan**
 
-- **Spectral Energy Distribution**
-    - Galactic ecocystem and star lifecycle
-    - Structure and environments 
+- [**Overview**](content:references:Title1) 
+    - Definition
+    - Discovery and Early History 
 
 <br>
 
-- **Summary**
+- [**Properties**](content:references:Title2)
 
 :::
 ::::
 :::::
 
-::::::{div} full-width
 
-<div id="note">
-
-- **Notes:**
-    
 ***
 
+
+::::{margin}
+:::{grid-item-card}
+:class-header: bg-light
+
+**Page**
+^^^
+
+- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 04/02/2023
+   
+:::
+::::
+
+
+
+::::::{grid-item-card}
+:class-header: bg-light
+
+**Notes**
+^^^
 :::::{grid} 2
-
 ::::{grid-item}
-
-<h5> &#127793; <strong> For me </strong></h5>
-
-
 
 ```{admonition} To Do
 :class: note, dropdown
@@ -59,8 +73,6 @@ Intro paragraph
 
 ::::{grid-item}
 
-<h5> &#127757; <strong>The rest of the World </strong></h5>
-
 ```{admonition} Colaboration
 :class: tip, dropdown
 
@@ -69,12 +81,10 @@ Star formation is not my expertise so if you want to help, feel free to comment 
 ```
 ::::
 :::::  
-    
-</div>
-    
 ::::::
-   
-## Quick Overview
+
+(content:references:Title1)=   
+## Overview
 
 ### <strong>&#x2023;  <u> Definition </u></strong>
 
@@ -191,22 +201,7 @@ Different techniques will probe different parts, objects of the disk ...
 
 ```
 
-
-::::{margin}
-
-```{image} Docs/Andrews-et-al-Animation.gif
-:alt: PPD-Gif
-:width: 600px
-:align: center
-```
-
-[Papers + Data](https://almascience.eso.org/almadata/lp/DSHARP/)
-
-::::
-
-
-
-
+(content:references:Title2)=
 ## Properties 
 
 :::::{div} full-width
@@ -289,13 +284,6 @@ Most of the Physics presented above is out of the scope of my work and we will n
 
 #### Dust Dynamics
 
-
-
-
-
-
-
-
 PPD Diagrams comes from Til Birnstiel website - [source](https://www.til-birnstiel.de/#stacks_in_395_page1_myModal)
 
 ```{note}
@@ -357,6 +345,13 @@ PPD mass can be constrained by **ALMA measurments** using different methods
 the mass of PPDs is dominated by gasses (H<sub>2</sub> and He) 
 
 - dust to gas ratio is typically 1:100 - to check for ref
+
+
+#### Structure
+
+##### Vertical
+
+- {cite:p}`Paneque2022`
 
 
 
@@ -452,7 +447,41 @@ However, snow-line location of different ice species can vary due to several pro
 - {cite:p}`Okuzumi2012`
 
 
+#### Water Vapor in PPD
+
+- {cite:p}`Banzatti2023`
+
 ## Substructures
+
+
+
+::::{margin}
+
+```{image} Docs/Andrews-et-al-Animation.gif
+:alt: PPD-Gif
+:width: 600px
+:align: center
+```
+
+[Papers + Data](https://almascience.eso.org/almadata/lp/DSHARP/)
+
+::::
+
+
+```{note}
+
+- Implement the following in dropdown tab
+    - Find paper
+
+- Insert DSHARP Gif here
+
+- add tip bar with DSHARP project (articles)
+
+```
+
+### ALMA 
+
+sub mm / substructure are ubiquitous -> planet formation is common
 
 ```{figure} Docs/Tw_Hy_gap_explain.png
 ---
@@ -471,9 +500,9 @@ width: 1200px
 ```
 
 
-### Planet formation scenario
+## Planet formation scenario
 
-- **Core accretion scenario**
+### Core accretion scenario
 
 
 {cite:p}`Eistrup2022`

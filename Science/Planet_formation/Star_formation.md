@@ -19,9 +19,9 @@ Intro paragraph
 
 **Plan**
 
-- **Spectral Energy Distribution**
-    - Galactic ecocystem and star lifecycle
-    - Structure and environments 
+- [**Observation**](content:references:Title1)
+    - Spectral Energy Distribution
+ 
 
 <br>
 
@@ -32,34 +32,45 @@ Intro paragraph
 ::::
 :::::
 
-::::::{div} full-width
-
-<div id="note">
-
-- **Notes:**
-    
 ***
 
+
+::::{margin}
+:::{grid-item-card}
+:class-header: bg-light
+
+**Page**
+^^^
+
+- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 04/02/2023
+   
+:::
+::::
+
+
+
+::::::{grid-item-card}
+:class-header: bg-light
+
+**Notes**
+^^^
 :::::{grid} 2
-
 ::::{grid-item}
-
-<h5> &#127793; <strong> For me </strong></h5>
-
-
 
 ```{admonition} To Do
 :class: note, dropdown
 
-- Implement
+- Write the content, and send to Anita when happy 
 
 ```
 
 ::::
 
 ::::{grid-item}
-
-<h5> &#127757; <strong>The rest of the World </strong></h5>
 
 ```{admonition} Colaboration
 :class: tip, dropdown
@@ -69,14 +80,21 @@ Star formation is not my expertise so if you want to help, feel free to comment 
 ```
 ::::
 :::::  
-    
-</div>
-    
 ::::::
 
+(content:references:Title1)=   
 ## Observation
 
+:::::{div} full-width
+::::{grid} 2
+:::{grid-item}
+:columns: 4
 Orion complex, closest star forming region from the sun. 
+
+:::
+
+:::{grid-item}
+:columns: 8
 
 ```{figure} Docs/Star_formation_Hubble.png
 ---
@@ -86,9 +104,13 @@ width: 1200px
 [Reference](https://hubblesite.org/contents/media/images/2021/006/01F0XQN12YE0C2MZV4JV7F1RM9?itemsPerPage=100&page=2&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
 ```
 
+:::
+::::
+:::::
+
 
    
-## Spectral Energy Distribution
+### Spectral Energy Distribution
 
 ### <strong>&#x2023;  <u> Ariane thread for star evolution  </u></strong>
 

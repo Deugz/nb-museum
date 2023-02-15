@@ -1,3 +1,107 @@
 # Collision
 
+***
+
+<h3> <strong> <u>  Introduction </u></strong> </h3>
+
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+:columns: 7
+
+Intro paragraph
+
+:::
+
+:::{grid-item}
+:columns: 5
+
+**Plan**
+
+- [**Science of Collisions**](content:references:Title1) 
+
+- [**Collision Experiments**](content:references:Title1) 
+    - Subsection
+
+<br>
+
+- **Summary**
+
+:::
+
+::::
+:::::
+
+::::{margin}
+:::{grid-item-card}
+:class-header: bg-light
+
+**Page**
+^^^
+
+- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 04/02/2023
+   
+:::
+::::
+
+
+
+::::::{grid-item-card}
+:class-header: bg-light
+
+**Notes**
+^^^
+:::::{grid} 2
+::::{grid-item}
+
+```{admonition} To Do
+:class: note, dropdown
+
+- Think about coherent plan
+- Implement
+
+```
+
+::::
+
+::::{grid-item}
+
+```{admonition} Colaboration
+:class: tip, dropdown
+
+What to do
+
+```
+::::
+:::::  
+::::::
+
+(content:references:Title1)=
+## Science of Collisions
+
+```{note}
+
+Insert collision outcome diagram 
+
+Sabrina stuffs ...
+
+```
+
+
 [Image + science of big body collisions leading to dust cloud](https://hubblesite.org/contents/media/images/2020/09/4625-Image?itemsPerPage=100&page=3&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+
+
+(content:references:Title2)=
+## Collision Experiments
+
+
+## Effects of collision on Amorphous Ice
+
+- {cite:p}`Steckloff2023`
+
+## Summary

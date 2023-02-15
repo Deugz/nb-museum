@@ -1,55 +1,68 @@
 # Geochemistry
 
+***
 
-## Introduction
+<h3> <strong> <u>  Introduction </u></strong> </h3>
 
 :::::{div} full-width
 ::::{grid} 2
 
 :::{grid-item}
+:columns: 7
 
-Introduction paragraph
+Intro paragraph
 
 :::
 
 :::{grid-item}
+:columns: 5
 
 **Plan**
+
+- [**Going Back in time**](content:references:Title1) 
+
+
+
+<br>
+
+- **Summary**
 
 :::
 
 ::::
 :::::
 
+::::{margin}
+:::{grid-item-card}
+:class-header: bg-light
 
-***
+**Page**
+^^^
+
+- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 04/02/2023
+   
+:::
+::::
 
 
-<h4> <strong> Notes </strong></h4> 
 
-::::::{div} full-width
+::::::{grid-item-card}
+:class-header: bg-light
 
+**Notes**
+^^^
 :::::{grid} 2
-
 ::::{grid-item}
-
-<h5> &#127793; <strong> For me </strong></h5>
-
-
 
 ```{admonition} To Do
 :class: note, dropdown
 
-- Insert a small paragraph about how we unveil the history of soloar systems via meteorites and Deuterium fractionation
-
-- Finish this page as best I can and send to Ross for:
-    - Comments
-    - Ortograph Correction (lol, good luck with that)
-    - Check if something can be said about D/H or O<sup>16</sup>/O<sup>18</sup>
-
-- Rework the intro
-    - Insert plan
-- Make sure that the titles are correct
+- Think about coherent plan
+- Implement
 
 ```
 
@@ -57,22 +70,18 @@ Introduction paragraph
 
 ::::{grid-item}
 
-<h5> &#127757; <strong>The rest of the World </strong></h5>
-
-```{admonition} Ross
+```{admonition} Colaboration
 :class: tip, dropdown
-Do all PPDs have rings ? Or is it a certain subset, does it require a bigger / smaller disk ? What proportion of observed PPD via ALMA are homogeneous ?
+
+- Ross
+    - Image of meteroite ...
+
 ```
-
-
-
 ::::
-
-
-
-:::::
-  
+:::::  
 ::::::
+
+## Going Back in time
  
 
 ### Comets 

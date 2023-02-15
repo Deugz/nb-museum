@@ -19,9 +19,8 @@ Intro paragraph
 
 **Plan**
 
-- **Spectral Energy Distribution**
-    - Galactic ecocystem and star lifecycle
-    - Structure and environments 
+- [**Interstellar Dust**](content:references:Title1) 
+    - Dust Light Interaction
 
 <br>
 
@@ -32,25 +31,36 @@ Intro paragraph
 ::::
 :::::
 
-::::::{div} full-width
+::::{margin}
+:::{grid-item-card}
+:class-header: bg-light
 
-<div id="note">
+**Page**
+^^^
 
-- **Notes:**
-    
-***
+- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 04/02/2023
+   
+:::
+::::
 
+
+
+::::::{grid-item-card}
+:class-header: bg-light
+
+**Notes**
+^^^
 :::::{grid} 2
-
 ::::{grid-item}
-
-<h5> &#127793; <strong> For me </strong></h5>
-
-
 
 ```{admonition} To Do
 :class: note, dropdown
 
+- Think about coherent plan
 - Implement
 
 ```
@@ -58,8 +68,6 @@ Intro paragraph
 ::::
 
 ::::{grid-item}
-
-<h5> &#127757; <strong>The rest of the World </strong></h5>
 
 ```{admonition} Colaboration
 :class: tip, dropdown
@@ -69,20 +77,17 @@ Star formation is not my expertise so if you want to help, feel free to comment 
 ```
 ::::
 :::::  
-    
-</div>
-    
 ::::::
-   
+
+
+
+(content:references:Title1)=
 ## Interstellar Dust
     
 ```{warning}
 
 - [Dustpy](https://stammler.github.io/dustpy/) - Python package to model dust in PPD
     **Check in more detail**
-
-
-
 
 ```
   

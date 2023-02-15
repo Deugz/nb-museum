@@ -1,4 +1,4 @@
-# Migration, Collision & Growth 
+# Dust Collisions & Growth 
 
 ## Growth mechanism
 
