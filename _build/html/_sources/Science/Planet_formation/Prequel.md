@@ -54,32 +54,18 @@ It is commonly assumed by the public that appart from stars, our galaxy is empty
 
 ***
 
+:::::::{div} full-width
 
-::::{margin}
-:::{grid-item-card}
+::::::{grid} 2
+
+:::::{grid-item-card}
 :class-header: bg-light
-
-**Page**
-^^^
-
-- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
-  
-- Reviewed: &#x274C;
-       
-- Updated: 04/02/2023
-   
-:::
-::::
-
-
-
-::::::{grid-item-card}
-:class-header: bg-light
+:columns: 9
 
 **Notes**
 ^^^
-:::::{grid} 2
-::::{grid-item}
+::::{grid} 2
+:::{grid-item}
 
 ```{admonition} To Do
 :class: note, dropdown
@@ -88,9 +74,9 @@ It is commonly assumed by the public that appart from stars, our galaxy is empty
 
 ```
 
-::::
+:::
 
-::::{grid-item}
+:::{grid-item}
 
 ```{admonition} Supervisors
 :class: warning, dropdown
@@ -98,11 +84,26 @@ It is commonly assumed by the public that appart from stars, our galaxy is empty
 Taking into consideration that this content is aimed at bachelor student or science enthusiast, what do you think about the format? The plan ?
 
 ```
+:::
 ::::
-:::::  
-::::::
-    
+:::::
 
+
+
+:::::{grid-item-card}
+:class-header: bg-light
+:columns: 3
+**Page**
+^^^
+
+- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 15/02/2023
+   
+::::::
+:::::::
 
 
 (content:references:Title1)=  

@@ -77,6 +77,13 @@ img[alt$=">"] {
     text-align:center;
 }
 
+.emphase2 {
+    font-size:2.6em;
+    padding:20px;
+    text-align:center;
+    color: #412582  !important;
+}
+
 .picto {
   width: 20px !important;
   margin: 5px !important;  
@@ -328,6 +335,15 @@ padding: 10px;
   position: relative;
   padding: Opx !important;
 }
+
+#transition-img .images-Stoke {
+  width: 100%;
+  height: 140px;
+  position: relative;
+  padding: Opx !important;
+}
+
+
 
 #transition-img img {
   width: 100%;

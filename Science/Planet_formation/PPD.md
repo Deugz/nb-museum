@@ -201,6 +201,24 @@ Different techniques will probe different parts, objects of the disk ...
 
 ```
 
+#### Inner Rim
+
+- **Review**: {cite:p}`Dullemond2010`
+
+
+```{note}
+
+Good diagram to show Observation per zone ... **to extract**
+
+```
+
+
+#### Midplane
+
+!!
+
+
+
 (content:references:Title2)=
 ## Properties 
 
@@ -498,6 +516,10 @@ width: 1200px
 ---
 [Reference](https://hubblesite.org/contents/media/images/2017/03/3975-Image.html?itemsPerPage=100&page=6&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
 ```
+
+## Debris Disk
+
+- **Review**: {cite:p}`Hughes2018`
 
 
 ## Planet formation scenario

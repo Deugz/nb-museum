@@ -4,37 +4,37 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Introduction
+  - caption: Science
     chapters:
-    - file: Thesis_JB_B/Intro/Intro
     - file: Science/Science
+    - file: Science/Planet_formation/Main_en_Planet_formation
       sections:
-      - file: Science/Planet_formation/Main_Planet_formation
-        sections:
-        - file: Science/Planet_formation/Prequel
-        - file: Science/Planet_formation/Star_formation
-        - file: Science/Planet_formation/PPD
-        - file: Science/Planet_formation/Blocks
-      - file: Science/Collision/Main_Collision
-        sections:
-        - file: Science/Collision/Migration
-        - file: Science/Collision/Collision
-        - file: Science/Collision/Growth
-        - file: Science/Collision/GeoChem
-      - file: Science/HGW/Main_HGW
-        sections:
-        - file: Science/HGW/Vitrification
-        - file: Science/HGW/HGW
-        - file: Science/HGW/Cooling
-      - file: Science/Levitation/Main_Levitation
-        sections:
-        - file: Science/Levitation/3DObs
-        - file: Science/Levitation/RightWing
-        - file: Science/Levitation/Levitation        
-      - file: Science/How
+      - file: Science/Planet_formation/Prequel
+      - file: Science/Planet_formation/Star_formation
+      - file: Science/Planet_formation/PPD
+      - file: Science/Planet_formation/Blocks
+    - file: Science/Collision/Main_en_Collision
+      sections:
+      - file: Science/Collision/Migration
+      - file: Science/Collision/Collision
+      - file: Science/Collision/Growth
+      - file: Science/Collision/GeoChem
+    - file: Science/HGW/Main_en_HGW
+      sections:
+      - file: Science/HGW/Vitrification
+      - file: Science/HGW/HGW
+      - file: Science/HGW/Cooling
+    - file: Science/Levitation/Main_en_Levitation
+      sections:
+      - file: Science/Levitation/3DObs
+      - file: Science/Levitation/RightWing
+      - file: Science/Levitation/Levitation        
+    - file: Science/How
+    - url: https://deugz.github.io/nb-thesis/_build/html/Introduction/Introduction.html
+      title: "Introduction (📖 Thesis)"
   - caption: Methods
     chapters:
-    - file: Thesis_JB_B/Method/Method
+    - file: Technical/Method
     - file: Technical/XP_Dev/XP_Dev    
       sections:
       - file: Technical/XP_Dev/V1/Proof_of_concept
@@ -44,11 +44,19 @@ parts:
       sections:
       - file: Technical/Characterisation/Microscopy/Microscopy
       - file: Technical/Characterisation/Neutron/Neutron
-      - file: Technical/Characterisation/Infrared/Infrared      
+      - file: Technical/Characterisation/Infrared/Infrared 
+    - url: https://deugz.github.io/nb-thesis/_build/html/Methods/Methods.html
+      title: "Methods (📖 Thesis)  "
   - caption: Results
     chapters:
-    - file: Thesis_JB_B/Chapter6/Chapter6
-    - file: Thesis_JB_B/Chapter7/Chapter7
+    - url: https://deugz.github.io/nb-thesis/_build/html/Chapter6/Chapter6.html
+      title: "Chapter 6 (📖 Thesis)  "
+    - url: https://deugz.github.io/nb-thesis/_build/html/Chapter7/Chapter7.html
+      title: "Chapter 7 (📖 Thesis)  "
+  - caption: Conclusion
+    chapters:
+    - url: https://deugz.github.io/nb-thesis/_build/html/Conclusion/Conclusion.html
+      title: "Conclusion (📖 Thesis)  "
   - caption: Bibliography
     chapters:
     - file: Thesis_JB_B/Biblio/bibliography 

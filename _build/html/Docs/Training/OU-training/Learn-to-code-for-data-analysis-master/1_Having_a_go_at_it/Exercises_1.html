@@ -1,0 +1,1873 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Exercise notebook 1: Having a go at it &#8212; MUSEUM</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../../_static/copybutton.js"></script>
+    <script src="../../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb-museum");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-museum/_build/html/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/1_Having_a_go_at_it/Exercises_1.html" />
+    <link rel="shortcut icon" href="../../../../../_static/OU_Logo.svg"/>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GYJ9YP0JJ4"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-GYJ9YP0JJ4');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">Current Version: Jan 2023</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../../../_static/OU_Logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">MUSEUM</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Science
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Science/Science.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Planet_formation/Main_en_Planet_formation.html">
+   Stars &amp; Planet Formation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Prequel.html">
+     Setting up the stage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Star_formation.html">
+     Star Formation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/PPD.html">
+     Protoplanetary Disks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Blocks.html">
+     Planets Building Blocks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Collision/Main_en_Collision.html">
+   Dust Collisions &amp; Growth
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Migration.html">
+     Migration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Collision.html">
+     Collision &amp; Growth Mechanism
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Growth.html">
+     Planetesimals Dynamics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/GeoChem.html">
+     Geochemistry
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/HGW/Main_en_HGW.html">
+   Hyperquenched Glassy Water
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/Vitrification.html">
+     Vitrification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/HGW.html">
+     HGW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/Cooling.html">
+     Cooling Processes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Levitation/Main_en_Levitation.html">
+   Levitation and IR Signature
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/3DObs.html">
+     Dust 3D Observations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/RightWing.html">
+     3 µm Right Wing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/Levitation.html">
+     Levitation techniques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Science/How.html">
+   Thesis Aim → How ?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Introduction/Introduction.html">
+   Introduction (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Methods
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Technical/Method.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Technical/XP_Dev/XP_Dev.html">
+   XP Development
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/V1/Proof_of_concept.html">
+     Proof of concept
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/V2/2nd_Version.html">
+     2
+     <sup>
+      nd
+     </sup>
+     Version
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/Levitation/Lev-Chamb.html">
+     Levitation Chamber
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Technical/Characterisation/characterisation.html">
+   Characterisation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Microscopy/Microscopy.html">
+     Microscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Neutron/Neutron.html">
+     Neutron Scattering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Infrared/Infrared.html">
+     Infrared
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Methods/Methods.html">
+   Methods (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Results
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter6/Chapter6.html">
+   Chapter 6 (📖 Thesis)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter7/Chapter7.html">
+   Chapter 7 (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Conclusion
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Conclusion/Conclusion.html">
+   Conclusion (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Bibliography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Thesis_JB_B/Biblio/bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/Deugz/nb-museum/master?urlpath=tree/docs/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/1_Having_a_go_at_it/Exercises_1.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/Deugz/nb-museum"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/issues/new?title=Issue%20on%20page%20%2FDocs/Training/OU-training/Learn-to-code-for-data-analysis-master/1_Having_a_go_at_it/Exercises_1.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/edit/master/docs/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/1_Having_a_go_at_it/Exercises_1.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../../../_sources/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/1_Having_a_go_at_it/Exercises_1.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1-variables-and-assignments">
+   Exercise 1: variables and assignments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-2-expressions">
+   Exercise 2: expressions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3-functions-quiz">
+   Exercise 3: functions quiz
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tasks">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4-comments">
+   Exercise 4: comments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-5-pandas-quiz">
+   Exercise 5: pandas quiz
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-6-selecting-a-column">
+   Exercise 6: selecting a column
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-7-calculations-on-a-column">
+   Exercise 7: calculations on a column
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-8-sorting-on-a-column">
+   Exercise 8: sorting on a column
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#final-quiz-calculations-over-columns">
+   Final quiz: Calculations over columns
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Exercise notebook 1: Having a go at it</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1-variables-and-assignments">
+   Exercise 1: variables and assignments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-2-expressions">
+   Exercise 2: expressions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3-functions-quiz">
+   Exercise 3: functions quiz
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tasks">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4-comments">
+   Exercise 4: comments
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-5-pandas-quiz">
+   Exercise 5: pandas quiz
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-6-selecting-a-column">
+   Exercise 6: selecting a column
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-7-calculations-on-a-column">
+   Exercise 7: calculations on a column
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-8-sorting-on-a-column">
+   Exercise 8: sorting on a column
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#final-quiz-calculations-over-columns">
+   Final quiz: Calculations over columns
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-notebook-1-having-a-go-at-it">
+<h1>Exercise notebook 1: Having a go at it<a class="headerlink" href="#exercise-notebook-1-having-a-go-at-it" title="Permalink to this headline">#</a></h1>
+<p>This Jupyter notebook, for the first part of The Open University’s <em>Learn to Code for Data Analysis</em> course, contains code examples and coding activities for you.</p>
+<p>You’ll come across steps in the course directing you to this notebook. Once you’ve done each exercise, go back to the corresponding step and mark it as complete.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this code conceals irrelevant warning messages</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">FutureWarning</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="exercise-1-variables-and-assignments">
+<h2>Exercise 1: variables and assignments<a class="headerlink" href="#exercise-1-variables-and-assignments" title="Permalink to this headline">#</a></h2>
+<p>A <strong>variable</strong> is a named storage for values. An <strong>assignment</strong> takes a value (like the number 100 below) and stores it in a variable (<code class="docutils literal notranslate"><span class="pre">deathsInPortugal</span></code> below).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deathsInPortugal</span> <span class="o">=</span> <span class="mi">100</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To display the value stored in a variable, write the name of the variable.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deathsInPortugal</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100
+</pre></div>
+</div>
+</div>
+</div>
+<p>Each variable can store one value at any time, but the value stored can vary over time, by assigning a new value to the variable.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deathsInPortugal</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">deathsInPortugal</span> <span class="o">=</span> <span class="mi">140</span>
+<span class="n">deathsInPortugal</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140
+</pre></div>
+</div>
+</div>
+</div>
+<p>Each assignment is written on a separate line. The computer executes the assignments one line at a time, from top to bottom.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deathsInPortugal</span> <span class="o">=</span> <span class="mi">140</span>
+<span class="n">deathsInAngola</span> <span class="o">=</span> <span class="mi">6900</span>
+<span class="n">deathsInBrazil</span> <span class="o">=</span> <span class="mi">4400</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="task">
+<h3>Task<a class="headerlink" href="#task" title="Permalink to this headline">#</a></h3>
+<p>Add assignments to the code cell above (or in a new code cell) for the estimated deaths by TB in 2013 in the remaining BRICS countries. The values are as follows: Russia 17000, India 240000, China 41000, South Africa 25000.</p>
+<p>Don’t forget to run the code cell, so that the new variables are available for the exercises further below.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-2-expressions">
+<h2>Exercise 2: expressions<a class="headerlink" href="#exercise-2-expressions" title="Permalink to this headline">#</a></h2>
+<p>An <strong>expression</strong> is a fragment of code that has a value. A variable name, by itself, is an expression: the expression’s value is the value stored in the variable. In Jupyter notebooks, if the last line of a code cell is an expression, then the computer will show its value when executing the cell.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deathsInPortugal</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140
+</pre></div>
+</div>
+</div>
+</div>
+<p>By contrast, a <strong>statement</strong> is a command for the computer to do something. Commands don’t produce values, and therefore the computer doesn’t display anything.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deathsInPortugal</span> <span class="o">=</span> <span class="mi">140</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>More complex expressions can be written using the arithmetic <strong>operators</strong> of addition (<code class="docutils literal notranslate"><span class="pre">+</span></code>), substraction (<code class="docutils literal notranslate"><span class="pre">-</span></code>), multiplication (<code class="docutils literal notranslate"><span class="pre">*</span></code>) and division (<code class="docutils literal notranslate"><span class="pre">/</span></code>). For example, the total number of deaths in the three countries is:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deathsInAngola</span> <span class="o">+</span> <span class="n">deathsInBrazil</span> <span class="o">+</span> <span class="n">deathsInPortugal</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11440
+</pre></div>
+</div>
+</div>
+</div>
+<p>If the calculated value needs to be used later on in the code, it has to be stored in a variable. In general, the right-hand side of an assignment is an expression; its value is calculated (the expression is <strong>evaluated</strong>) and stored in the variable.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">totalDeaths</span> <span class="o">=</span> <span class="n">deathsInAngola</span> <span class="o">+</span> <span class="n">deathsInBrazil</span> <span class="o">+</span> <span class="n">deathsInPortugal</span>
+<span class="n">totalDeaths</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11440
+</pre></div>
+</div>
+</div>
+</div>
+<p>The average number of deaths is the total divided by the number of countries.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">totalDeaths</span> <span class="o">/</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3813.3333333333335
+</pre></div>
+</div>
+</div>
+</div>
+<p>The average could also be calculated with a single expression.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">deathsInAngola</span> <span class="o">+</span> <span class="n">deathsInBrazil</span> <span class="o">+</span> <span class="n">deathsInPortugal</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3813.3333333333335
+</pre></div>
+</div>
+</div>
+</div>
+<p>The parentheses (round brackets) are necessary to state that the sum has to be calculated before the division. Without parentheses, Python follows the conventional order used in mathematics: divisions and multiplications are done before additions and subtractions.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deathsInAngola</span> <span class="o">+</span> <span class="n">deathsInBrazil</span> <span class="o">+</span> <span class="n">deathsInPortugal</span> <span class="o">/</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11346.666666666666
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id1">
+<h3>Task<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>In the cell below, write code to calculate the total number of deaths in the five BRICS countries (Brazil, Russia, India, China, South Africa) in 2013. Run the code to see the result, which should be 327400.</p></li>
+</ul>
+<ul class="simple">
+<li><p>In the cell below, write code to calculate the average number of deaths in the BRICS countries in 2013. Run the code to see the result, which should be 65480.</p></li>
+</ul>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-3-functions-quiz">
+<h2>Exercise 3: functions quiz<a class="headerlink" href="#exercise-3-functions-quiz" title="Permalink to this headline">#</a></h2>
+<p>A <strong>function</strong> takes zero or more values (the function’s <strong>arguments</strong>) and <strong>returns</strong> (produces) a value. To <strong>call</strong> (use) a function, write the function name, followed by its arguments within parentheses (round brackets). Multiple arguments are separated by commas. Function names follow the same rules and conventions as variable names. A function call is an expression: the expression’s value is the value returned by the function.</p>
+<p>Python provides two functions to compute the <strong>maximum</strong> (largest) and <strong>minimum</strong> (smallest) of two or more values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">max</span><span class="p">(</span><span class="n">deathsInBrazil</span><span class="p">,</span> <span class="n">deathsInPortugal</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4400
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">min</span><span class="p">(</span><span class="n">deathsInAngola</span><span class="p">,</span> <span class="n">deathsInBrazil</span><span class="p">,</span> <span class="n">deathsInPortugal</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <strong>range</strong> of a set of values is the difference between the maximum and the minimum.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">largest</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">deathsInBrazil</span><span class="p">,</span> <span class="n">deathsInPortugal</span><span class="p">)</span>
+<span class="n">smallest</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">deathsInBrazil</span><span class="p">,</span> <span class="n">deathsInPortugal</span><span class="p">)</span>
+<span class="n">deathsRange</span> <span class="o">=</span> <span class="n">largest</span> <span class="o">-</span> <span class="n">smallest</span>
+<span class="n">deathsRange</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4260
+</pre></div>
+</div>
+</div>
+</div>
+<section id="tasks">
+<h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">#</a></h3>
+<p>Answer the quiz questions in the course. All of them can be answered by editing the above code cell. Don’t forget that you can use TAB-completion to quickly write the variable names of the remaining BRICS countries, namely Russia, India, China and South Africa (Brazil is already in the code above).</p>
+</section>
+</section>
+<section id="exercise-4-comments">
+<h2>Exercise 4: comments<a class="headerlink" href="#exercise-4-comments" title="Permalink to this headline">#</a></h2>
+<p><strong>Comments</strong> start with the hash sign (<code class="docutils literal notranslate"><span class="pre">#</span></code>) and go until the end of the line. They’re used to annotate the code, e.g. to indicate the units of values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># population unit: thousands of inhabitants</span>
+<span class="n">populationOfPortugal</span> <span class="o">=</span> <span class="mi">10608</span>
+
+<span class="c1"># deaths unit: inhabitants</span>
+<span class="n">deathsInPortugal</span> <span class="o">=</span> <span class="mi">140</span>
+
+<span class="c1"># deaths per 100 thousand inhabitants</span>
+<span class="n">deathsInPortugal</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">/</span> <span class="n">populationOfPortugal</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.3197586726998491
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id2">
+<h3>Task<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<p>Calculate the deaths per 100 thousand inhabitants for Brazil. Its population in 2013 was roughly 200 million and 362 thousand people. You should obtain a result of around 2.2 deaths per 100 thousand people.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-5-pandas-quiz">
+<h2>Exercise 5: pandas quiz<a class="headerlink" href="#exercise-5-pandas-quiz" title="Permalink to this headline">#</a></h2>
+<p>All programs in this course must start with the following <strong>import statement</strong>, to load all the code from the pandas <strong>module</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The words in boldface (<code class="docutils literal notranslate"><span class="pre">from</span></code> and <code class="docutils literal notranslate"><span class="pre">import</span></code>) are <strong>reserved words</strong> of the Python language; they cannot be used as names.</p>
+<section id="id3">
+<h3>Task<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<p>Answer the quiz questions in the course. You can change the above line of code to find out the answers.</p>
+</section>
+</section>
+<section id="exercise-6-selecting-a-column">
+<h2>Exercise 6: selecting a column<a class="headerlink" href="#exercise-6-selecting-a-column" title="Permalink to this headline">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">read_excel()</span></code> function takes a <strong>string</strong> with the name of an Excel file, and returns a <strong>dataframe</strong>, the pandas representation of a table. The computer reports a <strong>file not found</strong> error if the file is not in the same folder as this notebook, or the file name is misspelt.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;WHO POP TB some.xls&#39;</span><span class="p">)</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_89776</span>\<span class="mf">3677698565.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">data</span> <span class="o">=</span> <span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;WHO POP TB some.xls&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">data</span>
+
+<span class="nn">~\anaconda3\lib\site-packages\pandas\util\_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">309</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">310</span>                 <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">311</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">312</span> 
+<span class="g g-Whitespace">    </span><span class="mi">313</span>         <span class="k">return</span> <span class="n">wrapper</span>
+
+<span class="nn">~\anaconda3\lib\site-packages\pandas\io\excel\_base.py</span> in <span class="ni">read_excel</span><span class="nt">(io, sheet_name, header, names, index_col, usecols, squeeze, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, parse_dates, date_parser, thousands, decimal, comment, skipfooter, convert_float, mangle_dupe_cols, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">455</span>     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">io</span><span class="p">,</span> <span class="n">ExcelFile</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">456</span>         <span class="n">should_close</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="ne">--&gt; </span><span class="mi">457</span>         <span class="n">io</span> <span class="o">=</span> <span class="n">ExcelFile</span><span class="p">(</span><span class="n">io</span><span class="p">,</span> <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">458</span>     <span class="k">elif</span> <span class="n">engine</span> <span class="ow">and</span> <span class="n">engine</span> <span class="o">!=</span> <span class="n">io</span><span class="o">.</span><span class="n">engine</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">459</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+
+<span class="nn">~\anaconda3\lib\site-packages\pandas\io\excel\_base.py</span> in <span class="ni">__init__</span><span class="nt">(self, path_or_buffer, engine, storage_options)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1374</span>                 <span class="n">ext</span> <span class="o">=</span> <span class="s2">&quot;xls&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1375</span>             <span class="k">else</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1376</span>                 <span class="n">ext</span> <span class="o">=</span> <span class="n">inspect_excel_format</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1377</span>                     <span class="n">content_or_path</span><span class="o">=</span><span class="n">path_or_buffer</span><span class="p">,</span> <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span>
+<span class="g g-Whitespace">   </span><span class="mi">1378</span>                 <span class="p">)</span>
+
+<span class="nn">~\anaconda3\lib\site-packages\pandas\io\excel\_base.py</span> in <span class="ni">inspect_excel_format</span><span class="nt">(content_or_path, storage_options)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1248</span>         <span class="n">content_or_path</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">(</span><span class="n">content_or_path</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1249</span> 
+<span class="ne">-&gt; </span><span class="mi">1250</span>     <span class="k">with</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1251</span>         <span class="n">content_or_path</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">,</span> <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">,</span> <span class="n">is_text</span><span class="o">=</span><span class="kc">False</span>
+<span class="g g-Whitespace">   </span><span class="mi">1252</span>     <span class="p">)</span> <span class="k">as</span> <span class="n">handle</span><span class="p">:</span>
+
+<span class="nn">~\anaconda3\lib\site-packages\pandas\io\common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">793</span>         <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">794</span>             <span class="c1"># Binary mode</span>
+<span class="ne">--&gt; </span><span class="mi">795</span>             <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">796</span>         <span class="n">handles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">797</span> 
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;WHO POP TB some.xls&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>The expression <code class="docutils literal notranslate"><span class="pre">dataFrame[columnName]</span></code> evaluates to the column with the given name (a string). Column names are case sensitive. Misspelling the column name will result in a rather long <strong>key error</strong> message. You can see what happens by changing the string in the next code cell (e.g. replace <code class="docutils literal notranslate"><span class="pre">TB</span></code> by <code class="docutils literal notranslate"><span class="pre">tb</span></code>) and running it. Don’t forget to undo your change and run the code again.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tbColumn</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;TB deaths&#39;</span><span class="p">]</span>
+<span class="n">tbColumn</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0       6900
+1       4400
+2      41000
+3         67
+4       1200
+5     240000
+6      18000
+7        140
+8      17000
+9         18
+10     25000
+11       990
+Name: TB deaths, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id4">
+<h3>Task<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<p>In the next cell, select the population column and store it in a variable (you’ll use it in the next exercise). You need to scroll back to the start of the exercise to see the column’s name.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-7-calculations-on-a-column">
+<h2>Exercise 7: calculations on a column<a class="headerlink" href="#exercise-7-calculations-on-a-column" title="Permalink to this headline">#</a></h2>
+<p>A <strong>method</strong> is a function that can only be called in a certain context, like a dataframe or a column. A <strong>method call</strong> is of the form <code class="docutils literal notranslate"><span class="pre">context.methodName(argument1,</span> <span class="pre">argument2,</span> <span class="pre">...)</span></code>.</p>
+<p>Pandas provides several column methods, including to calculate the sum, the largest, and the smallest of the numbers in a column, as follows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tbColumn</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>354715
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tbColumn</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>240000
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tbColumn</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>18
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <strong>mean</strong> of a collection of numbers is the sum of those numbers divided by how many there are.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tbColumn</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="mi">12</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29559.583333333332
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tbColumn</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29559.583333333332
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <strong>median</strong> of a collection of numbers is the number in the middle, i.e. half of the numbers are below the median and half  are above.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tbColumn</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5650.0
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id5">
+<h3>Tasks<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<p>Use the population column variable from the previous exercise to calculate:</p>
+<ul class="simple">
+<li><p>the total population</p></li>
+</ul>
+<ul class="simple">
+<li><p>the maximum population</p></li>
+</ul>
+<ul class="simple">
+<li><p>the minimum population</p></li>
+</ul>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-8-sorting-on-a-column">
+<h2>Exercise 8: sorting on a column<a class="headerlink" href="#exercise-8-sorting-on-a-column" title="Permalink to this headline">#</a></h2>
+<p>The dataframe method <code class="docutils literal notranslate"><span class="pre">sort_values()</span></code> takes as argument a column name and returns a new dataframe, with rows in ascending order according to the values in that column.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;TB deaths&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+      <th>TB deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>9</th>
+      <td>Sao Tome and Principe</td>
+      <td>193</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Equatorial Guinea</td>
+      <td>757</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Portugal</td>
+      <td>10608</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Timor-Leste</td>
+      <td>1133</td>
+      <td>990</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Guinea-Bissau</td>
+      <td>1704</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Brazil</td>
+      <td>200362</td>
+      <td>4400</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Angola</td>
+      <td>21472</td>
+      <td>6900</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Russian Federation</td>
+      <td>142834</td>
+      <td>17000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Mozambique</td>
+      <td>25834</td>
+      <td>18000</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>South Africa</td>
+      <td>52776</td>
+      <td>25000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>China</td>
+      <td>1393337</td>
+      <td>41000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>India</td>
+      <td>1252140</td>
+      <td>240000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Sorting doesn’t change the original table.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="c1"># rows still in original order</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+      <th>TB deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Angola</td>
+      <td>21472</td>
+      <td>6900</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Brazil</td>
+      <td>200362</td>
+      <td>4400</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>China</td>
+      <td>1393337</td>
+      <td>41000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Equatorial Guinea</td>
+      <td>757</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Guinea-Bissau</td>
+      <td>1704</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>India</td>
+      <td>1252140</td>
+      <td>240000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Mozambique</td>
+      <td>25834</td>
+      <td>18000</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Portugal</td>
+      <td>10608</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Russian Federation</td>
+      <td>142834</td>
+      <td>17000</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Sao Tome and Principe</td>
+      <td>193</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>South Africa</td>
+      <td>52776</td>
+      <td>25000</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Timor-Leste</td>
+      <td>1133</td>
+      <td>990</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Sorting on a column that has text will put the rows in alphabetical order.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+      <th>TB deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Angola</td>
+      <td>21472</td>
+      <td>6900</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Brazil</td>
+      <td>200362</td>
+      <td>4400</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>China</td>
+      <td>1393337</td>
+      <td>41000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Equatorial Guinea</td>
+      <td>757</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Guinea-Bissau</td>
+      <td>1704</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>India</td>
+      <td>1252140</td>
+      <td>240000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Mozambique</td>
+      <td>25834</td>
+      <td>18000</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Portugal</td>
+      <td>10608</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Russian Federation</td>
+      <td>142834</td>
+      <td>17000</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Sao Tome and Principe</td>
+      <td>193</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>South Africa</td>
+      <td>52776</td>
+      <td>25000</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Timor-Leste</td>
+      <td>1133</td>
+      <td>990</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="id6">
+<h3>Task<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
+<p>Sort the same table by population, to quickly see which are the least and the most populous countries.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="final-quiz-calculations-over-columns">
+<h2>Final quiz: Calculations over columns<a class="headerlink" href="#final-quiz-calculations-over-columns" title="Permalink to this headline">#</a></h2>
+<p>This information will help you to answer questions in the final quiz.</p>
+<p>The value of an arithmetic expression involving columns is a column. In evaluating the expression, the computer computes the expression for each row.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deathsColumn</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;TB deaths&#39;</span><span class="p">]</span>
+<span class="n">populationColumn</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Population (1000s)&#39;</span><span class="p">]</span>
+<span class="n">rateColumn</span> <span class="o">=</span> <span class="n">deathsColumn</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">/</span> <span class="n">populationColumn</span>
+<span class="n">rateColumn</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     32.134873
+1      2.196025
+2      2.942576
+3      8.850727
+4     70.422535
+5     19.167186
+6     69.675621
+7      1.319759
+8     11.901928
+9      9.326425
+10    47.370017
+11    87.378641
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>To add a new column to a dataframe, ‘select’ a non-existing column, i.e. with a new name, and assign to it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;TB deaths (per 100000)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rateColumn</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+      <th>TB deaths</th>
+      <th>TB deaths (per 100000)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Angola</td>
+      <td>21472</td>
+      <td>6900</td>
+      <td>32.134873</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Brazil</td>
+      <td>200362</td>
+      <td>4400</td>
+      <td>2.196025</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>China</td>
+      <td>1393337</td>
+      <td>41000</td>
+      <td>2.942576</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Equatorial Guinea</td>
+      <td>757</td>
+      <td>67</td>
+      <td>8.850727</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Guinea-Bissau</td>
+      <td>1704</td>
+      <td>1200</td>
+      <td>70.422535</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>India</td>
+      <td>1252140</td>
+      <td>240000</td>
+      <td>19.167186</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Mozambique</td>
+      <td>25834</td>
+      <td>18000</td>
+      <td>69.675621</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Portugal</td>
+      <td>10608</td>
+      <td>140</td>
+      <td>1.319759</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Russian Federation</td>
+      <td>142834</td>
+      <td>17000</td>
+      <td>11.901928</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Sao Tome and Principe</td>
+      <td>193</td>
+      <td>18</td>
+      <td>9.326425</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>South Africa</td>
+      <td>52776</td>
+      <td>25000</td>
+      <td>47.370017</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Timor-Leste</td>
+      <td>1133</td>
+      <td>990</td>
+      <td>87.378641</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="id7">
+<h3>Tasks<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+<p>Add code to calculate:</p>
+<ul class="simple">
+<li><p>the range of the population, in thousands of inhabitants</p></li>
+</ul>
+<ul class="simple">
+<li><p>the mean of the death rate</p></li>
+</ul>
+<ul class="simple">
+<li><p>the median of the death rate</p></li>
+</ul>
+<p>Now you can answer the questions in the <strong>final quiz</strong>.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Docs\Training\OU-training\Learn-to-code-for-data-analysis-master\1_Having_a_go_at_it"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By <strong>Vincent Deguin</strong> (with ❤️)<br/>
+  
+    <div class="extra_footer">
+      
+<img class="CC_licence" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licence CC BY NC SA 2"/>
+
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

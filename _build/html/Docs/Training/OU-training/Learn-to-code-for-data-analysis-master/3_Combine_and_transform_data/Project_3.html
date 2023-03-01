@@ -1,0 +1,1419 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Project 3: GDP and life expectancy &#8212; MUSEUM</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../../_static/copybutton.js"></script>
+    <script src="../../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb-museum");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-museum/_build/html/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/3_Combine_and_transform_data/Project_3.html" />
+    <link rel="shortcut icon" href="../../../../../_static/OU_Logo.svg"/>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GYJ9YP0JJ4"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-GYJ9YP0JJ4');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">Current Version: Jan 2023</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../../../_static/OU_Logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">MUSEUM</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Science
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Science/Science.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Planet_formation/Main_en_Planet_formation.html">
+   Stars &amp; Planet Formation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Prequel.html">
+     Setting up the stage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Star_formation.html">
+     Star Formation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/PPD.html">
+     Protoplanetary Disks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Blocks.html">
+     Planets Building Blocks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Collision/Main_en_Collision.html">
+   Dust Collisions &amp; Growth
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Migration.html">
+     Migration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Collision.html">
+     Collision &amp; Growth Mechanism
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Growth.html">
+     Planetesimals Dynamics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/GeoChem.html">
+     Geochemistry
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/HGW/Main_en_HGW.html">
+   Hyperquenched Glassy Water
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/Vitrification.html">
+     Vitrification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/HGW.html">
+     HGW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/Cooling.html">
+     Cooling Processes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Levitation/Main_en_Levitation.html">
+   Levitation and IR Signature
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/3DObs.html">
+     Dust 3D Observations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/RightWing.html">
+     3 µm Right Wing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/Levitation.html">
+     Levitation techniques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Science/How.html">
+   Thesis Aim → How ?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Introduction/Introduction.html">
+   Introduction (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Methods
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Technical/Method.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Technical/XP_Dev/XP_Dev.html">
+   XP Development
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/V1/Proof_of_concept.html">
+     Proof of concept
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/V2/2nd_Version.html">
+     2
+     <sup>
+      nd
+     </sup>
+     Version
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/Levitation/Lev-Chamb.html">
+     Levitation Chamber
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Technical/Characterisation/characterisation.html">
+   Characterisation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Microscopy/Microscopy.html">
+     Microscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Neutron/Neutron.html">
+     Neutron Scattering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Infrared/Infrared.html">
+     Infrared
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Methods/Methods.html">
+   Methods (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Results
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter6/Chapter6.html">
+   Chapter 6 (📖 Thesis)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter7/Chapter7.html">
+   Chapter 7 (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Conclusion
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Conclusion/Conclusion.html">
+   Conclusion (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Bibliography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Thesis_JB_B/Biblio/bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/Deugz/nb-museum/master?urlpath=tree/docs/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/3_Combine_and_transform_data/Project_3.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/Deugz/nb-museum"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/issues/new?title=Issue%20on%20page%20%2FDocs/Training/OU-training/Learn-to-code-for-data-analysis-master/3_Combine_and_transform_data/Project_3.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/edit/master/docs/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/3_Combine_and_transform_data/Project_3.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../../../_sources/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/3_Combine_and_transform_data/Project_3.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-the-data">
+   Getting the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cleaning-the-data">
+   Cleaning the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transforming-the-data">
+   Transforming the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#combining-the-data">
+   Combining the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculating-the-correlation">
+   Calculating the correlation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#showing-the-data">
+   Showing the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusions">
+   Conclusions
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Project 3: GDP and life expectancy</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-the-data">
+   Getting the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cleaning-the-data">
+   Cleaning the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transforming-the-data">
+   Transforming the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#combining-the-data">
+   Combining the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculating-the-correlation">
+   Calculating the correlation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#showing-the-data">
+   Showing the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusions">
+   Conclusions
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="project-3-gdp-and-life-expectancy">
+<h1>Project 3: GDP and life expectancy<a class="headerlink" href="#project-3-gdp-and-life-expectancy" title="Permalink to this headline">#</a></h1>
+<p>by Michel Wermelinger, 27 August 2015, updated 5 April 2016 and 18 October 2017, minor edits 20 December 2017</p>
+<p>This is the project notebook for Part 3 of The Open University’s <em>Learn to code for Data Analysis</em> course.</p>
+<p>Richer countries can afford to invest more on healthcare, on work and road safety, and other measures that reduce mortality. On the other hand, richer countries may have less healthy lifestyles. Is there any relation between the wealth of a country and the life expectancy of its inhabitants?</p>
+<p>The following analysis checks whether there is any correlation between the total gross domestic product (GDP) of a country in 2013 and the life expectancy of people born in that country in 2013.</p>
+<section id="getting-the-data">
+<h2>Getting the data<a class="headerlink" href="#getting-the-data" title="Permalink to this headline">#</a></h2>
+<p>Two datasets of the World Bank are considered. One dataset, available at <a class="reference external" href="http://data.worldbank.org/indicator/NY.GDP.MKTP.CD">http://data.worldbank.org/indicator/NY.GDP.MKTP.CD</a>, lists the GDP of the world’s countries in current US dollars, for various years. The use of a common currency allows us to compare GDP values across countries. The other dataset, available at <a class="reference external" href="http://data.worldbank.org/indicator/SP.DYN.LE00.IN">http://data.worldbank.org/indicator/SP.DYN.LE00.IN</a>, lists the life expectancy of the world’s countries. The datasets were downloaded as CSV files in March 2016.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">FutureWarning</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">YEAR</span> <span class="o">=</span> <span class="mi">2013</span>
+<span class="n">GDP_INDICATOR</span> <span class="o">=</span> <span class="s1">&#39;NY.GDP.MKTP.CD&#39;</span>
+<span class="n">gdpReset</span> <span class="o">=</span> <span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;WB GDP 2013.csv&#39;</span><span class="p">)</span>
+
+<span class="n">LIFE_INDICATOR</span> <span class="o">=</span> <span class="s1">&#39;SP.DYN.LE00.IN&#39;</span>
+<span class="n">lifeReset</span> <span class="o">=</span> <span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;WB LE 2013.csv&#39;</span><span class="p">)</span>
+<span class="n">lifeReset</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>year</th>
+      <th>SP.DYN.LE00.IN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Arab World</td>
+      <td>2013</td>
+      <td>70.631305</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Caribbean small states</td>
+      <td>2013</td>
+      <td>71.901964</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Central Europe and the Baltics</td>
+      <td>2013</td>
+      <td>76.127583</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>East Asia &amp; Pacific (all income levels)</td>
+      <td>2013</td>
+      <td>74.604619</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>East Asia &amp; Pacific (developing only)</td>
+      <td>2013</td>
+      <td>73.657617</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="cleaning-the-data">
+<h2>Cleaning the data<a class="headerlink" href="#cleaning-the-data" title="Permalink to this headline">#</a></h2>
+<p>Inspecting the data with <code class="docutils literal notranslate"><span class="pre">head()</span></code> and <code class="docutils literal notranslate"><span class="pre">tail()</span></code> shows that:</p>
+<ol class="simple">
+<li><p>the first 34 rows are aggregated data, for the Arab World, the Caribbean small states, and other country groups used by the World Bank;</p></li>
+</ol>
+<ul class="simple">
+<li><p>GDP and life expectancy values are missing for some countries.</p></li>
+</ul>
+<p>The data is therefore cleaned by:</p>
+<ol class="simple">
+<li><p>removing the first 34 rows;</p></li>
+</ol>
+<ul class="simple">
+<li><p>removing rows with unavailable values.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gdpCountries</span> <span class="o">=</span> <span class="n">gdpReset</span><span class="p">[</span><span class="mi">34</span><span class="p">:]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="n">lifeCountries</span> <span class="o">=</span> <span class="n">lifeReset</span><span class="p">[</span><span class="mi">34</span><span class="p">:]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="transforming-the-data">
+<h2>Transforming the data<a class="headerlink" href="#transforming-the-data" title="Permalink to this headline">#</a></h2>
+<p>The World Bank reports GDP in US dollars and cents. To make the data easier to read, the GDP is converted to millions of British pounds (the author’s local currency) with the following auxiliary functions, using the average 2013 dollar-to-pound conversion rate provided by <a class="reference external" href="http://www.ukforex.co.uk/forex-tools/historical-rate-tools/yearly-average-rates">http://www.ukforex.co.uk/forex-tools/historical-rate-tools/yearly-average-rates</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">roundToMillions</span> <span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">value</span> <span class="o">/</span> <span class="mi">1000000</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">usdToGBP</span> <span class="p">(</span><span class="n">usd</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">usd</span> <span class="o">/</span> <span class="mf">1.564768</span>
+
+<span class="n">GDP</span> <span class="o">=</span> <span class="s1">&#39;GDP (£m)&#39;</span>
+<span class="n">gdpCountries</span><span class="p">[</span><span class="n">GDP</span><span class="p">]</span> <span class="o">=</span> <span class="n">gdpCountries</span><span class="p">[</span><span class="n">GDP_INDICATOR</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">usdToGBP</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">roundToMillions</span><span class="p">)</span>
+<span class="n">gdpCountries</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>year</th>
+      <th>NY.GDP.MKTP.CD</th>
+      <th>GDP (£m)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>34</th>
+      <td>Afghanistan</td>
+      <td>2013</td>
+      <td>2.045894e+10</td>
+      <td>13075</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Albania</td>
+      <td>2013</td>
+      <td>1.278103e+10</td>
+      <td>8168</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Algeria</td>
+      <td>2013</td>
+      <td>2.097035e+11</td>
+      <td>134016</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Andorra</td>
+      <td>2013</td>
+      <td>3.249101e+09</td>
+      <td>2076</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Angola</td>
+      <td>2013</td>
+      <td>1.383568e+11</td>
+      <td>88420</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>The unnecessary columns can be dropped.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">COUNTRY</span> <span class="o">=</span> <span class="s1">&#39;country&#39;</span>
+<span class="n">headings</span> <span class="o">=</span> <span class="p">[</span><span class="n">COUNTRY</span><span class="p">,</span> <span class="n">GDP</span><span class="p">]</span>
+<span class="n">gdpClean</span> <span class="o">=</span> <span class="n">gdpCountries</span><span class="p">[</span><span class="n">headings</span><span class="p">]</span>
+<span class="n">gdpClean</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>GDP (£m)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>34</th>
+      <td>Afghanistan</td>
+      <td>13075</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Albania</td>
+      <td>8168</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Algeria</td>
+      <td>134016</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Andorra</td>
+      <td>2076</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Angola</td>
+      <td>88420</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>The World Bank reports the life expectancy with several decimal places. After rounding, the original column is discarded.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">LIFE</span> <span class="o">=</span> <span class="s1">&#39;Life expectancy (years)&#39;</span>
+<span class="n">lifeCountries</span><span class="p">[</span><span class="n">LIFE</span><span class="p">]</span> <span class="o">=</span> <span class="n">lifeCountries</span><span class="p">[</span><span class="n">LIFE_INDICATOR</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="nb">round</span><span class="p">)</span>
+<span class="n">headings</span> <span class="o">=</span> <span class="p">[</span><span class="n">COUNTRY</span><span class="p">,</span> <span class="n">LIFE</span><span class="p">]</span>
+<span class="n">lifeClean</span> <span class="o">=</span> <span class="n">lifeCountries</span><span class="p">[</span><span class="n">headings</span><span class="p">]</span>
+<span class="n">lifeClean</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>Life expectancy (years)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>34</th>
+      <td>Afghanistan</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Albania</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Algeria</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Angola</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>Antigua and Barbuda</td>
+      <td>76</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="combining-the-data">
+<h2>Combining the data<a class="headerlink" href="#combining-the-data" title="Permalink to this headline">#</a></h2>
+<p>The tables are combined through an inner join on the common ‘country’ column.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gdpVsLife</span> <span class="o">=</span> <span class="n">merge</span><span class="p">(</span><span class="n">gdpClean</span><span class="p">,</span> <span class="n">lifeClean</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="n">COUNTRY</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
+<span class="n">gdpVsLife</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>GDP (£m)</th>
+      <th>Life expectancy (years)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>13075</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Albania</td>
+      <td>8168</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Algeria</td>
+      <td>134016</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Angola</td>
+      <td>88420</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Antigua and Barbuda</td>
+      <td>767</td>
+      <td>76</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="calculating-the-correlation">
+<h2>Calculating the correlation<a class="headerlink" href="#calculating-the-correlation" title="Permalink to this headline">#</a></h2>
+<p>To measure if the life expectancy and the GDP grow together, the Spearman rank correlation coefficient is used. It is a number from -1 (perfect inverse rank correlation: if one indicator increases, the other decreases) to 1 (perfect direct rank correlation: if one indicator increases, so does the other), with 0 meaning there is no rank correlation. A perfect correlation doesn’t imply any cause-effect relation between the two indicators. A p-value below 0.05 means the correlation is statistically significant.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">spearmanr</span>
+
+<span class="n">gdpColumn</span> <span class="o">=</span> <span class="n">gdpVsLife</span><span class="p">[</span><span class="n">GDP</span><span class="p">]</span>
+<span class="n">lifeColumn</span> <span class="o">=</span> <span class="n">gdpVsLife</span><span class="p">[</span><span class="n">LIFE</span><span class="p">]</span>
+<span class="p">(</span><span class="n">correlation</span><span class="p">,</span> <span class="n">pValue</span><span class="p">)</span> <span class="o">=</span> <span class="n">spearmanr</span><span class="p">(</span><span class="n">gdpColumn</span><span class="p">,</span> <span class="n">lifeColumn</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The correlation is&#39;</span><span class="p">,</span> <span class="n">correlation</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">pValue</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It is statistically significant.&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It is not statistically significant.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The correlation is 0.5010232389671027
+It is statistically significant.
+</pre></div>
+</div>
+</div>
+</div>
+<p>The value shows a direct correlation, i.e. richer countries tend to have longer life expectancy, but it is not very strong.</p>
+</section>
+<section id="showing-the-data">
+<h2>Showing the data<a class="headerlink" href="#showing-the-data" title="Permalink to this headline">#</a></h2>
+<p>Measures of correlation can be misleading, so it is best to see the overall picture with a scatterplot. The GDP axis uses a logarithmic scale to better display the vast range of GDP values, from a few million to several billion (million of million) pounds.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">gdpVsLife</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">GDP</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">LIFE</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;scatter&#39;</span><span class="p">,</span> <span class="n">grid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">logx</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;GDP (£m)&#39;, ylabel=&#39;Life expectancy (years)&#39;&gt;
+</pre></div>
+</div>
+<img alt="../../../../../_images/Project_3_17_1.png" src="../../../../../_images/Project_3_17_1.png" />
+</div>
+</div>
+<p>The plot shows there is no clear correlation: there are rich countries with low life expectancy, poor countries with high expectancy, and countries with around 10 thousand (10<sup>4</sup>) million pounds GDP have almost the full range of values, from below 50 to over 80 years. Towards the lower and higher end of GDP, the variation diminishes. Above 40 thousand million pounds of GDP (3rd tick mark to the right of 10<sup>4</sup>), most countries have an expectancy of 70 years or more, whilst below that threshold most countries’ life expectancy is below 70 years.</p>
+<p>Comparing the 10 poorest countries and the 10 countries with the lowest life expectancy shows that total GDP is a rather crude measure. The population size should be taken into account for a more precise definiton of what ‘poor’ and ‘rich’ means. Furthermore, looking at the countries below, droughts and internal conflicts may also play a role in life expectancy.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the 10 countries with lowest GDP</span>
+<span class="n">gdpVsLife</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">GDP</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>GDP (£m)</th>
+      <th>Life expectancy (years)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>87</th>
+      <td>Kiribati</td>
+      <td>108</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>Sao Tome and Principe</td>
+      <td>195</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>Micronesia, Fed. Sts.</td>
+      <td>202</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <th>168</th>
+      <td>Tonga</td>
+      <td>277</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Comoros</td>
+      <td>383</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>St. Vincent and the Grenadines</td>
+      <td>461</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>Samoa</td>
+      <td>509</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>180</th>
+      <td>Vanuatu</td>
+      <td>512</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>Grenada</td>
+      <td>538</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Gambia, The</td>
+      <td>578</td>
+      <td>60</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the 10 countries with lowest life expectancy</span>
+<span class="n">gdpVsLife</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">LIFE</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>GDP (£m)</th>
+      <th>Life expectancy (years)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>95</th>
+      <td>Lesotho</td>
+      <td>1418</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td>Swaziland</td>
+      <td>2916</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Central African Republic</td>
+      <td>983</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>Sierra Leone</td>
+      <td>3092</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Chad</td>
+      <td>8276</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Cote d'Ivoire</td>
+      <td>19998</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Angola</td>
+      <td>88420</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>Nigeria</td>
+      <td>329100</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Cameroon</td>
+      <td>18896</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>South Sudan</td>
+      <td>8473</td>
+      <td>55</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="conclusions">
+<h2>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this headline">#</a></h2>
+<p>To sum up, there is no strong correlation between a country’s wealth and the life expectancy of its inhabitants: there is often a wide variation of life expectancy for countries with similar GDP, countries with the lowest life expectancy are not the poorest countries, and countries with the highest expectancy are not the richest countries. Nevertheless there is some relationship, because the vast majority of countries with a life expectancy below 70 years is on the left half of the scatterplot.</p>
+<p>Using the <a class="reference external" href="http://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD">NY.GDP.PCAP.PP.CD</a> indicator, GDP per capita in current ‘international dollars’, would make for a better like-for-like comparison between countries, because it would take population and purchasing power into account. Using more specific data, like expediture on health, could also lead to a better analysis.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Docs\Training\OU-training\Learn-to-code-for-data-analysis-master\3_Combine_and_transform_data"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By <strong>Vincent Deguin</strong> (with ❤️)<br/>
+  
+    <div class="extra_footer">
+      
+<img class="CC_licence" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licence CC BY NC SA 2"/>
+
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

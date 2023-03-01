@@ -1,0 +1,3502 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Exercise notebook 2: Cleaning up our act &#8212; MUSEUM</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../../_static/copybutton.js"></script>
+    <script src="../../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb-museum");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-museum/_build/html/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/2_Cleaning_up_our_act/Exercises_2.html" />
+    <link rel="shortcut icon" href="../../../../../_static/OU_Logo.svg"/>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GYJ9YP0JJ4"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-GYJ9YP0JJ4');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">Current Version: Jan 2023</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../../../_static/OU_Logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">MUSEUM</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Science
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Science/Science.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Planet_formation/Main_en_Planet_formation.html">
+   Stars &amp; Planet Formation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Prequel.html">
+     Setting up the stage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Star_formation.html">
+     Star Formation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/PPD.html">
+     Protoplanetary Disks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Blocks.html">
+     Planets Building Blocks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Collision/Main_en_Collision.html">
+   Dust Collisions &amp; Growth
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Migration.html">
+     Migration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Collision.html">
+     Collision &amp; Growth Mechanism
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Growth.html">
+     Planetesimals Dynamics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/GeoChem.html">
+     Geochemistry
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/HGW/Main_en_HGW.html">
+   Hyperquenched Glassy Water
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/Vitrification.html">
+     Vitrification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/HGW.html">
+     HGW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/Cooling.html">
+     Cooling Processes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Levitation/Main_en_Levitation.html">
+   Levitation and IR Signature
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/3DObs.html">
+     Dust 3D Observations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/RightWing.html">
+     3 µm Right Wing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/Levitation.html">
+     Levitation techniques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Science/How.html">
+   Thesis Aim → How ?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Introduction/Introduction.html">
+   Introduction (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Methods
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Technical/Method.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Technical/XP_Dev/XP_Dev.html">
+   XP Development
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/V1/Proof_of_concept.html">
+     Proof of concept
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/V2/2nd_Version.html">
+     2
+     <sup>
+      nd
+     </sup>
+     Version
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/Levitation/Lev-Chamb.html">
+     Levitation Chamber
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Technical/Characterisation/characterisation.html">
+   Characterisation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Microscopy/Microscopy.html">
+     Microscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Neutron/Neutron.html">
+     Neutron Scattering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Infrared/Infrared.html">
+     Infrared
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Methods/Methods.html">
+   Methods (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Results
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter6/Chapter6.html">
+   Chapter 6 (📖 Thesis)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter7/Chapter7.html">
+   Chapter 7 (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Conclusion
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Conclusion/Conclusion.html">
+   Conclusion (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Bibliography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Thesis_JB_B/Biblio/bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/Deugz/nb-museum/master?urlpath=tree/docs/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/2_Cleaning_up_our_act/Exercises_2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/Deugz/nb-museum"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/issues/new?title=Issue%20on%20page%20%2FDocs/Training/OU-training/Learn-to-code-for-data-analysis-master/2_Cleaning_up_our_act/Exercises_2.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/edit/master/docs/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/2_Cleaning_up_our_act/Exercises_2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../../../_sources/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/2_Cleaning_up_our_act/Exercises_2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1-dataframes-and-csv-files">
+   Exercise 1: Dataframes and CSV files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dataframe-attributes">
+     Dataframe attributes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dataframe-rows">
+     Dataframe rows
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-code-head-code-method">
+     The
+     <code>
+      head()
+     </code>
+     method
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-code-tail-code-method">
+     The
+     <code>
+      tail()
+     </code>
+     method
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#selecting-and-displaying-columns-in-a-dataframe">
+     Selecting and displaying columns in a dataframe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applying-methods-to-a-dataframe-column">
+     Applying methods to a dataframe column
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tasks">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-2-comparison-operators">
+   Exercise 2: Comparison operators
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3-bitwise-operators">
+   Exercise 3: Bitwise operators
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4-display-rows-from-dataframe">
+   Exercise 4: Display rows from dataframe
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#removing-initial-spaces">
+     Removing initial spaces
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#removing-extra-characters">
+     Removing extra characters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#missing-values">
+     Missing values
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#changing-the-value-type-of-a-column">
+     Changing the value type of a column
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-5-every-picture-tells-a-story">
+   Exercise 5: Every picture tells a story
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-6-changing-a-dataframe-s-index">
+   Exercise 6: Changing a dataframe’s index
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Exercise notebook 2: Cleaning up our act</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1-dataframes-and-csv-files">
+   Exercise 1: Dataframes and CSV files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dataframe-attributes">
+     Dataframe attributes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dataframe-rows">
+     Dataframe rows
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-code-head-code-method">
+     The
+     <code>
+      head()
+     </code>
+     method
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-code-tail-code-method">
+     The
+     <code>
+      tail()
+     </code>
+     method
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#selecting-and-displaying-columns-in-a-dataframe">
+     Selecting and displaying columns in a dataframe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applying-methods-to-a-dataframe-column">
+     Applying methods to a dataframe column
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tasks">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-2-comparison-operators">
+   Exercise 2: Comparison operators
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3-bitwise-operators">
+   Exercise 3: Bitwise operators
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4-display-rows-from-dataframe">
+   Exercise 4: Display rows from dataframe
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#removing-initial-spaces">
+     Removing initial spaces
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#removing-extra-characters">
+     Removing extra characters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#missing-values">
+     Missing values
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#changing-the-value-type-of-a-column">
+     Changing the value type of a column
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-5-every-picture-tells-a-story">
+   Exercise 5: Every picture tells a story
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-6-changing-a-dataframe-s-index">
+   Exercise 6: Changing a dataframe’s index
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-notebook-2-cleaning-up-our-act">
+<h1>Exercise notebook 2: Cleaning up our act<a class="headerlink" href="#exercise-notebook-2-cleaning-up-our-act" title="Permalink to this headline">#</a></h1>
+<p>This Jupyter notebook, for the second part of The Open University’s <em>Learn to code for Data Analysis</em> course, has code examples and coding activities for you. Remember to run the code in this notebook before you start.</p>
+<p>You’ll come across steps in the course directing you to this notebook. Once you’ve done each exercise, go back to the corresponding step and mark it as complete.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">FutureWarning</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="exercise-1-dataframes-and-csv-files">
+<h2>Exercise 1: Dataframes and CSV files<a class="headerlink" href="#exercise-1-dataframes-and-csv-files" title="Permalink to this headline">#</a></h2>
+<p>To read a CSV file into a dataframe you need to call the pandas function called <code>read_csv()</code>. The simplest usage of this function is with a single argument, a string that holds the name of the CSV file, for example.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;WHO POP TB all.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="dataframe-attributes">
+<h3>Dataframe attributes<a class="headerlink" href="#dataframe-attributes" title="Permalink to this headline">#</a></h3>
+<p>A dataframe attribute is like a variable that can only be accessed in the context of a dataframe. One such attribute is <code>columns</code> which holds a dataframe’s column names.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Country&#39;, &#39;Population (1000s)&#39;, &#39;TB deaths&#39;], dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="dataframe-rows">
+<h3>Dataframe rows<a class="headerlink" href="#dataframe-rows" title="Permalink to this headline">#</a></h3>
+<p>A dataframe has a default integer index for its rows, which starts at zero. The <code class="docutils literal notranslate"><span class="pre">iloc</span></code> attribute can be used to obtain the row at the given index.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># first row, index 0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Country               Afghanistan
+Population (1000s)          30552
+TB deaths                 13000.0
+Name: 0, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># third row, index 2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Country               Algeria
+Population (1000s)      39208
+TB deaths              5100.0
+Name: 2, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="the-code-head-code-method">
+<h3>The <code>head()</code> method<a class="headerlink" href="#the-code-head-code-method" title="Permalink to this headline">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">head()</span></code> method returns a dataframe with the first rows, as many as given in the argument. By default, if the argument is missing, it returns the first five rows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> <span class="c1"># first five rows</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+      <th>TB deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>30552</td>
+      <td>13000.00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Albania</td>
+      <td>3173</td>
+      <td>20.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Algeria</td>
+      <td>39208</td>
+      <td>5100.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Andorra</td>
+      <td>79</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Angola</td>
+      <td>21472</td>
+      <td>6900.00</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="c1"># first seven rows</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+      <th>TB deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>30552</td>
+      <td>13000.00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Albania</td>
+      <td>3173</td>
+      <td>20.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Algeria</td>
+      <td>39208</td>
+      <td>5100.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Andorra</td>
+      <td>79</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Angola</td>
+      <td>21472</td>
+      <td>6900.00</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Antigua and Barbuda</td>
+      <td>90</td>
+      <td>1.20</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Argentina</td>
+      <td>41446</td>
+      <td>570.00</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="the-code-tail-code-method">
+<h3>The <code>tail()</code> method<a class="headerlink" href="#the-code-tail-code-method" title="Permalink to this headline">#</a></h3>
+<p>The <code>tail()</code> method is similar to the <code>head()</code> method. If no argument is used, the last five rows of the dataframe are returned, otherwise the number of rows returned is dependent on the argument.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span> <span class="c1"># last five rows</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+      <th>TB deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>189</th>
+      <td>Venezuela (Bolivarian Republic of)</td>
+      <td>30405</td>
+      <td>480.0</td>
+    </tr>
+    <tr>
+      <th>190</th>
+      <td>Viet Nam</td>
+      <td>91680</td>
+      <td>17000.0</td>
+    </tr>
+    <tr>
+      <th>191</th>
+      <td>Yemen</td>
+      <td>24407</td>
+      <td>990.0</td>
+    </tr>
+    <tr>
+      <th>192</th>
+      <td>Zambia</td>
+      <td>14539</td>
+      <td>3600.0</td>
+    </tr>
+    <tr>
+      <th>193</th>
+      <td>Zimbabwe</td>
+      <td>14150</td>
+      <td>5700.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="selecting-and-displaying-columns-in-a-dataframe">
+<h3>Selecting and displaying columns in a dataframe<a class="headerlink" href="#selecting-and-displaying-columns-in-a-dataframe" title="Permalink to this headline">#</a></h3>
+<p>You found in Week 1 that you can select and display the values for a single dataframe column by puting the name of the column (in quotes) within square brackets immediately after the dataframe’s name. However you can also select and display the values for multiple columns too.</p>
+<p>To get multiple columns you need to use a list. A list in Python is a number of items separated by commas within square brackets, for example <code class="docutils literal notranslate"><span class="pre">['Country',</span> <span class="pre">'Population</span> <span class="pre">(1000s)']</span></code>. This list is then put within square brackets immediately after the dataframe’s name. The resulting expression represents a new dataframe, just with those columns, and therefore any dataframe method can be applied to it, like for example <code class="docutils literal notranslate"><span class="pre">head()</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="s1">&#39;Population (1000s)&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>30552</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Albania</td>
+      <td>3173</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Algeria</td>
+      <td>39208</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Andorra</td>
+      <td>79</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Angola</td>
+      <td>21472</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="applying-methods-to-a-dataframe-column">
+<h3>Applying methods to a dataframe column<a class="headerlink" href="#applying-methods-to-a-dataframe-column" title="Permalink to this headline">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">iloc</span></code> attribute and the <code>head()</code> and <code>tail()</code> methods discussed above can be used with single columns.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TB deaths&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># third value of deaths column</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5100.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Population (1000s)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span> <span class="c1"># last five values of population column      </span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>189    30405
+190    91680
+191    24407
+192    14539
+193    14150
+Name: Population (1000s), dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="tasks">
+<h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">#</a></h3>
+<p>In the code cell below, write the code to get and display the 55th row in the dataframe <code>df</code>.</p>
+<p>In the code cell below write the code to display the first 10 rows of the dataframe <code>df</code>.</p>
+<p>In the code cell below, select and display the first eight rows from the <code>’Country’</code> and <code>’TB deaths’</code> columns.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-2-comparison-operators">
+<h2>Exercise 2: Comparison operators<a class="headerlink" href="#exercise-2-comparison-operators" title="Permalink to this headline">#</a></h2>
+<p>Python has the following comparison operators:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>== (equals)
+!= (not equal)
+&lt; (less than)
+&gt; (greater than)
+&lt;= (less than or equal to)
+&gt;= (greater than or equal to)
+</pre></div>
+</div>
+<p>The following code will get and display all the rows in <code class="docutils literal notranslate"><span class="pre">df</span></code> where it is <code class="docutils literal notranslate"><span class="pre">True</span></code> that the value in the <code class="docutils literal notranslate"><span class="pre">'Population</span> <span class="pre">(1000s)'</span></code> column is greater than <code class="docutils literal notranslate"><span class="pre">80000</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Population (1000s)&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">80000</span><span class="p">]</span>         
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+      <th>TB deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>13</th>
+      <td>Bangladesh</td>
+      <td>156595</td>
+      <td>80000.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Brazil</td>
+      <td>200362</td>
+      <td>4400.0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>China</td>
+      <td>1393337</td>
+      <td>41000.0</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Egypt</td>
+      <td>82056</td>
+      <td>550.0</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Ethiopia</td>
+      <td>94101</td>
+      <td>30000.0</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>Germany</td>
+      <td>82727</td>
+      <td>300.0</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>India</td>
+      <td>1252140</td>
+      <td>240000.0</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>Indonesia</td>
+      <td>249866</td>
+      <td>64000.0</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>Japan</td>
+      <td>127144</td>
+      <td>2100.0</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>Mexico</td>
+      <td>122332</td>
+      <td>2200.0</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>Nigeria</td>
+      <td>173615</td>
+      <td>160000.0</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>Pakistan</td>
+      <td>182143</td>
+      <td>49000.0</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>Philippines</td>
+      <td>98394</td>
+      <td>27000.0</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>Russian Federation</td>
+      <td>142834</td>
+      <td>17000.0</td>
+    </tr>
+    <tr>
+      <th>185</th>
+      <td>United States of America</td>
+      <td>320051</td>
+      <td>490.0</td>
+    </tr>
+    <tr>
+      <th>190</th>
+      <td>Viet Nam</td>
+      <td>91680</td>
+      <td>17000.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="task">
+<h3>Task<a class="headerlink" href="#task" title="Permalink to this headline">#</a></h3>
+<p>In the code cell below write code to find all the rows in <code>df</code> where TB deaths exceed 10000.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-3-bitwise-operators">
+<h2>Exercise 3: Bitwise operators<a class="headerlink" href="#exercise-3-bitwise-operators" title="Permalink to this headline">#</a></h2>
+<p>Pandas has two operators to make more complicated queries. Use the operator <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> (means ‘and’) to select rows where two conditions are both true. Use the operator <code class="docutils literal notranslate"><span class="pre">|</span></code> (means ‘or’) to select rows where at least one condition is true. Don’t forget to put parentheses around <em>each</em> comparison. For example, the following expression selects only countries with a population over 80 million inhabitants <strong>and</strong> with more that 10 thousand deaths.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Population (1000s)&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">80000</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;TB deaths&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10000</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+      <th>TB deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>13</th>
+      <td>Bangladesh</td>
+      <td>156595</td>
+      <td>80000.0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>China</td>
+      <td>1393337</td>
+      <td>41000.0</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Ethiopia</td>
+      <td>94101</td>
+      <td>30000.0</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>India</td>
+      <td>1252140</td>
+      <td>240000.0</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>Indonesia</td>
+      <td>249866</td>
+      <td>64000.0</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>Nigeria</td>
+      <td>173615</td>
+      <td>160000.0</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>Pakistan</td>
+      <td>182143</td>
+      <td>49000.0</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>Philippines</td>
+      <td>98394</td>
+      <td>27000.0</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>Russian Federation</td>
+      <td>142834</td>
+      <td>17000.0</td>
+    </tr>
+    <tr>
+      <th>190</th>
+      <td>Viet Nam</td>
+      <td>91680</td>
+      <td>17000.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>If the same columns will be used repeatedly in the program, the code becomes more readable if written as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">population</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Population (1000s)&#39;</span><span class="p">]</span>
+<span class="n">deaths</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;TB deaths&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="p">[(</span><span class="n">population</span> <span class="o">&gt;</span> <span class="mi">80000</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">deaths</span> <span class="o">&gt;</span> <span class="mi">10000</span><span class="p">)]</span>  
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Population (1000s)</th>
+      <th>TB deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>13</th>
+      <td>Bangladesh</td>
+      <td>156595</td>
+      <td>80000.0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>China</td>
+      <td>1393337</td>
+      <td>41000.0</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Ethiopia</td>
+      <td>94101</td>
+      <td>30000.0</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>India</td>
+      <td>1252140</td>
+      <td>240000.0</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>Indonesia</td>
+      <td>249866</td>
+      <td>64000.0</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>Nigeria</td>
+      <td>173615</td>
+      <td>160000.0</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>Pakistan</td>
+      <td>182143</td>
+      <td>49000.0</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>Philippines</td>
+      <td>98394</td>
+      <td>27000.0</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>Russian Federation</td>
+      <td>142834</td>
+      <td>17000.0</td>
+    </tr>
+    <tr>
+      <th>190</th>
+      <td>Viet Nam</td>
+      <td>91680</td>
+      <td>17000.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="id1">
+<h3>Task<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p>In the code cell below find  all the countries where the Population (1000s) is <strong>less than or equal to</strong> 50000 <strong>or</strong> TB deaths are <strong>greater than or equal to</strong> 20000.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-4-display-rows-from-dataframe">
+<h2>Exercise 4: Display rows from dataframe<a class="headerlink" href="#exercise-4-display-rows-from-dataframe" title="Permalink to this headline">#</a></h2>
+<p>You have downloaded the file London_2014.csv from our website, it can now be read into a dataframe.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span> <span class="o">=</span> <span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;London_2014.csv&#39;</span><span class="p">)</span>
+<span class="n">london</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GMT</th>
+      <th>Max TemperatureC</th>
+      <th>Mean TemperatureC</th>
+      <th>Min TemperatureC</th>
+      <th>Dew PointC</th>
+      <th>MeanDew PointC</th>
+      <th>Min DewpointC</th>
+      <th>Max Humidity</th>
+      <th>Mean Humidity</th>
+      <th>Min Humidity</th>
+      <th>...</th>
+      <th>Max VisibilityKm</th>
+      <th>Mean VisibilityKm</th>
+      <th>Min VisibilitykM</th>
+      <th>Max Wind SpeedKm/h</th>
+      <th>Mean Wind SpeedKm/h</th>
+      <th>Max Gust SpeedKm/h</th>
+      <th>Precipitationmm</th>
+      <th>CloudCover</th>
+      <th>Events</th>
+      <th>WindDirDegrees&lt;br /&gt;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2014-1-1</td>
+      <td>11</td>
+      <td>8</td>
+      <td>6</td>
+      <td>9</td>
+      <td>7</td>
+      <td>4</td>
+      <td>94</td>
+      <td>86</td>
+      <td>73</td>
+      <td>...</td>
+      <td>31</td>
+      <td>11</td>
+      <td>2</td>
+      <td>40</td>
+      <td>26</td>
+      <td>66.0</td>
+      <td>9.91</td>
+      <td>4.0</td>
+      <td>Rain</td>
+      <td>186&lt;br /&gt;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2014-1-2</td>
+      <td>11</td>
+      <td>9</td>
+      <td>6</td>
+      <td>9</td>
+      <td>6</td>
+      <td>4</td>
+      <td>94</td>
+      <td>81</td>
+      <td>60</td>
+      <td>...</td>
+      <td>31</td>
+      <td>15</td>
+      <td>5</td>
+      <td>32</td>
+      <td>21</td>
+      <td>50.0</td>
+      <td>1.02</td>
+      <td>2.0</td>
+      <td>Rain</td>
+      <td>214&lt;br /&gt;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2014-1-3</td>
+      <td>11</td>
+      <td>8</td>
+      <td>6</td>
+      <td>9</td>
+      <td>5</td>
+      <td>2</td>
+      <td>94</td>
+      <td>76</td>
+      <td>54</td>
+      <td>...</td>
+      <td>31</td>
+      <td>12</td>
+      <td>0</td>
+      <td>50</td>
+      <td>29</td>
+      <td>69.0</td>
+      <td>7.11</td>
+      <td>2.0</td>
+      <td>Rain-Thunderstorm</td>
+      <td>219&lt;br /&gt;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2014-1-4</td>
+      <td>9</td>
+      <td>6</td>
+      <td>3</td>
+      <td>8</td>
+      <td>6</td>
+      <td>2</td>
+      <td>93</td>
+      <td>85</td>
+      <td>65</td>
+      <td>...</td>
+      <td>31</td>
+      <td>12</td>
+      <td>5</td>
+      <td>35</td>
+      <td>21</td>
+      <td>39.0</td>
+      <td>9.91</td>
+      <td>4.0</td>
+      <td>Rain</td>
+      <td>211&lt;br /&gt;</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2014-1-5</td>
+      <td>12</td>
+      <td>7</td>
+      <td>1</td>
+      <td>11</td>
+      <td>4</td>
+      <td>-1</td>
+      <td>100</td>
+      <td>88</td>
+      <td>77</td>
+      <td>...</td>
+      <td>31</td>
+      <td>14</td>
+      <td>5</td>
+      <td>35</td>
+      <td>16</td>
+      <td>NaN</td>
+      <td>0.25</td>
+      <td>5.0</td>
+      <td>Rain</td>
+      <td>199&lt;br /&gt;</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 23 columns</p>
+</div></div></div>
+</div>
+<section id="removing-initial-spaces">
+<h3>Removing initial spaces<a class="headerlink" href="#removing-initial-spaces" title="Permalink to this headline">#</a></h3>
+<p>There are too many columns for the dataframe to fit horizontally in this notebook, but they can be displayed separately.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;GMT&#39;, &#39;Max TemperatureC&#39;, &#39;Mean TemperatureC&#39;, &#39;Min TemperatureC&#39;,
+       &#39;Dew PointC&#39;, &#39;MeanDew PointC&#39;, &#39;Min DewpointC&#39;, &#39;Max Humidity&#39;,
+       &#39; Mean Humidity&#39;, &#39; Min Humidity&#39;, &#39; Max Sea Level PressurehPa&#39;,
+       &#39; Mean Sea Level PressurehPa&#39;, &#39; Min Sea Level PressurehPa&#39;,
+       &#39; Max VisibilityKm&#39;, &#39; Mean VisibilityKm&#39;, &#39; Min VisibilitykM&#39;,
+       &#39; Max Wind SpeedKm/h&#39;, &#39; Mean Wind SpeedKm/h&#39;, &#39; Max Gust SpeedKm/h&#39;,
+       &#39;Precipitationmm&#39;, &#39; CloudCover&#39;, &#39; Events&#39;, &#39;WindDirDegrees&lt;br /&gt;&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>This shows that <code>’ Max Wind SpeedKm/h’</code> is prefixed by a space, as are other columm names such as <code>’ Mean Humidity’</code> and <code>’ Max Sea Level PressurehPa’</code>.</p>
+<p>The  <code>read_csv()</code> function has interpreted spaces after commas as being part of the next value. This can be rectified  easily by adding another argument to the <code>read_csv()</code> function to skip the initial spaces after a comma.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span> <span class="o">=</span> <span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;London_2014.csv&#39;</span><span class="p">,</span> <span class="n">skipinitialspace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="removing-extra-characters">
+<h3>Removing extra characters<a class="headerlink" href="#removing-extra-characters" title="Permalink to this headline">#</a></h3>
+<p>Another problem shown above is that the final column is called <code>’WindDirDegrees&lt; br /&gt;’</code>.</p>
+<p>When the dataset was exported from the Weather Underground web site, HTML line breaks were automatically added to each line in the file which <code>read_csv()</code> has interpreted as part of the column name and its values. This can be seen more clearly by looking at more values in the final column:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;WindDirDegrees&lt;br /&gt;&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    186&lt;br /&gt;
+1    214&lt;br /&gt;
+2    219&lt;br /&gt;
+3    211&lt;br /&gt;
+4    199&lt;br /&gt;
+Name: WindDirDegrees&lt;br /&gt;, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p><code>’WindDirDegrees&lt; br /&gt;’</code> can be changed to <code>’WindDirDegrees’</code> with the <code>rename()</code> method as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span> <span class="o">=</span> <span class="n">london</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;WindDirDegrees&lt;br /&gt;&#39;</span> <span class="p">:</span> <span class="s1">&#39;WindDirDegrees&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To remove the <code>’&lt; br /&gt;’</code> html line breaks from the values in the <code>’WindDirDegrees’</code> column you need to use the string method <code>rstrip()</code> which is used to remove characters from the <em>end</em> or ‘rear’ of a string:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;WindDirDegrees&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">london</span><span class="p">[</span><span class="s1">&#39;WindDirDegrees&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;&lt;br /&gt;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Display the first few rows of the <code>’WindDirDegrees’</code> to confirm the change:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;WindDirDegrees&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    186
+1    214
+2    219
+3    211
+4    199
+Name: WindDirDegrees, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="missing-values">
+<h3>Missing values<a class="headerlink" href="#missing-values" title="Permalink to this headline">#</a></h3>
+<p>Missing (also called null or not available) values are marked as NaN (not a number) in dataframes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;Events&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>360    Rain
+361     NaN
+362     NaN
+363     NaN
+364     Fog
+Name: Events, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">isnull()</span></code> method returns <code class="docutils literal notranslate"><span class="pre">True</span></code> for each row in a column that has a null value. The method can be used to select and display those rows. Scroll the table below to the right to check that the events column is only showing missing values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;Events&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GMT</th>
+      <th>Max TemperatureC</th>
+      <th>Mean TemperatureC</th>
+      <th>Min TemperatureC</th>
+      <th>Dew PointC</th>
+      <th>MeanDew PointC</th>
+      <th>Min DewpointC</th>
+      <th>Max Humidity</th>
+      <th>Mean Humidity</th>
+      <th>Min Humidity</th>
+      <th>...</th>
+      <th>Max VisibilityKm</th>
+      <th>Mean VisibilityKm</th>
+      <th>Min VisibilitykM</th>
+      <th>Max Wind SpeedKm/h</th>
+      <th>Mean Wind SpeedKm/h</th>
+      <th>Max Gust SpeedKm/h</th>
+      <th>Precipitationmm</th>
+      <th>CloudCover</th>
+      <th>Events</th>
+      <th>WindDirDegrees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>32</th>
+      <td>2014-2-2</td>
+      <td>10</td>
+      <td>8</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>93</td>
+      <td>71</td>
+      <td>43</td>
+      <td>...</td>
+      <td>31</td>
+      <td>16</td>
+      <td>10</td>
+      <td>37</td>
+      <td>24</td>
+      <td>47.0</td>
+      <td>0.00</td>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>216</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>2014-2-3</td>
+      <td>8</td>
+      <td>6</td>
+      <td>3</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>93</td>
+      <td>79</td>
+      <td>55</td>
+      <td>...</td>
+      <td>31</td>
+      <td>15</td>
+      <td>10</td>
+      <td>32</td>
+      <td>18</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>4.0</td>
+      <td>NaN</td>
+      <td>133</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>2014-2-13</td>
+      <td>8</td>
+      <td>6</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>81</td>
+      <td>66</td>
+      <td>45</td>
+      <td>...</td>
+      <td>31</td>
+      <td>15</td>
+      <td>10</td>
+      <td>42</td>
+      <td>27</td>
+      <td>48.0</td>
+      <td>0.00</td>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>236</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>2014-2-22</td>
+      <td>12</td>
+      <td>8</td>
+      <td>4</td>
+      <td>5</td>
+      <td>3</td>
+      <td>1</td>
+      <td>87</td>
+      <td>68</td>
+      <td>38</td>
+      <td>...</td>
+      <td>31</td>
+      <td>16</td>
+      <td>10</td>
+      <td>29</td>
+      <td>21</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>228</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>2014-3-5</td>
+      <td>13</td>
+      <td>7</td>
+      <td>0</td>
+      <td>4</td>
+      <td>2</td>
+      <td>-1</td>
+      <td>100</td>
+      <td>72</td>
+      <td>40</td>
+      <td>...</td>
+      <td>31</td>
+      <td>15</td>
+      <td>8</td>
+      <td>21</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>0.25</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>351</th>
+      <td>2014-12-18</td>
+      <td>13</td>
+      <td>12</td>
+      <td>11</td>
+      <td>11</td>
+      <td>11</td>
+      <td>10</td>
+      <td>94</td>
+      <td>85</td>
+      <td>74</td>
+      <td>...</td>
+      <td>31</td>
+      <td>12</td>
+      <td>10</td>
+      <td>37</td>
+      <td>29</td>
+      <td>60.0</td>
+      <td>0.00</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>245</td>
+    </tr>
+    <tr>
+      <th>358</th>
+      <td>2014-12-25</td>
+      <td>8</td>
+      <td>6</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>93</td>
+      <td>79</td>
+      <td>51</td>
+      <td>...</td>
+      <td>31</td>
+      <td>19</td>
+      <td>10</td>
+      <td>24</td>
+      <td>16</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>275</td>
+    </tr>
+    <tr>
+      <th>361</th>
+      <td>2014-12-28</td>
+      <td>6</td>
+      <td>2</td>
+      <td>-2</td>
+      <td>1</td>
+      <td>-2</td>
+      <td>-3</td>
+      <td>100</td>
+      <td>76</td>
+      <td>45</td>
+      <td>...</td>
+      <td>31</td>
+      <td>17</td>
+      <td>8</td>
+      <td>16</td>
+      <td>11</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>362</th>
+      <td>2014-12-29</td>
+      <td>6</td>
+      <td>1</td>
+      <td>-4</td>
+      <td>2</td>
+      <td>-1</td>
+      <td>-4</td>
+      <td>100</td>
+      <td>87</td>
+      <td>62</td>
+      <td>...</td>
+      <td>24</td>
+      <td>10</td>
+      <td>5</td>
+      <td>13</td>
+      <td>8</td>
+      <td>NaN</td>
+      <td>0.25</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>289</td>
+    </tr>
+    <tr>
+      <th>363</th>
+      <td>2014-12-30</td>
+      <td>6</td>
+      <td>1</td>
+      <td>-4</td>
+      <td>2</td>
+      <td>-1</td>
+      <td>-4</td>
+      <td>100</td>
+      <td>90</td>
+      <td>68</td>
+      <td>...</td>
+      <td>27</td>
+      <td>9</td>
+      <td>3</td>
+      <td>14</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>0.25</td>
+      <td>3.0</td>
+      <td>NaN</td>
+      <td>258</td>
+    </tr>
+  </tbody>
+</table>
+<p>114 rows × 23 columns</p>
+</div></div></div>
+</div>
+<p>One way to deal with missing values is to replace them by some value. The column method <code class="docutils literal notranslate"><span class="pre">fillna()</span></code> fills all not available value cells with the value given as argument. In the example below, each missing event is replaced by the empty string.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;Events&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">london</span><span class="p">[</span><span class="s1">&#39;Events&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">london</span><span class="p">[</span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;Events&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GMT</th>
+      <th>Max TemperatureC</th>
+      <th>Mean TemperatureC</th>
+      <th>Min TemperatureC</th>
+      <th>Dew PointC</th>
+      <th>MeanDew PointC</th>
+      <th>Min DewpointC</th>
+      <th>Max Humidity</th>
+      <th>Mean Humidity</th>
+      <th>Min Humidity</th>
+      <th>...</th>
+      <th>Max VisibilityKm</th>
+      <th>Mean VisibilityKm</th>
+      <th>Min VisibilitykM</th>
+      <th>Max Wind SpeedKm/h</th>
+      <th>Mean Wind SpeedKm/h</th>
+      <th>Max Gust SpeedKm/h</th>
+      <th>Precipitationmm</th>
+      <th>CloudCover</th>
+      <th>Events</th>
+      <th>WindDirDegrees</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>0 rows × 23 columns</p>
+</div></div></div>
+</div>
+<p>The empty dataframe (no rows) confirms there are no more missing event values.</p>
+<p>Another way to deal with missing values is to ignore rows with them. The <code class="docutils literal notranslate"><span class="pre">dropna()</span></code> dataframe method returns a new dataframe where all rows with at least one non-available value have been removed.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GMT</th>
+      <th>Max TemperatureC</th>
+      <th>Mean TemperatureC</th>
+      <th>Min TemperatureC</th>
+      <th>Dew PointC</th>
+      <th>MeanDew PointC</th>
+      <th>Min DewpointC</th>
+      <th>Max Humidity</th>
+      <th>Mean Humidity</th>
+      <th>Min Humidity</th>
+      <th>...</th>
+      <th>Max VisibilityKm</th>
+      <th>Mean VisibilityKm</th>
+      <th>Min VisibilitykM</th>
+      <th>Max Wind SpeedKm/h</th>
+      <th>Mean Wind SpeedKm/h</th>
+      <th>Max Gust SpeedKm/h</th>
+      <th>Precipitationmm</th>
+      <th>CloudCover</th>
+      <th>Events</th>
+      <th>WindDirDegrees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2014-1-1</td>
+      <td>11</td>
+      <td>8</td>
+      <td>6</td>
+      <td>9</td>
+      <td>7</td>
+      <td>4</td>
+      <td>94</td>
+      <td>86</td>
+      <td>73</td>
+      <td>...</td>
+      <td>31</td>
+      <td>11</td>
+      <td>2</td>
+      <td>40</td>
+      <td>26</td>
+      <td>66.0</td>
+      <td>9.91</td>
+      <td>4.0</td>
+      <td>Rain</td>
+      <td>186</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2014-1-2</td>
+      <td>11</td>
+      <td>9</td>
+      <td>6</td>
+      <td>9</td>
+      <td>6</td>
+      <td>4</td>
+      <td>94</td>
+      <td>81</td>
+      <td>60</td>
+      <td>...</td>
+      <td>31</td>
+      <td>15</td>
+      <td>5</td>
+      <td>32</td>
+      <td>21</td>
+      <td>50.0</td>
+      <td>1.02</td>
+      <td>2.0</td>
+      <td>Rain</td>
+      <td>214</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2014-1-3</td>
+      <td>11</td>
+      <td>8</td>
+      <td>6</td>
+      <td>9</td>
+      <td>5</td>
+      <td>2</td>
+      <td>94</td>
+      <td>76</td>
+      <td>54</td>
+      <td>...</td>
+      <td>31</td>
+      <td>12</td>
+      <td>0</td>
+      <td>50</td>
+      <td>29</td>
+      <td>69.0</td>
+      <td>7.11</td>
+      <td>2.0</td>
+      <td>Rain-Thunderstorm</td>
+      <td>219</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2014-1-4</td>
+      <td>9</td>
+      <td>6</td>
+      <td>3</td>
+      <td>8</td>
+      <td>6</td>
+      <td>2</td>
+      <td>93</td>
+      <td>85</td>
+      <td>65</td>
+      <td>...</td>
+      <td>31</td>
+      <td>12</td>
+      <td>5</td>
+      <td>35</td>
+      <td>21</td>
+      <td>39.0</td>
+      <td>9.91</td>
+      <td>4.0</td>
+      <td>Rain</td>
+      <td>211</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2014-1-6</td>
+      <td>12</td>
+      <td>10</td>
+      <td>8</td>
+      <td>11</td>
+      <td>8</td>
+      <td>6</td>
+      <td>94</td>
+      <td>78</td>
+      <td>60</td>
+      <td>...</td>
+      <td>31</td>
+      <td>12</td>
+      <td>5</td>
+      <td>50</td>
+      <td>29</td>
+      <td>61.0</td>
+      <td>2.03</td>
+      <td>4.0</td>
+      <td>Rain</td>
+      <td>219</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>355</th>
+      <td>2014-12-22</td>
+      <td>13</td>
+      <td>12</td>
+      <td>10</td>
+      <td>11</td>
+      <td>9</td>
+      <td>7</td>
+      <td>94</td>
+      <td>77</td>
+      <td>63</td>
+      <td>...</td>
+      <td>31</td>
+      <td>14</td>
+      <td>8</td>
+      <td>40</td>
+      <td>32</td>
+      <td>55.0</td>
+      <td>0.00</td>
+      <td>5.0</td>
+      <td>Rain</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <th>356</th>
+      <td>2014-12-23</td>
+      <td>13</td>
+      <td>11</td>
+      <td>10</td>
+      <td>9</td>
+      <td>7</td>
+      <td>5</td>
+      <td>82</td>
+      <td>72</td>
+      <td>58</td>
+      <td>...</td>
+      <td>31</td>
+      <td>12</td>
+      <td>10</td>
+      <td>42</td>
+      <td>32</td>
+      <td>61.0</td>
+      <td>0.00</td>
+      <td>4.0</td>
+      <td>Rain</td>
+      <td>238</td>
+    </tr>
+    <tr>
+      <th>357</th>
+      <td>2014-12-24</td>
+      <td>12</td>
+      <td>8</td>
+      <td>4</td>
+      <td>10</td>
+      <td>4</td>
+      <td>-2</td>
+      <td>94</td>
+      <td>71</td>
+      <td>38</td>
+      <td>...</td>
+      <td>31</td>
+      <td>13</td>
+      <td>10</td>
+      <td>34</td>
+      <td>26</td>
+      <td>45.0</td>
+      <td>0.25</td>
+      <td>5.0</td>
+      <td>Rain</td>
+      <td>262</td>
+    </tr>
+    <tr>
+      <th>360</th>
+      <td>2014-12-27</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>8</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>93</td>
+      <td>83</td>
+      <td>64</td>
+      <td>...</td>
+      <td>31</td>
+      <td>13</td>
+      <td>9</td>
+      <td>42</td>
+      <td>26</td>
+      <td>61.0</td>
+      <td>0.00</td>
+      <td>4.0</td>
+      <td>Rain</td>
+      <td>330</td>
+    </tr>
+    <tr>
+      <th>364</th>
+      <td>2014-12-31</td>
+      <td>8</td>
+      <td>2</td>
+      <td>-4</td>
+      <td>5</td>
+      <td>2</td>
+      <td>-4</td>
+      <td>100</td>
+      <td>89</td>
+      <td>70</td>
+      <td>...</td>
+      <td>19</td>
+      <td>9</td>
+      <td>0</td>
+      <td>23</td>
+      <td>8</td>
+      <td>37.0</td>
+      <td>0.25</td>
+      <td>4.0</td>
+      <td>Fog</td>
+      <td>201</td>
+    </tr>
+  </tbody>
+</table>
+<p>128 rows × 23 columns</p>
+</div></div></div>
+</div>
+<p>Note that the table above has fewer than 251 of the original 365 rows, so there must be further null values besides the 114 missing events.</p>
+</section>
+<section id="changing-the-value-type-of-a-column">
+<h3>Changing the value type of a column<a class="headerlink" href="#changing-the-value-type-of-a-column" title="Permalink to this headline">#</a></h3>
+<p>The type of every column in a dataframe can be determined by looking at the dataframe’s <code class="docutils literal notranslate"><span class="pre">dtypes</span></code> attribute, like this:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GMT                            object
+Max TemperatureC                int64
+Mean TemperatureC               int64
+Min TemperatureC                int64
+Dew PointC                      int64
+MeanDew PointC                  int64
+Min DewpointC                   int64
+Max Humidity                    int64
+Mean Humidity                   int64
+Min Humidity                    int64
+Max Sea Level PressurehPa       int64
+Mean Sea Level PressurehPa      int64
+Min Sea Level PressurehPa       int64
+Max VisibilityKm                int64
+Mean VisibilityKm               int64
+Min VisibilitykM                int64
+Max Wind SpeedKm/h              int64
+Mean Wind SpeedKm/h             int64
+Max Gust SpeedKm/h            float64
+Precipitationmm               float64
+CloudCover                    float64
+Events                         object
+WindDirDegrees                 object
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>The type of all the values in a column can be changed using the <code>astype()</code> method. The following code will change the values in the <code>’WindDirDegrees’</code> column from strings (<code class="docutils literal notranslate"><span class="pre">object</span></code>) to integers (<code>int64</code>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;WindDirDegrees&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">london</span><span class="p">[</span><span class="s1">&#39;WindDirDegrees&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int64&#39;</span><span class="p">)</span>   
+</pre></div>
+</div>
+</div>
+</div>
+<p>The function <code class="docutils literal notranslate"><span class="pre">to_datetime()</span></code> is needed to change the values in the <code class="docutils literal notranslate"><span class="pre">'GMT'</span></code> column from strings (<code class="docutils literal notranslate"><span class="pre">object</span></code>) to dates (<code class="docutils literal notranslate"><span class="pre">datetime64</span></code>):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;GMT&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">to_datetime</span><span class="p">(</span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;GMT&#39;</span><span class="p">])</span>
+<span class="n">london</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GMT                           datetime64[ns]
+Max TemperatureC                       int64
+Mean TemperatureC                      int64
+Min TemperatureC                       int64
+Dew PointC                             int64
+MeanDew PointC                         int64
+Min DewpointC                          int64
+Max Humidity                           int64
+Mean Humidity                          int64
+Min Humidity                           int64
+Max Sea Level PressurehPa              int64
+Mean Sea Level PressurehPa             int64
+Min Sea Level PressurehPa              int64
+Max VisibilityKm                       int64
+Mean VisibilityKm                      int64
+Min VisibilitykM                       int64
+Max Wind SpeedKm/h                     int64
+Mean Wind SpeedKm/h                    int64
+Max Gust SpeedKm/h                   float64
+Precipitationmm                      float64
+CloudCover                           float64
+Events                                object
+WindDirDegrees                         int64
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>Values of type <code class="docutils literal notranslate"><span class="pre">datetime64</span></code> can be created using the <code class="docutils literal notranslate"><span class="pre">datetime()</span></code> function, provided by the package of the same name. The first integer argument is the year, the second the month and the third the day.
+The code below will get and display the row in the dataframe whose <code class="docutils literal notranslate"><span class="pre">'GMT'</span></code> value is 4th June 2014.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="n">london</span><span class="p">[</span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;GMT&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">)]</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GMT</th>
+      <th>Max TemperatureC</th>
+      <th>Mean TemperatureC</th>
+      <th>Min TemperatureC</th>
+      <th>Dew PointC</th>
+      <th>MeanDew PointC</th>
+      <th>Min DewpointC</th>
+      <th>Max Humidity</th>
+      <th>Mean Humidity</th>
+      <th>Min Humidity</th>
+      <th>...</th>
+      <th>Max VisibilityKm</th>
+      <th>Mean VisibilityKm</th>
+      <th>Min VisibilitykM</th>
+      <th>Max Wind SpeedKm/h</th>
+      <th>Mean Wind SpeedKm/h</th>
+      <th>Max Gust SpeedKm/h</th>
+      <th>Precipitationmm</th>
+      <th>CloudCover</th>
+      <th>Events</th>
+      <th>WindDirDegrees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>154</th>
+      <td>2014-06-04</td>
+      <td>14</td>
+      <td>11</td>
+      <td>8</td>
+      <td>11</td>
+      <td>9</td>
+      <td>3</td>
+      <td>94</td>
+      <td>78</td>
+      <td>47</td>
+      <td>...</td>
+      <td>31</td>
+      <td>12</td>
+      <td>7</td>
+      <td>47</td>
+      <td>13</td>
+      <td>64.0</td>
+      <td>2.03</td>
+      <td>4.0</td>
+      <td>Rain-Thunderstorm</td>
+      <td>230</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 23 columns</p>
+</div></div></div>
+</div>
+<p>Queries such as ‘Return all the rows where the date is between 8 December and 12 December’ can be made:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dates</span> <span class="o">=</span> <span class="n">london</span><span class="p">[</span><span class="s1">&#39;GMT&#39;</span><span class="p">]</span>
+<span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<span class="n">end</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<span class="n">london</span><span class="p">[(</span><span class="n">dates</span> <span class="o">&gt;=</span> <span class="n">start</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">dates</span> <span class="o">&lt;=</span> <span class="n">end</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GMT</th>
+      <th>Max TemperatureC</th>
+      <th>Mean TemperatureC</th>
+      <th>Min TemperatureC</th>
+      <th>Dew PointC</th>
+      <th>MeanDew PointC</th>
+      <th>Min DewpointC</th>
+      <th>Max Humidity</th>
+      <th>Mean Humidity</th>
+      <th>Min Humidity</th>
+      <th>...</th>
+      <th>Max VisibilityKm</th>
+      <th>Mean VisibilityKm</th>
+      <th>Min VisibilitykM</th>
+      <th>Max Wind SpeedKm/h</th>
+      <th>Mean Wind SpeedKm/h</th>
+      <th>Max Gust SpeedKm/h</th>
+      <th>Precipitationmm</th>
+      <th>CloudCover</th>
+      <th>Events</th>
+      <th>WindDirDegrees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>341</th>
+      <td>2014-12-08</td>
+      <td>7</td>
+      <td>4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>93</td>
+      <td>76</td>
+      <td>51</td>
+      <td>...</td>
+      <td>31</td>
+      <td>17</td>
+      <td>10</td>
+      <td>23</td>
+      <td>13</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>2.0</td>
+      <td>Rain</td>
+      <td>270</td>
+    </tr>
+    <tr>
+      <th>342</th>
+      <td>2014-12-09</td>
+      <td>12</td>
+      <td>6</td>
+      <td>-1</td>
+      <td>11</td>
+      <td>3</td>
+      <td>-1</td>
+      <td>100</td>
+      <td>86</td>
+      <td>64</td>
+      <td>...</td>
+      <td>31</td>
+      <td>15</td>
+      <td>3</td>
+      <td>37</td>
+      <td>14</td>
+      <td>52.0</td>
+      <td>0.25</td>
+      <td>5.0</td>
+      <td>Rain</td>
+      <td>224</td>
+    </tr>
+    <tr>
+      <th>343</th>
+      <td>2014-12-10</td>
+      <td>9</td>
+      <td>7</td>
+      <td>6</td>
+      <td>11</td>
+      <td>3</td>
+      <td>1</td>
+      <td>90</td>
+      <td>70</td>
+      <td>44</td>
+      <td>...</td>
+      <td>31</td>
+      <td>18</td>
+      <td>3</td>
+      <td>40</td>
+      <td>27</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>2.0</td>
+      <td>Rain</td>
+      <td>246</td>
+    </tr>
+    <tr>
+      <th>344</th>
+      <td>2014-12-11</td>
+      <td>10</td>
+      <td>8</td>
+      <td>5</td>
+      <td>6</td>
+      <td>3</td>
+      <td>2</td>
+      <td>82</td>
+      <td>72</td>
+      <td>51</td>
+      <td>...</td>
+      <td>31</td>
+      <td>15</td>
+      <td>10</td>
+      <td>40</td>
+      <td>31</td>
+      <td>NaN</td>
+      <td>0.25</td>
+      <td>2.0</td>
+      <td>Rain</td>
+      <td>246</td>
+    </tr>
+    <tr>
+      <th>345</th>
+      <td>2014-12-12</td>
+      <td>9</td>
+      <td>6</td>
+      <td>2</td>
+      <td>9</td>
+      <td>4</td>
+      <td>-1</td>
+      <td>94</td>
+      <td>79</td>
+      <td>59</td>
+      <td>...</td>
+      <td>31</td>
+      <td>11</td>
+      <td>3</td>
+      <td>40</td>
+      <td>26</td>
+      <td>55.0</td>
+      <td>1.02</td>
+      <td>3.0</td>
+      <td>Rain</td>
+      <td>253</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 23 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="id2">
+<h3>Tasks<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<p>Now that the wind direction is given by a number, write code to select all days that had a northerly wind. Hint: select the rows where the direction is greater than or equal to 350 <strong>or</strong> smaller than or equal to 10, as the compass rose shows.</p>
+<p>In the code cell below, write code to get and display all the rows in the dataframe that are beween 1 April 2014 and
+11 April 2014.</p>
+<p>In the cell below, write two lines of code to display the first five rows that have a missing value in the <code class="docutils literal notranslate"><span class="pre">'Max</span> <span class="pre">Gust</span> <span class="pre">SpeedKm/h'</span></code> column. Hint: first select the missing value rows and store them in a new dataframe, then display the first five rows of the new dataframe.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-5-every-picture-tells-a-story">
+<h2>Exercise 5: Every picture tells a story<a class="headerlink" href="#exercise-5-every-picture-tells-a-story" title="Permalink to this headline">#</a></h2>
+<p>The following line of code tells Jupyter to display inside this notebook any graph that is created.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">plot()</span></code> method can make a graph of the values in a column. Gridlines are turned on by the <code class="docutils literal notranslate"><span class="pre">grid</span></code> argument.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;Max Wind SpeedKm/h&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+</pre></div>
+</div>
+<img alt="../../../../../_images/Exercises_2_82_1.png" src="../../../../../_images/Exercises_2_82_1.png" />
+</div>
+</div>
+<p>The graph can be made bigger by giving the method a <code class="docutils literal notranslate"><span class="pre">figsize=(x,y)</span></code> argument where <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are integers that determine the length of the x-axis and y-axis.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;Max Wind SpeedKm/h&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+</pre></div>
+</div>
+<img alt="../../../../../_images/Exercises_2_84_1.png" src="../../../../../_images/Exercises_2_84_1.png" />
+</div>
+</div>
+<p>Multiple lines can be plotted by selecting multiple columns.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[[</span><span class="s1">&#39;Max Wind SpeedKm/h&#39;</span><span class="p">,</span> <span class="s1">&#39;Mean Wind SpeedKm/h&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
+</pre></div>
+</div>
+<img alt="../../../../../_images/Exercises_2_86_1.png" src="../../../../../_images/Exercises_2_86_1.png" />
+</div>
+</div>
+<section id="id3">
+<h3>Task<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<p>In the cell below, write code to plot the minimum, mean, and maximum temperature during 2014 in London.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-6-changing-a-dataframe-s-index">
+<h2>Exercise 6: Changing a dataframe’s index<a class="headerlink" href="#exercise-6-changing-a-dataframe-s-index" title="Permalink to this headline">#</a></h2>
+<p>Changing the dataframe’s index from the default to <code class="docutils literal notranslate"><span class="pre">datetime64</span></code> values is done by assigning to the dataframe’s <code class="docutils literal notranslate"><span class="pre">index</span></code> attribute the contents of the <code class="docutils literal notranslate"><span class="pre">'GMT</span></code>’ column, like this:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">london</span><span class="p">[</span><span class="s1">&#39;GMT&#39;</span><span class="p">]</span>
+<span class="n">london</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GMT</th>
+      <th>Max TemperatureC</th>
+      <th>Mean TemperatureC</th>
+      <th>Min TemperatureC</th>
+      <th>Dew PointC</th>
+      <th>MeanDew PointC</th>
+      <th>Min DewpointC</th>
+      <th>Max Humidity</th>
+      <th>Mean Humidity</th>
+      <th>Min Humidity</th>
+      <th>...</th>
+      <th>Max VisibilityKm</th>
+      <th>Mean VisibilityKm</th>
+      <th>Min VisibilitykM</th>
+      <th>Max Wind SpeedKm/h</th>
+      <th>Mean Wind SpeedKm/h</th>
+      <th>Max Gust SpeedKm/h</th>
+      <th>Precipitationmm</th>
+      <th>CloudCover</th>
+      <th>Events</th>
+      <th>WindDirDegrees</th>
+    </tr>
+    <tr>
+      <th>GMT</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2014-01-01</th>
+      <td>2014-01-01</td>
+      <td>11</td>
+      <td>8</td>
+      <td>6</td>
+      <td>9</td>
+      <td>7</td>
+      <td>4</td>
+      <td>94</td>
+      <td>86</td>
+      <td>73</td>
+      <td>...</td>
+      <td>31</td>
+      <td>11</td>
+      <td>2</td>
+      <td>40</td>
+      <td>26</td>
+      <td>66.0</td>
+      <td>9.91</td>
+      <td>4.0</td>
+      <td>Rain</td>
+      <td>186</td>
+    </tr>
+    <tr>
+      <th>2014-01-02</th>
+      <td>2014-01-02</td>
+      <td>11</td>
+      <td>9</td>
+      <td>6</td>
+      <td>9</td>
+      <td>6</td>
+      <td>4</td>
+      <td>94</td>
+      <td>81</td>
+      <td>60</td>
+      <td>...</td>
+      <td>31</td>
+      <td>15</td>
+      <td>5</td>
+      <td>32</td>
+      <td>21</td>
+      <td>50.0</td>
+      <td>1.02</td>
+      <td>2.0</td>
+      <td>Rain</td>
+      <td>214</td>
+    </tr>
+  </tbody>
+</table>
+<p>2 rows × 23 columns</p>
+</div></div></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">iloc</span></code> attribute can still be used to get and display rows by number, but now you can now also use the <code class="docutils literal notranslate"><span class="pre">datetime64</span></code> index to get a row by date, using the dataframe’s <code class="docutils literal notranslate"><span class="pre">loc</span></code> attribute, like this:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GMT                           2014-01-01 00:00:00
+Max TemperatureC                               11
+Mean TemperatureC                               8
+Min TemperatureC                                6
+Dew PointC                                      9
+MeanDew PointC                                  7
+Min DewpointC                                   4
+Max Humidity                                   94
+Mean Humidity                                  86
+Min Humidity                                   73
+Max Sea Level PressurehPa                    1002
+Mean Sea Level PressurehPa                    993
+Min Sea Level PressurehPa                     984
+Max VisibilityKm                               31
+Mean VisibilityKm                              11
+Min VisibilitykM                                2
+Max Wind SpeedKm/h                             40
+Mean Wind SpeedKm/h                            26
+Max Gust SpeedKm/h                           66.0
+Precipitationmm                              9.91
+CloudCover                                    4.0
+Events                                       Rain
+WindDirDegrees                                186
+Name: 2014-01-01 00:00:00, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>A query such as <em>‘Return all the rows where the date is between December 8th and December 12th’</em> can now be done  succinctly like this:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span> <span class="p">:</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">)]</span>
+
+<span class="c1">#The meaning of the above code is get the rows beween and including </span>
+<span class="c1">#the indices datetime(2014,12,8) and datetime(2014,12,12)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GMT</th>
+      <th>Max TemperatureC</th>
+      <th>Mean TemperatureC</th>
+      <th>Min TemperatureC</th>
+      <th>Dew PointC</th>
+      <th>MeanDew PointC</th>
+      <th>Min DewpointC</th>
+      <th>Max Humidity</th>
+      <th>Mean Humidity</th>
+      <th>Min Humidity</th>
+      <th>...</th>
+      <th>Max VisibilityKm</th>
+      <th>Mean VisibilityKm</th>
+      <th>Min VisibilitykM</th>
+      <th>Max Wind SpeedKm/h</th>
+      <th>Mean Wind SpeedKm/h</th>
+      <th>Max Gust SpeedKm/h</th>
+      <th>Precipitationmm</th>
+      <th>CloudCover</th>
+      <th>Events</th>
+      <th>WindDirDegrees</th>
+    </tr>
+    <tr>
+      <th>GMT</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2014-12-08</th>
+      <td>2014-12-08</td>
+      <td>7</td>
+      <td>4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>93</td>
+      <td>76</td>
+      <td>51</td>
+      <td>...</td>
+      <td>31</td>
+      <td>17</td>
+      <td>10</td>
+      <td>23</td>
+      <td>13</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>2.0</td>
+      <td>Rain</td>
+      <td>270</td>
+    </tr>
+    <tr>
+      <th>2014-12-09</th>
+      <td>2014-12-09</td>
+      <td>12</td>
+      <td>6</td>
+      <td>-1</td>
+      <td>11</td>
+      <td>3</td>
+      <td>-1</td>
+      <td>100</td>
+      <td>86</td>
+      <td>64</td>
+      <td>...</td>
+      <td>31</td>
+      <td>15</td>
+      <td>3</td>
+      <td>37</td>
+      <td>14</td>
+      <td>52.0</td>
+      <td>0.25</td>
+      <td>5.0</td>
+      <td>Rain</td>
+      <td>224</td>
+    </tr>
+    <tr>
+      <th>2014-12-10</th>
+      <td>2014-12-10</td>
+      <td>9</td>
+      <td>7</td>
+      <td>6</td>
+      <td>11</td>
+      <td>3</td>
+      <td>1</td>
+      <td>90</td>
+      <td>70</td>
+      <td>44</td>
+      <td>...</td>
+      <td>31</td>
+      <td>18</td>
+      <td>3</td>
+      <td>40</td>
+      <td>27</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>2.0</td>
+      <td>Rain</td>
+      <td>246</td>
+    </tr>
+    <tr>
+      <th>2014-12-11</th>
+      <td>2014-12-11</td>
+      <td>10</td>
+      <td>8</td>
+      <td>5</td>
+      <td>6</td>
+      <td>3</td>
+      <td>2</td>
+      <td>82</td>
+      <td>72</td>
+      <td>51</td>
+      <td>...</td>
+      <td>31</td>
+      <td>15</td>
+      <td>10</td>
+      <td>40</td>
+      <td>31</td>
+      <td>NaN</td>
+      <td>0.25</td>
+      <td>2.0</td>
+      <td>Rain</td>
+      <td>246</td>
+    </tr>
+    <tr>
+      <th>2014-12-12</th>
+      <td>2014-12-12</td>
+      <td>9</td>
+      <td>6</td>
+      <td>2</td>
+      <td>9</td>
+      <td>4</td>
+      <td>-1</td>
+      <td>94</td>
+      <td>79</td>
+      <td>59</td>
+      <td>...</td>
+      <td>31</td>
+      <td>11</td>
+      <td>3</td>
+      <td>40</td>
+      <td>26</td>
+      <td>55.0</td>
+      <td>1.02</td>
+      <td>3.0</td>
+      <td>Rain</td>
+      <td>253</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 23 columns</p>
+</div></div></div>
+</div>
+<p>Now we have a <code class="docutils literal notranslate"><span class="pre">datetime64</span></code> index, let’s plot <code class="docutils literal notranslate"><span class="pre">'Max</span> <span class="pre">Wind</span> <span class="pre">SpeedKm/h'</span></code> again:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">london</span><span class="p">[</span><span class="s1">&#39;Max Wind SpeedKm/h&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;GMT&#39;&gt;
+</pre></div>
+</div>
+<img alt="../../../../../_images/Exercises_2_97_1.png" src="../../../../../_images/Exercises_2_97_1.png" />
+</div>
+</div>
+<p>Now it is much clearer that the worst winds were in mid February.</p>
+<section id="id4">
+<h3>Task<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<p>Use the code cell below to plot the values of <code class="docutils literal notranslate"><span class="pre">'Mean</span> <span class="pre">Humidity'</span></code> during spring (full months of March, April and May).</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Docs\Training\OU-training\Learn-to-code-for-data-analysis-master\2_Cleaning_up_our_act"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By <strong>Vincent Deguin</strong> (with ❤️)<br/>
+  
+    <div class="extra_footer">
+      
+<img class="CC_licence" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licence CC BY NC SA 2"/>
+
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

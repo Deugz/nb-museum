@@ -82,7 +82,10 @@ Intro paragraph
 ::::::
 
 ## Going Back in time
- 
+
+## Isotopic Heterogeneity
+
+- **Review**: {cite:p}`Boss2012`
 
 ### Comets 
 
@@ -94,9 +97,34 @@ Reservoir of unprocessed ices
 
 ### Meteorites
 
+- **Review**: {cite:p}`Nittler2016`
+
+
+
+```{figure} Docs/Planet_formation_timescale_geochem.png
+---
+name: Disk_gaps_hubble
+width: 1200px
+---
+{cite:p}`Nittler2016`
+```
+
+
 - {cite:p}`Cuzzi2005`
 
 
 - [Forsterite](https://ui.adsabs.harvard.edu/abs/2021ApJ...922..256P/abstract)
+
+
+#### Chondrites
+
+- **Review**: {cite:p}`Scott2007`
+
+
+#### Water in Meteroites
+
+- {cite:p}`Schultz2023` (❌ to read)
+
+
 
 

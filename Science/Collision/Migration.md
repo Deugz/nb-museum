@@ -31,31 +31,19 @@ Intro paragraph
 ::::
 :::::
 
-::::{margin}
-:::{grid-item-card}
+
+:::::::{div} full-width
+
+::::::{grid} 2
+
+:::::{grid-item-card}
 :class-header: bg-light
-
-**Page**
-^^^
-
-- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
-  
-- Reviewed: &#x274C;
-       
-- Updated: 04/02/2023
-   
-:::
-::::
-
-
-
-::::::{grid-item-card}
-:class-header: bg-light
+:columns: 9
 
 **Notes**
 ^^^
-:::::{grid} 2
-::::{grid-item}
+::::{grid} 2
+:::{grid-item}
 
 ```{admonition} To Do
 :class: note, dropdown
@@ -65,19 +53,145 @@ Intro paragraph
 
 ```
 
-::::
+:::
 
-::::{grid-item}
+:::{grid-item}
 
 ```{admonition} Colaboration
 :class: tip, dropdown
 
-What to do
+Presentation
 
 ```
+:::
 ::::
-:::::  
+:::::
+
+
+
+:::::{grid-item-card}
+:class-header: bg-light
+:columns: 3
+**Page**
+^^^
+
+- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 15/02/2023
+   
 ::::::
+:::::::
 
 (content:references:Title1)=
 ## Dust Dynamics within PPD
+
+- Epstein regime ...
+
+
+### <strong> &#x2023; <u> Stock number </u></strong>
+
+```{note}
+
+Insert formula
+
+```
+
+
+#### <strong> &#x2023; &#x2023; St &#60; 1 </strong>
+
+:::::{div} full-width
+::::{grid} 2 
+
+:::{grid-item}
+:columns: 8 
+
+- t<sub>stop</sub> < t<sub>orb</sub>
+
+Explanation
+
+:::
+
+:::{grid-item}
+:columns: 4
+
+<figure id="transition-img">
+<div class="images-Stoke">
+<img src="../../_static/assets/Stoke/Stoke1a.png" alt="" class="two">
+<img src="../../_static/assets/Stoke/Stoke2a.png" alt="" class="one">
+</div>
+<figcaption>What to say</figcaption>
+</figure>
+    
+:::
+
+::::
+
+:::::
+    
+#### <strong> &#x2023; &#x2023; St ~ 1 </strong>
+
+
+:::::{div} full-width
+::::{grid} 2 
+
+:::{grid-item}
+:columns: 8 
+
+- t<sub>stop</sub> ~ t<sub>orb</sub>
+
+Explanation
+
+:::
+
+:::{grid-item}
+:columns: 4
+
+<figure id="transition-img">
+<div class="images-Stoke">
+<img src="../../_static/assets/Stoke/Stoke1b.png" alt="" class="two">
+<img src="../../_static/assets/Stoke/Stoke2b.png" alt="" class="one">
+</div>
+<figcaption>What to say</figcaption>
+</figure>
+    
+:::
+
+::::
+
+:::::
+    
+
+#### <strong> &#x2023; &#x2023; St &#62; 1 </strong>
+
+:::::{div} full-width
+::::{grid} 2 
+
+:::{grid-item}
+:columns: 8 
+
+- t<sub>stop</sub> > t<sub>orb</sub>
+
+Explanation
+
+:::
+
+:::{grid-item}
+:columns: 4
+
+<figure id="transition-img">
+<div class="images-Stoke">
+<img src="../../_static/assets/Stoke/Stoke1c.png" alt="" class="two">
+<img src="../../_static/assets/Stoke/Stoke2c.png" alt="" class="one">
+</div>
+<figcaption>What to say</figcaption>
+</figure>
+    
+:::
+
+::::
+
+:::::
+    
+    

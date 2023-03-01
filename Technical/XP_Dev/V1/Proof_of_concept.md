@@ -1,7 +1,48 @@
 # Proof of concept
 
+
+```{note}
+
 copy web-site
 
+
+```
+
+::::::{div} full-width
+:::::{dropdown} <span style="float: right">![flag alt >](../../Docs/Svg_icons/onion-svgrepo-com.svg)</span> Fun Fact
+
+<p class="emphase">The Dewar Flask</p>
+
+::::{grid} 2
+:::{grid-item}
+:columns: 8
+
+We will talk a lot about <strong>Dewar Flask</strong> in this section. Now you may be more familiar with the term *Thermos*
+
+```{note}
+For those interested by the life of this great scientist, have a look at this article {cite:p}`Wisniak2003`
+```
+
+
+:::
+
+:::{grid-item}
+:columns: 4
+
+```{figure} Docs/Dewar_flask_1.png
+---
+name: Deware Flask
+width: 1000px
+---
+[Source](https://ri-science.tumblr.com/post/175988085957/if-youve-ever-wondered-who-to-thank-for-your-ice)
+```
+
+
+:::
+
+::::
+:::::
+::::::
 
 
 ## Experiment Design

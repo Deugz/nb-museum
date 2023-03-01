@@ -22,7 +22,8 @@ s0.parentNode.insertBefore(s1,s0);
 <br>
 <br>
 
-# <u>Thesis</u> .B
+# **Open Notes**
+
 
 :::::{margin} 
 ::::{grid} 1
@@ -33,10 +34,24 @@ s0.parentNode.insertBefore(s1,s0);
 **Vincent Deguin**
 :::
 ::::
+
+
+**Support**
+
+![flag alt >](Docs/Svg_icons/patreon-svgrepo-com.svg) [Patreon](https://www.patreon.com/Science_for_the_People)
+
+
+or
+
+
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '#317315', 'O4O6EZO78');kofiwidget2.draw();</script>
+
 :::::
 
 
 ***
+
+<p class="emphase2"><strong>Thesis .B</strong></p>
 
 <p class="emphase"><strong>Novel methodology for producing 3D samples of Amorphous ice: Hyperquenched Glassy Water (HGW)</strong></p>
 
@@ -44,6 +59,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 
 - **Topics**: Experimental Astrophysics, Engeneering, Material Science
+- **Technique**: Neutron Scattering
 - **Job**: PhD Part I - Highway to Hell
 <br>
 <br>
@@ -73,57 +89,192 @@ formation and the possible emergence of life itself. This Thesis covers the firs
 
     
 
-## Content
+## Table of Content
+
+### <strong>&#187;  <u>Science</u></strong>
+
+:::::{div} full-width
+
+::::{grid} 
+
+:::{grid-item}
+:columns: 5 
+
+- [Overview](Science/Science)
+<br>
+<br>
+- ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-united-kingdom-svgrepo-com.svg) [Planet Formation](Science/Planet_formation/Main_en_Planet_formation) / ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-france-svgrepo-com.svg) [Formation des planètes](Science/Planet_formation/Main_fr_Planet_formation)
+<br>
+<br>
+    - [Prequel](Science/Planet_formation/Prequel)     
+    - [Star Formation](Science/Planet_formation/Star_formation)     
+    - [Protoplanetary Disks](Science/Planet_formation/PPD)    
+    - [Building Blocks](Science/Planet_formation/Blocks)
+<br>
+<br>
+- ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-united-kingdom-svgrepo-com.svg) [Collision](Science/Collision/Main_en_Collision) / ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-france-svgrepo-com.svg) [Collision](Science/Collision/Main_fr_Collision)
+<br>
+<br>
+    - [Migration](Science/Collision/Migration)     
+    - [Collision](Science/Collision/Collision)     
+    - [Growth](Science/Collision/Growth)    
+    - [Geochemistry](Science/Collision/GeoChem)
+<br>
+<br>
+- ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-united-kingdom-svgrepo-com.svg) [Hyperquenched Glassy Water](Science/HGW/Main_en_HGW) / ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-france-svgrepo-com.svg) [HGW](Science/HGW/Main_fr_HGW)
+<br>
+<br>
+    - [Vitrification](Science/HGW/Vitrification)     
+    - [HGW](Science/HGW/HGW)     
+    - [Cooling Processes](Science/HGW/Cooling)    
+<br>
+<br>
+- ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-united-kingdom-svgrepo-com.svg) [Levitation](Science/Levitation/Main_en_Levitation) / ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-france-svgrepo-com.svg) [levitation](Science/Levitation/Main_fr_Levitation)
+<br>
+<br>
+    - [Dust 3D Observation](Science/Levitation/3DObs)
+    - [3 µm Right Wing](Science/Levitation/RightWing) 
+    - [Levitation](Science/Levitation/Levitation)     
+    
+<br>
+<br>
+
+- <strong> [Introduction](https://deugz.github.io/nb-thesis/_build/html/Introduction/Introduction.html) </strong> (📖 Thesis)
+
+:::
+
+:::{grid-item}
+:columns: 7
+
+<p class="emphase">Unraveiling the formation of planets throughout the collision of HGW ice grain, studied by accoustic levitation </p>
+
+Explanation
 
 
-- [Chapter 1](Science/Chapter1/Chapter1) : **Introduction**
+
+:::
+
+::::
+
+:::::
+
+
+***
+
+### <strong>&#187;  <u>Methods</u></strong>
+
+:::::{div} full-width
+
+::::{grid} 2 
+
+:::{grid-item}
+:columns: 5 
+
+- [Overview](Technical/Method)
 <br>
 <br>
-    - 1.1 The Dust cycle in the Galaxy
+- [XP Development](Technical/XP_Dev/XP_Dev)
 <br>
 <br>
-    - 1.2 Synergy Between Experiments, Modelling and Observation in Astronomy through the Prism of Ice
+    - [Proof of Concept](Technical/XP_Dev/V1/Proof_of_concept)     
+    - [HGW Experiment V2](Technical/XP_Dev/V2/2nd_Version)
+    - [Levitation Chamber](Technical/XP_Dev/Levitation/Lev-Chamb)
 <br>
-<br>   
-    - 1.3 Amorphous Ices in the Laboratory
-<br>
-<br>
-    - 1.4 Ice Processing in the Context of Planet Formation
-<br>
-<br>
-    - 1.5 Thesis Motivation and Aim
+<br>    
+- [Characterisation](Technical/Characterisation/characterisation)
 <br>
 <br>
-    - 1.6 Thesis Outline
+    - [Microscopy](Technical/Characterisation/Microscopy/Microscopy)     
+    - [Neutron Scattering](Technical/Characterisation/Neutron/Neutron)
+    - [IR Spectroscopy](Technical/Characterisation/Infrared/Infrared)
 <br>
 <br>
-- [Chapter 2](Method/Chapter2/Chapter2) : **Method**
+- <strong> [Methods](https://deugz.github.io/nb-thesis/_build/html/Methods/Methods.html) </strong> (📖 Thesis)
+
+:::
+
+:::{grid-item}
+:columns: 7
+
+Methodology
+
+:::
+
+::::
+
+:::::
+
+
+
+
+
+
+
+***
+
+### <strong>&#187;  <u>Data</u></strong>
+
+```{admonition} Embargo
+
+The data generated from this work has been embargoed (links to more details (Blog Post maybe)), however I participated in the following ISIS runs
+
+Sort things out
+
+```
+
+#### ISIS
+
+Unidentified:
+- RB_2000110
+- RB_2003050
+- RB_1810842
+
+
+- 2019-02-D2O_C2H4 
+no RB number, no proposal, no lab-book
+
+- RB_1900135_NIMROD_Feb_2019
+Is it the same as above ?
+
+- RB_2000140_Sandals_Files
+Pierre, particles + pebbles
+
+- RB_1902756_NIMROD_Files
+**Experiment V2 ** ISIS Run
+
+##### Nimrod
+
+- Feb 2020: **RB_1902756** (2nd Version Data aquisition)
+- Feb 2019: RB_1900135
+
+- March 2017 - Icy Particles (Sedimentation Chamber) 
+
+##### Sans2D
+
+- Feb 2019: RB_1820601
+
+##### Sandals
+
+- RB_2000140
+
+
+### <strong>&#187;  <u>Results</u></strong>
+
+- <strong> [Chapter 6](https://deugz.github.io/nb-thesis/_build/html/Chapter6/Chapter6.html) </strong> (📖 Thesis)
 <br>
 <br>
-    - 2.1 The HGW Experiment
-        - 2.1.1 Description
-        - 2.1.2 Experimental procedure
-        - 2.1.3 Experimental limitations
-<br>
-<br>
-    - 2.2 Neutron Scattering
+- <strong> [Chapter 7](https://deugz.github.io/nb-thesis/_build/html/Chapter7/Chapter7.html) </strong> (📖 Thesis)
 <br>
 <br>
 
-- [Chapter 6](Thesis_JB_B/Chapter6/Chapter6) : **Crystalisation kinetics of ASW**
-<br>
-<br>
-- [Chapter 7](Thesis_JB_B/Chapter7/Chapter7) : **Influence of impurity (ethane) on the structure, morphology and crystalisation kinetics of ASW**
-<br>
-<br>
-- [Discussion](Discussion/Discussion) : **Discussion**
-<br>
-<br>
-- [Conclusion](Conclusion/Chapter8/Chapter8) : **Conclusion**
-<br>
-<br>
+### <strong>&#187;  <u>Conclusion</u></strong>
 
-<h4><strong>Lists </strong></h4>
+- <strong> [Conclusion](https://deugz.github.io/nb-thesis/_build/html/Conclusion/Conclusion.html) </strong> (📖 Thesis)
+
+
+
+
+## Lists 
 
 :::::{div} full-width
 ::::{grid} 3
@@ -168,49 +319,6 @@ No lists of abbreviation as will be directly described in the text:
 **Exemple:**  <span class="hovertext" data-hover="Amorphous Solid Water">ASW</span>
     
 
-## Comments
-
-
-
-### Data aquisition
-    
-    
-- 2019-02-D2O_C2H4 
-no RB number, no proposal, no lab-book
-
-- RB_1900135_NIMROD_Feb_2019
-Is it the same as above ?
-
-- RB_2000140_Sandals_Files
-Pierre, particles + pebbles
-
-- RB_1902756_NIMROD_Files
-**Experiment V2 ** ISIS Run
-
-#### ISIS
-
-Unidentified:
-- RB_2000110
-- RB_2003050
-- RB_1810842
-
-##### Nimrod
-
-- Feb 2020: **RB_1902756** (2nd Version Data aquisition)
-- Feb 2019: RB_1900135
-
-- March 2017 - Icy Particles (Sedimentation Chamber) 
-
-##### Sans2D
-
-- Feb 2019: RB_1820601
-
-##### Sandals
-
-- RB_2000140
-
-    
-
 
 # Comments
 
@@ -222,4 +330,59 @@ Unidentified:
         async>
 </script>
 
+<hr>
+
+:::::::{div} full-width
+
+::::::{grid} 2
+
+:::::{grid-item-card}
+:class-header: bg-light
+:columns: 9
+
+**Notes**
+^^^
+::::{grid} 2
+:::{grid-item}
+
+```{admonition} To Do
+:class: note, dropdown
+
+- Rewrite the Abstract
+- Send to Friends to Review, comment
+- Orthographique correction
+
+```
+
+:::
+
+:::{grid-item}
+
+```{admonition} Ideas
+:class: tip, dropdown
+
+Nothing, just leave it like that.
+
+
+```
+:::
+::::
+:::::
+
+
+
+:::::{grid-item-card}
+:class-header: bg-light
+:columns: 3
+**Page**
+^^^
+
+- Status:  &#9989;
+  
+- Reviewed: <span class="hovertext" data-hover="Insert here who has done what">&#x274C;</span>
+       
+- Updated: 27/02/2023
+   
+::::::
+:::::::
 

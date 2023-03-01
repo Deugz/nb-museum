@@ -1,4 +1,4 @@
-# Collision
+# Collision & Growth Mechanism
 
 ***
 
@@ -33,31 +33,19 @@ Intro paragraph
 ::::
 :::::
 
-::::{margin}
-:::{grid-item-card}
+
+:::::::{div} full-width
+
+::::::{grid} 2
+
+:::::{grid-item-card}
 :class-header: bg-light
-
-**Page**
-^^^
-
-- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
-  
-- Reviewed: &#x274C;
-       
-- Updated: 04/02/2023
-   
-:::
-::::
-
-
-
-::::::{grid-item-card}
-:class-header: bg-light
+:columns: 9
 
 **Notes**
 ^^^
-:::::{grid} 2
-::::{grid-item}
+::::{grid} 2
+:::{grid-item}
 
 ```{admonition} To Do
 :class: note, dropdown
@@ -67,19 +55,36 @@ Intro paragraph
 
 ```
 
-::::
+:::
 
-::::{grid-item}
+:::{grid-item}
 
 ```{admonition} Colaboration
 :class: tip, dropdown
 
-What to do
+Presentation
 
 ```
+:::
 ::::
-:::::  
+:::::
+
+
+
+:::::{grid-item-card}
+:class-header: bg-light
+:columns: 3
+**Page**
+^^^
+
+- Status: ![flag alt >](../../Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 15/02/2023
+   
 ::::::
+:::::::
 
 (content:references:Title1)=
 ## Science of Collisions
@@ -96,12 +101,34 @@ Sabrina stuffs ...
 [Image + science of big body collisions leading to dust cloud](https://hubblesite.org/contents/media/images/2020/09/4625-Image?itemsPerPage=100&page=3&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
 
 
+### Computation
+
+- {cite:p}`Hasegawa2023`
+
+
 (content:references:Title2)=
 ## Collision Experiments
+
+- **Review**: {cite:p}`Blum2008`
+
+
 
 
 ## Effects of collision on Amorphous Ice
 
 - {cite:p}`Steckloff2023`
+
+
+
+## Growth Mechanism
+
+
+### <strong> &#x2023; <u> Sintering ? </u></strong>
+
+{cite:p}`Okuzumi2016` (mention ethane in their paper)
+
+
+## The Bouncing Barrier
+
 
 ## Summary

@@ -1,0 +1,3438 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Exercise notebook 4: Grouping your data &#8212; MUSEUM</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../../_static/copybutton.js"></script>
+    <script src="../../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb-museum");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-museum/_build/html/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/4_Further_techniques/Exercises_4.html" />
+    <link rel="shortcut icon" href="../../../../../_static/OU_Logo.svg"/>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GYJ9YP0JJ4"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-GYJ9YP0JJ4');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">Current Version: Jan 2023</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../../../_static/OU_Logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">MUSEUM</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Science
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Science/Science.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Planet_formation/Main_en_Planet_formation.html">
+   Stars &amp; Planet Formation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Prequel.html">
+     Setting up the stage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Star_formation.html">
+     Star Formation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/PPD.html">
+     Protoplanetary Disks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Planet_formation/Blocks.html">
+     Planets Building Blocks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Collision/Main_en_Collision.html">
+   Dust Collisions &amp; Growth
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Migration.html">
+     Migration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Collision.html">
+     Collision &amp; Growth Mechanism
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/Growth.html">
+     Planetesimals Dynamics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Collision/GeoChem.html">
+     Geochemistry
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/HGW/Main_en_HGW.html">
+   Hyperquenched Glassy Water
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/Vitrification.html">
+     Vitrification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/HGW.html">
+     HGW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/HGW/Cooling.html">
+     Cooling Processes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Science/Levitation/Main_en_Levitation.html">
+   Levitation and IR Signature
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/3DObs.html">
+     Dust 3D Observations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/RightWing.html">
+     3 µm Right Wing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Science/Levitation/Levitation.html">
+     Levitation techniques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Science/How.html">
+   Thesis Aim → How ?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Introduction/Introduction.html">
+   Introduction (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Methods
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Technical/Method.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Technical/XP_Dev/XP_Dev.html">
+   XP Development
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/V1/Proof_of_concept.html">
+     Proof of concept
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/V2/2nd_Version.html">
+     2
+     <sup>
+      nd
+     </sup>
+     Version
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/XP_Dev/Levitation/Lev-Chamb.html">
+     Levitation Chamber
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../Technical/Characterisation/characterisation.html">
+   Characterisation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Microscopy/Microscopy.html">
+     Microscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Neutron/Neutron.html">
+     Neutron Scattering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../Technical/Characterisation/Infrared/Infrared.html">
+     Infrared
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Methods/Methods.html">
+   Methods (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Results
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter6/Chapter6.html">
+   Chapter 6 (📖 Thesis)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter7/Chapter7.html">
+   Chapter 7 (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Conclusion
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Conclusion/Conclusion.html">
+   Conclusion (📖 Thesis)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Bibliography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Thesis_JB_B/Biblio/bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/Deugz/nb-museum/master?urlpath=tree/docs/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/4_Further_techniques/Exercises_4.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/Deugz/nb-museum"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/issues/new?title=Issue%20on%20page%20%2FDocs/Training/OU-training/Learn-to-code-for-data-analysis-master/4_Further_techniques/Exercises_4.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb-museum/edit/master/docs/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/4_Further_techniques/Exercises_4.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../../../_sources/Docs/Training/OU-training/Learn-to-code-for-data-analysis-master/4_Further_techniques/Exercises_4.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1-getting-comtrade-data-into-your-notebook">
+   Exercise 1: Getting Comtrade data into your notebook
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subsetting-your-data">
+     Subsetting Your Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sorting-the-data">
+     Sorting the data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-2-grouping-data">
+   Exercise 2: Grouping data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grouping-the-data">
+     Grouping the data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3-experimenting-with-split-apply-combine-summary-reports">
+   Exercise 3: Experimenting with Split-Apply-Combine – Summary reports
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aggregation-operations-generating-summary-reports">
+     Aggregation operations – Generating
+     <em>
+      Summary
+     </em>
+     reports
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finding-top-ranked-elements-within-a-group">
+     Finding top ranked elements within a group
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generating-simple-charts">
+     Generating simple charts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generating-alternative-groupings">
+     Generating alternative groupings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generating-several-aggregation-values-at-the-same-time">
+     Generating several aggregation values at the same time
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tasks">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4-filtering-groups">
+   Exercise 4: Filtering groups
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#filtering-on-the-comtrade-data">
+     Filtering on the Comtrade data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-5-interactive-pivot-table">
+   Exercise 5: Interactive pivot table
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Task
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-6-pivot-tables-with-pandas">
+   Exercise 6: Pivot tables with pandas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-started-with-pivot-tables-in-pandas">
+     Getting started with pivot tables in pandas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Exercise notebook 4: Grouping your data</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1-getting-comtrade-data-into-your-notebook">
+   Exercise 1: Getting Comtrade data into your notebook
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subsetting-your-data">
+     Subsetting Your Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sorting-the-data">
+     Sorting the data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-2-grouping-data">
+   Exercise 2: Grouping data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grouping-the-data">
+     Grouping the data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3-experimenting-with-split-apply-combine-summary-reports">
+   Exercise 3: Experimenting with Split-Apply-Combine – Summary reports
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aggregation-operations-generating-summary-reports">
+     Aggregation operations – Generating
+     <em>
+      Summary
+     </em>
+     reports
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finding-top-ranked-elements-within-a-group">
+     Finding top ranked elements within a group
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generating-simple-charts">
+     Generating simple charts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generating-alternative-groupings">
+     Generating alternative groupings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generating-several-aggregation-values-at-the-same-time">
+     Generating several aggregation values at the same time
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tasks">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4-filtering-groups">
+   Exercise 4: Filtering groups
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#filtering-on-the-comtrade-data">
+     Filtering on the Comtrade data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-5-interactive-pivot-table">
+   Exercise 5: Interactive pivot table
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Task
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-6-pivot-tables-with-pandas">
+   Exercise 6: Pivot tables with pandas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-started-with-pivot-tables-in-pandas">
+     Getting started with pivot tables in pandas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Task
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-notebook-4-grouping-your-data">
+<h1>Exercise notebook 4: Grouping your data<a class="headerlink" href="#exercise-notebook-4-grouping-your-data" title="Permalink to this headline">#</a></h1>
+<p>This Jupyter notebook, for Part 4 of The Open University’s <em>Learn to code for Data Analysis</em> course, contains code examples and coding activities for you.</p>
+<p>You’ll come across steps directing you to this notebook. Once you’ve done each exercise, go back to the corresponding step and mark it as complete. Remember to run the code in this notebook before you start.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">FutureWarning</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.grid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># show gridlines by default</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="exercise-1-getting-comtrade-data-into-your-notebook">
+<h2>Exercise 1: Getting Comtrade data into your notebook<a class="headerlink" href="#exercise-1-getting-comtrade-data-into-your-notebook" title="Permalink to this headline">#</a></h2>
+<p>In this exercise, you will practice loading data from Comtrade into a pandas dataframe and getting it into a form where you can start to work with it.</p>
+<p>The following steps and code are an example. Your task for this exercise is stated at the end, after the example.</p>
+<p>The data is obtained from the <a class="reference external" href="http://comtrade.un.org/data/">United Nations Comtrade</a> website, by selecting the following configuration:</p>
+<ul class="simple">
+<li><p>Type of Product: goods</p></li>
+<li><p>Frequency: monthly</p></li>
+<li><p>Periods: all of 2014</p></li>
+<li><p>Reporter: United Kingdom</p></li>
+<li><p>Partners: all</p></li>
+<li><p>Flows: imports and exports</p></li>
+<li><p>HS (as reported) commodity codes: 0401 (Milk and cream, neither concentrated nor sweetened) and 0402 (Milk and cream, concentrated or sweetened)</p></li>
+</ul>
+<p>Clicking on ‘Preview’ results in a message that the data exceeds 500 rows. Data was downloaded using the <em>Download CSV</em> button and the download file renamed appropriately.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">LOCATION</span><span class="o">=</span><span class="s1">&#39;comtrade_milk_uk_monthly_14.csv&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>A URL for downloading all the data as a CSV file can also be obtained via “View API Link”.
+It must be modified so that it returns up to 5000 records (set <code class="docutils literal notranslate"><span class="pre">max=5000</span></code>) in the CSV format (<code class="docutils literal notranslate"><span class="pre">&amp;fmt=csv</span></code>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># LOCATION = &#39;http://comtrade.un.org/api/get?max=5000&amp;type=C&amp;freq=M&amp;px=HS&amp;ps=2014&amp;r=826&amp;p=all&amp;rg=1%2C2&amp;cc=0401%2C0402&amp;fmt=csv&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Load the data in from the specified location, ensuring that the various codes are read as strings. Preview the first few rows of the dataset.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk</span> <span class="o">=</span> <span class="n">read_csv</span><span class="p">(</span><span class="n">LOCATION</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Commodity Code&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="s1">&#39;Reporter Code&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">})</span>
+<span class="n">milk</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Classification</th>
+      <th>Year</th>
+      <th>Period</th>
+      <th>Period Desc.</th>
+      <th>Aggregate Level</th>
+      <th>Is Leaf Code</th>
+      <th>Trade Flow Code</th>
+      <th>Trade Flow</th>
+      <th>Reporter Code</th>
+      <th>Reporter</th>
+      <th>...</th>
+      <th>Qty</th>
+      <th>Alt Qty Unit Code</th>
+      <th>Alt Qty Unit</th>
+      <th>Alt Qty</th>
+      <th>Netweight (kg)</th>
+      <th>Gross weight (kg)</th>
+      <th>Trade Value (US$)</th>
+      <th>CIF Trade Value (US$)</th>
+      <th>FOB Trade Value (US$)</th>
+      <th>Flag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>HS</td>
+      <td>2014</td>
+      <td>201401</td>
+      <td>January 2014</td>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Imports</td>
+      <td>826</td>
+      <td>United Kingdom</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>22404316</td>
+      <td>NaN</td>
+      <td>21950747</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>HS</td>
+      <td>2014</td>
+      <td>201401</td>
+      <td>January 2014</td>
+      <td>4</td>
+      <td>0</td>
+      <td>2</td>
+      <td>Exports</td>
+      <td>826</td>
+      <td>United Kingdom</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>60497363</td>
+      <td>NaN</td>
+      <td>46923551</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>HS</td>
+      <td>2014</td>
+      <td>201401</td>
+      <td>January 2014</td>
+      <td>4</td>
+      <td>0</td>
+      <td>2</td>
+      <td>Exports</td>
+      <td>826</td>
+      <td>United Kingdom</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2520</td>
+      <td>NaN</td>
+      <td>3410</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>3 rows × 35 columns</p>
+</div></div></div>
+</div>
+<p>Limit the columns to make the dataframe easier to work with by selecting just a subset of them.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">COLUMNS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="s1">&#39;Period&#39;</span><span class="p">,</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">,</span><span class="s1">&#39;Reporter&#39;</span><span class="p">,</span> <span class="s1">&#39;Partner&#39;</span><span class="p">,</span> <span class="s1">&#39;Commodity&#39;</span><span class="p">,</span><span class="s1">&#39;Commodity Code&#39;</span><span class="p">,</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span>
+<span class="n">milk</span> <span class="o">=</span> <span class="n">milk</span><span class="p">[</span><span class="n">COLUMNS</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Derive two new dataframes that separate out the ‘World’ partner data and the data for individual partner countries.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk_world</span> <span class="o">=</span> <span class="n">milk</span><span class="p">[</span><span class="n">milk</span><span class="p">[</span><span class="s1">&#39;Partner&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span><span class="p">]</span>
+<span class="n">milk_countries</span> <span class="o">=</span> <span class="n">milk</span><span class="p">[</span><span class="n">milk</span><span class="p">[</span><span class="s1">&#39;Partner&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;World&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You may wish to store a local copy as a CSV file, for example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk_countries</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;countrymilk.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To load the data back in:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">load_test</span> <span class="o">=</span> <span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;countrymilk.csv&#39;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Commodity Code&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="s1">&#39;Reporter Code&#39;</span><span class="p">:</span><span class="nb">str</span><span class="p">})</span>
+<span class="n">load_test</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Period</th>
+      <th>Trade Flow</th>
+      <th>Reporter</th>
+      <th>Partner</th>
+      <th>Commodity</th>
+      <th>Commodity Code</th>
+      <th>Trade Value (US$)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Exports</td>
+      <td>United Kingdom</td>
+      <td>Afghanistan</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>3410</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Exports</td>
+      <td>United Kingdom</td>
+      <td>Austria</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>316</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>If you are on a Windows computer, data files may sometimes be saved using a file encoding (<em>Latin-1</em>). Pandas may not recognise this by default, in which case you will see a <code class="docutils literal notranslate"><span class="pre">UnicodeDecodeError</span></code>.</p>
+<p>In such cases, opening files in <code class="docutils literal notranslate"><span class="pre">read_excel()</span></code> or <code class="docutils literal notranslate"><span class="pre">read_csv()</span></code> using the parameter  <code class="docutils literal notranslate"><span class="pre">encoding=&quot;ISO-8859-1&quot;</span></code> or  <code class="docutils literal notranslate"><span class="pre">encoding</span> <span class="pre">=</span> <span class="pre">&quot;Latin-1&quot;</span></code> should fix the problem. For example, edit the previous command to read:</p>
+<p><code class="docutils literal notranslate"><span class="pre">load_test=read_csv('countrymilk.csv',</span> <span class="pre">dtype={'Commodity</span> <span class="pre">Code':str},</span> <span class="pre">encoding</span> <span class="pre">=</span> <span class="pre">&quot;ISO-8859-1&quot;)</span></code></p>
+<section id="subsetting-your-data">
+<h3>Subsetting Your Data<a class="headerlink" href="#subsetting-your-data" title="Permalink to this headline">#</a></h3>
+<p>For large or heterogenous datasets, it is often convenient to create subsets of the data. To further separate out the imports:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk_imports</span> <span class="o">=</span> <span class="n">milk</span><span class="p">[</span><span class="n">milk</span><span class="p">[</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Imports&#39;</span><span class="p">]</span>
+<span class="n">milk_countries_imports</span> <span class="o">=</span> <span class="n">milk_countries</span><span class="p">[</span><span class="n">milk_countries</span><span class="p">[</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Imports&#39;</span><span class="p">]</span>
+<span class="n">milk_world_imports</span><span class="o">=</span><span class="n">milk_world</span><span class="p">[</span><span class="n">milk_world</span><span class="p">[</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Imports&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="sorting-the-data">
+<h3>Sorting the data<a class="headerlink" href="#sorting-the-data" title="Permalink to this headline">#</a></h3>
+<p>Having loaded in the data, find the most valuable partners in terms of import trade flow during a particular month by sorting the data by <em>decreasing</em> trade value and then selecting the top few rows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milkImportsInJanuary2014</span> <span class="o">=</span> <span class="n">milk_countries_imports</span><span class="p">[</span><span class="n">milk_countries_imports</span><span class="p">[</span><span class="s1">&#39;Period&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">201401</span><span class="p">]</span>
+<span class="n">milkImportsInJanuary2014</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Period</th>
+      <th>Trade Flow</th>
+      <th>Reporter</th>
+      <th>Partner</th>
+      <th>Commodity</th>
+      <th>Commodity Code</th>
+      <th>Trade Value (US$)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>23</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Ireland</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>10676138</td>
+    </tr>
+    <tr>
+      <th>626</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>8020014</td>
+    </tr>
+    <tr>
+      <th>637</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Ireland</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>5966962</td>
+    </tr>
+    <tr>
+      <th>650</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Netherlands</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>4650774</td>
+    </tr>
+    <tr>
+      <th>629</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Germany</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>4545873</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Belgium</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>4472349</td>
+    </tr>
+    <tr>
+      <th>612</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Belgium</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>3584038</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Denmark</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>2233438</td>
+    </tr>
+    <tr>
+      <th>667</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Spain</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>1850097</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1522872</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="task">
+<h3>Task<a class="headerlink" href="#task" title="Permalink to this headline">#</a></h3>
+<p>To complete these tasks you could copy this notebook and amend the code or create a new notebook to do the analysis for your chosen data.</p>
+<p>Using the <a class="reference external" href="http://comtrade.un.org/data/">Comtrade Data website</a>, identify a dataset that describes the import and export trade flows for a particular service or form of goods between your country (as reporter) and all (‘All’) the other countries in the world. Get the monthly data for all months in 2014.</p>
+<p>Download the data as a CSV file and add the file to the same folder as the one containing this notebook. Load the data in from the file into a pandas dataframe. Create an easier to work with dataframe that excludes data associated with the ‘World’ partner. Sort this data to see which countries are the biggest partners in terms of import and export trade flow.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-2-grouping-data">
+<h2>Exercise 2: Grouping data<a class="headerlink" href="#exercise-2-grouping-data" title="Permalink to this headline">#</a></h2>
+<p>On many occasions, a dataframe may be organised as groups of rows where the group membership is identified based on cell values within one or more ‘key’ columns. <strong>Grouping</strong> refers to the process whereby rows associated with a particular group are collated so that you can work with just those rows as distinct subsets of the whole dataset.</p>
+<p>The number of groups the dataframe will be split into is based on the number of unique values identified within a single key column, or the number of unique combinations of values for two or more key columns.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">groupby()</span></code> method runs down each row in a data frame, splitting the rows into separate groups based on the unique values associated with the key column or columns.</p>
+<p>The following is an example of the steps and code needed to split the dataframe from the Exercise 1 example.</p>
+<section id="grouping-the-data">
+<h3>Grouping the data<a class="headerlink" href="#grouping-the-data" title="Permalink to this headline">#</a></h3>
+<p>Split the data into two different subsets of data (imports and exports), by grouping on trade flow.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">groups</span> <span class="o">=</span> <span class="n">milk_countries</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Inspect the first few rows associated with a particular group:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">groups</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">&#39;Imports&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Period</th>
+      <th>Trade Flow</th>
+      <th>Reporter</th>
+      <th>Partner</th>
+      <th>Commodity</th>
+      <th>Commodity Code</th>
+      <th>Trade Value (US$)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>4</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Belgium</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>4472349</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Denmark</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>2233438</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1522872</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Germany</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1028700</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>Ireland</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>10676138</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>As well as grouping on a single term, you can create groups based on multiple columns by passing in several column names as a list. For example, generate groups based on commodity code <em>and</em> trade flow, and then preview the keys used to define the groups.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">GROUPING_COMMFLOW</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Commodity Code&#39;</span><span class="p">,</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">]</span>
+
+<span class="n">groups</span> <span class="o">=</span> <span class="n">milk_countries</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">GROUPING_COMMFLOW</span><span class="p">)</span>
+<span class="n">groups</span><span class="o">.</span><span class="n">groups</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([(&#39;0401&#39;, &#39;Exports&#39;), (&#39;0401&#39;, &#39;Imports&#39;), (&#39;0402&#39;, &#39;Exports&#39;), (&#39;0402&#39;, &#39;Imports&#39;)])
+</pre></div>
+</div>
+</div>
+</div>
+<p>Retrieve a group based on multiple group levels by passing in a tuple that specifies a value for each index column. For example, if a grouping is based on the <code class="docutils literal notranslate"><span class="pre">'Partner'</span></code> and <code class="docutils literal notranslate"><span class="pre">'Trade</span> <span class="pre">Flow'</span></code> columns, the argument of <code class="docutils literal notranslate"><span class="pre">get_group</span></code> has to be a partner/flow pair, like <code class="docutils literal notranslate"><span class="pre">('France',</span> <span class="pre">'Import')</span></code> to  get all rows associated with imports from France.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">GROUPING_PARTNERFLOW</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Partner&#39;</span><span class="p">,</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">]</span>
+<span class="n">groups</span> <span class="o">=</span> <span class="n">milk_countries</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">GROUPING_PARTNERFLOW</span><span class="p">)</span>
+
+<span class="n">GROUP_PARTNERFLOW</span><span class="o">=</span> <span class="p">(</span><span class="s1">&#39;France&#39;</span><span class="p">,</span><span class="s1">&#39;Imports&#39;</span><span class="p">)</span>
+<span class="n">groups</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span> <span class="n">GROUP_PARTNERFLOW</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Period</th>
+      <th>Trade Flow</th>
+      <th>Reporter</th>
+      <th>Partner</th>
+      <th>Commodity</th>
+      <th>Commodity Code</th>
+      <th>Trade Value (US$)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>15</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1522872</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>2014</td>
+      <td>201402</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1444455</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>2014</td>
+      <td>201403</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1414291</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>2014</td>
+      <td>201404</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1912257</td>
+    </tr>
+    <tr>
+      <th>223</th>
+      <td>2014</td>
+      <td>201405</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1638838</td>
+    </tr>
+    <tr>
+      <th>273</th>
+      <td>2014</td>
+      <td>201406</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1449614</td>
+    </tr>
+    <tr>
+      <th>327</th>
+      <td>2014</td>
+      <td>201407</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>2096771</td>
+    </tr>
+    <tr>
+      <th>370</th>
+      <td>2014</td>
+      <td>201408</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1474883</td>
+    </tr>
+    <tr>
+      <th>416</th>
+      <td>2014</td>
+      <td>201409</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1259777</td>
+    </tr>
+    <tr>
+      <th>466</th>
+      <td>2014</td>
+      <td>201410</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1483422</td>
+    </tr>
+    <tr>
+      <th>514</th>
+      <td>2014</td>
+      <td>201411</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1720555</td>
+    </tr>
+    <tr>
+      <th>565</th>
+      <td>2014</td>
+      <td>201412</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, neither concentrated nor sweet...</td>
+      <td>0401</td>
+      <td>1958660</td>
+    </tr>
+    <tr>
+      <th>626</th>
+      <td>2014</td>
+      <td>201401</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>8020014</td>
+    </tr>
+    <tr>
+      <th>696</th>
+      <td>2014</td>
+      <td>201402</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>6494426</td>
+    </tr>
+    <tr>
+      <th>760</th>
+      <td>2014</td>
+      <td>201403</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>7545848</td>
+    </tr>
+    <tr>
+      <th>830</th>
+      <td>2014</td>
+      <td>201404</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>5917331</td>
+    </tr>
+    <tr>
+      <th>901</th>
+      <td>2014</td>
+      <td>201405</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>7183954</td>
+    </tr>
+    <tr>
+      <th>970</th>
+      <td>2014</td>
+      <td>201406</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>6948169</td>
+    </tr>
+    <tr>
+      <th>1048</th>
+      <td>2014</td>
+      <td>201407</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>6630456</td>
+    </tr>
+    <tr>
+      <th>1121</th>
+      <td>2014</td>
+      <td>201408</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>7051096</td>
+    </tr>
+    <tr>
+      <th>1193</th>
+      <td>2014</td>
+      <td>201409</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>8514848</td>
+    </tr>
+    <tr>
+      <th>1271</th>
+      <td>2014</td>
+      <td>201410</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>8638220</td>
+    </tr>
+    <tr>
+      <th>1354</th>
+      <td>2014</td>
+      <td>201411</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>7938295</td>
+    </tr>
+    <tr>
+      <th>1425</th>
+      <td>2014</td>
+      <td>201412</td>
+      <td>Imports</td>
+      <td>United Kingdom</td>
+      <td>France</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>4749124</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>To find the leading partner for a particular commodity, group by commodity, get the desired group, and then sort the result.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">groups</span> <span class="o">=</span> <span class="n">milk_countries</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Commodity Code&#39;</span><span class="p">])</span>
+<span class="n">groups</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">&#39;0402&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Trade Value (US$)&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Period</th>
+      <th>Trade Flow</th>
+      <th>Reporter</th>
+      <th>Partner</th>
+      <th>Commodity</th>
+      <th>Commodity Code</th>
+      <th>Trade Value (US$)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>954</th>
+      <td>2014</td>
+      <td>201406</td>
+      <td>Exports</td>
+      <td>United Kingdom</td>
+      <td>Algeria</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>22411564</td>
+    </tr>
+    <tr>
+      <th>880</th>
+      <td>2014</td>
+      <td>201405</td>
+      <td>Exports</td>
+      <td>United Kingdom</td>
+      <td>Algeria</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>19656679</td>
+    </tr>
+    <tr>
+      <th>811</th>
+      <td>2014</td>
+      <td>201404</td>
+      <td>Exports</td>
+      <td>United Kingdom</td>
+      <td>Algeria</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>14875816</td>
+    </tr>
+    <tr>
+      <th>841</th>
+      <td>2014</td>
+      <td>201404</td>
+      <td>Exports</td>
+      <td>United Kingdom</td>
+      <td>Ireland</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>11712344</td>
+    </tr>
+    <tr>
+      <th>773</th>
+      <td>2014</td>
+      <td>201403</td>
+      <td>Exports</td>
+      <td>United Kingdom</td>
+      <td>Ireland</td>
+      <td>Milk and cream, concentrated or sweetened</td>
+      <td>0402</td>
+      <td>11015471</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="id1">
+<h3>Task<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p>Using your own data set from Exercise 1, try to group the data in a variety of ways, finding the most significant trade partner in each case:</p>
+<ul class="simple">
+<li><p>by commodity, or commodity code</p></li>
+<li><p>by trade flow, commodity and year.</p></li>
+</ul>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-3-experimenting-with-split-apply-combine-summary-reports">
+<h2>Exercise 3: Experimenting with Split-Apply-Combine – Summary reports<a class="headerlink" href="#exercise-3-experimenting-with-split-apply-combine-summary-reports" title="Permalink to this headline">#</a></h2>
+<p>Having learned how to group data using the <code class="docutils literal notranslate"><span class="pre">groupby()</span></code> method, you will now start to put those groups to work.</p>
+<section id="aggregation-operations-generating-summary-reports">
+<h3>Aggregation operations – Generating <em>Summary</em> reports<a class="headerlink" href="#aggregation-operations-generating-summary-reports" title="Permalink to this headline">#</a></h3>
+<p>Aggegration operations can be invoked using the <code class="docutils literal notranslate"><span class="pre">aggregate()</span></code> method.</p>
+<p>To find the total value of imports traded for each commodity within the period, take the world dataframe, and sum the values over the trade value column within each grouping.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk_world_imports</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Commodity Code&#39;</span><span class="p">)[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Commodity Code
+0401    222107770
+0402    341777173
+Name: Trade Value (US$), dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>So that’s 222 million dollars or so on the 0401 commodity, and 341 million dollars or so on 0402.</p>
+<p>If you total (sum) up all the individual country contributions, you should get similar amounts.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk_imports_grouped</span><span class="o">=</span><span class="n">milk_countries_imports</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Commodity Code&#39;</span><span class="p">)</span>
+<span class="n">milk_imports_grouped</span><span class="p">[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Commodity Code
+0401    222107771
+0402    341777171
+Name: Trade Value (US$), dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Not far off – there are perhaps a few rounding errors that would account for the odd couple of million that appear to be missing…</p>
+</section>
+<section id="finding-top-ranked-elements-within-a-group">
+<h3>Finding top ranked elements within a group<a class="headerlink" href="#finding-top-ranked-elements-within-a-group" title="Permalink to this headline">#</a></h3>
+<p>To find the leading import partners across all the milk products, group by partner, sum (total) the trade value within each group, and then sort the result in descending order before displaying the top few entries.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk_countries_imports_totals</span><span class="o">=</span><span class="n">milk_countries_imports</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Partner&#39;</span><span class="p">)[[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+<span class="n">milk_countries_imports_totals</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Trade Value (US$)</th>
+    </tr>
+    <tr>
+      <th>Partner</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Ireland</th>
+      <td>174315886</td>
+    </tr>
+    <tr>
+      <th>France</th>
+      <td>105008176</td>
+    </tr>
+    <tr>
+      <th>Germany</th>
+      <td>76612700</td>
+    </tr>
+    <tr>
+      <th>Netherlands</th>
+      <td>72209235</td>
+    </tr>
+    <tr>
+      <th>Belgium</th>
+      <td>58338745</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="generating-simple-charts">
+<h3>Generating simple charts<a class="headerlink" href="#generating-simple-charts" title="Permalink to this headline">#</a></h3>
+<p>One of the useful features of the <code class="docutils literal notranslate"><span class="pre">aggregate()</span></code> method is that it returns an object that can be plotted from directly, in this example a horizontal bar chart.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk_imports_grouped</span><span class="p">[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:ylabel=&#39;Commodity Code&#39;&gt;
+</pre></div>
+</div>
+<img alt="../../../../../_images/Exercises_4_45_1.png" src="../../../../../_images/Exercises_4_45_1.png" />
+</div>
+</div>
+</section>
+<section id="generating-alternative-groupings">
+<h3>Generating alternative groupings<a class="headerlink" href="#generating-alternative-groupings" title="Permalink to this headline">#</a></h3>
+<p>Reports can also be generated to show the total imports per month for each commodity: group on commodity, trade flow and period, and then sum the trade values contained within each group.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">monthlies</span><span class="o">=</span><span class="n">milk_countries_imports</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Commodity&#39;</span><span class="p">,</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">,</span><span class="s1">&#39;Period&#39;</span><span class="p">])[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+<span class="n">monthlies</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Commodity                                           Trade Flow  Period
+Milk and cream, concentrated or sweetened           Imports     201401    30423330
+                                                                201402    20614513
+                                                                201403    26335257
+                                                                201404    24770338
+                                                                201405    26409462
+                                                                201406    29081876
+                                                                201407    25668642
+                                                                201408    23360790
+                                                                201409    37418160
+                                                                201410    38012444
+                                                                201411    39465351
+                                                                201412    20217008
+Milk and cream, neither concentrated nor sweetened  Imports     201401    21950746
+                                                                201402    18685554
+                                                                201403    17984197
+                                                                201404    19440269
+                                                                201405    21665662
+                                                                201406    16022428
+                                                                201407    19128109
+                                                                201408    16934043
+                                                                201409    19284385
+                                                                201410    18353099
+                                                                201411    17617864
+                                                                201412    15041415
+Name: Trade Value (US$), dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">groupby()</span></code> method <em>splits</em> the data into separate distinct groups of rows, and then the <code class="docutils literal notranslate"><span class="pre">aggregate()</span></code> method takes each group of rows from the results of the <code class="docutils literal notranslate"><span class="pre">groupby()</span></code> operation, <em>applies</em> the specified aggregation function, and then <em>combines</em> the results in the output.</p>
+<p>The aggregation function itself is applied to all columns of an appropriate type. In the example, the only numeric column that makes sense to aggregate over is the trade value column.</p>
+<p>As well as built in summary operations, such as finding the total (<code class="docutils literal notranslate"><span class="pre">sum</span></code>), or maximum or minimum value in a group (<code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>), aggregating functions imported from other Python packages can also be used. As shown in the next example, the <code class="docutils literal notranslate"><span class="pre">numpy</span></code> package has a function <code class="docutils literal notranslate"><span class="pre">mean</span></code> that will calculate the mean (simple average) value for a set of values.</p>
+</section>
+<section id="generating-several-aggregation-values-at-the-same-time">
+<h3>Generating several aggregation values at the same time<a class="headerlink" href="#generating-several-aggregation-values-at-the-same-time" title="Permalink to this headline">#</a></h3>
+<p>To generate several aggregate reports in a single line of code, provide a list of several aggregating operations to the <code class="docutils literal notranslate"><span class="pre">aggregate()</span></code> method:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">mean</span>
+
+<span class="n">GROUPING_COMMFLOWPERIOD</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Commodity&#39;</span><span class="p">,</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">,</span><span class="s1">&#39;Period&#39;</span><span class="p">]</span>
+<span class="n">milk_countries</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">GROUPING_COMMFLOWPERIOD</span><span class="p">)[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">([</span><span class="nb">sum</span><span class="p">,</span> <span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">,</span> <span class="n">mean</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>sum</th>
+      <th>min</th>
+      <th>max</th>
+      <th>mean</th>
+    </tr>
+    <tr>
+      <th>Commodity</th>
+      <th>Trade Flow</th>
+      <th>Period</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="24" valign="top">Milk and cream, concentrated or sweetened</th>
+      <th rowspan="12" valign="top">Exports</th>
+      <th>201401</th>
+      <td>40215103</td>
+      <td>5</td>
+      <td>8908460</td>
+      <td>6.933638e+05</td>
+    </tr>
+    <tr>
+      <th>201402</th>
+      <td>32298379</td>
+      <td>2</td>
+      <td>9634586</td>
+      <td>6.333015e+05</td>
+    </tr>
+    <tr>
+      <th>201403</th>
+      <td>42987355</td>
+      <td>116</td>
+      <td>11015471</td>
+      <td>8.266799e+05</td>
+    </tr>
+    <tr>
+      <th>201404</th>
+      <td>52900517</td>
+      <td>5</td>
+      <td>14875816</td>
+      <td>1.037265e+06</td>
+    </tr>
+    <tr>
+      <th>201405</th>
+      <td>55987927</td>
+      <td>10</td>
+      <td>19656679</td>
+      <td>9.653091e+05</td>
+    </tr>
+    <tr>
+      <th>201406</th>
+      <td>59594101</td>
+      <td>24</td>
+      <td>22411564</td>
+      <td>1.045511e+06</td>
+    </tr>
+    <tr>
+      <th>201407</th>
+      <td>33370590</td>
+      <td>7</td>
+      <td>8430285</td>
+      <td>5.959034e+05</td>
+    </tr>
+    <tr>
+      <th>201408</th>
+      <td>35080215</td>
+      <td>23</td>
+      <td>7431534</td>
+      <td>6.048313e+05</td>
+    </tr>
+    <tr>
+      <th>201409</th>
+      <td>27320915</td>
+      <td>37</td>
+      <td>5498955</td>
+      <td>4.793143e+05</td>
+    </tr>
+    <tr>
+      <th>201410</th>
+      <td>30387862</td>
+      <td>21</td>
+      <td>4074424</td>
+      <td>4.675056e+05</td>
+    </tr>
+    <tr>
+      <th>201411</th>
+      <td>23417285</td>
+      <td>35</td>
+      <td>4721974</td>
+      <td>4.181658e+05</td>
+    </tr>
+    <tr>
+      <th>201412</th>
+      <td>31301034</td>
+      <td>217</td>
+      <td>6267310</td>
+      <td>5.491409e+05</td>
+    </tr>
+    <tr>
+      <th rowspan="12" valign="top">Imports</th>
+      <th>201401</th>
+      <td>30423330</td>
+      <td>932</td>
+      <td>8020014</td>
+      <td>2.535278e+06</td>
+    </tr>
+    <tr>
+      <th>201402</th>
+      <td>20614513</td>
+      <td>1427</td>
+      <td>6494426</td>
+      <td>1.717876e+06</td>
+    </tr>
+    <tr>
+      <th>201403</th>
+      <td>26335257</td>
+      <td>507</td>
+      <td>7545848</td>
+      <td>2.025789e+06</td>
+    </tr>
+    <tr>
+      <th>201404</th>
+      <td>24770338</td>
+      <td>346</td>
+      <td>5956478</td>
+      <td>1.548146e+06</td>
+    </tr>
+    <tr>
+      <th>201405</th>
+      <td>26409462</td>
+      <td>7</td>
+      <td>7183954</td>
+      <td>1.886390e+06</td>
+    </tr>
+    <tr>
+      <th>201406</th>
+      <td>29081876</td>
+      <td>352</td>
+      <td>8337597</td>
+      <td>1.938792e+06</td>
+    </tr>
+    <tr>
+      <th>201407</th>
+      <td>25668642</td>
+      <td>413</td>
+      <td>6630456</td>
+      <td>1.711243e+06</td>
+    </tr>
+    <tr>
+      <th>201408</th>
+      <td>23360790</td>
+      <td>292</td>
+      <td>7051096</td>
+      <td>1.946732e+06</td>
+    </tr>
+    <tr>
+      <th>201409</th>
+      <td>37418160</td>
+      <td>284</td>
+      <td>8514848</td>
+      <td>2.338635e+06</td>
+    </tr>
+    <tr>
+      <th>201410</th>
+      <td>38012444</td>
+      <td>432</td>
+      <td>9941905</td>
+      <td>2.111802e+06</td>
+    </tr>
+    <tr>
+      <th>201411</th>
+      <td>39465351</td>
+      <td>560</td>
+      <td>8630781</td>
+      <td>2.466584e+06</td>
+    </tr>
+    <tr>
+      <th>201412</th>
+      <td>20217008</td>
+      <td>411</td>
+      <td>4749124</td>
+      <td>1.555154e+06</td>
+    </tr>
+    <tr>
+      <th rowspan="24" valign="top">Milk and cream, neither concentrated nor sweetened</th>
+      <th rowspan="12" valign="top">Exports</th>
+      <th>201401</th>
+      <td>46923551</td>
+      <td>20</td>
+      <td>32069689</td>
+      <td>1.303432e+06</td>
+    </tr>
+    <tr>
+      <th>201402</th>
+      <td>40191337</td>
+      <td>15</td>
+      <td>30336727</td>
+      <td>1.148324e+06</td>
+    </tr>
+    <tr>
+      <th>201403</th>
+      <td>43794069</td>
+      <td>48</td>
+      <td>27302843</td>
+      <td>1.183623e+06</td>
+    </tr>
+    <tr>
+      <th>201404</th>
+      <td>42295261</td>
+      <td>17</td>
+      <td>30012776</td>
+      <td>1.143115e+06</td>
+    </tr>
+    <tr>
+      <th>201405</th>
+      <td>40213208</td>
+      <td>175</td>
+      <td>30436121</td>
+      <td>1.182741e+06</td>
+    </tr>
+    <tr>
+      <th>201406</th>
+      <td>39721799</td>
+      <td>30</td>
+      <td>31043637</td>
+      <td>1.134909e+06</td>
+    </tr>
+    <tr>
+      <th>201407</th>
+      <td>39508126</td>
+      <td>365</td>
+      <td>29943028</td>
+      <td>1.162004e+06</td>
+    </tr>
+    <tr>
+      <th>201408</th>
+      <td>26657488</td>
+      <td>28</td>
+      <td>23573848</td>
+      <td>9.873144e+05</td>
+    </tr>
+    <tr>
+      <th>201409</th>
+      <td>33279378</td>
+      <td>11</td>
+      <td>28619275</td>
+      <td>9.244272e+05</td>
+    </tr>
+    <tr>
+      <th>201410</th>
+      <td>26615555</td>
+      <td>11</td>
+      <td>21360068</td>
+      <td>8.585663e+05</td>
+    </tr>
+    <tr>
+      <th>201411</th>
+      <td>25876673</td>
+      <td>27</td>
+      <td>20206100</td>
+      <td>7.393335e+05</td>
+    </tr>
+    <tr>
+      <th>201412</th>
+      <td>28714207</td>
+      <td>33</td>
+      <td>21434455</td>
+      <td>7.003465e+05</td>
+    </tr>
+    <tr>
+      <th rowspan="12" valign="top">Imports</th>
+      <th>201401</th>
+      <td>21950746</td>
+      <td>68</td>
+      <td>10676138</td>
+      <td>1.688519e+06</td>
+    </tr>
+    <tr>
+      <th>201402</th>
+      <td>18685554</td>
+      <td>12</td>
+      <td>10091544</td>
+      <td>1.334682e+06</td>
+    </tr>
+    <tr>
+      <th>201403</th>
+      <td>17984197</td>
+      <td>4405</td>
+      <td>8843285</td>
+      <td>1.383400e+06</td>
+    </tr>
+    <tr>
+      <th>201404</th>
+      <td>19440269</td>
+      <td>567</td>
+      <td>7453388</td>
+      <td>1.215017e+06</td>
+    </tr>
+    <tr>
+      <th>201405</th>
+      <td>21665662</td>
+      <td>912</td>
+      <td>11065926</td>
+      <td>1.547547e+06</td>
+    </tr>
+    <tr>
+      <th>201406</th>
+      <td>16022428</td>
+      <td>250</td>
+      <td>7597407</td>
+      <td>1.232494e+06</td>
+    </tr>
+    <tr>
+      <th>201407</th>
+      <td>19128109</td>
+      <td>4644</td>
+      <td>7709174</td>
+      <td>1.366294e+06</td>
+    </tr>
+    <tr>
+      <th>201408</th>
+      <td>16934043</td>
+      <td>4543</td>
+      <td>9093382</td>
+      <td>1.302619e+06</td>
+    </tr>
+    <tr>
+      <th>201409</th>
+      <td>19284385</td>
+      <td>440</td>
+      <td>11583314</td>
+      <td>1.483414e+06</td>
+    </tr>
+    <tr>
+      <th>201410</th>
+      <td>18353099</td>
+      <td>6568</td>
+      <td>10370276</td>
+      <td>1.411777e+06</td>
+    </tr>
+    <tr>
+      <th>201411</th>
+      <td>17617864</td>
+      <td>421</td>
+      <td>9939612</td>
+      <td>1.258419e+06</td>
+    </tr>
+    <tr>
+      <th>201412</th>
+      <td>15041415</td>
+      <td>2572</td>
+      <td>6956193</td>
+      <td>1.157032e+06</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>By combining different grouping combinations and aggregate functions, you can quickly ask a range of questions over the data or generate a wide variety of charts from it.</p>
+<p>Sometimes, however,  it can be quite hard to see any ‘outstanding’ values in a complex pivot table. In such cases, a chart may help you see which values are significantly larger or smaller than the other values.</p>
+<p>For example, plot the maximum value by month across each code/period combination to see which month saw the maximum peak flow of imports from a single partner.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk_countries_imports</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Commodity Code&#39;</span><span class="p">,</span><span class="s1">&#39;Period&#39;</span><span class="p">])[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="nb">max</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:ylabel=&#39;Commodity Code,Period&#39;&gt;
+</pre></div>
+</div>
+<img alt="../../../../../_images/Exercises_4_51_1.png" src="../../../../../_images/Exercises_4_51_1.png" />
+</div>
+</div>
+<p>For the 0401 commodity, the largest single monthly trade flow in 2014 appears to have taken place in September (201409). For the 0402 commodity, the weakest month was December, 2014.</p>
+<p>To chart the mean trade flows by month, simply aggregate on the <em>mean</em> rather than the <code class="docutils literal notranslate"><span class="pre">max</span></code>.</p>
+<p>In some cases, you might want to sort the order of the bars in a bar chart by value. By default, the <code class="docutils literal notranslate"><span class="pre">sort_values()</span></code> operator sorts a series or dataframe ‘in place’. That is, it sorts the dataframe and doesn’t return anything. Use the <code class="docutils literal notranslate"><span class="pre">inplace=False</span></code> parameter to return the sorted values so that the plot function can work on them.</p>
+<p>The following chart displays the total imports for the combined commodities by partner (including the <em>World</em> partner) for the top five partners: the <code class="docutils literal notranslate"><span class="pre">sort_values()</span></code> element sorts the values in descending order, passes them to the <code class="docutils literal notranslate"><span class="pre">head()</span></code> element, which selects the top five and passes those onto the plotting function.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk_bypartner_total</span><span class="o">=</span><span class="n">milk</span><span class="p">[</span><span class="n">milk</span><span class="p">[</span><span class="s2">&quot;Trade Flow&quot;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Imports&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Partner&#39;</span><span class="p">])[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+<span class="n">milk_bypartner_total</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Partner
+Austria         798816
+Belgium       58338745
+Czech Rep.     1254989
+Denmark       30534642
+Finland             12
+Name: Trade Value (US$), dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>In this case, we don’t need to specify the column name when sorting because the aggregation operator returns a <em>pandas</em> <code class="docutils literal notranslate"><span class="pre">Series</span></code> and we can sort the values directly:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">milk_bypartner_total</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:ylabel=&#39;Partner&#39;&gt;
+</pre></div>
+</div>
+<img alt="../../../../../_images/Exercises_4_57_1.png" src="../../../../../_images/Exercises_4_57_1.png" />
+</div>
+</div>
+</section>
+<section id="tasks">
+<h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">#</a></h3>
+<p>For the 0402 trade item, which months saw the greatest average (mean) activity? How does that compare with the maximum flows in each month? How does it compare with the total flow in each month?</p>
+<p>Download your own choice of monthly dataset over one or two years containing both import and export data. (To start with, you may find it convenient to split the data into two dataframes, one for exports and one for imports.)</p>
+<p>Using your own data:</p>
+<ul class="simple">
+<li><p>find out which months saw the largest total value of imports, or exports?</p></li>
+<li><p>assess, by eye, if there appears to be any seasonal trend in the behaviour of imports or exports?</p></li>
+<li><p>plot a bar chart showing the top three importers or exporters of your selected trade item over the period you grabbed the data for, compared to the total world trade value.</p></li>
+</ul>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-4-filtering-groups">
+<h2>Exercise 4: Filtering groups<a class="headerlink" href="#exercise-4-filtering-groups" title="Permalink to this headline">#</a></h2>
+<p>If you have a large dataset that can be split into multiple groups but for which you only want to report on groups that have a particular property, the <code class="docutils literal notranslate"><span class="pre">filter()</span></code> method can be used to apply a test to a group and only return rows from groups that pass a particular group-wide test. If the test evaluates as <code class="docutils literal notranslate"><span class="pre">False</span></code>, the rows included in that group will be ignored.</p>
+<p>Consider the following simple test dataset:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Commodity&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Fish&#39;</span><span class="p">,</span> <span class="s1">&#39;Milk&#39;</span><span class="p">,</span> <span class="s1">&#39;Eggs&#39;</span><span class="p">,</span> <span class="s1">&#39;Fish&#39;</span><span class="p">,</span> <span class="s1">&#39;Milk&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;Trade Flow&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Import&#39;</span><span class="p">,</span> <span class="s1">&#39;Import&#39;</span><span class="p">,</span> <span class="s1">&#39;Import&#39;</span><span class="p">,</span> <span class="s1">&#39;Export&#39;</span><span class="p">,</span><span class="s1">&#39;Export&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;Value&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">16</span><span class="p">]})</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Commodity</th>
+      <th>Trade Flow</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Fish</td>
+      <td>Import</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Milk</td>
+      <td>Import</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Eggs</td>
+      <td>Import</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Fish</td>
+      <td>Export</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Milk</td>
+      <td>Export</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>One reason for filtering a dataset might be to exclude ‘sparse’ or infrequently occurring items, such as trade partners who only seem to trade for less than six months of the year.</p>
+<p>To select just the groups that contain more than a certain number of rows, define a function to test the length (that is, the number of rows) of each group and return a <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> value depending on the test.</p>
+<p>In the following case, group by trade flow and only return rows from groups containing three or more rows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">groupsOfThreeOrMoreRows</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">g</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">groupsOfThreeOrMoreRows</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Commodity</th>
+      <th>Trade Flow</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Fish</td>
+      <td>Import</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Milk</td>
+      <td>Import</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Eggs</td>
+      <td>Import</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>You can also select groups based on other group properties. For example, you might select just the groups where the total value for a particular column within a group exceeds a certain threshold.</p>
+<p>In the following case, select just those commodities where the sum of import and export values is greater than a certain amount to indicate which ones have a large value of trade, in whatever direction, associated with them. First group by the commodity, then filter on the group property of interest.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">groupsWithValueGreaterThanFive</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">g</span><span class="p">[</span><span class="s1">&#39;Value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">5</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Commodity&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">groupsWithValueGreaterThanFive</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Commodity</th>
+      <th>Trade Flow</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Fish</td>
+      <td>Import</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Milk</td>
+      <td>Import</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Fish</td>
+      <td>Export</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Milk</td>
+      <td>Export</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="filtering-on-the-comtrade-data">
+<h3>Filtering on the Comtrade data<a class="headerlink" href="#filtering-on-the-comtrade-data" title="Permalink to this headline">#</a></h3>
+<p>Now try filtering the Comtrade data relating to the milk imports. Start by creating a subset of the data containing only rows where the total trade value of imports for a particular commodity and partner is greater than $25 million (that is, 25000000).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">groupsWithImportsOver25million</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">g</span><span class="p">[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">25000000</span>
+
+<span class="n">rows</span><span class="o">=</span><span class="n">milk_countries_imports</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Commodity&#39;</span><span class="p">,</span><span class="s1">&#39;Partner&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">groupsWithImportsOver25million</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Check the filtering by grouping on the commodity and partner and summing the result.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rows</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Commodity&#39;</span><span class="p">,</span><span class="s1">&#39;Partner&#39;</span><span class="p">])[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Commodity                                           Partner    
+Milk and cream, concentrated or sweetened           Belgium         36155409
+                                                    France          85631781
+                                                    Germany         59776965
+                                                    Ireland         62936247
+                                                    Netherlands     61531712
+Milk and cream, neither concentrated nor sweetened  Denmark         29432607
+                                                    Ireland        111379639
+Name: Trade Value (US$), dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>As before, you can plot the results.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rows</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Commodity&#39;</span><span class="p">,</span><span class="s1">&#39;Partner&#39;</span><span class="p">])[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:ylabel=&#39;Commodity,Partner&#39;&gt;
+</pre></div>
+</div>
+<img alt="../../../../../_images/Exercises_4_72_1.png" src="../../../../../_images/Exercises_4_72_1.png" />
+</div>
+</div>
+<p>Logical tests can be combined in a filter function, for example testing for partners that only appear to trade infrequently <em>or</em> for small total amounts in any particular commodity.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">weakpartner</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">g</span><span class="p">)</span><span class="o">&lt;=</span><span class="mi">3</span> <span class="o">|</span> <span class="n">g</span><span class="p">[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">&lt;</span><span class="mi">25000</span>
+
+<span class="n">weak_milk_countries_imports</span><span class="o">=</span><span class="n">milk_countries_imports</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Commodity&#39;</span><span class="p">,</span><span class="s1">&#39;Partner&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">weakpartner</span><span class="p">)</span>
+<span class="n">weak_milk_countries_imports</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Commodity&#39;</span><span class="p">,</span><span class="s1">&#39;Partner&#39;</span><span class="p">])[[</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">aggregate</span><span class="p">([</span><span class="nb">len</span><span class="p">,</span><span class="nb">sum</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2" halign="left">Trade Value (US$)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>len</th>
+      <th>sum</th>
+    </tr>
+    <tr>
+      <th>Commodity</th>
+      <th>Partner</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="7" valign="top">Milk and cream, concentrated or sweetened</th>
+      <th>Greece</th>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>Hungary</th>
+      <td>8</td>
+      <td>4956</td>
+    </tr>
+    <tr>
+      <th>Latvia</th>
+      <td>1</td>
+      <td>432</td>
+    </tr>
+    <tr>
+      <th>Luxembourg</th>
+      <td>1</td>
+      <td>23724</td>
+    </tr>
+    <tr>
+      <th>New Zealand</th>
+      <td>1</td>
+      <td>19291</td>
+    </tr>
+    <tr>
+      <th>United Arab Emirates</th>
+      <td>2</td>
+      <td>5779</td>
+    </tr>
+    <tr>
+      <th>United States of America</th>
+      <td>2</td>
+      <td>4375</td>
+    </tr>
+    <tr>
+      <th rowspan="5" valign="top">Milk and cream, neither concentrated nor sweetened</th>
+      <th>Finland</th>
+      <td>1</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>Latvia</th>
+      <td>4</td>
+      <td>1678</td>
+    </tr>
+    <tr>
+      <th>Spain</th>
+      <td>1</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <th>Ukraine</th>
+      <td>1</td>
+      <td>3733</td>
+    </tr>
+    <tr>
+      <th>United States of America</th>
+      <td>1</td>
+      <td>2415</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>In this report, many of the listed countries appear to have traded in only one or two months; but while Hungary traded concentrated/sweetened products eight times, the total trade value was not very significant at all.</p>
+</section>
+<section id="id2">
+<h3>Tasks<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<p>Filter the dataset so that it only contains rows where the total exports across all the milk products for a particular country are at least two million dollars in any given monthly period. (HINT: group on partner and period and filter against a function that tests the minimum trade value exceeds the required value.)</p>
+<p>Generate a chart from that dataset that displays the sum total trade value for each partner. (HINT: group on the partner and then aggregate on the sum.)</p>
+<p>Using your own monthly data for a single year, which countries only trade in your selected trade item rarely or for small amounts? Which partners trade on a regular basis (for example, in at least nine of the months)?</p>
+<p>Can you also find countries that trade regularly but only for small amounts (for example whose maximum monthly trade value is less than a certain threshold amount) or who trade infrequently but for large amounts (or other combinations thereof)?</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+<section id="exercise-5-interactive-pivot-table">
+<h2>Exercise 5: Interactive pivot table<a class="headerlink" href="#exercise-5-interactive-pivot-table" title="Permalink to this headline">#</a></h2>
+<p>The interactive pivot table contains a fragment of the milk data downloaded from Comtrade relating to the leading partner importers of milk products to the UK. (<strong>Note:</strong> If you can’t see the pivot table, check you have downloaded it to the same folder as this notebook and run the cell below.)</p>
+<p>Configure the pivot table by dragging the labels into the appropriate row and column selection areas. (You do not need to add all the labels to those areas). Select the aggregation type using the calculation list (which defauts to <em>count</em>). Click on the down arrow associated with a label in order to select a subset of values associated with that label.</p>
+<p>Use the interactive pivot table to generate reports that display:</p>
+<ul class="simple">
+<li><p>a single column containing the total value of each trade flow for each commodity  each year (in rows: Year, Commodity, Trade Flow; no columns; sum Trade Value(US$))</p></li>
+<li><p>for each year and each commodity, a column containing the total trade value by Trade flow (rows: year, commodity; cols Trade Flow; sum trade value)</p></li>
+<li><p>the total exports for each partner country (rows) by year (columns). Row: partner, trade flow with filter set to export); col: year; sum trade value</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span><span class="n">IFrame</span>
+
+<span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;comtrade_pivot.html&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="1000"
+    height="600"
+    src="comtrade_pivot.html"
+    frameborder="0"
+    allowfullscreen
+
+></iframe>
+</div></div>
+</div>
+</section>
+<section id="id3">
+<h2>Task<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<p>Try to come up with some of your own questions and then see if you can use the pivot table to answer them.</p>
+<p>For example, see if you can use the table to find:</p>
+<ul class="simple">
+<li><p>the total value by partner country of each commodity type (with each row corresponding to a particular country)</p></li>
+<li><p>the total value of trade in commodity type for each month of the year</p></li>
+<li><p>the leading partners associated with the 0402 commodity code</p></li>
+<li><p>the minimum trade value, by month and commodity type, for Ireland.</p></li>
+</ul>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+<section id="exercise-6-pivot-tables-with-pandas">
+<h2>Exercise 6: Pivot tables with pandas<a class="headerlink" href="#exercise-6-pivot-tables-with-pandas" title="Permalink to this headline">#</a></h2>
+<p>Pivot tables can be quite hard to understand, so if you want a gentle dataset to pratice with, here is the simple example dataset used in the previous step that you can try out a few pivot table functions on.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Example dataframe</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Commodity&quot;</span><span class="p">:[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;B&quot;</span><span class="p">,</span><span class="s2">&quot;B&quot;</span><span class="p">,</span><span class="s2">&quot;B&quot;</span><span class="p">,</span><span class="s2">&quot;C&quot;</span><span class="p">,</span><span class="s2">&quot;C&quot;</span><span class="p">],</span>
+                  <span class="s2">&quot;Amount&quot;</span><span class="p">:[</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">],</span>
+                  <span class="s2">&quot;Reporter&quot;</span><span class="p">:[</span><span class="s2">&quot;P&quot;</span><span class="p">,</span><span class="s2">&quot;P&quot;</span><span class="p">,</span><span class="s2">&quot;Q&quot;</span><span class="p">,</span><span class="s2">&quot;Q&quot;</span><span class="p">,</span><span class="s2">&quot;P&quot;</span><span class="p">,</span><span class="s2">&quot;P&quot;</span><span class="p">,</span><span class="s2">&quot;Q&quot;</span><span class="p">,</span><span class="s2">&quot;P&quot;</span><span class="p">,</span><span class="s2">&quot;Q&quot;</span><span class="p">],</span>
+                  <span class="s2">&quot;Flow&quot;</span><span class="p">:[</span><span class="s2">&quot;X&quot;</span><span class="p">,</span><span class="s2">&quot;Y&quot;</span><span class="p">,</span><span class="s2">&quot;X&quot;</span><span class="p">,</span><span class="s2">&quot;Y&quot;</span><span class="p">,</span><span class="s2">&quot;X&quot;</span><span class="p">,</span><span class="s2">&quot;Y&quot;</span><span class="p">,</span><span class="s2">&quot;X&quot;</span><span class="p">,</span><span class="s2">&quot;X&quot;</span><span class="p">,</span><span class="s2">&quot;Y&quot;</span><span class="p">]},</span>
+                 <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Commodity&quot;</span><span class="p">,</span><span class="s2">&quot;Reporter&quot;</span><span class="p">,</span><span class="s2">&quot;Flow&quot;</span><span class="p">,</span><span class="s2">&quot;Amount&quot;</span><span class="p">])</span>
+
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Commodity</th>
+      <th>Reporter</th>
+      <th>Flow</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>A</td>
+      <td>P</td>
+      <td>X</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>A</td>
+      <td>P</td>
+      <td>Y</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>A</td>
+      <td>Q</td>
+      <td>X</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>A</td>
+      <td>Q</td>
+      <td>Y</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>B</td>
+      <td>P</td>
+      <td>X</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>B</td>
+      <td>P</td>
+      <td>Y</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>B</td>
+      <td>Q</td>
+      <td>X</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>C</td>
+      <td>P</td>
+      <td>X</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>C</td>
+      <td>Q</td>
+      <td>Y</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="getting-started-with-pivot-tables-in-pandas">
+<h3>Getting started with pivot tables in pandas<a class="headerlink" href="#getting-started-with-pivot-tables-in-pandas" title="Permalink to this headline">#</a></h3>
+<p>The pandas library provides a <code class="docutils literal notranslate"><span class="pre">pivot_table()</span></code> function into which you can pass the elements needed to define the pivot table view you would like to generate over a particular dataset.</p>
+<p>If you inspect the documentation for the pandas <code class="docutils literal notranslate"><span class="pre">pivot_table()</span></code> function, you will see that it is quite involved (but <em>DON’T PANIC!</em>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">##Inspect the documentation for the pandas pivot_table() function</span>
+<span class="c1">##Uncomment the following command (remove the #) and then click the play button in the toolbar to run the cell</span>
+<span class="c1">#?pivot_table</span>
+<span class="c1">##The documentation file should pop up from the bottom of the browser.</span>
+<span class="c1">##Click the x to close it.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can start to use the pivot table quite straightforwardly, drawing inspiration from the way you configured the interactive pivot table. The function itself takes the form:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pd.pivot_table(DATAFRAME,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">index=</span> <span class="pre">(LIST_OF_)DATA_COLUMN(S)_THAT_DEFINE_PIVOT_TABLE_ROWS,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">columns=</span> <span class="pre">(LIST_OF_)DATA_COLUMN(S)_THAT_DEFINE_PIVOT_TABLE_COLUMNS</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">values=</span> <span class="pre">DATA_COLUMN_TO_APPLY_THE</span> <span class="pre">SUMMARYFUNCTION_TO,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">aggfunc=sum</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">)</span></code></p>
+<p>You can generate a pivot table that shows the total trade value as a single column, grouped into row based subdivisions based on year, country, trade flow and commodity in the following way.</p>
+<p>The following pivot table reports on a subset of countries. The <code class="docutils literal notranslate"><span class="pre">isin()</span></code> method selects rows whose partner value ‘is in’ the list of specified partners.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">KEYPARTNERS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Belgium&#39;</span><span class="p">,</span><span class="s1">&#39;France&#39;</span><span class="p">,</span><span class="s1">&#39;Germany&#39;</span><span class="p">,</span><span class="s1">&#39;Ireland&#39;</span><span class="p">,</span><span class="s1">&#39;Netherlands&#39;</span><span class="p">,</span><span class="s1">&#39;Denmark&#39;</span><span class="p">]</span>
+<span class="n">milk_keypartners</span> <span class="o">=</span> <span class="n">milk_countries</span><span class="p">[</span><span class="n">milk_countries</span><span class="p">[</span><span class="s1">&#39;Partner&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">KEYPARTNERS</span><span class="p">)]</span>
+
+<span class="n">pivot_table</span><span class="p">(</span><span class="n">milk_keypartners</span><span class="p">,</span>
+               <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span><span class="s1">&#39;Partner&#39;</span><span class="p">,</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">,</span><span class="s1">&#39;Commodity&#39;</span><span class="p">],</span>
+               <span class="n">values</span><span class="o">=</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">,</span>
+               <span class="n">aggfunc</span><span class="o">=</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Trade Value (US$)</th>
+    </tr>
+    <tr>
+      <th>Year</th>
+      <th>Partner</th>
+      <th>Trade Flow</th>
+      <th>Commodity</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="24" valign="top">2014</th>
+      <th rowspan="4" valign="top">Belgium</th>
+      <th rowspan="2" valign="top">Exports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>6301229</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>23041778</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">Imports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>36155409</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>22183336</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">Denmark</th>
+      <th rowspan="2" valign="top">Exports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>1849170</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>1059287</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">Imports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>1102035</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>29432607</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">France</th>
+      <th rowspan="2" valign="top">Exports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>9025441</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>25597541</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">Imports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>85631781</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>19376395</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">Germany</th>
+      <th rowspan="2" valign="top">Exports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>24785683</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>11310950</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">Imports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>59776965</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>16835735</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">Ireland</th>
+      <th rowspan="2" valign="top">Exports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>94889874</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>326338567</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">Imports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>62936247</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>111379639</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">Netherlands</th>
+      <th rowspan="2" valign="top">Exports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>47518672</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>21130410</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">Imports</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>61531712</td>
+    </tr>
+    <tr>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>10677523</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>If you just want to use a single data column from the original dataset to specify the row (that is, the <code class="docutils literal notranslate"><span class="pre">index</span></code>) groupings or the column groupings, you don’t need to use a list, just pass in the name of the appropriate original data column.</p>
+<p>So, to look at rows grouped by year, country and commodity, and split columns out by trade flow:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#For convenience, let&#39;s assign the output of this pivot table operation to a variable...</span>
+<span class="n">report</span> <span class="o">=</span> <span class="n">pivot_table</span><span class="p">(</span><span class="n">milk_keypartners</span><span class="p">,</span>
+               <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span><span class="s1">&#39;Partner&#39;</span><span class="p">,</span><span class="s1">&#39;Commodity&#39;</span><span class="p">],</span>
+               <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;Trade Flow&#39;</span><span class="p">,</span>
+               <span class="n">values</span><span class="o">=</span><span class="s1">&#39;Trade Value (US$)&#39;</span><span class="p">,</span>
+               <span class="n">aggfunc</span><span class="o">=</span><span class="nb">sum</span><span class="p">)</span>
+
+<span class="c1">#And then display the result, sorted by import value</span>
+<span class="n">report</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Imports&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>Trade Flow</th>
+      <th>Exports</th>
+      <th>Imports</th>
+    </tr>
+    <tr>
+      <th>Year</th>
+      <th>Partner</th>
+      <th>Commodity</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="12" valign="top">2014</th>
+      <th>Ireland</th>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>326338567</td>
+      <td>111379639</td>
+    </tr>
+    <tr>
+      <th>France</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>9025441</td>
+      <td>85631781</td>
+    </tr>
+    <tr>
+      <th>Ireland</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>94889874</td>
+      <td>62936247</td>
+    </tr>
+    <tr>
+      <th>Netherlands</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>47518672</td>
+      <td>61531712</td>
+    </tr>
+    <tr>
+      <th>Germany</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>24785683</td>
+      <td>59776965</td>
+    </tr>
+    <tr>
+      <th>Belgium</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>6301229</td>
+      <td>36155409</td>
+    </tr>
+    <tr>
+      <th>Denmark</th>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>1059287</td>
+      <td>29432607</td>
+    </tr>
+    <tr>
+      <th>Belgium</th>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>23041778</td>
+      <td>22183336</td>
+    </tr>
+    <tr>
+      <th>France</th>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>25597541</td>
+      <td>19376395</td>
+    </tr>
+    <tr>
+      <th>Germany</th>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>11310950</td>
+      <td>16835735</td>
+    </tr>
+    <tr>
+      <th>Netherlands</th>
+      <th>Milk and cream, neither concentrated nor sweetened</th>
+      <td>21130410</td>
+      <td>10677523</td>
+    </tr>
+    <tr>
+      <th>Denmark</th>
+      <th>Milk and cream, concentrated or sweetened</th>
+      <td>1849170</td>
+      <td>1102035</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>One of the features of the interactive pivot table you did not explore was its ability to generate bar chart style views over the pivoted data as well as tabulated results. (In fact, this requires a plugin to the pivot table that has not been installed.)</p>
+<p>In the same way that you produced charts from pandas dataframes previously, you can visualise the contents of the dataframe produced from the pivot table operation.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">report</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Imports&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:ylabel=&#39;Year,Partner,Commodity&#39;&gt;
+</pre></div>
+</div>
+<img alt="../../../../../_images/Exercises_4_92_1.png" src="../../../../../_images/Exercises_4_92_1.png" />
+</div>
+</div>
+<p>Here, the <code class="docutils literal notranslate"><span class="pre">.plot()</span></code> command produces a <em>grouped bar chart</em> with the bars grouped according to the order of the row index values. The values contained within any numerical columns are then displayed as bars.</p>
+</section>
+<section id="id4">
+<h3>Task<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<p>Using your own data set containing data for both imports and exports of a particular trade item, see if you can use a pandas pivot table to answer the same questions you asked of your dataset in Exercise 5, as well as asking some new ones.</p>
+<p>For example, try to use a pivot table to identify partner countries engaging in ‘bi-derectional’ trade who have total import values and export values greater than a certain threshold every month.</p>
+<p>You can also use a pivot table in combination with other operations. For example, try using one of the filtered datasets you created using the <code class="docutils literal notranslate"><span class="pre">filter()</span></code> function, such as one that limited rows to partners trading above a certain level, as the basis for a pivot table report.</p>
+<p><strong>Now go back to the course.</strong></p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Docs\Training\OU-training\Learn-to-code-for-data-analysis-master\4_Further_techniques"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By <strong>Vincent Deguin</strong> (with ❤️)<br/>
+  
+    <div class="extra_footer">
+      
+<img class="CC_licence" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licence CC BY NC SA 2"/>
+
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
