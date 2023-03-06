@@ -183,6 +183,10 @@ Split in 2 and modify in inkscape with relevant information
 
 ```
 
+##### Volatiles
+
+- {cite:p}`Schneeberger2023`
+
 
 
 #### <strong> Observation techniques </strong>
