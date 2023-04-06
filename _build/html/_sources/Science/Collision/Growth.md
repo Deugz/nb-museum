@@ -85,8 +85,17 @@ Presentation
 ::::::
 :::::::
 
+(content:references:Title2)=
+## Overcoming The Bouncing Barrier
 
-(content:references:Title1)=
+### Gravitational collapse ?
+
+{cite:p}`Aumatell2011`: Lab experiments, sublimation of freely levitating ice aggregates, frequent break up, sublimation of drifting ice aggregates might locally increase the density of small dust (silicate)
+
+
+
+
+(content:references:Title2)=
 ## Title
 
 Let's jump over the Bouncing Barrier and have a look at thos km bodies that may have formed.
@@ -100,6 +109,25 @@ Let's jump over the Bouncing Barrier and have a look at thos km bodies that may 
 {cite:p}`Nesvorny2018`
 
 
+## Overcoming the bouncing barrier
+
+### Electrical charging
+
+- {cite:p}`Steinpilz2020`
+
+## Growth Mechanism
 
 
+### <strong> &#x2023; <u> Sintering ? </u></strong>
+
+{cite:p}`Okuzumi2016` (mention ethane in their paper)
+
+- {cite:p}`Sirono2011a`: Sintering increases strength of neck in aggregates, sintering region can span whole nebula
+
+- {cite:p}`Sirono2011b`: Numerical simulations (sintering of icy dust aggregates), accumulation of fragments in particular region of protoplanetary nebula, planetesimal formation by gravitational instability
+
+
+## From planet formation to planet atmosphere
+
+{cite:p}`Molliere2022`
 

@@ -414,3 +414,9 @@ width: 1200px
 [Reference](https://hubblesite.org/contents/media/images/2015/12/3519-Image.html?itemsPerPage=100&page=9&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
 ```
 
+## The MMSN
+
+<p class="emphase"> The Minimum Mass Solar Nebulae</p>
+
+**Definition**: litterature Review
+

@@ -4,6 +4,9 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Introduction
+    chapters:
+    - file: How-it-works
   - caption: Science
     chapters:
     - file: Science/Science
@@ -34,17 +37,17 @@ parts:
       title: "Introduction (📖 Thesis)"
   - caption: Methods
     chapters:
-    - file: Technical/Method
-    - file: Technical/XP_Dev/XP_Dev    
+    - file: Methods/Method
+    - file: Methods/XP_Dev/XP_Dev    
       sections:
-      - file: Technical/XP_Dev/V1/Proof_of_concept
-      - file: Technical/XP_Dev/V2/2nd_Version
-      - file: Technical/XP_Dev/Levitation/Lev-Chamb      
-    - file: Technical/Characterisation/characterisation    
+      - file: Methods/XP_Dev/V1/Proof_of_concept
+      - file: Methods/XP_Dev/V2/2nd_Version
+      - file: Methods/XP_Dev/Levitation/Lev-Chamb      
+    - file: Methods/Characterisation/characterisation    
       sections:
-      - file: Technical/Characterisation/Microscopy/Microscopy
-      - file: Technical/Characterisation/Neutron/Neutron
-      - file: Technical/Characterisation/Infrared/Infrared 
+      - file: Methods/Characterisation/Microscopy/Microscopy
+      - file: Methods/Characterisation/Neutron/Neutron
+      - file: Methods/Characterisation/Infrared/Infrared 
     - url: https://deugz.github.io/nb-thesis/_build/html/Methods/Methods.html
       title: "Methods (📖 Thesis)  "
   - caption: Results

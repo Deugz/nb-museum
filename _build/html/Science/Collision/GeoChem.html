@@ -1,37 +1,47 @@
 
+
 <!DOCTYPE html>
 
-<html lang="en">
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Geochemistry &#8212; MUSEUM</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom_style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -39,7 +49,7 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -79,635 +89,416 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-GYJ9YP0JJ4"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-GYJ9YP0JJ4');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Science/Collision/GeoChem';</script>
     <link rel="canonical" href="https://deugz.github.io/nb-museum/_build/html/Science/Collision/GeoChem.html" />
     <link rel="shortcut icon" href="../../_static/OU_Logo.svg"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Hyperquenched Glassy Water" href="../HGW/Main_en_HGW.html" />
     <link rel="prev" title="Planetesimals Dynamics" href="Growth.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
-    
-
-    <!-- Google Analytics -->
-    
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GYJ9YP0JJ4"></script>
-<script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){ dataLayer.push(arguments); }
-                    gtag('js', new Date());
-                    gtag('config', 'G-GYJ9YP0JJ4');
-                </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint">Current Version: Jan 2023</div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
 
-    
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../index.html">
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Current Version: Feb 2023 ⚠ <u>Thesis Deadline</u>: <strong>October 2023</strong> ⚠</div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../../_static/OU_Logo.svg" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">MUSEUM</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Science
- </span>
-</p>
+    
+    
+    <img src="../../_static/OU_Master_LOGO_BLUE_125mm.svg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/OU_Master_LOGO_BLUE_125mm.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../How-it-works.html">How it works</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Science</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Science.html">
-   Overview
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../Planet_formation/Main_en_Planet_formation.html">
-   Stars &amp; Planet Formation
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Planet_formation/Prequel.html">
-     Setting up the stage
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Planet_formation/Star_formation.html">
-     Star Formation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Planet_formation/PPD.html">
-     Protoplanetary Disks
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Planet_formation/Blocks.html">
-     Planets Building Blocks
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="Main_en_Collision.html">
-   Dust Collisions &amp; Growth
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="Migration.html">
-     Migration
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Collision.html">
-     Collision &amp; Growth Mechanism
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Growth.html">
-     Planetesimals Dynamics
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Geochemistry
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../HGW/Main_en_HGW.html">
-   Hyperquenched Glassy Water
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../HGW/Vitrification.html">
-     Vitrification
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../HGW/HGW.html">
-     HGW
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../HGW/Cooling.html">
-     Cooling Processes
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../Levitation/Main_en_Levitation.html">
-   Levitation and IR Signature
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Levitation/3DObs.html">
-     Dust 3D Observations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Levitation/RightWing.html">
-     3 µm Right Wing
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Levitation/Levitation.html">
-     Levitation techniques
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../How.html">
-   Thesis Aim → How ?
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Introduction/Introduction.html">
-   Introduction (📖 Thesis)
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Science.html">Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Planet_formation/Main_en_Planet_formation.html">Stars &amp; Planet Formation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Planet_formation/Prequel.html">Setting up the stage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Planet_formation/Star_formation.html">Star Formation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Planet_formation/PPD.html">Protoplanetary Disks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Planet_formation/Blocks.html">Planets Building Blocks</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Methods
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../Technical/Method.html">
-   Overview
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../Technical/XP_Dev/XP_Dev.html">
-   XP Development
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Technical/XP_Dev/V1/Proof_of_concept.html">
-     Proof of concept
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Technical/XP_Dev/V2/2nd_Version.html">
-     2
-     <sup>
-      nd
-     </sup>
-     Version
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Technical/XP_Dev/Levitation/Lev-Chamb.html">
-     Levitation Chamber
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../Technical/Characterisation/characterisation.html">
-   Characterisation
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Technical/Characterisation/Microscopy/Microscopy.html">
-     Microscopy
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Technical/Characterisation/Neutron/Neutron.html">
-     Neutron Scattering
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Technical/Characterisation/Infrared/Infrared.html">
-     Infrared
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Methods/Methods.html">
-   Methods (📖 Thesis)
-  </a>
- </li>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Main_en_Collision.html">Dust Collisions &amp; Growth</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Migration.html">Migration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Collision.html">Collision &amp; Growth Mechanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Growth.html">Planetesimals Dynamics</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Geochemistry</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Results
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter6/Chapter6.html">
-   Chapter 6 (📖 Thesis)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter7/Chapter7.html">
-   Chapter 7 (📖 Thesis)
-  </a>
- </li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../HGW/Main_en_HGW.html">Hyperquenched Glassy Water</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../HGW/Vitrification.html">Vitrification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../HGW/HGW.html">HGW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../HGW/Cooling.html">Cooling Processes</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Conclusion
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Conclusion/Conclusion.html">
-   Conclusion (📖 Thesis)
-  </a>
- </li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Levitation/Main_en_Levitation.html">Levitation and IR Signature</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Levitation/3DObs.html">Dust 3D Observations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Levitation/RightWing.html">3 µm Right Wing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Levitation/Levitation.html">Levitation techniques</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Bibliography
- </span>
-</p>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../How.html">Thesis Aim → How ?</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Introduction/Introduction.html">Introduction (📖 Thesis)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Methods</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html">
-   Bibliography
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../Methods/Method.html">Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Methods/XP_Dev/XP_Dev.html">XP Development</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Methods/XP_Dev/V1/Proof_of_concept.html">Proof of concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Methods/XP_Dev/V2/2nd_Version.html">2<sup>nd</sup> Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Methods/XP_Dev/Levitation/Lev-Chamb.html">Levitation Chamber</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Methods/Characterisation/characterisation.html">Characterisation</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Methods/Characterisation/Microscopy/Microscopy.html">Microscopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Methods/Characterisation/Neutron/Neutron.html">Neutron Scattering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Methods/Characterisation/Infrared/Infrared.html">Infrared</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Methods/Methods.html">Methods (📖 Thesis)  </a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Results</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter6/Chapter6.html">Chapter 6 (📖 Thesis)  </a></li>
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Chapter7/Chapter7.html">Chapter 7 (📖 Thesis)  </a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Conclusion</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/nb-thesis/_build/html/Conclusion/Conclusion.html">Conclusion (📖 Thesis)  </a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Bibliography</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html">Bibliography</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Deugz/nb-museum" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Deugz/nb-museum/edit/master/docs/Science/Collision/GeoChem.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Deugz/nb-museum/issues/new?title=Issue%20on%20page%20%2FScience/Collision/GeoChem.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
 
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
 
 
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/Science/Collision/GeoChem.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
   </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/Deugz/nb-museum"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/Deugz/nb-museum/issues/new?title=Issue%20on%20page%20%2FScience/Collision/GeoChem.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/Deugz/nb-museum/edit/master/docs/Science/Collision/GeoChem.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Edit this page"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-pencil-alt"></i>
-  </span>
-<span class="headerbtn__text-container">suggest edit</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/Science/Collision/GeoChem.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#going-back-in-time">
-   Going Back in time
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#isotopic-heterogeneity">
-   Isotopic Heterogeneity
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#comets">
-     Comets
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#d-h-ratio">
-       D/H Ratio
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#meteorites">
-     Meteorites
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#chondrites">
-       Chondrites
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#water-in-meteroites">
-       Water in Meteroites
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Geochemistry</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#going-back-in-time">
-   Going Back in time
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#isotopic-heterogeneity">
-   Isotopic Heterogeneity
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#comets">
-     Comets
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#d-h-ratio">
-       D/H Ratio
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#meteorites">
-     Meteorites
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#chondrites">
-       Chondrites
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#water-in-meteroites">
-       Water in Meteroites
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Geochemistry</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#going-back-in-time">Going Back in time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isotopic-heterogeneity">Isotopic Heterogeneity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comets">Comets</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-h-ratio">D/H Ratio</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meteorites">Meteorites</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#chondrites">Chondrites</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#water-in-meteroites">Water in Meteroites</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#co-fractionation">CO fractionation</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="geochemistry">
 <h1>Geochemistry<a class="headerlink" href="#geochemistry" title="Permalink to this headline">#</a></h1>
 <hr class="docutils" />
@@ -788,7 +579,7 @@ title="Print to PDF"
 <section id="isotopic-heterogeneity">
 <h2>Isotopic Heterogeneity<a class="headerlink" href="#isotopic-heterogeneity" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p><strong>Review</strong>: <span id="id1">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id67" title="Alan P. Boss. Mixing and transport of isotopic heterogeneity in the early solar system. Annual Review of Earth and Planetary Sciences, 40:23-43, 5 2012. doi:10.1146/annurev-earth-042711-105552.">Boss, 2012</a>]</span></p></li>
+<li><p><strong>Review</strong>: <span id="id1">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id66" title="Alan P. Boss. Mixing and transport of isotopic heterogeneity in the early solar system. Annual Review of Earth and Planetary Sciences, 40:23-43, 5 2012. doi:10.1146/annurev-earth-042711-105552.">Boss, 2012</a>]</span></p></li>
 </ul>
 <section id="comets">
 <h3>Comets<a class="headerlink" href="#comets" title="Permalink to this headline">#</a></h3>
@@ -797,37 +588,44 @@ title="Print to PDF"
 <h4>D/H Ratio<a class="headerlink" href="#d-h-ratio" title="Permalink to this headline">#</a></h4>
 <ul class="simple">
 <li><p><span id="id2">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id33" title="Mathilde Faure, Eric Quirico, Alexandre Faure, Bernard Schmitt, Patrice Theulé, and Ulysse Marboeuf. Kinetics of hydrogen/deuterium exchanges in cometary ices. Icarus, 261:14-30, 11 2015. doi:10.1016/j.icarus.2015.08.002.">Faure <em>et al.</em>, 2015</a>]</span></p></li>
+<li><p><span id="id3">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id82" title="John J. Tobin, Merel L. R. van ’t Hoff, Margot Leemker, Ewine F. van Dishoeck, Teresa Paneque-Carreño, Kenji Furuya, Daniel Harsono, Magnus V. Persson, L. Ilsedore Cleeves, Patrick D. Sheehan, and Lucas Cieza. Deuterium-enriched water ties planet-forming disks to comets and protostars. Nature, 615:227-230, 3 2023. URL: https://www.nature.com/articles/s41586-022-05676-z, doi:10.1038/s41586-022-05676-z.">Tobin <em>et al.</em>, 2023</a>]</span></p></li>
 </ul>
 </section>
 </section>
 <section id="meteorites">
 <h3>Meteorites<a class="headerlink" href="#meteorites" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><strong>Review</strong>: <span id="id3">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id70" title="Larry R. Nittler and Fred Ciesla. Astrophysics with extraterrestrial materials. Annual Review of Astronomy and Astrophysics, 54:53-93, 9 2016. doi:10.1146/annurev-astro-082214-122505.">Nittler and Ciesla, 2016</a>]</span></p></li>
+<li><p><strong>Review</strong>: <span id="id4">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id69" title="Larry R. Nittler and Fred Ciesla. Astrophysics with extraterrestrial materials. Annual Review of Astronomy and Astrophysics, 54:53-93, 9 2016. doi:10.1146/annurev-astro-082214-122505.">Nittler and Ciesla, 2016</a>]</span></p></li>
 </ul>
 <figure class="align-default" id="disk-gaps-hubble">
 <a class="reference internal image-reference" href="../../_images/Planet_formation_timescale_geochem.png"><img alt="../../_images/Planet_formation_timescale_geochem.png" src="../../_images/Planet_formation_timescale_geochem.png" style="width: 1200px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 38 </span><span class="caption-text"><span id="id4">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id70" title="Larry R. Nittler and Fred Ciesla. Astrophysics with extraterrestrial materials. Annual Review of Astronomy and Astrophysics, 54:53-93, 9 2016. doi:10.1146/annurev-astro-082214-122505.">Nittler and Ciesla, 2016</a>]</span></span><a class="headerlink" href="#disk-gaps-hubble" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 39 </span><span class="caption-text"><span id="id5">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id69" title="Larry R. Nittler and Fred Ciesla. Astrophysics with extraterrestrial materials. Annual Review of Astronomy and Astrophysics, 54:53-93, 9 2016. doi:10.1146/annurev-astro-082214-122505.">Nittler and Ciesla, 2016</a>]</span></span><a class="headerlink" href="#disk-gaps-hubble" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p><span id="id5">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id38">Cuzzi <em>et al.</em>, 2005</a>]</span></p></li>
+<li><p><span id="id6">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id38">Cuzzi <em>et al.</em>, 2005</a>]</span></p></li>
 <li><p><a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2021ApJ...922..256P/abstract">Forsterite</a></p></li>
 </ul>
 <section id="chondrites">
 <h4>Chondrites<a class="headerlink" href="#chondrites" title="Permalink to this headline">#</a></h4>
 <ul class="simple">
-<li><p><strong>Review</strong>: <span id="id6">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id72" title="Edward R.D. Scott. Chondrites and the protoplanetary disk. Annual Review of Earth and Planetary Sciences, 35:577-620, 2007. doi:10.1146/annurev.earth.35.031306.140100.">Scott, 2007</a>]</span></p></li>
+<li><p><strong>Review</strong>: <span id="id7">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id71" title="Edward R.D. Scott. Chondrites and the protoplanetary disk. Annual Review of Earth and Planetary Sciences, 35:577-620, 2007. doi:10.1146/annurev.earth.35.031306.140100.">Scott, 2007</a>]</span></p></li>
 </ul>
 </section>
 <section id="water-in-meteroites">
 <h4>Water in Meteroites<a class="headerlink" href="#water-in-meteroites" title="Permalink to this headline">#</a></h4>
 <ul class="simple">
-<li><p><span id="id7">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id61" title="Cody Schultz, Brendan A. Anzures, Ralph E. Milliken, Taki Hiroi, and Kevin Robertson. Assessing the spatial variability of the  3 μm oh/h2o absorption feature in cm2 carbonaceous chondrites. Meteoritics and Planetary Science, 2 2023. doi:10.1111/maps.13946.">Schultz <em>et al.</em>, 2023</a>]</span> (❌ to read)</p></li>
+<li><p><span id="id8">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id60" title="Cody Schultz, Brendan A. Anzures, Ralph E. Milliken, Taki Hiroi, and Kevin Robertson. Assessing the spatial variability of the  3 μm oh/h2o absorption feature in cm2 carbonaceous chondrites. Meteoritics and Planetary Science, 2 2023. doi:10.1111/maps.13946.">Schultz <em>et al.</em>, 2023</a>]</span> (❌ to read)</p></li>
 </ul>
 </section>
 </section>
+</section>
+<section id="co-fractionation">
+<h2>CO fractionation<a class="headerlink" href="#co-fractionation" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><span id="id9">[<a class="reference internal" href="../../Thesis_JB_B/Biblio/bibliography.html#id75" title="Pan Jiang, Xiaoping Chi, Qihe Zhu, Min Cheng, and Hong Gao. Strong and selective isotope effect in the vacuum ultraviolet photodissociation branching ratios of carbon monoxide. Nature Communications, 12 2019. doi:10.1038/s41467-019-11086-z.">Jiang <em>et al.</em>, 2019</a>]</span> (❌ to read)</p></li>
+</ul>
 </section>
 </section>
 
@@ -843,7 +641,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./Science\Collision"
         },
         predefinedOutput: true
@@ -851,54 +649,110 @@ title="Print to PDF"
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Growth.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Planetesimals Dynamics</p>
-        </div>
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Growth.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Planetesimals Dynamics</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="../HGW/Main_en_HGW.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="../HGW/Main_en_HGW.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Hyperquenched Glassy Water</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#going-back-in-time">Going Back in time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isotopic-heterogeneity">Isotopic Heterogeneity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comets">Comets</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-h-ratio">D/H Ratio</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meteorites">Meteorites</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#chondrites">Chondrites</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#water-in-meteroites">Water in Meteroites</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#co-fractionation">CO fractionation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
   
-    By <strong>Vincent Deguin</strong> (with ❤️)<br/>
+  <div class="footer-item">
+    
+<p class="component-author">
+By <strong>Vincent Deguin</strong> (with ❤️)
+</p>
+
+  </div>
   
-    <div class="extra_footer">
-      
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  
 <img class="CC_licence" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licence CC BY NC SA 2"/>
 
-    </div>
-</p>
-        </footer>
-    </div>
-    
 </div>
+  </div>
+  
+</div></div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

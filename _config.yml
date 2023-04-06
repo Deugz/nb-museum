@@ -3,7 +3,7 @@
 
 title: "MUSEUM"
 author: <strong>Vincent Deguin</strong> (with ❤️)
-logo: OU_Logo.svg
+logo: Docs/OU_Master_LOGO_BLUE_125mm.svg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -46,7 +46,7 @@ html:
     hypothesis              : true
     utterances              : 
       repo: "https://github.com/Deugz/nb-museum"
-  announcement              : "Current Version: Jan 2023"
+  announcement              : "Current Version: Feb 2023 ⚠ <u>Thesis Deadline</u>: <strong>October 2023</strong> ⚠"
 
 
 sphinx:

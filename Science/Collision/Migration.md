@@ -193,5 +193,13 @@ Explanation
 ::::
 
 :::::
+
+## Dust Dynamics in Plasma
+
+
+
+- {cite:p}`Chai2018` Dynamics of non-spherical, fractal dust grains
+
+"Because dust particles are not spherical they show different dynamics from spherical particles in a plasma environment namely, they align in the direction perpendicular to the force equilibrium line, rotate about their alignment axis due to the interaction between the dipole moment and the surrounding electric field, and show vortex motion while maintaining their alignment and rotation when they are exposed to a nonconservative drag force"
     
     

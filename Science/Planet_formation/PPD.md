@@ -88,6 +88,12 @@ Star formation is not my expertise so if you want to help, feel free to comment 
 
 ### <strong>&#x2023;  <u> Definition </u></strong>
 
+:::::{div} full-width
+
+::::{grid} 2
+
+:::{grid-item}
+
 <p class="emphase">A protoplanetary disk is a rotating disk of gas and dust surrounding a newly formed star, from which planets and other celestial objects eventually form.</p>
 
 ```{note}
@@ -100,10 +106,37 @@ Star formation is not my expertise so if you want to help, feel free to comment 
 - Gas:Dust ratio 99:1
 
 ```
+
+:::
+
+:::{grid-item}
+
+```{figure} Docs/PPD_Nasa_artist.jpg
+---
+name: PPD_NASA_Image_artist
+width: 800px
+---
+PPD (Artist image) [source](https://www.spitzer.caltech.edu/image/ssc2005-06b-mini-solar-system-in-the-making)
+```
+
+:::
+
+
+::::
+:::::
+
+
+
   
 ### <strong>&#x2023;  <u> Discovery and Early History  </u></strong>
 
 Infrared excess around young stars
+
+```{note}
+
+- used to be named **Proplyd**
+
+```
 
 #### <strong>&#x2023; &#x2023;  Direct Imaging </strong>
 
@@ -437,6 +470,12 @@ Particles with the same Stokes number behave aerodynamically similar. For a fixe
 
 ##### Ices in PPD
 
+##### Observation
+
+- {cite:p}`Schegerer2010`: spectroscopic detection of crystalline water ice in young stellar object, predominantly small grains (0.1 – 0.3 μm), few large grains, evidence for grain growth, crystallinity increases in upper layers of circumstellar disk, only amorphous grains exist in bipolar envelope, crystallization close to disk atmosphere, where water ice is shielded from hard radiation
+
+***
+
 **Mekler and Podolak Model**: 
 - {cite:p}`Mekler1994` 
 - {cite:p}`Podolak1997`
@@ -471,7 +510,11 @@ However, snow-line location of different ice species can vary due to several pro
 
 #### Water Vapor in PPD
 
+- {cite:p}`Podio2013`: water vapour detected in outer disk, where most water ice reservoirs are stored, Herschel observations, dominated by emission from envelope/outflow, strong UV radiation of parent star irradiates upper disk layer (heating to ≈ 600 K), suggest water delivery to terrestrial planets by impact of icy bodies forming in outer disk
+
 - {cite:p}`Banzatti2023`
+
+
 
 ## Substructures
 
