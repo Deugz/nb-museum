@@ -200,6 +200,11 @@ Insert here the most simple diagram from Birnstiel + Observations
 
 ```
 
+***
+- {cite:p}`Bell1997`: Vertical structure models of protostellar α-law accretion disks: temperature dependence of opacity is crucial factor determining radial trends, most planet formation (0.5 – 3 M1 disks) occurred in environments unheated by stellar radiation, external heating enhances flaring, but inner disk will shield planet-forming regions in most cases.
+
+***
+
 #### <strong> Constituents </strong>
 
 ```{figure} Docs/Dullemond-2006.png
@@ -402,6 +407,14 @@ the mass of PPDs is dominated by gasses (H<sub>2</sub> and He)
 - dust to gas ratio is typically 1:100 - to check for ref
 
 
+***
+
+- {cite:p}`Desch2007`: Disk model for Solar System, assume compact disk that is photoevaporated, solves problem that “minimum-mass” (assuming that giant planets swept up all material in their feeding zones) disk models have: Uranus and Neptune could not have grown to current size within lifetime of disk. This models derives planet masses within 10 % of actual masses, but only if Uranus and Neptune switched placed in early Solar System (also predicted by Nice model). 
+
+
+***
+
+
 #### Structure
 
 ##### Vertical
@@ -494,6 +507,12 @@ However, snow-line location of different ice species can vary due to several pro
 
 - {cite:p}`Cieza2016`
 
+
+##### Models
+
+- {cite:p}`Min2010`: modeling H2O snowline in young solar nebula (optically thick), two opposite effects (shielding/viscous heating), snowline position sensitive to dust grain opacity/mass accretion rate of disk, compute abundances of ice/dust, jump in solid surface density at snowline (and where rocky planets formed) smaller than previously assumed
+
+
 ### Importance of snowline in Planet formation
 
 - {cite:p}`Zhang2015`
@@ -507,12 +526,22 @@ However, snow-line location of different ice species can vary due to several pro
 
 - {cite:p}`Okuzumi2012`
 
+#### C/O ratio
+
+- {cite:p}`Oeberg2011`: C/O ratio regulates chemistry in hot Jupiters, exoplanets show different C/O ratio from solar system, ratio depends on where w.r.t. the different snow lines the giant planets form, between H2O and CO snowline, most of O is present in icy grains. 
+
+
 
 #### Water Vapor in PPD
 
 - {cite:p}`Podio2013`: water vapour detected in outer disk, where most water ice reservoirs are stored, Herschel observations, dominated by emission from envelope/outflow, strong UV radiation of parent star irradiates upper disk layer (heating to ≈ 600 K), suggest water delivery to terrestrial planets by impact of icy bodies forming in outer disk
 
 - {cite:p}`Banzatti2023`
+
+
+#### CO snowline
+
+- {cite:p}`Qi2013`: chemical imaging of CO snowline (TW Hya, solar nebula analogue) with ALMA, observe N2H+, distribution in ring matches predicted position (30 AU) of CO snow line, helps to assess models of solar system
 
 
 

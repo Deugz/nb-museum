@@ -84,6 +84,38 @@ May be talk with Jacques Dubochet
 (content:references:Title1)=
 ## ASW vs HGW
 
+**Results from Neutron Scattering** 
+
+```{note}
+
+Insert Loerting article with RDF ...
+
+```
+
+- Difference in porosity ... Surface properties are also different
+
+
+
+## Production Methods
+
+### Vapor deposition
+
+```{note}
+
+Make links with ASW
+
+```
+
+- {cite:p}`Kuroda1982`: Theory, ice growing from vapour deposition, changes with temperature, -35°C – -4°C, vapour – quasi-liquid – solid mechanism / adhesive growth / 2D nucleation growth, type of surface structure (and thus growth mechanism) depends on surface orientation ({0001} or {1010} face) and temperature, spherical volume diffusion field near {0001} face, cylindrical volume diffusion field near {1010} face, surface diffusion from {0001} to {1010} faces
+
+
+
+
+
+
+### High pressure jet freezing
+
+- {cite:p}`Mayer1982`: produce vitrified (=glassy) water in a jet, compare X-ray diffraction patterns to vapour deposited ASW
 
 
 (content:references:Title2)=
@@ -95,3 +127,18 @@ May be talk with Jacques Dubochet
 
 
 ### Cryo EM
+
+
+## Properties
+
+
+### Glass transition and heat capacity
+
+```{note}
+
+to define
+
+```
+
+- {cite:p}`Hallbrucker1989`: differential scanning calorimetry, 103 – 273 K, thermally reversible glass-liquid transition (Tg = 136 K, activation energy of structural relaxation ≈ 55 kJ/mol, transition width 12 K, increase in heat capacity = 1.6 kJ/mol), liquid water forms from glassy water at 146 K, crystallization near 232 K.
+

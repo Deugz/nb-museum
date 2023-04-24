@@ -83,3 +83,10 @@ May be talk with Jacques Dubochet
 
 (content:references:Title1)=
 ## Cryo EM
+
+
+
+## Snow metamorphism
+
+- {cite:p}`Flin2003`: Numerical modelling (snow metamorphism, near 0°C), structure changes driven by temperature and humidity fields, high vapour pressure => metamorphism in first approximation curvature driven (neglecting crystallographic and diffusion-limited effects), basic equations: Kelvin & Langmuir-Knudsen, result: analytical growth law of ice phase.
+

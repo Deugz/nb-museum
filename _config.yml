@@ -3,12 +3,12 @@
 
 title: "MUSEUM"
 author: <strong>Vincent Deguin</strong> (with ❤️)
-logo: Docs/OU_Master_LOGO_BLUE_125mm.svg
+logo: Docs/OU_logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: off
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -37,7 +37,7 @@ html:
   extra_navbar              : ""
   extra_footer: |
   
-    <img class="CC_licence" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licence CC BY NC SA 2"/>
+    <br><img class="CC_licence" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licence CC BY NC SA 2"/>
    
   google_analytics_id       : G-GYJ9YP0JJ4  
   home_page_in_navbar       : false

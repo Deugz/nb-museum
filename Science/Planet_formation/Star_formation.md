@@ -112,6 +112,20 @@ width: 1200px
    
 ### Spectral Energy Distribution
 
+
+***
+
+{cite:p}`Chiang1997`: Hydrostatic, radiative equilibrium disk models, disks encased by thin layer of superheated dust grains, result: disks flare & absorb more stellar radiation than flat disks would, spectral features from dust grains in superheated layer appear in emission if disk is viewed nearly face-on.
+
+```{note}
+
+Looks like good introduction
+
+```
+
+
+***
+
 ### <strong>&#x2023;  <u> Ariane thread for star evolution  </u></strong>
 
 #### <strong> &#x2023; &#x2023; Black vs Grey body radiation </strong>
@@ -397,6 +411,20 @@ width: 1200px
 ---
 [Reference](https://hubblesite.org/contents/media/images/2015/42/3656-Image.html?itemsPerPage=100&page=8&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
 ```
+
+
+#### Illustration
+
+
+
+```{figure} Docs/Protostellar-enveloppe-illustration.png
+---
+name: Protostellar-enveloppe
+width: 1200px
+---
+[Reference](https://iopscience.iop.org/article/10.1086/658676)
+```
+
 
 ### Processing
 

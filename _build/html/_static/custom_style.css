@@ -85,6 +85,25 @@ img[alt$=">"] {
     color: #412582  !important;
 }
 
+.embedresize {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+}
+
+.embedresize iframe,
+.embedresize object,
+.embedresize embed {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+}
+
+
 .picto {
   width: 20px !important;
   margin: 5px !important;  

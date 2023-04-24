@@ -6,7 +6,9 @@ root: intro
 parts:
   - caption: Introduction
     chapters:
-    - file: How-it-works
+    - file: Appendix/Info/How-it-works
+    - file: Appendix/Info/Organisation
+    - file: Appendix/Info/table-of-content    
   - caption: Science
     chapters:
     - file: Science/Science
@@ -21,11 +23,13 @@ parts:
       - file: Science/Collision/Migration
       - file: Science/Collision/Collision
       - file: Science/Collision/Growth
+      - file: Science/Collision/Dynamics
       - file: Science/Collision/GeoChem
     - file: Science/HGW/Main_en_HGW
       sections:
-      - file: Science/HGW/Vitrification
+      - file: Science/HGW/Amorphous
       - file: Science/HGW/HGW
+      - file: Science/HGW/Vitrification
       - file: Science/HGW/Cooling
     - file: Science/Levitation/Main_en_Levitation
       sections:
@@ -63,4 +67,15 @@ parts:
   - caption: Bibliography
     chapters:
     - file: Thesis_JB_B/Biblio/bibliography 
-
+  - caption: Appendix
+    chapters:
+    - file: Appendix/Lists/Lists
+      sections:
+      - file: Appendix/Lists/figures
+      - file: Appendix/Lists/videos
+      - file: Appendix/Lists/tables
+      - file: Appendix/Lists/equations
+    - file: Appendix/Presentation/Presentations
+      sections:
+      - file: Appendix/Presentation/oral
+      - file: Appendix/Presentation/poster

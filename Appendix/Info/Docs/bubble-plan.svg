@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="bubble-plan.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path846"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="511.4163"
+     inkscape:cy="289.97"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="1072"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1036"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <circle
+         r="38.165764"
+         cy="118.78423"
+         cx="91.092262"
+         id="path4835"
+         style="fill:none;stroke:#000000;stroke-width:0.2846607;stroke-miterlimit:4;stroke-dasharray:0.85398217, 0.85398216999999998;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.267;stroke-miterlimit:4;stroke-dasharray:0.80100001, 0.80100000999999998;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle5044"
+         cx="90.336311"
+         cy="118.02744"
+         r="62.642933" />
+      <circle
+         style="fill:#d45500;stroke:#d45500;stroke-width:0.99199998;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle5026"
+         cx="55.021301"
+         cy="118.57178"
+         r="12.294398" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="54.946369"
+         y="116.77774"
+         id="text5032"><tspan
+           sodipodi:role="line"
+           x="54.946369"
+           y="116.77774"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           id="tspan5030">Levitation &amp;</tspan><tspan
+           sodipodi:role="line"
+           x="54.946369"
+           y="122.0694"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           id="tspan5038">IR Signature</tspan></text>
+      <a
+         style="fill:#ff0000;stroke:#ff0000"
+         transform="translate(-1.4381504,-2.8869553)"
+         xlink:show="new"
+         xlink:href="https://deugz.github.io/nb-museum/_build/html/Science/Science.html"
+         id="a1129">
+        <circle
+           style="fill:#ff0000;stroke:#ff0000;stroke-width:0.99199998;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path815"
+           cx="93.009796"
+           cy="121.67119"
+           r="12.294398" />
+      </a>
+      <text
+         id="text819"
+         y="120.58671"
+         x="80.332367"
+         style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#ffffff;stroke-width:0.26458332"
+           y="120.58671"
+           x="80.332367"
+           id="tspan817"
+           sodipodi:role="line">Overview</tspan></text>
+      <circle
+         style="fill:#800080;stroke:#800080;stroke-width:0.99199998;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle821"
+         cx="91.571648"
+         cy="83.042015"
+         r="12.294398" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="91.492409"
+         y="78.864838"
+         id="text825"><tspan
+           sodipodi:role="line"
+           id="tspan823"
+           x="91.892036"
+           y="78.864838"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Stars </tspan><tspan
+           id="tspan827"
+           sodipodi:role="line"
+           x="91.892036"
+           y="84.156502"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">and Planet </tspan><tspan
+           id="tspan829"
+           sodipodi:role="line"
+           x="91.492409"
+           y="89.448174"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">formation</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path835"
+         d="M 91.092262,104.18337 V 97.504163"
+         style="fill:none;stroke:#000000;stroke-width:0.22979586;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+      <circle
+         r="9.5968952"
+         cy="73.535622"
+         cx="43.430061"
+         id="circle1119"
+         style="fill:#aa00d4;stroke:#800080;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text1127"
+         y="74.421875"
+         x="43.414558"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="74.421875"
+           x="43.414558"
+           sodipodi:role="line"
+           id="tspan1125">Prequel</tspan></text>
+      <circle
+         r="12.294398"
+         cy="118.57178"
+         cx="128.04634"
+         id="circle4970"
+         style="fill:#008000;stroke:#008000;stroke-width:0.99199998;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text4978"
+         y="108.2269"
+         x="127.8539"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="112.0891"
+           x="127.8539"
+           sodipodi:role="line"
+           id="tspan4976" /><tspan
+           id="tspan4992"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="117.38076"
+           x="127.8539"
+           sodipodi:role="line">Collision &amp;</tspan><tspan
+           id="tspan868"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="122.67243"
+           x="128.25352"
+           sodipodi:role="line">Growth  </tspan></text>
+      <circle
+         r="12.294398"
+         cy="153.95039"
+         cx="91.571648"
+         id="circle5000"
+         style="fill:#000080;stroke:#000080;stroke-width:0.99199998;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text5008"
+         y="152.48792"
+         x="91.55442"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="152.48792"
+           x="91.55442"
+           sodipodi:role="line"
+           id="tspan5006">Hyperquenched</tspan><tspan
+           id="tspan5022"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="157.77959"
+           x="91.55442"
+           sodipodi:role="line">Glassy</tspan><tspan
+           id="tspan5024"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="163.07124"
+           x="91.55442"
+           sodipodi:role="line">Water</tspan></text>
+      <circle
+         style="fill:#aa00d4;stroke:#800080;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle5051"
+         cx="63.840775"
+         cy="59.172527"
+         r="9.5968952" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="63.820103"
+         y="57.641182"
+         id="text5055"><tspan
+           id="tspan5053"
+           sodipodi:role="line"
+           x="63.820103"
+           y="57.641182"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Star</tspan><tspan
+           id="tspan5057"
+           sodipodi:role="line"
+           x="63.820103"
+           y="62.93285"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Formation</tspan></text>
+      <circle
+         r="9.5968952"
+         cy="52.368958"
+         cx="89.921135"
+         id="circle5059"
+         style="fill:#aa00d4;stroke:#800080;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text5065"
+         y="53.478279"
+         x="89.853096"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5069"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="53.478279"
+           x="89.853096"
+           sodipodi:role="line">PPD</tspan></text>
+      <circle
+         style="fill:#aa00d4;stroke:#800080;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle5073"
+         cx="116.94643"
+         cy="59.739494"
+         r="9.5968952" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="116.79829"
+         y="58.27705"
+         id="text5077"><tspan
+           sodipodi:role="line"
+           x="117.19791"
+           y="58.27705"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           id="tspan5075">Building </tspan><tspan
+           id="tspan5079"
+           sodipodi:role="line"
+           x="116.79829"
+           y="63.568718"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Blocks</tspan></text>
+      <circle
+         style="fill:#44aa00;stroke:#008000;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle5104"
+         cx="149.64137"
+         cy="97.537117"
+         r="9.5968952" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="149.59401"
+         y="98.42337"
+         id="text5108"><tspan
+           id="tspan5106"
+           sodipodi:role="line"
+           x="149.59401"
+           y="98.42337"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Collisions</tspan></text>
+      <circle
+         r="9.5968952"
+         cy="180.97813"
+         cx="92.032433"
+         id="circle5110"
+         style="fill:#0044aa;stroke:#000080;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text5114"
+         y="181.8644"
+         x="91.985069"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="181.8644"
+           x="91.985069"
+           sodipodi:role="line"
+           id="tspan5112">HGW</tspan></text>
+      <circle
+         r="9.5968952"
+         cy="75.992477"
+         cx="136.4122"
+         id="circle870"
+         style="fill:#44aa00;stroke:#008000;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text874"
+         y="76.878731"
+         x="136.36484"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="76.878731"
+           x="136.36484"
+           sodipodi:role="line"
+           id="tspan872">Migration</tspan></text>
+      <circle
+         r="9.5968952"
+         cy="119.64873"
+         cx="154.36607"
+         id="circle876"
+         style="fill:#44aa00;stroke:#008000;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text880"
+         y="120.53498"
+         x="154.31871"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="120.53498"
+           x="154.31871"
+           sodipodi:role="line"
+           id="tspan878">Growth</tspan></text>
+      <circle
+         style="fill:#44aa00;stroke:#008000;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle882"
+         cx="147.7515"
+         cy="142.13831"
+         r="9.5968952" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="147.70413"
+         y="140.90793"
+         id="text886"><tspan
+           id="tspan884"
+           sodipodi:role="line"
+           x="147.70413"
+           y="140.90793"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Planets</tspan><tspan
+           id="tspan894"
+           sodipodi:role="line"
+           x="147.70413"
+           y="146.1996"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Dynamics</tspan></text>
+      <circle
+         r="9.5968952"
+         cy="160.84813"
+         cx="134.9003"
+         id="circle888"
+         style="fill:#44aa00;stroke:#008000;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text892"
+         y="161.73439"
+         x="134.85294"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="161.73439"
+           x="134.85294"
+           sodipodi:role="line"
+           id="tspan890">Geochemistry</tspan></text>
+      <circle
+         style="fill:#0044aa;stroke:#000080;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle896"
+         cx="115.55215"
+         cy="176.16728"
+         r="9.5968952" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="115.50478"
+         y="175.99522"
+         id="text900"><tspan
+           id="tspan898"
+           sodipodi:role="line"
+           x="115.50478"
+           y="175.99522"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Amorphous</tspan><tspan
+           id="tspan902"
+           sodipodi:role="line"
+           x="115.50478"
+           y="181.2869"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Ices</tspan></text>
+      <circle
+         style="fill:#0044aa;stroke:#000080;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle904"
+         cx="68.379074"
+         cy="176.56819"
+         r="9.5968952" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="68.331711"
+         y="177.45445"
+         id="text908"><tspan
+           id="tspan906"
+           sodipodi:role="line"
+           x="68.331711"
+           y="177.45445"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Vitrification</tspan></text>
+      <circle
+         r="9.5968952"
+         cy="164.54106"
+         cx="47.398418"
+         id="circle910"
+         style="fill:#0044aa;stroke:#000080;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text914"
+         y="163.31068"
+         x="47.351055"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="163.31068"
+           x="47.351055"
+           sodipodi:role="line"
+           id="tspan912">Cooling</tspan><tspan
+           id="tspan916"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="168.60236"
+           x="47.351055"
+           sodipodi:role="line">Processes</tspan></text>
+      <circle
+         style="fill:#ff9955;stroke:#d45500;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle926"
+         cx="31.523418"
+         cy="143.18541"
+         r="9.5968952" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="31.476055"
+         y="140.89671"
+         id="text932"><tspan
+           sodipodi:role="line"
+           x="31.476055"
+           y="140.89671"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           id="tspan930">Dust</tspan><tspan
+           id="tspan936"
+           sodipodi:role="line"
+           x="31.476055"
+           y="146.18839"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Observation</tspan></text>
+      <circle
+         r="9.5968952"
+         cy="118.05"
+         cx="25.664787"
+         id="circle938"
+         style="fill:#ff9955;stroke:#d45500;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text944"
+         y="115.7613"
+         x="25.617424"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan940"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="115.7613"
+           x="25.617424"
+           sodipodi:role="line">3 micron</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           y="121.05296"
+           x="25.617424"
+           sodipodi:role="line"
+           id="tspan942">Wing</tspan></text>
+      <circle
+         style="fill:#ff9955;stroke:#d45500;stroke-width:0.77434611;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle946"
+         cx="30.38949"
+         cy="93.481552"
+         r="9.5968952" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="30.342127"
+         y="91.192848"
+         id="text952"><tspan
+           sodipodi:role="line"
+           x="30.342127"
+           y="91.192848"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+           id="tspan948">Levitation</tspan><tspan
+           id="tspan950"
+           sodipodi:role="line"
+           x="30.342127"
+           y="96.484512"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">Techniques</tspan></text>
+    </g>
+  </g>
+</svg>

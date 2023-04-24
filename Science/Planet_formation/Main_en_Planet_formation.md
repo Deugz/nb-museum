@@ -63,9 +63,33 @@ width: 1000px
 :::::
 
 
+## Introduction
+
+### Step by Step
+
+::::{div} full-width
+
+```{figure} Docs/Planet-formation-overview.png
+---
+name: Planet formation
+width: 2000px
+---
+From {cite:p}`Halliday2022` [Article](https://www.boulder.swri.edu/~robin/HallidayCanup2022.pdf)
+```
+::::
+
+
+
+
 ## Plan
 
 ### Setting up the Stage
+
+```{figure} Docs/Star_lifecycle_webb.jpg
+
+
+[Source](https://webbtelescope.org/contents/media/images/4190-Image?page=1&keyword=lifecycle)
+```
 
 
 

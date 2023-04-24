@@ -81,8 +81,22 @@ May be talk with Nathalie Ysard
 :::::  
 ::::::
 
+
+## Experiments
+
+- {cite:p}`Jost2016`: Characterisation experiments (bidirectional reflectance, VIS-NIR, surfaces built from small-grained spherical water-ice particles), results: coherent backscattering dominates for fresh samples, contribution decreases with increasing bulk porosity and particle shape irregularity, particle sintering (temporal effect), glory for granular surfaces formed by small particles, angular positon of glory depends on particle size
+
+```{note}
+
+Lots of things I don't understand -> To read carefully
+
+```
+
+
+
 (content:references:Title1)=
-## Cryo EM
+### Cryo EM
 
 
 {cite:p}`Sigurbjornsson2009`
+

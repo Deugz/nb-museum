@@ -83,237 +83,30 @@ formation and the possible emergence of life itself. This Thesis covers the firs
 - **Technique**: Neutron Scattering
 - **Job**: PhD Part I - Highway to Hell
 
-    
+```{note}
 
-## Table of Content
-
-### <strong>&#187;  <u>Science</u></strong>
-
-:::::{div} full-width
-
-::::{grid} 
-
-:::{grid-item}
-:columns: 5 
-
-- [Overview](Science/Science)
-<br>
-<br>
-- ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-united-kingdom-svgrepo-com.svg) [Planet Formation](Science/Planet_formation/Main_en_Planet_formation) / ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-france-svgrepo-com.svg) [Formation des planètes](Science/Planet_formation/Main_fr_Planet_formation)
-<br>
-<br>
-    - [Prequel](Science/Planet_formation/Prequel)     
-    - [Star Formation](Science/Planet_formation/Star_formation)     
-    - [Protoplanetary Disks](Science/Planet_formation/PPD)    
-    - [Building Blocks](Science/Planet_formation/Blocks)
-<br>
-<br>
-- ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-united-kingdom-svgrepo-com.svg) [Collision](Science/Collision/Main_en_Collision) / ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-france-svgrepo-com.svg) [Collision](Science/Collision/Main_fr_Collision)
-<br>
-<br>
-    - [Migration](Science/Collision/Migration)     
-    - [Collision](Science/Collision/Collision)     
-    - [Growth](Science/Collision/Growth)    
-    - [Geochemistry](Science/Collision/GeoChem)
-<br>
-<br>
-- ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-united-kingdom-svgrepo-com.svg) [Hyperquenched Glassy Water](Science/HGW/Main_en_HGW) / ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-france-svgrepo-com.svg) [HGW](Science/HGW/Main_fr_HGW)
-<br>
-<br>
-    - [Vitrification](Science/HGW/Vitrification)     
-    - [HGW](Science/HGW/HGW)     
-    - [Cooling Processes](Science/HGW/Cooling)    
-<br>
-<br>
-- ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-united-kingdom-svgrepo-com.svg) [Levitation](Science/Levitation/Main_en_Levitation) / ![flag alt >](Docs/Svg_icons/flags/flag-for-flag-france-svgrepo-com.svg) [levitation](Science/Levitation/Main_fr_Levitation)
-<br>
-<br>
-    - [Dust 3D Observation](Science/Levitation/3DObs)
-    - [3 µm Right Wing](Science/Levitation/RightWing) 
-    - [Levitation](Science/Levitation/Levitation)     
-    
-<br>
-<br>
-
-- <strong> [Introduction](https://deugz.github.io/nb-thesis/_build/html/Introduction/Introduction.html) </strong> (📖 Thesis)
-
-:::
-
-:::{grid-item}
-:columns: 7
-
-<p class="emphase">Unraveiling the formation of planets throughout the collision of HGW ice grain, studied by accoustic levitation </p>
-
-Explanation
-
-
-
-:::
-
-::::
-
-:::::
-
-
-***
-
-### <strong>&#187;  <u>Methods</u></strong>
-
-:::::{div} full-width
-
-::::{grid} 2 
-
-:::{grid-item}
-:columns: 5 
-
-- [Overview](Technical/Method)
-<br>
-<br>
-- [XP Development](Technical/XP_Dev/XP_Dev)
-<br>
-<br>
-    - [Proof of Concept](Technical/XP_Dev/V1/Proof_of_concept)     
-    - [HGW Experiment V2](Technical/XP_Dev/V2/2nd_Version)
-    - [Levitation Chamber](Technical/XP_Dev/Levitation/Lev-Chamb)
-<br>
-<br>    
-- [Characterisation](Technical/Characterisation/characterisation)
-<br>
-<br>
-    - [Microscopy](Technical/Characterisation/Microscopy/Microscopy)     
-    - [Neutron Scattering](Technical/Characterisation/Neutron/Neutron)
-    - [IR Spectroscopy](Technical/Characterisation/Infrared/Infrared)
-<br>
-<br>
-- <strong> [Methods](https://deugz.github.io/nb-thesis/_build/html/Methods/Methods.html) </strong> (📖 Thesis)
-
-:::
-
-:::{grid-item}
-:columns: 7
-
-Methodology
-
-:::
-
-::::
-
-:::::
-
-
-
-
-
-
-
-***
-
-### <strong>&#187;  <u>Data</u></strong>
-
-```{admonition} Embargo
-
-The data generated from this work has been embargoed (links to more details (Blog Post maybe)), however I participated in the following ISIS runs
-
-Sort things out
+Use semantic web tags
 
 ```
 
-#### ISIS
 
-Unidentified:
-- RB_2000110
-- RB_2003050
-- RB_1810842
+***
 
+## Cite this work
 
-- 2019-02-D2O_C2H4 
-no RB number, no proposal, no lab-book
+```{note}
 
-- RB_1900135_NIMROD_Feb_2019
-Is it the same as above ?
+To check
 
-- RB_2000140_Sandals_Files
-Pierre, particles + pebbles
+```
 
-- RB_1902756_NIMROD_Files
-**Experiment V2 ** ISIS Run
+## Contribute
 
-##### Nimrod
+```{note}
 
-- Feb 2020: **RB_1902756** (2nd Version Data aquisition)
-- Feb 2019: RB_1900135
+To check
 
-- March 2017 - Icy Particles (Sedimentation Chamber) 
-
-##### Sans2D
-
-- Feb 2019: RB_1820601
-
-##### Sandals
-
-- RB_2000140
-
-
-### <strong>&#187;  <u>Results</u></strong>
-
-- <strong> [Chapter 6](https://deugz.github.io/nb-thesis/_build/html/Chapter6/Chapter6.html) </strong> (📖 Thesis)
-<br>
-<br>
-- <strong> [Chapter 7](https://deugz.github.io/nb-thesis/_build/html/Chapter7/Chapter7.html) </strong> (📖 Thesis)
-<br>
-<br>
-
-### <strong>&#187;  <u>Conclusion</u></strong>
-
-- <strong> [Conclusion](https://deugz.github.io/nb-thesis/_build/html/Conclusion/Conclusion.html) </strong> (📖 Thesis)
-
-
-
-
-## Lists 
-
-:::::{div} full-width
-::::{grid} 3
-
-<div>
-    
-<h5><strong>Figures</strong></h5>
-
-- {numref}`Figure {number}:<GB_fig1>` Proof of concept setup  
-- {numref}`Figure {number}:<GB_Fig2>` Ethane liquefaction setup 
-- {numref}`Figure {number}:<GB_Fig3>` Nebuliser setup
-- {numref}`Figure {number}:<GB_Fig4>` Nozzle setup II
-- {numref}`Figure {number}:<GB_Fig8>` Doesn't show
-    
-- {numref}`Figure {number}:<directive-fig>` GB setup  
-- {numref}`Figure {number}:<directive-fig2>` what is it
-- {numref}`Figure {number}:<directive-fig3>` what is it    
-</div>
-    
-<div>
-    
-<h5><strong>Tables</strong></h5>
-
-
-- {numref}`example-table`: ASW Experiments
-
-</div>
-
-<div>
-    
-<h5><strong>Equations</strong></h5>
-
-- {eq}`my_label` Equation 1
-
-</div>
-
-::::
-:::::
-
-No lists of abbreviation as will be directly described in the text:
-
-**Exemple:**  <span class="hovertext" data-hover="Amorphous Solid Water">ASW</span>
-    
+```
 
 
 # Comments

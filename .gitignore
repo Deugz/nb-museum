@@ -176,16 +176,13 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/jupyternotebooks,python
 
-DATA
-Presentation
-Courses
-_static/video/Sabrina-XP-video-project
-_build/html/_static/video/Sabrina-XP-video-project
-_build/html/_static/video/Ice_recovery.mp4
-_static/video/Ice_recovery.mp4
-To_sort/
-Docs/Meetings
-Docs/Training
+Scripts
+
+Docs/Meetings/
+_build/html/Meetings/
+
+Docs/Training/
+_build/html/Docs/Training/
 
 _static/video/no_git/
 _build/html/_static/video/no_git/
