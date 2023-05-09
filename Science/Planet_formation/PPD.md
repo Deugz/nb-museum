@@ -483,6 +483,8 @@ Particles with the same Stokes number behave aerodynamically similar. For a fixe
 
 ##### Ices in PPD
 
+- [Arxiv May 2023](https://arxiv.org/pdf/2305.02355.pdf): Investigate Edge-on Disks ice inventory
+
 ##### Observation
 
 - {cite:p}`Schegerer2010`: spectroscopic detection of crystalline water ice in young stellar object, predominantly small grains (0.1 – 0.3 μm), few large grains, evidence for grain growth, crystallinity increases in upper layers of circumstellar disk, only amorphous grains exist in bipolar envelope, crystallization close to disk atmosphere, where water ice is shielded from hard radiation
@@ -604,3 +606,26 @@ width: 1200px
 
 
 {cite:p}`Eistrup2022`
+
+
+## Chemistry in Disks
+
+### Molecule detections
+
+**JWST** (MIRI instrument)
+
+- {cite:p}`Grant2022` 
+
+### Assymetric traps
+
+```{note}
+
+To define
+
+
+```
+
+- {cite:p}`Temmink2023` 
+
+- {cite:p}`Booth2021`
+

@@ -88,6 +88,16 @@ Speak about snowline
 
 ```
 
+## ISM Dust
+
+```{note}
+
+Link to BT Draine website with Dust properties
+
+```
+
+- {cite:p}`Hensley2023`: Unified model Dust+PAH
+
 ## From molecular clouds to PPD
 
 - {cite:p}`Hirashita2013`: Numerical modelling (formation of μm-sized grains in dense cores of molecular clouds), results: coreshine (mid-IR emission due to scattering from μm-sized grains in dense cores) must come from long-lived entities rather than dynamically transient objects (based on free-fall time for typical hydrogen densities around 105 cm-3)
@@ -313,3 +323,22 @@ First **sample return mission**, launched by NASA in 1999
 
 
 
+## Circumplanetary Disk
+
+<p class="emphase">Disks that formed around planets and from which <strong>Icy Satellites</strong> forms</p>
+
+### Composition
+
+- {cite:p}`Oberg2023` : Model (code ProDiMo)
+
+```{note}
+
+- Check the model
+
+```
+
+## Kuiper Belt Objects
+
+Formation from relatively unaltered material, may be at the origin of comets
+
+- [Article to find](https://doi.org/10.1093/mnras/stad1086)

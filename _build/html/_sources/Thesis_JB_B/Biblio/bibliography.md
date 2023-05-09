@@ -1,4 +1,4 @@
-## Bibliography
+# Bibliography
 
 ```{bibliography}
 :style: unsrt

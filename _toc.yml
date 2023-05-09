@@ -6,8 +6,10 @@ root: intro
 parts:
   - caption: Introduction
     chapters:
-    - file: Appendix/Info/How-it-works
-    - file: Appendix/Info/Organisation
+    - url: https://deugz.github.io/nb-master/_build/html/Research/PhD/How-it-works.html
+      title: "Online Format"
+    - url: https://deugz.github.io/nb-master/_build/html/Research/PhD/PhD-Orga.html
+      title: "Supervision / Plan"
     - file: Appendix/Info/table-of-content    
   - caption: Science
     chapters:
