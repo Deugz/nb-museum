@@ -582,6 +582,12 @@ Description
 
 ### <strong> &#x2023; <u> Properties </u></strong> 
 
+#### Structure
+
+**Filament structure**
+
+- [Article](https://academic.oup.com/mnras/article-abstract/522/3/3890/7143799?redirectedFrom=fulltext&login=false) to extract and put in bib
+
 #### <strong> &#x2023; &#x2023; Molecular factory </strong>
 
 
@@ -646,8 +652,8 @@ How does the process of star formation beggin ? not out of the blue
 
 - Contraction of molecular cloud OK but what else
 
-
-### A Brief History of our own Solar system
+ 
+### <strong> &#x2023; <u> A Brief History of our own Solar system </u></strong> 
 
 4.6 Billion years ago ...
 
@@ -682,6 +688,18 @@ width: 1200px
 :::
 ::::
 :::::
+
+### <strong> &#x2023; <u>  Pre Stellar Cores </u></strong>
+
+#### 3D Modelling
+
+[Arxiv](https://arxiv.org/abs/2305.05932) - to download when published
+
+```{note}
+
+Filament structure ...
+
+```
 
 (content:references:Title5)= 
 ## Summary 

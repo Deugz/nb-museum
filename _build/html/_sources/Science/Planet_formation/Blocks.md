@@ -316,6 +316,10 @@ First **sample return mission**, launched by NASA in 1999
 
 - {cite:p}`Lorek2015`
 
+### Cometary Dust 
+
+- **Review**: [Arxiv link](https://arxiv.org/pdf/2305.03417.pdf)
+
 
 ## Ice in space
 
@@ -336,3 +340,9 @@ First **sample return mission**, launched by NASA in 1999
 - Check the model
 
 ```
+
+## Kuiper Belt Objects
+
+Formation from relatively unaltered material, may be at the origin of comets
+
+- [Article to find](https://doi.org/10.1093/mnras/stad1086)

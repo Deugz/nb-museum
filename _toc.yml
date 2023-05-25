@@ -72,11 +72,6 @@ parts:
   - caption: Appendix
     chapters:
     - file: Appendix/Lists/Lists
-      sections:
-      - file: Appendix/Lists/figures
-      - file: Appendix/Lists/videos
-      - file: Appendix/Lists/tables
-      - file: Appendix/Lists/equations
     - file: Appendix/Presentation/Presentations
       sections:
       - file: Appendix/Presentation/oral

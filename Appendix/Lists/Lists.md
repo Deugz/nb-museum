@@ -4,7 +4,49 @@
 No lists of abbreviation as will be directly described in the text:
 
 **Exemple:**  <span class="hovertext" data-hover="Amorphous Solid Water">ASW</span>
+ 
+## Figures
+
+
+
+### Introduction
+
+- {numref}`Figure {number}:<Funnel-explanation>` Explanation 
+- {numref}`Figure {number}:<Bubble-Plan>` Explanation
+
+
+### Science
+
+
+### Methods
+
+- {numref}`Figure {number}:<GB_fig1>` Proof of concept setup  
+- {numref}`Figure {number}:<GB_Fig2>` Ethane liquefaction setup 
+- {numref}`Figure {number}:<GB_Fig3>` Nebuliser setup
+- {numref}`Figure {number}:<GB_Fig4>` Nozzle setup II
+- {numref}`Figure {number}:<GB_Fig8>` Doesn't show
     
+- {numref}`Figure {number}:<directive-fig>` GB setup  
+- {numref}`Figure {number}:<directive-fig2>` what is it
+- {numref}`Figure {number}:<directive-fig3>` what is it   
+
+
+
+
+
+
+## Equations
+
+
+- {eq}`my_label` Equation 1
+ 
+ 
+ 
+ 
+## Tables
+
+- {numref}`example-table`: ASW Experiments
+ 
 
 
 ## Data

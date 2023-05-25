@@ -205,6 +205,10 @@ Insert here the most simple diagram from Birnstiel + Observations
 
 ***
 
+#### Vertical structure 
+
+- from CO isotoplogue emission: [Article](https://iopscience.iop.org/article/10.3847/1538-4357/acb3c4/pdf)
+
 #### <strong> Constituents </strong>
 
 ```{figure} Docs/Dullemond-2006.png
@@ -509,6 +513,7 @@ However, snow-line location of different ice species can vary due to several pro
 
 - {cite:p}`Cieza2016`
 
+**Variation from Gaps**: [Article](https://academic.oup.com/mnras/article-abstract/522/3/3378/7134090?redirectedFrom=fulltext&login=false) to extract and put in bib
 
 ##### Models
 
@@ -598,6 +603,10 @@ width: 1200px
 ## Debris Disk
 
 - **Review**: {cite:p}`Hughes2018`
+
+### Observations
+
+**JWST**: {cite:p}`Gaspar2023`
 
 
 ## Planet formation scenario
